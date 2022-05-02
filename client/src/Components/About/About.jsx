@@ -5,7 +5,9 @@ import profile_pic from '../../../../assets/profile_pic.png';
 const About = () => {
   return (
     <div>
-      <img class="profile_pic" src={profile_pic} />
+      <div className="profile_pic">
+        <img width="310px" height="414px" src={profile_pic} />
+      </div>
     </div>
   );
 }
