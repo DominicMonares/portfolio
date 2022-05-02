@@ -1,9 +1,11 @@
 import React from 'react';
 
+import profile_pic from '../../../../assets/profile_pic.png';
+
 const About = () => {
   return (
     <div>
-      <h1>ABOUT PAGE</h1>
+      <img class="profile_pic" src={profile_pic} />
     </div>
   );
 }
