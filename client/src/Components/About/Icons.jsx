@@ -46,13 +46,6 @@ const Icons = () => {
       </Modal>
     </div>
   )
-
-
-  // return (
-  //   <div className="icons8">
-  //     Icons by Icon8
-  //   </div>
-  // );
 }
 
 export default Icons;
