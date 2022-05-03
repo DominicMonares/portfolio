@@ -10,28 +10,19 @@ import Experience from './Components/Experience/Experience';
 import Education from './Components/Education/Education';
 import Applications from './Components/Applications/Applications';
 
-class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      view: 'about'
-    };
-  }
-
-  render() {
-    return (
-      <Router>
-        <NavBar />
-        <Routes>
-          <Route path='/about' element={<About />}></Route>
-          <Route path='/skills' element={<Skills />}></Route>
-          <Route path='/experience' element={<Experience />}></Route>
-          <Route path='/education' element={<Education />}></Route>
-          <Route path='/applications' element={<Applications />}></Route>
-        </Routes>
-      </Router>
-    )
-  }
+const App = () => {
+  return (
+    <Router>
+      <NavBar />
+      <Routes>
+        <Route path='/about' element={<About />}></Route>
+        <Route path='/skills' element={<Skills />}></Route>
+        <Route path='/experience' element={<Experience />}></Route>
+        <Route path='/education' element={<Education />}></Route>
+        <Route path='/applications' element={<Applications />}></Route>
+      </Routes>
+    </Router>
+  )
 }
 
 ReactDOM.render(<App />, document.getElementById('app'));

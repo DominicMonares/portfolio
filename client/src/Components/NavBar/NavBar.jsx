@@ -4,6 +4,8 @@ import { Nav, NavLink, NavMenu } from './NavBarElements';
 const NavBar = () => {
   return (
     <div>
+      <h2>Dominic Monares</h2>
+      <h4>Full-Stack Software Engineer</h4>
       <Nav>
         <NavMenu>
           <NavLink to="/about">
