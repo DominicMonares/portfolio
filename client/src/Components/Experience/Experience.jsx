@@ -1,11 +1,15 @@
 import React from 'react';
 
+import Job from './Job';
+import exp from './exp.js';
+const jobs = exp.jobs;
+
 const Experience = () => {
   return (
-    <div>
-      <h1>EXPERIENCE PAGE</h1>
+    <div className="experience_container">
+      {jobs.map(j => <Job job={j} />)}
     </div>
-  );
+  )
 }
 
 export default Experience;
