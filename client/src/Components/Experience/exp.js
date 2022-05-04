@@ -40,7 +40,7 @@ const exp = {
       year: 'Dec 2021 - Jan 2022',
       app: {
         type: 'API microservice for eCommerce application',
-        github: ['http://github.com/DominicMonares/cactus-oasis-ov']
+        github: ['https://github.com/DominicMonares/cactus-oasis-ov']
       },
       bullets: {
         first: 'Designed, built, and deployed a multi-layered backend microservice on an <b>AWS EC2<b> T2.micro instance',
