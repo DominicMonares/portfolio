@@ -1,5 +1,6 @@
+.DS_Store
 node_modules
 assets
 client/dist/main.js
-.DS_Store
+client/dist/main.js.map
 client/dist/images
