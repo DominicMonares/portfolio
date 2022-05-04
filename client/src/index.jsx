@@ -10,6 +10,8 @@ import Experience from './Components/Experience/Experience';
 import Education from './Components/Education/Education';
 import Applications from './Components/Applications/Applications';
 
+import './App.css';
+
 const App = () => {
   return (
     <Router>

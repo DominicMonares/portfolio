@@ -26,6 +26,10 @@ module.exports = {
         options: {
           outputPath: 'images'
         }
+      },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
       }
     ]
   },
