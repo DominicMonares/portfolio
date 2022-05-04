@@ -7,11 +7,11 @@ const Bullets = (props) => {
     return splitBullet.map(b => {
       if (even) {
         even = false;
-        return <span>{b}</span>
+        return <span key={b}>{b}</span>
       }
 
       even = true;
-      return <b>{b}</b>
+      return <b key={b}>{b}</b>
     })
   }
 
