@@ -9,7 +9,7 @@ const exp = {
         type: 'Social media application',
         github: [
           'https://github.com/DominicMonares/BOC',
-          'http://github.com/DominicMonares/backend'
+          'https://github.com/DominicMonares/backend'
         ]
       },
       bullets: {
