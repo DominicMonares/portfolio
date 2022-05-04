@@ -1,6 +1,13 @@
+# Mac
 .DS_Store
+
+# Dependencies
 node_modules
-assets
+
+# Bundle
 client/dist/main.js
 client/dist/main.js.map
 client/dist/images
+
+# Local Assets
+assets
