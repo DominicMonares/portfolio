@@ -9,7 +9,7 @@ const About = () => {
     <div className="about_container">
       <div className="about_body">
         <div className="profile_pic">
-          <img src={profile_pic} width="310px" height="414px"/>
+          <img src={profile_pic} width="200px" height="200px"/>
         </div>
         <p>
           Hi! I’m a problem solver who happens to specialize in full-stack
