@@ -27,9 +27,7 @@ const NavBar = () => {
           </NavMenu>
         </Nav>
       </div>
-      <div className="header_underline_container">
-        <div className="header_underline"></div>
-      </div>
+      <div className="header_underline"></div>
     </div>
   )
 }

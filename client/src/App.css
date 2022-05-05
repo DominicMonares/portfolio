@@ -1,5 +1,14 @@
 /* General */
 
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+#app {
+  width: 92%;
+}
+
 /* NavBar */
 
 .title_main {
@@ -24,21 +33,19 @@
 .navbar {
   display: flex;
   justify-content: center;
-}
-
-.header_underline_container {
-  display: flex;
-  justify-content: center;
+  margin-bottom: 0px;
 }
 
 .header_underline {
-  width: 92%;
   border-bottom-style: solid;
   border-width: 3px;
   border-color: #523F66;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 /* About */
+
 
 /* Skills */
 

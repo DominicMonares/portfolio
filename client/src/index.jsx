@@ -14,17 +14,19 @@ import './App.css';
 
 const App = () => {
   return (
-    <Router>
-      <NavBar />
-      <Routes>
-        <Route path='/about' element={<About />}></Route>
-        <Route path='/skills' element={<Skills />}></Route>
-        <Route path='/experience' element={<Experience />}></Route>
-        <Route path='/education' element={<Education />}></Route>
-        <Route path='/applications' element={<Applications />}></Route>
-      </Routes>
-    </Router>
+    <div id="app">
+      <Router>
+        <NavBar />
+        <Routes>
+          <Route path='/about' element={<About />}></Route>
+          <Route path='/skills' element={<Skills />}></Route>
+          <Route path='/experience' element={<Experience />}></Route>
+          <Route path='/education' element={<Education />}></Route>
+          <Route path='/applications' element={<Applications />}></Route>
+        </Routes>
+      </Router>
+    </div>
   )
 }
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('root'));
