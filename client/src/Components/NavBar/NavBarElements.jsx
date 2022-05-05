@@ -31,7 +31,8 @@ export const NavLink = styled(Link)`
   padding: 0 1rem;
   width: 80%;
   height: 100%;
-  // border-style: solid;
+  // border-left-style: solid;
+  // border-right-style: solid;
   // border-width: 1;
   // border-color: #ffffff;
   cursor: pointer;

@@ -12,19 +12,15 @@ const NavBar = () => {
             <NavLink to="/about">
               About
             </NavLink>
-            <div className="divider"></div>
             <NavLink to="/skills">
               Skills
             </NavLink>
-            <div className="divider"></div>
             <NavLink to="/experience">
               Experience
             </NavLink>
-            <div className="divider"></div>
             <NavLink to="/education">
               Education
             </NavLink>
-            <div className="divider"></div>
             <NavLink to="/applications">
               Applications
             </NavLink>
