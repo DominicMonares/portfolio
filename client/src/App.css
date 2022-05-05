@@ -3,6 +3,11 @@
 #root {
   display: flex;
   justify-content: center;
+  position:absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
 }
 
 #app {
@@ -42,11 +47,86 @@
   border-width: 3px;
   border-color: #523F66;
   margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 }
 
 /* About */
 
+.about_body_container {
+  display: flex;
+  justify-content: center;
+}
+
+.about_body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  max-width: 1100px;
+}
+
+.profile_pic {
+  width: 225px;
+  height: 300px;
+}
+
+.about_text_container {
+  max-width: 700px;
+  margin-left: 50px;
+}
+
+.about_text {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.about_text_bottom {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.about_container_underline {
+  border-bottom-style: solid;
+  border-width: 3px;
+  border-color: #523F66;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.contacts_container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+  align-items: center;
+}
+
+.contact_link {
+  margin-left: 20px;
+}
+
+.icon_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.icon_container {
+  display: flex;
+  justify-content: center;
+}
+
+.icon_open {
+  position: absolute;
+  bottom: 0;
+}
 
 /* Skills */
 

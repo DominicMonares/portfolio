@@ -27,8 +27,8 @@ const Icons = () => {
   }
 
   return (
-    <div>
-      <span onClick={openModal}>Icons by Icons8</span>
+    <div className="icon_container">
+      <span className="icon_open" onClick={openModal}>Icons by Icons8</span>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
