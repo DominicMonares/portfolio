@@ -11,7 +11,7 @@ export const NavMenu = styled.div`
   justify-content: center;
   align-items: center;
   width: 650px;
-  height: 50px;
+  height: 40px;
   background: #523F66;
   border-radius: 5px;
   border-style: solid;
