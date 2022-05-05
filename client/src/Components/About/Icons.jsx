@@ -12,7 +12,7 @@ const customStyles = {
   },
 };
 
-Modal.setAppElement('#app');
+Modal.setAppElement('#root');
 
 const Icons = () => {
   let subtitle;
