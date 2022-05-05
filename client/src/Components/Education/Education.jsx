@@ -4,8 +4,8 @@ const Education = () => {
   return (
     <div className="education_container">
       <div className="edu_container">
-        <div className="edu_header">
-          <div className="edu_left">
+        <div className="edu_header_container">
+          <div>
             <span className="edu_cert">
               Certificate, Advanced Software Engineering Immersive
             </span>
@@ -24,8 +24,8 @@ const Education = () => {
         </span>
       </div>
       <div className="edu_container">
-        <div className="edu_header">
-          <div className="edu_left">
+        <div className="edu_header_container">
+          <div>
             <span className="edu_cert">
               High School Diploma
             </span>
