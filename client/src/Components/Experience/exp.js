@@ -24,7 +24,7 @@ const exp = {
       location: 'US Remote',
       year: 'Jan 2022 - Mar 2022',
       app: {
-        type: 'eCommerce application',
+        type: 'e-commerce application',
         github: ['https://github.com/DominicMonares/fec-atelier']
       },
       bullets: {
