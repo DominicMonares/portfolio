@@ -4,9 +4,7 @@
   display: flex;
   justify-content: center;
   position:absolute;
-  top:0px;
   right:0px;
-  bottom:0px;
   left:0px;
 }
 
@@ -137,9 +135,10 @@ a.contact_link {
 /* Experience */
 
 .experience_container {
-  margin-top: 75px;
   font-size: 22px;
   max-width: 1250px;
+  /* margin-top: 75px; */
+  margin-bottom: 75px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -161,7 +160,9 @@ a.contact_link {
 
 .app_header_container {
   font-style: italic;
+  font-size: 20px;
   color: #9E9BA0;
+  margin-top: 5px;
   margin-bottom: 20px;
 }
 
@@ -173,7 +174,8 @@ a.exp_link {
   display: flex;
   flex-direction: column;
   margin-top: 35px;
-  margin-bottom: 50px;
+  margin-bottom: 75px;
+  margin-left: 50px;
 }
 
 .exp_bullet {
@@ -205,7 +207,7 @@ a.exp_link {
   max-width: 1250px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 75px;
+  margin-bottom: 75px;
 }
 
 .edu_header_container {
