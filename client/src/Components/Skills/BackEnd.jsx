@@ -13,41 +13,46 @@ import nodemailer from '../../../../assets/nodemailer.png';
 const BackEnd = () => {
   return (
     <div className="backend_container">
-      <div className="tool">
-        <span className="tool_text">Node.js</span>
-        <img src={node} width="48px" height="48px" />
+      <span className="skill_title">Back-End</span>
+      <div className="skill_container">
+        <div className="tool">
+          <span className="tool_text">Node.js</span>
+          <img src={node} width="48px" height="48px" />
+        </div>
+        <div className="tool">
+          <span className="tool_text">Express</span>
+          <img src={express} width="48px" height="48px" />
+        </div>
+        <div className="tool">
+          <span className="tool_text">MongoDB</span>
+          <img src={mongo} width="48px" height="48px" />
+        </div>
+        <div className="tool">
+          <span className="tool_text">MySQL</span>
+          <img src={mySQL} width="46px" height="46px" />
+        </div>
+        <div className="tool">
+          <span className="tool_text">RESTful API Development</span>
+          <img src={rest} width="48px" height="48px" />
+        </div>
+        <div className="tool">
+          <span className="tool_text">Memcached</span>
+          <img src={memcached} width="46px" height="46px" />
+        </div>
       </div>
-      <div className="tool">
-        <span className="tool_text">Express</span>
-        <img src={express} width="48px" height="48px" />
-      </div>
-      <div className="tool">
-        <span className="tool_text">MongoDB</span>
-        <img src={mongo} width="48px" height="48px" />
-      </div>
-      <div className="tool">
-        <span className="tool_text">MySQL</span>
-        <img src={mySQL} width="46px" height="46px" />
-      </div>
-      <div className="tool">
-        <span className="tool_text">RESTful API Development</span>
-        <img src={rest} width="48px" height="48px" />
-      </div>
-      <div className="tool">
-        <span className="tool_text">Memcached</span>
-        <img src={memcached} width="46px" height="46px" />
-      </div>
-      <div className="tool">
-        <span className="tool_text">Passport.js</span>
-        <img src={passport} width="48px" height="48px" />
-      </div>
-      <div className="tool">
-        <span className="tool_text">Auth0</span>
-        <img src={auth0} width="48px" height="48px" />
-      </div>
-      <div className="tool">
-        <span className="tool_text">Nodemailer</span>
-        <img src={nodemailer} width="98px" height="46px" />
+      <div className="skill_container_lower">
+        <div className="tool">
+          <span className="tool_text">Passport.js</span>
+          <img src={passport} width="48px" height="48px" />
+        </div>
+        <div className="tool">
+          <span className="tool_text">Auth0</span>
+          <img src={auth0} width="48px" height="48px" />
+        </div>
+        <div className="tool">
+          <span className="tool_text">Nodemailer</span>
+          <img src={nodemailer} width="98px" height="46px" />
+        </div>
       </div>
     </div>
   );

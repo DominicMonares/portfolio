@@ -45,7 +45,6 @@
   border-width: 3px;
   border-color: #523F66;
   margin-top: 25px;
-  margin-bottom: 50px;
 }
 
 /* About */
@@ -53,6 +52,7 @@
 .about_body_container {
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 }
 
 .about_body {
@@ -132,12 +132,103 @@ a.contact_link {
 
 /* Skills */
 
+.skills_container {
+  margin-bottom: 75px;
+}
+
+.frontend_container,
+.backend_container,
+.test_deploy_container,
+.dev_container,
+.office_container,
+.media_container {
+  border-bottom-style: solid;
+  border-width: 3px;
+  border-color: #523F66;
+}
+
+.frontend_container,
+.backend_container,
+.test_deploy_container,
+.dev_container,
+.office_container,
+.media_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.skill_title {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.skill_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.skill_container_lower {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.skill_container_lower_td {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.sc_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.skill_container_office {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tool {
+  display: flex;
+  align-items: center;
+}
+
+.tool_office {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tool_text {
+  font-size: 18px;
+  margin-top: 4px;
+  margin-right: 5px;
+}
+
+
 /* Experience */
 
 .experience_container {
   font-size: 22px;
   max-width: 1250px;
-  /* margin-top: 75px; */
+  margin-top: 50px;
   margin-bottom: 75px;
   margin-left: auto;
   margin-right: auto;
@@ -173,8 +264,8 @@ a.exp_link {
 .exp_bullet_container {
   display: flex;
   flex-direction: column;
-  margin-top: 35px;
-  margin-bottom: 75px;
+  margin-top: 20px;
+  margin-bottom: 50px;
   margin-left: 50px;
 }
 
@@ -194,6 +285,7 @@ a.exp_link {
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 21px;
+  line-height: 1.5;
 }
 
 
@@ -201,6 +293,7 @@ a.exp_link {
 
 .education_container {
   font-size: 22px;
+  margin-top: 50px;
 }
 
 .edu_container {
