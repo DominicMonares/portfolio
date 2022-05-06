@@ -17,7 +17,7 @@ const Education = () => {
           <span className="edu_year">2021 - 2022</span>
         </div>
         <span className="edu_bullet_container">
-          <p className="edu_bullet">•</p>
+          •
           <p className="edu_bullet_text">
             36-week software engineering immersive program with over 1000 hours of coding, full-stack development with JavaScript, React, Express, MongoDB, and MySQL.
           </p>

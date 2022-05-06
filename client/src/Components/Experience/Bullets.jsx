@@ -18,15 +18,15 @@ const Bullets = (props) => {
   return (
     <div className="exp_bullet_container">
       <div className="exp_bullet">
-        <p className="exp_bullet_point">•</p>
+        •
         <p className="exp_bullet_text">{bold(props.first)}</p>
       </div>
       <div className="exp_bullet">
-        <p className="exp_bullet_point">•</p>
+        •
         <p className="exp_bullet_text">{bold(props.second)}</p>
       </div>
       <div className="exp_bullet">
-        <p className="exp_bullet_point">•</p>
+        •
         <p className="exp_bullet_text">{bold(props.third)}</p>
       </div>
     </div>
