@@ -5,7 +5,7 @@ const App = (props) => {
     if (props.links.length > 1) {
       return [
         <a className="exp_link" href={props['links'][0]} key="link1">GitHub - Front End</a>,
-        <span>&nbsp;|&nbsp;</span>,
+        <span key="divider">&nbsp;|&nbsp;</span>,
         <a className="exp_link" href={props['links'][1]} key="link2">GitHub - Back End</a>
       ]
     }
