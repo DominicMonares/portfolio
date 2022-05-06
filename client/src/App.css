@@ -14,6 +14,12 @@
 
 /* NavBar */
 
+.nav_container {
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
 .title_main {
   display: flex;
   justify-content: center;

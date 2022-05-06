@@ -3,14 +3,14 @@ import { Nav, NavLink, NavMenu } from './NavBarElements';
 
 const NavBar = () => {
   return (
-    <div>
+    <div className="nav_container">
       <h1 className="title_main">Dominic Monares</h1>
       <h3 className="subtitle_main">Full-Stack Software Engineer</h3>
       <div className="navbar">
         <Nav>
           <NavMenu>
-            <NavLink to="/about">
-              About
+            <NavLink to="/applications">
+              Applications
             </NavLink>
             <NavLink to="/skills">
               Skills
@@ -21,8 +21,8 @@ const NavBar = () => {
             <NavLink to="/education">
               Education
             </NavLink>
-            <NavLink to="/applications">
-              Applications
+            <NavLink to="/about">
+              About
             </NavLink>
           </NavMenu>
         </Nav>
