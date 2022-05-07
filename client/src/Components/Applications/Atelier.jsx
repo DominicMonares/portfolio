@@ -8,7 +8,7 @@ import fec4 from '../../../../assets/fec4.gif'
 
 const Atelier = () => {
   return (
-    <div className="atelier_container">
+    <div className="app_container">
       <Header
         app="Atelier"
         desc="eCommerce application product page"
@@ -17,29 +17,37 @@ const Atelier = () => {
         ]}
         techs="React, WebPack, Babel, Express, Node.js, AWS: EC2, Jest, React Testing Library"
       />
-      <div>
-        <img src={fec1} width="713px" height="346px" />
-        <span className="demo_caption">
-          Dynamically sorting search bar
-        </span>
+      <div className="demo_container">
+        <div className="demo">
+          <img className="demo_img_at" src={fec1} width="713px" height="346px" />
+          <span className="demo_caption">
+            Dynamically sorting search bar
+          </span>
+        </div>
       </div>
-      <div>
-        <img src={fec2} width="443px" height="120px" />
-        <span className="demo_caption">
-          Rate helpfulness and flag inappropriate answers for review
-        </span>
+      <div className="demo_container">
+        <div className="demo">
+          <img className="demo_img_at" src={fec2} width="664px" height="180px" />
+          <span className="demo_caption">
+            Rate helpfulness and flag inappropriate answers for review
+          </span>
+        </div>
       </div>
-      <div>
-        <img src={fec3} width="718px" height="378px" />
-        <span className="demo_caption">
-          Answer accordion, expandable questions, and infinitely scrolling display
-        </span>
+      <div className="demo_container">
+        <div className="demo">
+          <img className="demo_img_at" src={fec3} width="718px" height="378px" />
+          <span className="demo_caption">
+            Answer accordion, expandable questions, and infinitely scrolling display
+          </span>
+        </div>
       </div>
-      <div>
-        <img src={fec4} width="718px" height="380px" />
-        <span className="demo_caption">
-          Answer submission modal and image upload
-        </span>
+      <div className="demo_container">
+        <div className="demo">
+          <img className="demo_img_at" src={fec4} width="718px" height="380px" />
+          <span className="demo_caption">
+            Answer submission modal and image upload
+          </span>
+        </div>
       </div>
     </div>
   )

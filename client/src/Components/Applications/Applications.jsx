@@ -6,7 +6,7 @@ import FretJs from './FretJs';
 
 const Applications = () => {
   return (
-    <div>
+    <div className="applications_container">
       <FretJs />
       <PetPix />
       <Atelier />

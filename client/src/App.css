@@ -53,87 +53,85 @@
   margin-top: 25px;
 }
 
-/* About */
+/* Applications */
 
-.about_body_container {
+.applications_container {
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 75px;
+}
+
+.applications_header_container {
+  font-size: 22px;
+}
+
+.app_container {
+  margin-top: 50px;
+}
+
+.bottom_container {
+  font-style: italic;
+  font-size: 20px;
+  color: #9E9BA0;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.app_name {
+  color: #523F66;
+  font-weight: bold;
+}
+
+.youtube {
   display: flex;
   justify-content: center;
   margin-top: 50px;
 }
 
-.about_body {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 100%;
-  max-width: 1100px;
-}
-
-.profile_pic {
-  width: 225px;
-  height: 300px;
-}
-
-.about_text_container {
-  max-width: 700px;
-  margin-left: 50px;
-}
-
-.about_text {
-  font-size: 20px;
-  line-height: 1.5;
-  margin-top: 0px;
-  margin-bottom: 30px;
-}
-
-.about_text_bottom {
-  font-size: 20px;
-  line-height: 1.5;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.about_container_underline {
-  border-bottom-style: solid;
+.youtube_iframe {
+  width: 960px;
+  height: 540px;
+  border-style: solid;
   border-width: 3px;
   border-color: #523F66;
+}
+
+.demo_container {
+  display: flex;
+  justify-content: space-evenly;
   margin-top: 50px;
-  margin-bottom: 50px;
 }
 
-.contacts_container {
+.demo {
+  display: flex;
+  flex-direction: column;
+}
+
+.demo_img_container {
   display: flex;
   justify-content: space-evenly;
 }
 
-.contact {
+.demo_img {
+  margin-left: 10%;
+  margin-right: 10%;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #523F66;
+}
+
+.demo_img_at {
+  border-style: solid;
+  border-width: 3px;
+  border-color: #523F66;
+}
+
+.demo_caption {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  margin-top: 30px;
   font-size: 20px;
-  align-items: center;
-}
-
-.contact_link {
-  margin-left: 20px;
-}
-
-a.contact_link {
-  color: #523F66;
-}
-
-.icon_wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.icon_container {
-  display: flex;
-  justify-content: center;
-}
-
-.icon_open {
-  position: absolute;
-  bottom: 0;
 }
 
 /* Skills */
@@ -343,4 +341,85 @@ a.edu_link {
   font-size: 21px;
 }
 
-/* Applications */
+/* About */
+
+.about_body_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.about_body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  max-width: 1100px;
+}
+
+.profile_pic {
+  width: 225px;
+  height: 300px;
+}
+
+.about_text_container {
+  max-width: 700px;
+  margin-left: 50px;
+}
+
+.about_text {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.about_text_bottom {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.about_container_underline {
+  border-bottom-style: solid;
+  border-width: 3px;
+  border-color: #523F66;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.contacts_container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+  align-items: center;
+}
+
+.contact_link {
+  margin-left: 20px;
+}
+
+a.contact_link {
+  color: #523F66;
+}
+
+.icon_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.icon_container {
+  display: flex;
+  justify-content: center;
+}
+
+.icon_open {
+  position: absolute;
+  bottom: 0;
+}

@@ -5,9 +5,9 @@ import YoutubeEmbed from './YoutubeEmbed';
 
 const FretJs = () => {
   return (
-    <div className="fretjs_container">
+    <div className="app_container">
       <Header
-        app="fretJs (WIP)"
+        app="fretJs"
         desc="An app that lets you write and execute JS using only an electric guitar"
         links={[
           'https://github.com/DominicMonares/fec-atelier'

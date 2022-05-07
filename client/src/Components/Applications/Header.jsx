@@ -5,6 +5,7 @@ const Header = (props) => {
     if (props.links.length > 1) {
       return [
         <a key="link1" className="link" href={props['links'][0]}>GitHub - Front End</a>,
+        <span key="divider">&nbsp;|&nbsp;</span>,
         <a key="link2" className="link" href={props['links'][1]}>GitHub - Back End</a>
       ]
     }
@@ -13,10 +14,12 @@ const Header = (props) => {
   }
 
   return (
-    <div className="app_header_container">
+    <div className="applications_header_container">
       <div className="top_container">
-        <span className="petpix">{props.app}</span>
-        <span className="petpix_desc">{props.desc}</span>
+        <span className="app_name">{props.app}</span>
+        &nbsp;|&nbsp;
+        <span className="app_desc">{props.desc}</span>
+        &nbsp;|&nbsp;
         {links()}
       </div>
       <div className="bottom_container">
