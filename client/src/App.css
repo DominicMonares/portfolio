@@ -6,6 +6,7 @@
   position:absolute;
   right:0px;
   left:0px;
+  height: 100%;
 }
 
 #app {
@@ -233,7 +234,6 @@
   font-size: 22px;
   max-width: 1250px;
   margin-top: 50px;
-  margin-bottom: 75px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -343,6 +343,10 @@ a.edu_link {
 
 /* About */
 
+/* .about_container {
+  margin-bottom: 75px;
+} */
+
 .about_body_container {
   display: flex;
   justify-content: center;
@@ -353,7 +357,7 @@ a.edu_link {
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 100%;
+  /* height: 100%; */
   max-width: 1100px;
 }
 
@@ -399,6 +403,7 @@ a.edu_link {
   justify-content: space-evenly;
   font-size: 20px;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .contact_link {
@@ -409,17 +414,12 @@ a.contact_link {
   color: #523F66;
 }
 
-.icon_wrapper {
-  display: flex;
-  justify-content: center;
-}
-
 .icon_container {
+  /* margin-top: 20%; */
   display: flex;
   justify-content: center;
 }
 
 .icon_open {
-  position: absolute;
   bottom: 0;
 }

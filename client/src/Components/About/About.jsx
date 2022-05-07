@@ -28,13 +28,11 @@ const About = () => {
               my spare time.
             </p>
           </div>
-      </div>
+        </div>
       </div>
       <div className="about_container_underline"></div>
       <Contacts />
-      <div className="icon_wrapper">
-        <Icons />
-      </div>
+      <Icons />
     </div>
   );
 }

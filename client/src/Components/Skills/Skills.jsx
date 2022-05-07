@@ -10,13 +10,15 @@ import Icons from './Icons';
 
 const Skills = () => {
   return (
-    <div className="skills_container">
-      <FrontEnd />
-      <BackEnd />
-      <TestDeploy />
-      <Development />
-      <Office />
-      <Media />
+    <div>
+      <div className="skills_container">
+        <FrontEnd />
+        <BackEnd />
+        <TestDeploy />
+        <Development />
+        <Office />
+        <Media />
+      </div>
       <Icons />
     </div>
   );
