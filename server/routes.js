@@ -1,7 +1,7 @@
 const app = require('express').Router();
 
 app.get('/', (req, res) => {
-  res.redirect('/about');
+  res.redirect('/applications');
 });
 
 module.exports = app;
