@@ -7,7 +7,7 @@ const NavBar = () => {
       <div className="navbar">
         <Nav>
           <NavMenu>
-            <NavLink to="/applications" className="navlink">
+            <NavLink to="/apps" className="navlink">
               <div className="nav_text">
                 Apps
               </div>

@@ -20,11 +20,11 @@ const App = () => {
       <Router>
         <NavBar />
         <Routes>
+          <Route path='/apps' element={<Applications />}></Route>
           <Route path='/about' element={<About />}></Route>
           <Route path='/skills' element={<Skills />}></Route>
           <Route path='/experience' element={<Experience />}></Route>
           <Route path='/education' element={<Education />}></Route>
-          <Route path='/applications' element={<Applications />}></Route>
         </Routes>
       </Router>
     </div>
