@@ -1,14 +1,18 @@
 const webpack = require('webpack');
 const path = require('path');
+const CompressionPlugin = require("compression-webpack-plugin");
 
 module.exports = {
   devtool: 'source-map',
-  mode: 'development',
+  mode: 'production',
   entry: path.join(__dirname, 'client/src/index.jsx'),
   output: {
     filename: 'main.js',
     path: path.join(__dirname, 'client/dist')
   },
+  plugins: [new CompressionPlugin({
+    test: /\.js(\?.*)?$/i,
+  })],
   module: {
     rules: [
       {
