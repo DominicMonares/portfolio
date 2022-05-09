@@ -9,8 +9,5 @@ client/dist/main.js
 client/dist/main.js.map
 client/dist/images
 
-# Local Assets
-assets
-
 # Deployment
 *.pem
