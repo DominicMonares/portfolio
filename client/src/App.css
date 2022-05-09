@@ -352,7 +352,6 @@ a.exp_link:visited {
   line-height: 1.5;
 }
 
-
 /* Education */
 
 .education_container {
@@ -421,8 +420,9 @@ a.edu_link:visited {
 }
 
 .profile_pic {
-  width: 225px;
-  height: 300px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #3A2E47;
 }
 
 .about_text_container {
@@ -468,6 +468,7 @@ a.edu_link:visited {
   display: flex;
   align-items: center;
   margin-left: 20px;
+  text-decoration: underline;
 }
 
 a.contact_link:link {

@@ -14,13 +14,9 @@ const Contacts = () => {
           target="_blank"
         >
           <img src={gmail} width="53px" height="40px" />
-          <a
-            className="contact_link"
-            href="https://dominicsmonares@gmail.com"
-            target="_blank"
-          >
+          <div className="contact_link">
             dominicsmonares@gmail.com
-          </a>
+          </div>
         </a>
       </div>
       <div className="contact">
@@ -30,13 +26,9 @@ const Contacts = () => {
           target="_blank"
         >
           <img src={linkedIn} width="40px" height="40px" />
-          <a
-            className="contact_link"
-            href="https://linkedin.com/in/dominic-monares/"
-            target="_blank"
-          >
+          <div className="contact_link">
             linkedin.com/in/dominic-monares/
-          </a>
+          </div>
         </a>
       </div>
       <div className="contact">
@@ -46,13 +38,9 @@ const Contacts = () => {
           target="_blank"
         >
           <img src={gitHub} width="40px" height="40px" />
-          <a
-            className="contact_link"
-            href="https://github.com/DominicMonares"
-            target="_blank"
-          >
+          <div className="contact_link">
             github.com/DominicMonares
-          </a>
+          </div>
         </a>
       </div>
     </div>
