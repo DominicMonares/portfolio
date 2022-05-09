@@ -17,6 +17,10 @@
   color: #3A2E47;
 }
 
+.modal_close:active {
+  color: #BBA5D2;
+}
+
 .modal_title {
   display: flex;
   justify-content: center;
@@ -29,12 +33,16 @@
   justify-content: center;
 }
 
-a.modal_link:link {
+.modal_link:link {
   color: #3A2E47;
 }
 
-a.modal_link:visited {
+.modal_link:visited {
   color: #3A2E47;
+}
+
+.modal_link:active {
+  color: #BBA5D2;
 }
 
 .modal_icon_disclaimer {
@@ -75,9 +83,20 @@ a.modal_link:visited {
 .navbar {
   display: flex;
   justify-content: center;
-  /* margin-top: 15px; */
   margin-bottom: 0px;
   padding-top: 15px;
+}
+
+.nav_text {
+  position: absolute;
+}
+
+.navlink:hover {
+  font-size: 25px;
+}
+
+.navlink:active {
+  color: #BBA5D2;
 }
 
 .header_underline {
@@ -117,12 +136,16 @@ a.modal_link:visited {
   font-weight: bold;
 }
 
-a.app_link:link {
+.app_link:link {
   color: #3A2E47;
 }
 
-a.app_link:visited {
+.app_link:visited {
   color: #3A2E47;
+}
+
+.app_link:active {
+  color: #BBA5D2;
 }
 
 .youtube {
@@ -275,12 +298,16 @@ a.app_link:visited {
   cursor: pointer;
 }
 
-a.icon_open_skills:link {
+.icon_open_skills:link {
   color: #3A2E47;
 }
 
-a.icon_open_skills:visited {
+.icon_open_skills:visited {
   color: #3A2E47;
+}
+
+.icon_open_skills:active {
+  color: #BBA5D2;
 }
 
 /* Experience */
@@ -317,12 +344,16 @@ a.icon_open_skills:visited {
   margin-bottom: 20px;
 }
 
-a.exp_link:link {
+.exp_link:link {
   color: #9E9BA0
 }
 
-a.exp_link:visited {
-  color: #3A2E47
+.exp_link:visited {
+  color: #9E9BA0
+}
+
+.exp_link:active {
+  color: #BBA5D2
 }
 
 .exp_bullet_container {
@@ -377,12 +408,16 @@ a.exp_link:visited {
   font-weight: bold;
 }
 
-a.edu_link:link {
+.edu_link:link {
   color: #3A2E47;
 }
 
-a.edu_link:visited {
+.edu_link:visited {
   color: #3A2E47;
+}
+
+.edu_link:active {
+  color: #BBA5D2;
 }
 
 .edu_year {
@@ -471,12 +506,16 @@ a.edu_link:visited {
   text-decoration: underline;
 }
 
-a.contact_link:link {
+.contact_link:link {
   color: #3A2E47;
 }
 
-a.contact_link:visited {
+.contact_link:visited {
   color: #3A2E47;
+}
+
+.contact_link:active {
+  color: #BBA5D2;
 }
 
 .icon_container {
@@ -492,10 +531,14 @@ a.contact_link:visited {
   cursor: pointer;
 }
 
-a.icon_open:link {
+.icon_open:link {
   color: #3A2E47;
 }
 
-a.icon_open:visited {
+.icon_open:visited {
   color: #3A2E47;
+}
+
+.icon_open:active {
+  color: #BBA5D2;
 }

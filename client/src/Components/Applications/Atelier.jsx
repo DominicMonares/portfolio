@@ -11,11 +11,11 @@ const Atelier = () => {
     <div className="app_container">
       <Header
         app="Atelier"
-        desc="eCommerce application product page"
+        desc="eCommerce application: Q&A widget on product page"
         links={[
           'https://github.com/DominicMonares/fec-atelier'
         ]}
-        techs="React, WebPack, Babel, Express, Node.js, AWS: EC2, Jest, React Testing Library"
+        techs="React, webpack, Babel, Express, Node.js, AWS: EC2, Jest, React Testing Library"
       />
       <div className="demo_container">
         <div className="demo">

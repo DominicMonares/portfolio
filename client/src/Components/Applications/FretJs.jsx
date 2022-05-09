@@ -12,7 +12,7 @@ const FretJs = () => {
         links={[
           'https://github.com/DominicMonares/fec-atelier'
         ]}
-        techs="React, Express, Web Audio API"
+        techs="React, webpack, Babel, Express, Web Audio API"
       />
       <YoutubeEmbed />
     </div>

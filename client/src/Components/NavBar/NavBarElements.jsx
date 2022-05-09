@@ -30,14 +30,10 @@ export const NavLink = styled(Link)`
   padding: 0 1rem;
   width: 80%;
   height: 100%;
-  // border-left-style: solid;
-  // border-right-style: solid;
-  // border-width: 1;
-  // border-color: #ffffff;
   cursor: pointer;
   &.active {
     color: #3A2E47;
     background: #ffffff;
     border-radius: 5px;
-  }
+  };
 `

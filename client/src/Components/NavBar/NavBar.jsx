@@ -7,20 +7,30 @@ const NavBar = () => {
       <div className="navbar">
         <Nav>
           <NavMenu>
-            <NavLink to="/applications">
-              Applications
+            <NavLink to="/applications" className="navlink">
+              <div className="nav_text">
+                Apps
+              </div>
             </NavLink>
-            <NavLink to="/skills">
-              Skills
+            <NavLink to="/skills" className="navlink">
+              <div className="nav_text">
+                Skills
+              </div>
             </NavLink>
-            <NavLink to="/experience">
-              Experience
+            <NavLink to="/experience" className="navlink">
+              <div className="nav_text">
+                Experience
+              </div>
             </NavLink>
-            <NavLink to="/education">
-              Education
+            <NavLink to="/education" className="navlink">
+              <div className="nav_text">
+                Education
+              </div>
             </NavLink>
-            <NavLink to="/about">
-              About
+            <NavLink to="/about" className="navlink">
+              <div className="nav_text">
+                About
+              </div>
             </NavLink>
           </NavMenu>
         </Nav>
