@@ -11,7 +11,8 @@ module.exports = {
     path: path.join(__dirname, 'client/dist')
   },
   plugins: [new CompressionPlugin({
-    test: /\.js(\?.*)?$/i,
+    algorithm: "gzip",
+    test: /\.(js|css)$/,
   })],
   module: {
     rules: [
