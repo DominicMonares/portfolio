@@ -1,10 +1,10 @@
 import React from 'react';
 
 import Header from './Header.jsx';
-import fec1 from '../../../../assets/fec1.gif'
-import fec2 from '../../../../assets/fec2.gif'
-import fec3 from '../../../../assets/fec3.gif'
-import fec4 from '../../../../assets/fec4.gif'
+import fec1 from '../../../../assets/fec1.mp4'
+import fec2 from '../../../../assets/fec2.mp4'
+import fec3 from '../../../../assets/fec3.mp4'
+import fec4 from '../../../../assets/fec4.mp4'
 
 const Atelier = () => {
   return (
@@ -19,7 +19,9 @@ const Atelier = () => {
       />
       <div className="demo_container">
         <div className="demo">
-          <img className="demo_img_at" src={fec1} width="713px" height="346px" />
+          <video className="demo_img_at" width="713px" height="346px" autoplay="autoplay" loop="true" muted>
+            <source src={fec1} type="video/mp4" />
+          </video>
           <span className="demo_caption">
             Dynamically sorting search bar
           </span>
@@ -27,7 +29,9 @@ const Atelier = () => {
       </div>
       <div className="demo_container">
         <div className="demo">
-          <img className="demo_img_at" src={fec2} width="664px" height="180px" />
+          <video className="demo_img_at" width="664px" height="180px" autoplay loop muted>
+            <source src={fec2} type="video/mp4" />
+          </video>
           <span className="demo_caption">
             Rate helpfulness and flag inappropriate answers for review
           </span>
@@ -35,7 +39,9 @@ const Atelier = () => {
       </div>
       <div className="demo_container">
         <div className="demo">
-          <img className="demo_img_at" src={fec3} width="718px" height="378px" />
+          <video className="demo_img_at" width="718px" height="378px" autoplay loop muted>
+            <source src={fec3} type="video/mp4" />
+          </video>
           <span className="demo_caption">
             Answer accordion, expandable questions, and infinitely scrolling display
           </span>
@@ -43,7 +49,9 @@ const Atelier = () => {
       </div>
       <div className="demo_container">
         <div className="demo">
-          <img className="demo_img_at" src={fec4} width="718px" height="380px" />
+          <video className="demo_img_at" width="718px" height="380px" autoplay loop muted>
+            <source src={fec4} type="video/mp4" />
+          </video>
           <span className="demo_caption">
             Answer submission modal and image upload
           </span>

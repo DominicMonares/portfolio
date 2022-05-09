@@ -1,10 +1,10 @@
 import React from 'react';
 
 import Header from './Header.jsx';
-import petpix1 from '../../../../assets/petpix1.gif';
-import petpix2 from '../../../../assets/petpix2.gif';
-import petpix3 from '../../../../assets/petpix3.gif';
-import petpix4 from '../../../../assets/petpix4.gif';
+import petpix1 from '../../../../assets/petpix1.mp4';
+import petpix2 from '../../../../assets/petpix2.mp4';
+import petpix3 from '../../../../assets/petpix3.mp4';
+import petpix4 from '../../../../assets/petpix4.mp4';
 
 const PetPix = () => {
   return (
@@ -21,8 +21,8 @@ const PetPix = () => {
       <div className="demo_container">
         <div className="demo">
           <div className="demo_img_container">
-            <img className="demo_img" src={petpix1} width="177px" height="356px" />
-            <img className="demo_img" src={petpix2} width="177px" height="356px" />
+            <video className="demo_img" src={petpix1} width="177px" height="356px" autoplay></video>
+            <video className="demo_img" src={petpix2} width="177px" height="356px" autoplay></video>
           </div>
           <span className="demo_caption">
             Authentication flow that I was responsible for
@@ -30,8 +30,8 @@ const PetPix = () => {
         </div>
         <div className="demo">
           <div className="demo_img_container">
-            <img className="demo_img" src={petpix3} width="177px" height="356px" />
-            <img className="demo_img" src={petpix4} width="177px" height="356px" />
+            <video className="demo_img" src={petpix3} width="177px" height="356px" autoplay></video>
+            <video className="demo_img" src={petpix4} width="177px" height="356px" autoplay></video>
           </div>
           <span className="demo_caption">UI that I designed.</span>
           <span className="demo_subcaption">
