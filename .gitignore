@@ -11,3 +11,6 @@ client/dist/images
 
 # Local Assets
 assets
+
+# Deployment
+*.pem
