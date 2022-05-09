@@ -15,6 +15,8 @@ import './App.css';
 const App = () => {
   return (
     <div id="app">
+      <h1 className="title_main">Dominic Monares</h1>
+      <h3 className="subtitle_main">Full-Stack Software Engineer</h3>
       <Router>
         <NavBar />
         <Routes>

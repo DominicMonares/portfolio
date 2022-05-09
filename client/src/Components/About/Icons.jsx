@@ -9,7 +9,13 @@ const customStyles = {
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
+    border: 'solid',
+    borderWidth: '3px',
+    borderColor: '#3A2E47'
   },
+  overlay: {
+    background: 'rgba(58, 46, 71, 0.75)'
+  }
 };
 
 Modal.setAppElement('#root');
@@ -35,14 +41,18 @@ const Icons = () => {
         style={customStyles}
         contentLabel="Icons Modal"
       >
-        <span onClick={closeModal}>X</span>
-        <div>
-          <a target="_blank" href="https://icons8.com/icon/P7UIlhbpWzZm/gmail">Gmail</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+        <div className="modal_close" onClick={closeModal}>X</div>
+        <br/>
+        <div className="modal_title">Source Links</div>
+        <br/>
+        <div className="modal_icon_link">
+          <a className="modal_link" target="_blank" href="https://icons8.com/icon/P7UIlhbpWzZm/gmail">Gmail</a>&nbsp;icon by&nbsp;<a className="modal_link" target="_blank" href="https://icons8.com">Icons8</a>
         </div>
-        <div>
-          <a target="_blank" href="https://icons8.com/icon/13930/linkedin">LinkedIn</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+        <div className="modal_icon_link">
+          <a className="modal_link" target="_blank" href="https://icons8.com/icon/13930/linkedin">LinkedIn</a>&nbsp;icon by&nbsp;<a className="modal_link" target="_blank" href="https://icons8.com">Icons8</a>
         </div>
-        <span>Icons used but not listed here were not sourced from Icons8.</span>
+        <br/>
+        <div className="modal_icon_disclaimer">Icons used but not listed here were not sourced from Icons8.</div>
       </Modal>
     </div>
   )

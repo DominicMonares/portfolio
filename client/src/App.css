@@ -11,7 +11,39 @@
   width: 92%;
 }
 
-/* NavBar */
+.modal_close {
+  float: right;
+  cursor: pointer;
+  color: #3A2E47;
+}
+
+.modal_title {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  color: #3A2E47;
+}
+
+.modal_icon_link {
+  display: flex;
+  justify-content: center;
+}
+
+a.modal_link:link {
+  color: #3A2E47;
+}
+
+a.modal_link:visited {
+  color: #3A2E47;
+}
+
+.modal_icon_disclaimer {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;;
+}
+
+/* Header | NavBar */
 
 .nav_container {
   position: sticky;
@@ -27,7 +59,7 @@
   padding-top: 7px;
   margin-top: 0px;
   margin-bottom: 0px;
-  color: #523F66;
+  color: #3A2E47;
 }
 
 .subtitle_main {
@@ -36,21 +68,23 @@
   font-weight: 400;
   font-size: 25px;
   margin-top: 0px;
-  margin-bottom: 7px;
-  color: #523F66;
+  margin-bottom: 0px;
+  color: #3A2E47;
 }
 
 .navbar {
   display: flex;
   justify-content: center;
+  /* margin-top: 15px; */
   margin-bottom: 0px;
+  padding-top: 15px;
 }
 
 .header_underline {
   border-bottom-style: solid;
   border-width: 3px;
-  border-color: #523F66;
-  margin-top: 8px;
+  border-color: #3A2E47;
+  margin-top: 15px;
 }
 
 /* Applications */
@@ -79,16 +113,16 @@
 }
 
 .app_name {
-  color: #523F66;
+  color: #3A2E47;
   font-weight: bold;
 }
 
 a.app_link:link {
-  color: #523F66;
+  color: #3A2E47;
 }
 
 a.app_link:visited {
-  color: #AD87D5;
+  color: #3A2E47;
 }
 
 .youtube {
@@ -102,7 +136,7 @@ a.app_link:visited {
   height: 540px;
   border-style: solid;
   border-width: 3px;
-  border-color: #523F66;
+  border-color: #3A2E47;
 }
 
 .demo_container {
@@ -126,13 +160,13 @@ a.app_link:visited {
   margin-right: 10%;
   border-style: solid;
   border-width: 3px;
-  border-color: #523F66;
+  border-color: #3A2E47;
 }
 
 .demo_img_at {
   border-style: solid;
   border-width: 3px;
-  border-color: #523F66;
+  border-color: #3A2E47;
 }
 
 .demo_caption {
@@ -156,7 +190,7 @@ a.app_link:visited {
 .media_container {
   border-bottom-style: solid;
   border-width: 3px;
-  border-color: #523F66;
+  border-color: #3A2E47;
 }
 
 .frontend_container,
@@ -177,6 +211,7 @@ a.app_link:visited {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 20px;
+  color: #3A2E47;
 }
 
 .skill_container {
@@ -236,7 +271,16 @@ a.app_link:visited {
 
 .icon_open_skills {
   bottom: 0;
-  margin-bottom: -10px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a.icon_open_skills:link {
+  color: #3A2E47;
+}
+
+a.icon_open_skills:visited {
+  color: #3A2E47;
 }
 
 /* Experience */
@@ -256,7 +300,7 @@ a.app_link:visited {
 }
 
 .exp_title {
-  color: #523F66;
+  color: #3A2E47;
   font-weight: bold;
 }
 
@@ -278,7 +322,7 @@ a.exp_link:link {
 }
 
 a.exp_link:visited {
-  color: #AD87D5
+  color: #3A2E47
 }
 
 .exp_bullet_container {
@@ -330,16 +374,16 @@ a.exp_link:visited {
 }
 
 .edu_cert {
-  color: #523F66;
+  color: #3A2E47;
   font-weight: bold;
 }
 
 a.edu_link:link {
-  color: #523F66;
+  color: #3A2E47;
 }
 
 a.edu_link:visited {
-  color: #AD87D5;
+  color: #3A2E47;
 }
 
 .edu_year {
@@ -403,7 +447,7 @@ a.edu_link:visited {
 .about_container_underline {
   border-bottom-style: solid;
   border-width: 3px;
-  border-color: #523F66;
+  border-color: #3A2E47;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -427,11 +471,11 @@ a.edu_link:visited {
 }
 
 a.contact_link:link {
-  color: #523F66;
+  color: #3A2E47;
 }
 
 a.contact_link:visited {
-  color: #AD87D5;
+  color: #3A2E47;
 }
 
 .icon_container {
@@ -441,6 +485,16 @@ a.contact_link:visited {
 }
 
 .icon_open {
-  bottom: 0;
+  bottom: 8px;
   position: absolute;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a.icon_open:link {
+  color: #3A2E47;
+}
+
+a.icon_open:visited {
+  color: #3A2E47;
 }

@@ -12,11 +12,11 @@ export const NavMenu = styled.div`
   align-items: center;
   width: 650px;
   height: 40px;
-  background: #523F66;
+  background: #3A2E47;
   border-radius: 5px;
   border-style: solid;
   border-width: 10px;
-  border-color: #523F66;
+  border-color: #3A2E47;
 `
 
 export const NavLink = styled(Link)`
@@ -36,7 +36,7 @@ export const NavLink = styled(Link)`
   // border-color: #ffffff;
   cursor: pointer;
   &.active {
-    color: #523F66;
+    color: #3A2E47;
     background: #ffffff;
     border-radius: 5px;
   }
