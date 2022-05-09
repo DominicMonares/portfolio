@@ -4,13 +4,34 @@ const Header = (props) => {
   const links = () => {
     if (props.links.length > 1) {
       return [
-        <a key="link1" className="link" href={props['links'][0]}>GitHub - Front End</a>,
+        <a
+        className="app_link"
+        href={props['links'][0]}
+        target="_blank"
+        key="link1"
+        >
+          GitHub - Front End
+        </a>,
         <span key="divider">&nbsp;|&nbsp;</span>,
-        <a key="link2" className="link" href={props['links'][1]}>GitHub - Back End</a>
+        <a
+        className="app_link"
+        href={props['links'][1]}
+        target="_blank"
+        key="link2"
+        >
+          GitHub - Back End
+        </a>
       ]
     }
 
-    return <a className="link" href={props['links'][0]} key="link1" >GitHub</a>
+    return <a
+      className="app_link"
+      href={props['links'][0]}
+      target="_blank"
+      key="link1"
+    >
+      GitHub
+    </a>
   }
 
   return (

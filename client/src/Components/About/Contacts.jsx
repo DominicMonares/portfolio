@@ -8,21 +8,51 @@ const Contacts = () => {
   return (
     <div className="contacts_container">
       <div className="contact">
-        <img src={gmail}  width="53px" height="40px"/>
-        <a className="contact_link" href="https://dominicsmonares@gmail.com">
-          dominicsmonares@gmail.com
+        <a
+          className="contact_link"
+          href="https://dominicsmonares@gmail.com"
+          target="_blank"
+        >
+          <img src={gmail} width="53px" height="40px" />
+          <a
+            className="contact_link"
+            href="https://dominicsmonares@gmail.com"
+            target="_blank"
+          >
+            dominicsmonares@gmail.com
+          </a>
         </a>
       </div>
       <div className="contact">
-        <img src={linkedIn} width="40px" height="40px"/>
-        <a className="contact_link" href="https://linkedin.com/in/dominic-monares/">
-          linkedin.com/in/dominic-monares/
+        <a
+          className="contact_link"
+          href="https://linkedin.com/in/dominic-monares/"
+          target="_blank"
+        >
+          <img src={linkedIn} width="40px" height="40px" />
+          <a
+            className="contact_link"
+            href="https://linkedin.com/in/dominic-monares/"
+            target="_blank"
+          >
+            linkedin.com/in/dominic-monares/
+          </a>
         </a>
       </div>
       <div className="contact">
-        <img src={gitHub} width="40px" height="40px"/>
-        <a className="contact_link" href="https://github.com/DominicMonares">
-          github.com/DominicMonares
+        <a
+          className="contact_link"
+          href="https://github.com/DominicMonares"
+          target="_blank"
+        >
+          <img src={gitHub} width="40px" height="40px" />
+          <a
+            className="contact_link"
+            href="https://github.com/DominicMonares"
+            target="_blank"
+          >
+            github.com/DominicMonares
+          </a>
         </a>
       </div>
     </div>

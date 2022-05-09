@@ -83,6 +83,14 @@
   font-weight: bold;
 }
 
+a.app_link:link {
+  color: #523F66;
+}
+
+a.app_link:visited {
+  color: #AD87D5;
+}
+
 .youtube {
   display: flex;
   justify-content: center;
@@ -265,8 +273,12 @@
   margin-bottom: 20px;
 }
 
-a.exp_link {
+a.exp_link:link {
   color: #9E9BA0
+}
+
+a.exp_link:visited {
+  color: #AD87D5
 }
 
 .exp_bullet_container {
@@ -322,8 +334,12 @@ a.exp_link {
   font-weight: bold;
 }
 
-a.edu_link {
+a.edu_link:link {
   color: #523F66;
+}
+
+a.edu_link:visited {
+  color: #AD87D5;
 }
 
 .edu_year {
@@ -402,15 +418,20 @@ a.edu_link {
   justify-content: space-evenly;
   font-size: 20px;
   align-items: center;
-  /* margin-bottom: 86px; */
 }
 
 .contact_link {
+  display: flex;
+  align-items: center;
   margin-left: 20px;
 }
 
-a.contact_link {
+a.contact_link:link {
   color: #523F66;
+}
+
+a.contact_link:visited {
+  color: #AD87D5;
 }
 
 .icon_container {

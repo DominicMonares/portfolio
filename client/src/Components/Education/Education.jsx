@@ -10,7 +10,13 @@ const Education = () => {
               Certificate, Advanced Software Engineering Immersive
             </span>
             &nbsp;|&nbsp;
-            <a className="edu_link" href="https://www.hackreactor.com/">Hack Reactor</a>
+            <a
+              className="edu_link"
+              href="https://www.hackreactor.com/"
+              target="_blank"
+            >
+              Hack Reactor
+            </a>
             &nbsp;|&nbsp;
             <span className="edu_location">US Remote</span>
           </div>
