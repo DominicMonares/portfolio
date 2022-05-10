@@ -17,9 +17,7 @@ const App = () => {
   var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
   if (isMobile) {
     return (
-      <div>
-        <Mobile />
-      </div>
+      <Mobile />
     )
   } else {
     return (
