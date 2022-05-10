@@ -20,14 +20,6 @@ const Mobile = () => {
         </div>
         <div className="mobile_contact_container">
           <div className="mobile_contact">
-            <a className="mobile_contact_link" href="https://dominicsmonares@gmail.com">
-              <img src={gmail} width="26px" height="20px" />
-              <div className="mobile_contact_link_text">
-                dominicsmonares@gmail.com
-              </div>
-            </a>
-          </div>
-          <div className="mobile_contact">
             <a className="mobile_contact_link" href="https://linkedin.com/in/dominic-monares/">
               <img src={linkedIn} width="20px" height="20px" />
               <div className="mobile_contact_link_text">
@@ -40,6 +32,14 @@ const Mobile = () => {
               <img src={gitHub} width="20px" height="20px" />
               <div className="mobile_contact_link_text">
                 github.com/DominicMonares
+              </div>
+            </a>
+          </div>
+          <div className="mobile_contact">
+            <a className="mobile_contact_link" href="https://dominicsmonares@gmail.com">
+              <img src={gmail} width="26px" height="20px" />
+              <div className="mobile_contact_link_text">
+                dominicsmonares@gmail.com
               </div>
             </a>
           </div>
