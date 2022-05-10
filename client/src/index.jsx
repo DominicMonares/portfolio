@@ -15,7 +15,7 @@ import './App.css';
 
 const App = () => {
   var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-  if (!isMobile) {
+  if (isMobile) {
     return (
       <Mobile />
     )
