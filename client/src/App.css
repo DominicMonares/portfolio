@@ -544,3 +544,11 @@
 .icon_open:active {
   color: #BBA5D2;
 }
+
+/* Mobile */
+
+.mobile_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
