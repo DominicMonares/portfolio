@@ -21,8 +21,12 @@ const PetPix = () => {
       <div className="demo_container">
         <div className="demo">
           <div className="demo_img_container">
-            <video className="demo_img" src={petpix1} width="177px" height="356px" autoplay></video>
-            <video className="demo_img" src={petpix2} width="177px" height="356px" autoplay></video>
+            <video className="demo_img" width="177px" height="356px" autoplay="autoplay" loop="true" muted="true">
+              <source src={petpix1} />
+            </video>
+            <video className="demo_img" width="177px" height="356px" autoplay="autoplay" loop="true" muted="true">
+              <source src={petpix2} />
+            </video>
           </div>
           <span className="demo_caption">
             Authentication flow that I was responsible for
@@ -30,8 +34,12 @@ const PetPix = () => {
         </div>
         <div className="demo">
           <div className="demo_img_container">
-            <video className="demo_img" src={petpix3} width="177px" height="356px" autoplay></video>
-            <video className="demo_img" src={petpix4} width="177px" height="356px" autoplay></video>
+            <video className="demo_img" width="177px" height="356px" autoplay="autoplay" loop="true" muted="true">
+              <source src={petpix3} />
+            </video>
+            <video className="demo_img" width="177px" height="356px" autoplay="autoplay" loop="true" muted="true">
+              <source src={petpix4} />
+            </video>
           </div>
           <span className="demo_caption">UI that I designed.</span>
           <span className="demo_subcaption">

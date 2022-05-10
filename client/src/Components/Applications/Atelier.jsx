@@ -19,7 +19,7 @@ const Atelier = () => {
       />
       <div className="demo_container">
         <div className="demo">
-          <video className="demo_img_at" width="713px" height="346px" autoplay="autoplay" loop="true" muted>
+          <video className="demo_img_at" width="713px" height="346px" autoplay="autoplay" loop="true" muted="true">
             <source src={fec1} type="video/mp4" />
           </video>
           <span className="demo_caption">
@@ -29,7 +29,7 @@ const Atelier = () => {
       </div>
       <div className="demo_container">
         <div className="demo">
-          <video className="demo_img_at" width="664px" height="180px" autoplay loop muted>
+          <video className="demo_img_at" width="664px" height="180px" autoplay="autoplay" loop="true" muted="true">
             <source src={fec2} type="video/mp4" />
           </video>
           <span className="demo_caption">
@@ -39,7 +39,7 @@ const Atelier = () => {
       </div>
       <div className="demo_container">
         <div className="demo">
-          <video className="demo_img_at" width="718px" height="378px" autoplay loop muted>
+          <video className="demo_img_at" width="718px" height="378px" autoplay="autoplay" loop="true" muted="true">
             <source src={fec3} type="video/mp4" />
           </video>
           <span className="demo_caption">
@@ -49,7 +49,7 @@ const Atelier = () => {
       </div>
       <div className="demo_container">
         <div className="demo">
-          <video className="demo_img_at" width="718px" height="380px" autoplay loop muted>
+          <video className="demo_img_at" width="718px" height="380px" autoplay="autoplay" loop="true" muted="true">
             <source src={fec4} type="video/mp4" />
           </video>
           <span className="demo_caption">
