@@ -13,22 +13,31 @@ import Applications from './Components/Applications/Applications';
 import './App.css';
 
 const App = () => {
-  return (
-    <div id="app">
-      <h1 className="title_main">Dominic Monares</h1>
-      <h3 className="subtitle_main">Full-Stack Software Engineer</h3>
-      <Router>
-        <NavBar />
-        <Routes>
-          <Route path='/apps' element={<Applications />}></Route>
-          <Route path='/about' element={<About />}></Route>
-          <Route path='/skills' element={<Skills />}></Route>
-          <Route path='/experience' element={<Experience />}></Route>
-          <Route path='/education' element={<Education />}></Route>
-        </Routes>
-      </Router>
-    </div>
-  )
+  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  if (isMobile) {
+    return (
+      <div>
+        Mobile Test
+      </div>
+    )
+  } else {
+    return (
+      <div id="app">
+        <h1 className="title_main">Dominic Monares</h1>
+        <h3 className="subtitle_main">Full-Stack Software Engineer</h3>
+        <Router>
+          <NavBar />
+          <Routes>
+            <Route path='/apps' element={<Applications />}></Route>
+            <Route path='/about' element={<About />}></Route>
+            <Route path='/skills' element={<Skills />}></Route>
+            <Route path='/experience' element={<Experience />}></Route>
+            <Route path='/education' element={<Education />}></Route>
+          </Routes>
+        </Router>
+      </div>
+    )
+  }
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
