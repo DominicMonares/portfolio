@@ -24,7 +24,7 @@ const About = () => {
             </p>
             <p className="about_text_bottom">
               I enjoy playing guitar, bass, drums, and piano, creating rotoscope animations,
-              creating mods for video games, and luthiery in
+              tinkering with video game mods, and luthiery in
               my spare time.
             </p>
           </div>
