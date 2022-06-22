@@ -10,7 +10,7 @@ const FretJs = () => {
         app="fretJs"
         desc="An app that lets you write and execute JavaScript using only an electric guitar"
         links={[
-          'https://github.com/DominicMonares/fec-atelier'
+          'https://github.com/DominicMonares/fret-js'
         ]}
         techs="React, webpack, Babel, Express, Web Audio API"
       />
