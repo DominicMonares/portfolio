@@ -11,6 +11,13 @@
   width: 92%;
 }
 
+body {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
 .modal_close {
   float: right;
   cursor: pointer;
@@ -54,7 +61,7 @@
 /* Header | NavBar */
 
 .nav_container {
-  position: sticky;
+  position: -webkit-sticky;
   top: 0;
   background-color: white;
 }
