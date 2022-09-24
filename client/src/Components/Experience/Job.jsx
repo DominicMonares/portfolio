@@ -16,11 +16,7 @@ const Job = ({ job }) => {
         year={job.year}
       />
       {app ? <Application type={app.type} links={app.github} /> : <></>}
-      <Bullets
-        first={bullets.first}
-        second={bullets.second}
-        third={bullets.third}
-      />
+      {bullets ? <Bullets bullets={bullets} /> : <></>}
     </div>
   );
 }
