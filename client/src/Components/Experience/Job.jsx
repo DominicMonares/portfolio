@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Header from './Header';
-import ExpApp from './ExpApp';
+import Application from './Application';
 import Bullets from './Bullets';
 
 const Job = (props) => {
@@ -9,7 +9,7 @@ const Job = (props) => {
   const currentApp = () => {
     if (job.app) {
       const current = job.app;
-      return <ExpApp type={current.type} links={current.github} />
+      return <Application type={current.type} links={current.github} />
     }
 
     return <></>

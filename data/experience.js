@@ -7,8 +7,14 @@ const experience = [
     app: {
       type: 'Social media application',
       github: [
-        'https://github.com/DominicMonares/BOC',
-        'https://github.com/DominicMonares/backend'
+        {
+          title: 'GitHub - Front End',
+          link: 'https://github.com/DominicMonares/BOC'
+        },
+        {
+          title: 'GitHub - Back End',
+          link: 'https://github.com/DominicMonares/backend'
+        }
       ]
     },
     bullets: {
@@ -24,7 +30,12 @@ const experience = [
     year: 'Jan 2022 - Mar 2022',
     app: {
       type: 'e-commerce application',
-      github: ['https://github.com/DominicMonares/fec-atelier']
+      github: [
+        {
+          title: 'GitHub',
+          link: 'https://github.com/DominicMonares/fec-atelier'
+        }
+      ]
     },
     bullets: {
       first: 'Increased Google Lighthouse performance from 40% to 81% by effectively utilizing tree-shaking, JS minification with <b>TerserWebpackPlugin<b>, and image minification with <b>Imagemin<b>',
@@ -39,7 +50,12 @@ const experience = [
     year: 'Dec 2021 - Jan 2022',
     app: {
       type: 'API microservice for eCommerce application',
-      github: ['https://github.com/DominicMonares/cactus-oasis-ov']
+      github: [
+        {
+          title: 'GitHub',
+          link: 'https://github.com/DominicMonares/cactus-oasis-ov'
+        }
+      ]
     },
     bullets: {
       first: 'Designed, built, and deployed a multi-layered backend microservice on an <b>AWS EC2<b> T2.micro instance',
