@@ -1,14 +1,14 @@
 // Atelier
-import fec1 from '../../../../assets/fec1.mp4';
-import fec2 from '../../../../assets/fec2.mp4';
-import fec3 from '../../../../assets/fec3.mp4';
-import fec4 from '../../../../assets/fec4.mp4';
+import fec1 from '../assets/fec1.mp4';
+import fec2 from '../assets/fec2.mp4';
+import fec3 from '../assets/fec3.mp4';
+import fec4 from '../assets/fec4.mp4';
 
 // PetPix
-import petpix1 from '../../../../assets/petpix1.mp4';
-import petpix2 from '../../../../assets/petpix2.mp4';
-import petpix3 from '../../../../assets/petpix3.mp4';
-import petpix4 from '../../../../assets/petpix4.mp4';
+import petpix1 from '../assets/petpix1.mp4';
+import petpix2 from '../assets/petpix2.mp4';
+import petpix3 from '../assets/petpix3.mp4';
+import petpix4 from '../assets/petpix4.mp4';
 
 const applications = [
   {

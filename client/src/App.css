@@ -11,12 +11,12 @@
   width: 92%;
 }
 
-body {
+/* body {
   display: flex;
   overflow-x: auto;
   white-space: nowrap;
   padding: 10px;
-}
+} */
 
 .modal_close {
   float: right;

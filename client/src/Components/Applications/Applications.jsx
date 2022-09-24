@@ -1,15 +1,12 @@
 import React from 'react';
 
-import PetPix from './PetPix';
-import Atelier from './Atelier';
-import FretJs from './FretJs';
+import applications from '../../../../data/applications';
+import Application from './Application.jsx';
 
 const Applications = () => {
   return (
     <div className="applications_container">
-      <FretJs />
-      <PetPix />
-      <Atelier />
+      {applications.map(app => <Application app={app} />)}
     </div>
   );
 }
