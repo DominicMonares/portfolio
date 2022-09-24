@@ -4,17 +4,8 @@ import Header from './Header';
 import Application from './Application';
 import Bullets from './Bullets';
 
-const Job = (props) => {
-  const job = props.job;
-  const currentApp = () => {
-    if (job.app) {
-      const current = job.app;
-      return <Application type={current.type} links={current.github} />
-    }
-
-    return <></>
-  }
-
+const Job = ({ job }) => {
+  const app = job.app;
   const bullets = job.bullets;
   return (
     <div className="job_container">
@@ -24,14 +15,14 @@ const Job = (props) => {
         location={job.location}
         year={job.year}
       />
-      {currentApp()}
+      {app ? <Application type={app.type} links={app.github} /> : <></>}
       <Bullets
         first={bullets.first}
         second={bullets.second}
         third={bullets.third}
       />
     </div>
-  )
+  );
 }
 
 export default Job;

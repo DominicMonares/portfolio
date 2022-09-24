@@ -8,7 +8,7 @@ const Experience = () => {
     <div className="experience_container">
       {experience.map(job => <Job job={job} />)}
     </div>
-  )
+  );
 }
 
 export default Experience;
