@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Header from './Header';
 import Application from './Application';
-import Bullets from './Bullets';
+import Header from '../Shared/Header';
+import Bullets from '../Shared/Bullets';
 
 const Job = ({ job }) => {
   const app = job.app;
@@ -11,7 +11,7 @@ const Job = ({ job }) => {
     <div className="job_container">
       <Header
         title={job.title}
-        company={job.company}
+        est={job.est}
         location={job.location}
         year={job.year}
       />

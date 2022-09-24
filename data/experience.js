@@ -1,7 +1,7 @@
 const experience = [
   {
     title: 'Full-Stack Engineer / UI Owner',
-    company: 'PetPix',
+    est: 'PetPix',
     location: 'US Remote',
     year: 'Mar 2022 - Apr 2022',
     app: {
@@ -25,7 +25,7 @@ const experience = [
   },
   {
     title: 'Front-End Engineer',
-    company: 'Atelier',
+    est: 'Atelier',
     location: 'US Remote',
     year: 'Jan 2022 - Mar 2022',
     app: {
@@ -45,7 +45,7 @@ const experience = [
   },
   {
     title: 'Back-End Engineer',
-    company: 'Atelier API',
+    est: 'Atelier API',
     location: 'US Remote',
     year: 'Dec 2021 - Jan 2022',
     app: {
@@ -65,7 +65,7 @@ const experience = [
   },
   {
     title: 'Facilities Assistant',
-    company: 'GSH Group',
+    est: 'GSH Group',
     location: 'Berkeley, CA',
     year: '2018-2020',
     app: null,
@@ -77,7 +77,7 @@ const experience = [
   },
   {
     title: 'Site Supervisor / Security Officer',
-    company: 'Allied Universal',
+    est: 'Allied Universal',
     location: 'San Bruno, CA',
     year: '2015-2018',
     app: null,
@@ -89,7 +89,7 @@ const experience = [
   },
   {
     title: 'Resident Manager',
-    company: 'Pacific Equities West, LLC',
+    est: 'Pacific Equities West, LLC',
     location: 'San Francisco, CA',
     year: '2014-2015',
     app: null,
@@ -101,7 +101,7 @@ const experience = [
   },
   {
     title: 'Administrative Assistant',
-    company: 'Pacific Equities West, LLC',
+    est: 'Pacific Equities West, LLC',
     location: 'San Francisco, CA',
     year: '2014-2014',
     app: null,
@@ -113,7 +113,7 @@ const experience = [
   },
   {
     title: 'Front Desk Agent',
-    company: 'Pacific Equities West, LLC',
+    est: 'Pacific Equities West, LLC',
     location: 'San Francisco, CA',
     year: '2013-2014',
     app: null,
@@ -125,7 +125,7 @@ const experience = [
   },
   {
     title: 'Maintenance Worker / Social Media Marketing Admin',
-    company: 'Pacific Equities West, LLC',
+    est: 'Pacific Equities West, LLC',
     location: 'San Francisco, CA',
     year: '2013-2014',
     app: null,
