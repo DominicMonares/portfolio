@@ -13,7 +13,7 @@ const Application = ({ type, links }) => {
               className="exp_link"
               href={link.link}
               target="_blank"
-              key={`link${index}`}
+              key={link.link}
             >
               {link.title}
             </a>
