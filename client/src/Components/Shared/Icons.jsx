@@ -1,7 +1,9 @@
 import React from 'react';
 import Modal from 'react-modal';
 
-const customStyles = {
+import icons from '../../../../data/icons';
+
+const modalStyles = { // Modal styling must be separate from css file
   content: {
     top: '50%',
     left: '50%',
@@ -20,8 +22,7 @@ const customStyles = {
 
 Modal.setAppElement('#root');
 
-const Icons = () => {
-  let subtitle;
+const Icons = ({ page }) => {
   const [modalIsOpen, setIsOpen] = React.useState(false);
 
   const openModal = () => {
@@ -38,20 +39,23 @@ const Icons = () => {
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
-        style={customStyles}
+        style={modalStyles}
         contentLabel="Icons Modal"
       >
         <div className="modal_close" onClick={closeModal}>X</div>
-        <br/>
+        <br />
         <div className="modal_title">Source Links</div>
-        <br/>
-        <div className="modal_icon_link">
-          <a className="modal_link" target="_blank" href="https://icons8.com/icon/P7UIlhbpWzZm/gmail">Gmail</a>&nbsp;icon by&nbsp;<a className="modal_link" target="_blank" href="https://icons8.com">Icons8</a>
-        </div>
-        <div className="modal_icon_link">
-          <a className="modal_link" target="_blank" href="https://icons8.com/icon/13930/linkedin">LinkedIn</a>&nbsp;icon by&nbsp;<a className="modal_link" target="_blank" href="https://icons8.com">Icons8</a>
-        </div>
-        <br/>
+        <br />
+        {icons[page].map(icon => {
+          return (
+            <div className="modal_icon_link">
+              <a className="modal_link" target="_blank" href={icon.link}>{icon.name}</a>
+              &nbsp;icon by&nbsp;
+              <a className="modal_link" target="_blank" href="https://icons8.com">Icons8</a>
+            </div>
+          );
+        })}
+        <br />
         <div className="modal_icon_disclaimer">Icons used but not listed here were not sourced from Icons8.</div>
       </Modal>
     </div>

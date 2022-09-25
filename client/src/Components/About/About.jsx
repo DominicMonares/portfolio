@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Contacts from './Contacts';
-import Icons from './Icons';
+import Icons from '../Shared/Icons';
 import profile_pic from '../../../../assets/profile_pic.png';
 
 const About = () => {
@@ -32,7 +32,7 @@ const About = () => {
       </div>
       <div className="about_container_underline"></div>
       <Contacts />
-      <Icons />
+      <Icons page="About" />
     </div>
   );
 }
