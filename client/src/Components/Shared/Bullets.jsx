@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Bullets = ({ first, second, third }) => {
+const Bullets = ({ bullets }) => {
   const bold = (bullet) => {
     const splitBullet = bullet.split('<b>');
     let odd = true;
@@ -17,18 +17,14 @@ const Bullets = ({ first, second, third }) => {
 
   return (
     <div className="exp_bullet_container">
-      <div className="exp_bullet">
-        •
-        <p className="exp_bullet_text">{bold(first)}</p>
-      </div>
-      <div className="exp_bullet">
-        •
-        <p className="exp_bullet_text">{bold(second)}</p>
-      </div>
-      <div className="exp_bullet">
-        •
-        <p className="exp_bullet_text">{bold(third)}</p>
-      </div>
+      {bullets.map(bullet => {
+        return (
+          <div className="exp_bullet">
+            •
+            <p className="exp_bullet_text">{bold(bullet)}</p>
+          </div>
+        );
+      })}
     </div>
   );
 }
