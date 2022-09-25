@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Icons from './Icons';
+import Icons from '../Shared/Icons';
 import skills from '../../../../data/skills';
 
 const Skills = () => {
@@ -11,7 +11,7 @@ const Skills = () => {
       <div className="category_container">
         <span className="skill_title">{category}</span>
         <div className="skill_container">
-          {skills.category.map(s => {
+          {skills[category].map(s => {
             const dims = s['dims'][device];
             return (
               <div className="tool">
@@ -28,7 +28,7 @@ const Skills = () => {
   return (
     <div>
       <div className="skills_container">{allSkills}</div>
-      <Icons />
+      <Icons page="Skills" />
     </div>
   );
 }
