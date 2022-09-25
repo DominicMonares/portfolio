@@ -27,7 +27,7 @@ const Header = ({ title, est, estLink, location, year, links }) => {
         return (
           <>
             <a
-              className="exp_link"
+              className="link"
               href={link.link}
               target="_blank"
               key={link.link}
