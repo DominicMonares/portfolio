@@ -1,24 +1,33 @@
 import React from 'react';
 
-import FrontEnd from './FrontEnd';
-import BackEnd from './BackEnd';
-import TestDeploy from './TestDeploy';
-import Development from './Development';
-import Office from './Office';
-import Media from './Media';
 import Icons from './Icons';
+import skills from '../../../../data/skills';
 
 const Skills = () => {
+  const device = 'web'; // TEMP, NEEDS TO BE MADE DYNAMIC
+  const allSkills = [];
+  for (const category in skills) {
+    allSkills.push(
+      <div className="category_container">
+        <span className="skill_title">{category}</span>
+        <div className="skill_container">
+          {skills.category.map(s => {
+            const dims = s['dims'][device];
+            return (
+              <div className="tool">
+                <span className="tool_text">{s.title}</span>
+                <img src={s.icon} width={dims.width} height={dims.height} />
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div>
-      <div className="skills_container">
-        <FrontEnd />
-        <BackEnd />
-        <TestDeploy />
-        <Development />
-        <Office />
-        <Media />
-      </div>
+      <div className="skills_container">{allSkills}</div>
       <Icons />
     </div>
   );
