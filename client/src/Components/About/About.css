@@ -1,3 +1,4 @@
+/* About */
 .about_body_container {
   display: flex;
   justify-content: center;
@@ -44,6 +45,8 @@
   margin-bottom: 50px;
 }
 
+/* Contacts */
+
 .contacts_container {
   display: flex;
   justify-content: space-evenly;
@@ -72,30 +75,5 @@
 }
 
 .contact_link:active {
-  color: #BBA5D2;
-}
-
-.icon_container {
-  display: flex;
-  justify-content: center;
-  height: auto;
-}
-
-.icon_open {
-  bottom: 8px;
-  position: absolute;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.icon_open:link {
-  color: #3A2E47;
-}
-
-.icon_open:visited {
-  color: #3A2E47;
-}
-
-.icon_open:active {
   color: #BBA5D2;
 }

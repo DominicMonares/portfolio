@@ -18,12 +18,12 @@ const Bullets = ({ bullets }) => {
   }
 
   return (
-    <div className="exp_bullet_container">
+    <div className="bullet_container">
       {bullets.map(bullet => {
         return (
-          <div className="exp_bullet">
+          <div className="bullet">
             •
-            <p className="exp_bullet_text">{bold(bullet)}</p>
+            <p className="bullet_text">{bold(bullet)}</p>
           </div>
         );
       })}

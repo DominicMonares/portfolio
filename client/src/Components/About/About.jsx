@@ -7,7 +7,7 @@ import './About.css';
 
 const About = () => {
   return (
-    <div className="about_container">
+    <>
       <div className="about_body_container">
         <div className="about_body">
           <div>
@@ -34,7 +34,7 @@ const About = () => {
       <div className="about_container_underline"></div>
       <Contacts />
       <Icons page="About" />
-    </div>
+    </>
   );
 }
 

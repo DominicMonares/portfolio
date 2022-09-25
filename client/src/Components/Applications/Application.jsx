@@ -1,14 +1,15 @@
 import React from 'react';
 
-import Header from './Header.jsx';
-import Demo from './Demo.jsx';
+import Header from '../Shared/Header';
+import SubHeader from '../Shared/SubHeader';
+import Demo from './Demo';
 
 const Application = (props) => {
   const app = props.app;
   return (
     <div className="app_container">
       <Header
-        app={app.title}
+        title={app.title}
         desc={app.desc}
         links={app.links}
         techs={app.techs}

@@ -4,14 +4,14 @@ import './Shared.css';
 
 const Header = ({ title, est, estLink, location, year }) => {
   return (
-    <div className="exp_header_container">
-      <div>
-        <span className="exp_title">{title}</span>
+    <div className="header_container">
+      <>
+        <span className="title">{title}</span>
         &nbsp;|&nbsp;
         {!estLink ?
-          <span className="exp_company">{est}</span> :
+          <span>{est}</span> :
           <a
-            className="exp_link"
+            className="link"
             href={estLink}
             target="_blank"
             key={estLink}
@@ -20,9 +20,9 @@ const Header = ({ title, est, estLink, location, year }) => {
           </a>
         }
         &nbsp;|&nbsp;
-        <span className="exp_location">{location}</span>
-      </div>
-      <span className="exp_year">{year}</span>
+        <span>{location}</span>
+      </>
+      {year ? <span className="year">{year}</span> : <></>}
     </div>
   );
 }

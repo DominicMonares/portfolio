@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Application from './Application';
 import Header from '../Shared/Header';
+import SubHeader from '../Shared/SubHeader';
 import Bullets from '../Shared/Bullets';
 
 const Job = ({ job }) => {
@@ -15,7 +15,7 @@ const Job = ({ job }) => {
         location={job.location}
         year={job.year}
       />
-      {app ? <Application type={app.type} links={app.github} /> : <></>}
+      {app ? <SubHeader desc={app.desc} links={app.github} /> : <></>}
       {bullets ? <Bullets bullets={bullets} /> : <></>}
     </div>
   );

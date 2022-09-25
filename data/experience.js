@@ -5,7 +5,7 @@ const experience = [
     location: 'US Remote',
     year: 'Mar 2022 - Apr 2022',
     app: {
-      type: 'Social media application',
+      desc: 'Social media application',
       github: [
         {
           title: 'GitHub - Front End',
@@ -29,7 +29,7 @@ const experience = [
     location: 'US Remote',
     year: 'Jan 2022 - Mar 2022',
     app: {
-      type: 'e-commerce application',
+      desc: 'e-commerce application',
       github: [
         {
           title: 'GitHub',
@@ -49,7 +49,7 @@ const experience = [
     location: 'US Remote',
     year: 'Dec 2021 - Jan 2022',
     app: {
-      type: 'API microservice for eCommerce application',
+      desc: 'API microservice for eCommerce application',
       github: [
         {
           title: 'GitHub',
