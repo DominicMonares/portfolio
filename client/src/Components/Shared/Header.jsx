@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './Shared.css';
+
 const Header = ({ title, est, estLink, location, year }) => {
   return (
     <div className="exp_header_container">

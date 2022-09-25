@@ -2,6 +2,7 @@ import React from 'react';
 
 import Job from './Job';
 import experience from '../../../../data/experience';
+import './Experience.css';
 
 const Experience = () => {
   return (

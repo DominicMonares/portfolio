@@ -2,6 +2,7 @@ import React from 'react';
 
 import Icons from '../Shared/Icons';
 import skills from '../../../../data/skills';
+import './Skills.css';
 
 const Skills = () => {
   const device = 'web'; // TEMP, NEEDS TO BE MADE DYNAMIC

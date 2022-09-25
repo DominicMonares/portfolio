@@ -3,6 +3,7 @@ import React from 'react';
 import Header from '../Shared/Header';
 import Bullets from '../Shared/Bullets';
 import education from '../../../../data/education';
+import './Education.css';
 
 const Education = () => {
   return (

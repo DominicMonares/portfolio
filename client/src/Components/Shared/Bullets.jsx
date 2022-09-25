@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './Shared.css';
+
 const Bullets = ({ bullets }) => {
   const bold = (bullet) => {
     const splitBullet = bullet.split('<b>');

@@ -3,6 +3,7 @@ import React from 'react';
 import Contacts from './Contacts';
 import Icons from '../Shared/Icons';
 import profile_pic from '../../../../assets/profile_pic.png';
+import './About.css';
 
 const About = () => {
   return (
