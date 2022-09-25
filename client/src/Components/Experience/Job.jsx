@@ -15,7 +15,7 @@ const Job = ({ job }) => {
         location={job.location}
         year={job.year}
       />
-      {app ? <SubHeader desc={app.desc} links={app.github} /> : <></>}
+      {app ? <SubHeader desc={app.desc} links={app.links} /> : <></>}
       {bullets ? <Bullets bullets={bullets} /> : <></>}
     </div>
   );

@@ -15,7 +15,10 @@ const applications = [
     title: 'Atelier',
     desc: 'eCommerce application: Q&A widget on product page',
     links: [
-      'https://github.com/DominicMonares/fec-atelier'
+      {
+        label: 'GitHub',
+        link: 'https://github.com/DominicMonares/fec-atelier'
+      }
     ],
     techs: 'React, webpack, Babel, Express, Node.js, AWS: EC2, Jest, React Testing Library',
     demos: [
@@ -85,8 +88,14 @@ const applications = [
     title: 'PetPix',
     desc: 'Social media application centered around pet pictures',
     links: [
-      'https://github.com/DominicMonares/BOC',
-      'https://github.com/DominicMonares/backend'
+      {
+        label: 'GitHub - Front End',
+        link: 'https://github.com/DominicMonares/BOC'
+      },
+      {
+        label: 'GitHub - Back End',
+        link: 'https://github.com/DominicMonares/backend'
+      }
     ],
     techs: 'React Native, Expo, Redux, Express, MongoDB, Passport.js, Nodemailer, Jest, React Native Testing Library',
     demos: [
@@ -156,7 +165,10 @@ const applications = [
     title: 'fretJs',
     desc: 'An app that lets you write and execute JavaScript using only an electric guitar',
     links: [
-      'https://github.com/DominicMonares/fret-js'
+      {
+        label: 'GitHub',
+        link: 'https://github.com/DominicMonares/fret-js'
+      }
     ],
     techs: 'React, webpack, Babel, Express, Web Audio API',
     demos: [

@@ -6,13 +6,13 @@ const experience = [
     year: 'Mar 2022 - Apr 2022',
     app: {
       desc: 'Social media application',
-      github: [
+      links: [
         {
-          title: 'GitHub - Front End',
+          label: 'GitHub - Front End',
           link: 'https://github.com/DominicMonares/BOC'
         },
         {
-          title: 'GitHub - Back End',
+          label: 'GitHub - Back End',
           link: 'https://github.com/DominicMonares/backend'
         }
       ]
@@ -30,9 +30,9 @@ const experience = [
     year: 'Jan 2022 - Mar 2022',
     app: {
       desc: 'e-commerce application',
-      github: [
+      links: [
         {
-          title: 'GitHub',
+          label: 'GitHub',
           link: 'https://github.com/DominicMonares/fec-atelier'
         }
       ]
@@ -50,9 +50,9 @@ const experience = [
     year: 'Dec 2021 - Jan 2022',
     app: {
       desc: 'API microservice for eCommerce application',
-      github: [
+      links: [
         {
-          title: 'GitHub',
+          label: 'GitHub',
           link: 'https://github.com/DominicMonares/cactus-oasis-ov'
         }
       ]

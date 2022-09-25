@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Shared.css';
 
-const Header = ({ title, est, estLink, location, year }) => {
+const Header = ({ title, est, estLink, location, year, links }) => {
   return (
     <div className="header_container">
       <>
@@ -22,6 +22,23 @@ const Header = ({ title, est, estLink, location, year }) => {
         &nbsp;|&nbsp;
         <span>{location}</span>
       </>
+      {links ? links.map((link, index) => {
+        const notLast = index < links.length - 1;
+        return (
+          <>
+            <a
+              className="exp_link"
+              href={link.link}
+              target="_blank"
+              key={link.link}
+            >
+              {link.label}
+            </a>
+            {notLast ? <>&nbsp;|&nbsp;</> : <></>}
+          </>
+        );
+      }) :
+      <></>}
       {year ? <span className="year">{year}</span> : <></>}
     </div>
   );

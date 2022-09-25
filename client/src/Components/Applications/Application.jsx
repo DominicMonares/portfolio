@@ -10,11 +10,12 @@ const Application = (props) => {
     <div className="app_container">
       <Header
         title={app.title}
-        desc={app.desc}
+        est={app.desc}
         links={app.links}
         techs={app.techs}
       />
-      {app.demos.map(demo => <Demo demo={demo}/>)}
+      <SubHeader desc={app.techs} />
+      {app.demos.map(demo => <Demo demo={demo} />)}
     </div>
 
   );
