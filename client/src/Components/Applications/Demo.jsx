@@ -20,24 +20,29 @@ const Demo = ({ demo }) => {
 
   const video = () => {
     return (
-      <div className="web_demo">
-        <video
-          className="demo_img"
-          width={demo.dims.web.width}
-          height={demo.dims.web.height}
-          autoplay="autoplay"
-          loop="true"
-          muted="true"
-        >
-          <source src={demo.media} type={demo.mediaType} />
-        </video>
-        <span className="demo_caption">{demo.caption}</span>
+      <div className="demo_container">
+        <div className="demo">
+          <video
+            className="demo_img"
+            width={demo.dims.web.width}
+            height={demo.dims.web.height}
+            autoplay="autoplay"
+            loop="true"
+            muted="true"
+          >
+            <source src={demo.media} type={demo.mediaType} />
+          </video>
+          <span className="demo_caption">{demo.caption}</span>
+        </div>
       </div>
-
     );
   }
 
-  return demo.mediaType === 'youtube' ? youtube() : video();
+  return (
+    <div>
+      {demo.mediaType === 'youtube' ? youtube() : video()}
+    </div>
+  );
 }
 
 export default Demo;
