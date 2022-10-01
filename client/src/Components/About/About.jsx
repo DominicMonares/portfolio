@@ -32,8 +32,10 @@ const About = () => {
         </div>
       </div>
       <div className="about_container_underline"></div>
-      <Contacts />
-      <Icons page="About" />
+      <div className="footer">
+        <Contacts />
+        <Icons page="About" />
+      </div>
     </>
   );
 }
