@@ -2,7 +2,7 @@ import React from 'react';
 
 const SubHeader = ({ desc, links }) => {
   return (
-    <div className="app_header_container">
+    <div className="subheader_container">
       <span>{desc}</span>
       {links ?
         <>
@@ -12,7 +12,7 @@ const SubHeader = ({ desc, links }) => {
             return (
               <>
                 <a
-                  className="exp_link"
+                  className="sublink"
                   href={link.link}
                   target="_blank"
                   key={link.link}

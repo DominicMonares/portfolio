@@ -24,6 +24,7 @@
 /* Header */
 
 .header_container {
+  font-size: 22px;
   display: flex;
   flex-direction: row;
 }
@@ -34,11 +35,11 @@
 }
 
 .link:link {
-  color: #9E9BA0
+  color: #3A2E47
 }
 
 .link:visited {
-  color: #9E9BA0
+  color: #3A2E47
 }
 
 .link:active {
@@ -115,4 +116,25 @@
   display: flex;
   justify-content: center;
   font-size: 14px;;
+}
+
+/* SubHeader */
+
+.subheader_container {
+  margin-top: 4px;
+  font-size: 20px;
+  font-style: italic;
+  color: #9E9BA0;
+}
+
+.sublink:link {
+  color: #9E9BA0
+}
+
+.sublink:visited {
+  color: #9E9BA0
+}
+
+.sublink:active {
+  color: #BBA5D2
 }
