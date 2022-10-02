@@ -77,10 +77,3 @@
 .contact_link:active {
   color: #BBA5D2;
 }
-
-.footer {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}

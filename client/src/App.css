@@ -1,12 +1,20 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
 #root {
   display: flex;
   justify-content: center;
-  right: 0px;
-  left: 0px;
+  height: 100%;
 }
 
 #app {
   width: 92%;
+  height: 100%;
 }
 
 /* body {

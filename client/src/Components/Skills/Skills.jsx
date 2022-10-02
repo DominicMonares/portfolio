@@ -27,8 +27,8 @@ const Skills = () => {
   }
 
   return (
-    <div>
-      <div className="skills_container">{allSkills}</div>
+    <div className="skills_container">
+      <div className="skills">{allSkills}</div>
       <Icons page="Skills" />
     </div>
   );
