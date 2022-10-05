@@ -51,9 +51,9 @@ import excel from '../assets/icons8-microsoft-excel-48.png';
 import powerpoint from '../assets/icons8-microsoft-powerpoint-48.png';
 
 // Media
-import photoshop from '../assets/icons8-adobe-photoshop-48.png'; // Get better pic
-import premiere from '../assets/icons8-adobe-premiere-pro-48.png'; // Get better pic
-import afterEffects from '../assets/icons8-adobe-after-effects-48.png'; // Get better pic
+import photoshop from '../assets/icons8-adobe-photoshop-48.png';
+import premiere from '../assets/icons8-adobe-premiere-pro-48.png';
+import afterEffects from '../assets/icons8-adobe-after-effects-48.png';
 import ebsynth from '../assets/ebsynth.png';
 import cubase from '../assets/cubase.png';
 
@@ -148,12 +148,12 @@ const skills = {
       icon: webAudio,
       dims: {
         web: {
-          width: 46,
-          height: 46
+          width: 45,
+          height: 45
         },
         mobile: {
-          width: 46, // PLACEHOLDER VALUE
-          height: 46 // PLACEHOLDER VALUE
+          width: 45, // PLACEHOLDER VALUE
+          height: 45 // PLACEHOLDER VALUE
         }
       }
     },
@@ -234,8 +234,8 @@ const skills = {
       icon: memcached,
       dims: {
         web: {
-          width: 48,
-          height: 48
+          width: 46,
+          height: 46
         },
         mobile: {
           width: 46, // PLACEHOLDER VALUE
@@ -248,12 +248,12 @@ const skills = {
       icon: passport,
       dims: {
         web: {
-          width: 48, // PLACEHOLDER VALUE
-          height: 48 // PLACEHOLDER VALUE
+          width: 46,
+          height: 46
         },
         mobile: {
-          width: 48, // PLACEHOLDER VALUE
-          height: 48 // PLACEHOLDER VALUE
+          width: 46, // PLACEHOLDER VALUE
+          height: 46 // PLACEHOLDER VALUE
         }
       }
     },
@@ -262,12 +262,12 @@ const skills = {
       icon: auth0,
       dims: {
         web: {
-          width: 48, // PLACEHOLDER VALUE
-          height: 48 // PLACEHOLDER VALUE
+          width: 46,
+          height: 46
         },
         mobile: {
-          width: 48, // PLACEHOLDER VALUE
-          height: 48 // PLACEHOLDER VALUE
+          width: 46, // PLACEHOLDER VALUE
+          height: 46 // PLACEHOLDER VALUE
         }
       }
     },
@@ -276,12 +276,12 @@ const skills = {
       icon: nodemailer,
       dims: {
         web: {
-          width: 98, // PLACEHOLDER VALUE
-          height: 46 // PLACEHOLDER VALUE
+          width: 94,
+          height: 42
         },
         mobile: {
-          width: 98, // PLACEHOLDER VALUE
-          height: 46 // PLACEHOLDER VALUE
+          width: 94, // PLACEHOLDER VALUE
+          height: 42 // PLACEHOLDER VALUE
         }
       }
     },
@@ -504,12 +504,12 @@ const skills = {
       icon: babel,
       dims: {
         web: {
-          width: 48,
-          height: 48
+          width: 46,
+          height: 46
         },
         mobile: {
-          width: 48, // PLACEHOLDER VALUE
-          height: 48 // PLACEHOLDER VALUE
+          width: 46, // PLACEHOLDER VALUE
+          height: 46 // PLACEHOLDER VALUE
         }
       }
     },
@@ -532,8 +532,8 @@ const skills = {
       icon: tdd,
       dims: {
         web: {
-          width: 50, // PLACEHOLDER VALUE
-          height: 50 // PLACEHOLDER VALUE
+          width: 50,
+          height: 50
         },
         mobile: {
           width: 50, // PLACEHOLDER VALUE
@@ -546,12 +546,12 @@ const skills = {
       icon: expo,
       dims: {
         web: {
-          width: 44,
-          height: 44
+          width: 42,
+          height: 42
         },
         mobile: {
-          width: 44, // PLACEHOLDER VALUE
-          height: 44 // PLACEHOLDER VALUE
+          width: 42, // PLACEHOLDER VALUE
+          height: 42 // PLACEHOLDER VALUE
         }
       }
     },
@@ -560,12 +560,12 @@ const skills = {
       icon: trello,
       dims: {
         web: {
-          width: 46,
-          height: 46
+          width: 44,
+          height: 44
         },
         mobile: {
-          width: 46, // PLACEHOLDER VALUE
-          height: 46 // PLACEHOLDER VALUE
+          width: 44, // PLACEHOLDER VALUE
+          height: 44 // PLACEHOLDER VALUE
         }
       }
     },
@@ -676,12 +676,12 @@ const skills = {
       icon: photoshop,
       dims: {
         web: {
-          width: 50, // PLACEHOLDER VALUE
-          height: 50 // PLACEHOLDER VALUE
+          width: 52,
+          height: 52
         },
         mobile: {
-          width: 50, // PLACEHOLDER VALUE
-          height: 50 // PLACEHOLDER VALUE
+          width: 52, // PLACEHOLDER VALUE
+          height: 52 // PLACEHOLDER VALUE
         }
       }
     },
@@ -690,12 +690,12 @@ const skills = {
       icon: premiere,
       dims: {
         web: {
-          width: 50, // PLACEHOLDER VALUE
-          height: 50 // PLACEHOLDER VALUE
+          width: 52,
+          height: 52
         },
         mobile: {
-          width: 50, // PLACEHOLDER VALUE
-          height: 50 // PLACEHOLDER VALUE
+          width: 52, // PLACEHOLDER VALUE
+          height: 52 // PLACEHOLDER VALUE
         }
       }
     },
@@ -704,12 +704,12 @@ const skills = {
       icon: afterEffects,
       dims: {
         web: {
-          width: 50, // PLACEHOLDER VALUE
-          height: 50 // PLACEHOLDER VALUE
+          width: 52,
+          height: 52
         },
         mobile: {
-          width: 50, // PLACEHOLDER VALUE
-          height: 50 // PLACEHOLDER VALUE
+          width: 52, // PLACEHOLDER VALUE
+          height: 52 // PLACEHOLDER VALUE
         }
       }
     },
