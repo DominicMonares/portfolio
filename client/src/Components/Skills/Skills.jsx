@@ -4,7 +4,7 @@ import Icons from '../Shared/Icons';
 import skills from '../../../../data/skills';
 import './Skills.css';
 
-export default Skills = ({ wide }) => {
+const Skills = ({ wide }) => {
   const device = wide ? 'web' : 'mobile';
 
   const sortSkills = () => {
@@ -49,3 +49,5 @@ export default Skills = ({ wide }) => {
     </div>
   );
 }
+
+export default Skills;

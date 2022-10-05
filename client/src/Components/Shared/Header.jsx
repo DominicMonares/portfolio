@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Shared.css';
 
-export default Header = ({ wide, title, est, estLink, location, year, links }) => {
+const Header = ({ wide, title, est, estLink, location, year, links }) => {
   return (
     <div className={wide ? 'w_header_container' : 'm_header_container'}>
       <>
@@ -43,3 +43,5 @@ export default Header = ({ wide, title, est, estLink, location, year, links }) =
     </div>
   );
 }
+
+export default Header;

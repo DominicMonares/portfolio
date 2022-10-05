@@ -2,7 +2,7 @@ import React from 'react';
 
 import { contacts } from '../../../../data/contacts';
 
-export default Contacts = ({ wide }) => {
+const Contacts = ({ wide }) => {
   const device = wide ? 'web' : 'mobile';
   const allContacts = [];
   for (const c in contacts) {
@@ -28,3 +28,5 @@ export default Contacts = ({ wide }) => {
     </div>
   );
 }
+
+export default Contacts;

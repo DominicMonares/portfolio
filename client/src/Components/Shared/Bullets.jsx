@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Shared.css';
 
-export default Bullets = ({ wide, bullets }) => {
+const Bullets = ({ wide, bullets }) => {
   const bold = (bullet) => {
     const splitBullet = bullet.split('<b>');
     let odd = true;
@@ -30,3 +30,5 @@ export default Bullets = ({ wide, bullets }) => {
     </div>
   );
 }
+
+export default Bullets;

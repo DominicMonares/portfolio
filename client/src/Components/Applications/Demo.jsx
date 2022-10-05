@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default Demo = ({ wide, demo }) => {
+const Demo = ({ wide, demo }) => {
   const smallWidth = demo.dims.web.width < 200;
 
   const youtube = () => {
@@ -40,3 +40,5 @@ export default Demo = ({ wide, demo }) => {
 
   return ( <div>{demo.mediaType === 'youtube' ? youtube() : video()}</div> );
 }
+
+export default Demo;

@@ -5,7 +5,7 @@ import Bullets from '../Shared/Bullets';
 import education from '../../../../data/education';
 import './Education.css';
 
-export default Education = ({ wide }) => {
+const Education = ({ wide }) => {
   return (
     <div className={wide ? 'w_education_container' : 'm_education_container'}>
       {education.map(edu => {
@@ -26,3 +26,5 @@ export default Education = ({ wide }) => {
     </div>
   );
 }
+
+export default Education;

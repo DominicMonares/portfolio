@@ -23,7 +23,7 @@ const modalStyles = { // Modal styling must be separate from css file
 
 Modal.setAppElement('#root');
 
-export default Icons = ({ wide, page }) => {
+const Icons = ({ wide, page }) => {
   const [modalIsOpen, setIsOpen] = React.useState(false);
 
   const openModal = () => {
@@ -78,3 +78,5 @@ export default Icons = ({ wide, page }) => {
     </div>
   )
 }
+
+export default Icons;

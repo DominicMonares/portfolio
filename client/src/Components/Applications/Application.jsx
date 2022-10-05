@@ -4,7 +4,7 @@ import Header from '../Shared/Header';
 import SubHeader from '../Shared/SubHeader';
 import Demo from './Demo';
 
-export default Application = ({ wide, app }) => {
+const Application = ({ wide, app }) => {
   const mobileDemo = app.demos.every(d => d.dims.web.width < 200);
 
   const getAppClass = () => {
@@ -31,3 +31,5 @@ export default Application = ({ wide, app }) => {
     </div>
   );
 }
+
+export default Application;

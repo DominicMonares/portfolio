@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default SubHeader = ({ desc, links }) => {
+const SubHeader = ({ desc, links }) => {
   return (
     <div className={wide ? 'w_subheader_container' : 'm_subheader_container'}>
       <span>{desc}</span>
@@ -29,3 +29,5 @@ export default SubHeader = ({ desc, links }) => {
     </div>
   );
 }
+
+export default SubHeader;

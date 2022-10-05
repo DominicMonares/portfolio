@@ -6,7 +6,7 @@ import profile_pic from '../../../../assets/profile_pic.png';
 import about from '../../../../data/about';
 import './About.css';
 
-export default About = ({ wide }) => {
+const About = ({ wide }) => {
   return (
     <div className={wide ? 'w_about_container' : 'm_about_container'}>
       <div>
@@ -28,3 +28,5 @@ export default About = ({ wide }) => {
     </div>
   );
 }
+
+export default About;
