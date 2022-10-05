@@ -4,24 +4,30 @@ import Header from '../Shared/Header';
 import SubHeader from '../Shared/SubHeader';
 import Demo from './Demo';
 
-const Application = (props) => {
-  const app = props.app;
+export default Application = ({ wide, app }) => {
   const mobileDemo = app.demos.every(d => d.dims.web.width < 200);
 
+  const getAppClass = () => {
+    if (wide) {
+      return mobileDemo ? 'w_mobile_demo_container' : 'w_web_demo_container';
+    } else {
+      return 'm_demo_container';
+    }
+  }
+
   return (
-    <div className="app_container">
+    <div className={wide ? 'w_app_container' : 'm_app_container'}>
       <Header
+        wide={wide}
         title={app.title}
         est={app.desc}
         links={app.links}
         techs={app.techs}
       />
-      <SubHeader desc={app.techs} />
-      <div className={mobileDemo ? "mobile_demo_container" : "web_demo_container"}>
-        {app.demos.map(demo => <Demo demo={demo} />)}
+      <SubHeader wide={wide} desc={app.techs} />
+      <div className={getAppClass()}>
+        {app.demos.map(demo => <Demo wide={wide} demo={demo} />)}
       </div>
     </div>
   );
 }
-
-export default Application;

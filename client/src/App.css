@@ -8,12 +8,14 @@ html, body {
   height: 100%;
 }
 
-#app {
+/***** Web *****/
+
+#w_app {
   width: 92%;
   height: 100%;
 }
 
-.title_main {
+.w_title {
   display: flex;
   justify-content: center;
   font-size: 65px;
@@ -24,7 +26,7 @@ html, body {
   color: #3A2E47;
 }
 
-.subtitle_main {
+.w_subtitle {
   display: flex;
   justify-content: center;
   font-weight: 400;
@@ -32,4 +34,18 @@ html, body {
   margin-top: 0px;
   margin-bottom: 0px;
   color: #3A2E47;
+}
+
+/***** Mobile *****/
+
+#m_app {
+
+}
+
+.m_title {
+
+}
+
+.m_subtitle {
+
 }

@@ -1,11 +1,13 @@
-.skills_container {
+/***** Web *****/
+
+.w_skills_container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 80;
 }
 
-.category_container {
+.w_category_container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,7 +17,7 @@
   border-color: #3A2E47;
 }
 
-.category_name {
+.w_category_name {
   display: flex;
   justify-content: center;
   font-size: 18px;
@@ -24,21 +26,48 @@
   color: #3A2E47;
 }
 
-.skills {
+.w_skills {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   margin-bottom: 20px;
 }
 
-.tool {
+.w_tool {
   display: flex;
   align-items: center;
   pointer-events: none;
 }
 
-.tool_text {
+.w_tool_text {
   font-size: 18px;
   margin-top: 4px;
   margin-right: 5px;
+}
+
+
+/***** Mobile *****/
+
+.m_skills_container {
+
+}
+
+.m_category_container {
+
+}
+
+.m_category_name {
+
+}
+
+.m_skills {
+
+}
+
+.m_tool {
+
+}
+
+.m_tool_text {
+
 }

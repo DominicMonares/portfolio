@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Shared.css';
 
-const Bullets = ({ bullets }) => {
+export default Bullets = ({ wide, bullets }) => {
   const bold = (bullet) => {
     const splitBullet = bullet.split('<b>');
     let odd = true;
@@ -18,17 +18,15 @@ const Bullets = ({ bullets }) => {
   }
 
   return (
-    <div className="bullet_container">
+    <div className={wide ? 'w_bullet_container' : 'm_bullet_container'}>
       {bullets.map(bullet => {
         return (
-          <div className="bullet">
+          <div className={wide ? 'w_bullet' : 'm_bullet'}>
             •
-            <p className="bullet_text">{bold(bullet)}</p>
+            <p className={wide ? 'w_bullet_text' : 'm_bullet_text'}>{bold(bullet)}</p>
           </div>
         );
       })}
     </div>
   );
 }
-
-export default Bullets;

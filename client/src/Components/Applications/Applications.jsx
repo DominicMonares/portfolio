@@ -4,12 +4,10 @@ import Application from './Application.jsx';
 import applications from '../../../../data/applications';
 import './Applications.css';
 
-const Applications = () => {
+export default Applications = ({ wide }) => {
   return (
-    <div className="applications_container">
-      {applications.map(app => <Application app={app} />)}
+    <div className={wide ? 'w_applications_container' : 'm_applications_container'}>
+      {applications.map(app => <Application wide={wide} app={app} />)}
     </div>
   );
 }
-
-export default Applications;

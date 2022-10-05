@@ -1,6 +1,8 @@
+/***** Web *****/
+
 /* Applications */
 
-.applications_container {
+.w_applications_container {
   max-width: 1250px;
   margin-left: auto;
   margin-right: auto;
@@ -9,18 +11,18 @@
 
 /* Application */
 
-.app_container {
+.w_app_container {
   margin-top: 50px;
 }
 
-.web_demo_container {
+.w_web_demo_container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   margin-top: 15px;
 }
 
-.mobile_demo_container {
+.w_mobile_demo_container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -29,14 +31,14 @@
 
 /* Demo */
 
-.youtube {
+.w_youtube {
   display: flex;
   justify-content: center;
   margin-top: 35px;
   margin-bottom: 25px;
 }
 
-.youtube_iframe {
+.w_youtube_iframe {
   width: 960px;
   height: 540px;
   border-style: solid;
@@ -44,12 +46,12 @@
   border-color: #3A2E47;
 }
 
-.demo_container {
+.w_demo_container {
   margin-top: 35px;
   margin-bottom: 25px;
 }
 
-.demo {
+.w_demo {
   display: flex;
   flex-direction: column;
   margin-left: auto;
@@ -57,7 +59,7 @@
   pointer-events: none;
 }
 
-.demo_img {
+.w_demo_img {
   margin-left: auto;
   margin-right: auto;
   border-style: solid;
@@ -65,7 +67,7 @@
   border-color: #3A2E47;
 }
 
-.demo_caption {
+.w_demo_caption {
   display: flex;
   justify-content: center;
   margin-top: 10px;
@@ -73,4 +75,49 @@
   margin-right: auto;
   font-size: 20px;
   text-align: center;
+}
+
+
+/***** Mobile *****/
+
+/* Applications */
+
+.m_applications_container {
+
+}
+
+/* Application */
+
+.m_app_container {
+
+}
+
+.m_demo_container {
+
+}
+
+/* Demo */
+
+.m_youtube {
+
+}
+
+.m_youtube_iframe {
+
+}
+
+.m_demo_container {
+
+}
+
+.m_demo {
+
+}
+
+.m_demo_img {
+
+}
+
+.m_demo_caption {
+
 }

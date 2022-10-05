@@ -6,22 +6,25 @@ import profile_pic from '../../../../assets/profile_pic.png';
 import about from '../../../../data/about';
 import './About.css';
 
-const About = () => {
+export default About = ({ wide }) => {
   return (
-    <div className="about_container">
+    <div className={wide ? 'w_about_container' : 'm_about_container'}>
       <div>
-        <div className="about_body_container">
-          <img className="profile_pic" src={profile_pic} width="300px" height="300px" />
-          <div className="about_text_container">
-            {about.map(p => <p className="about_text">{p}</p>)}
+        <div className={wide ? 'w_about_body_container' : 'm_about_body_container'}>
+          <img
+            className={wide ? 'w_profile_pic' : 'm_profile_pic'}
+            src={profile_pic}
+            width='300px'
+            height='300px'
+          />
+          <div className={wide ? 'w_about_text_container' : 'm_about_text_container'}>
+            {about.map(p => <p className={wide ? 'w_about_text' : 'm_about_text'}>{p}</p>)}
           </div>
         </div>
-        <div className="about_container_underline"></div>
-        <Contacts />
+        <div className={wide ? 'w_about_container_ul' : 'm_about_container_ul'}></div>
+        <Contacts wide={wide} />
       </div>
-      <Icons page="About" />
+      <Icons wide={wide} page='About' />
     </div>
   );
 }
-
-export default About;

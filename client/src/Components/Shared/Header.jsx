@@ -2,18 +2,18 @@ import React from 'react';
 
 import './Shared.css';
 
-const Header = ({ title, est, estLink, location, year, links }) => {
+export default Header = ({ wide, title, est, estLink, location, year, links }) => {
   return (
-    <div className="header_container">
+    <div className={wide ? 'w_header_container' : 'm_header_container'}>
       <>
-        <span className="title">{title}</span>
+        <span className={wide ? 'w_title' : 'm_title'}>{title}</span>
         &nbsp;|&nbsp;
         {!estLink ?
           <span>{est}</span> :
           <a
-            className="link"
+            className={wide ? 'w_link' : 'm_link'}
             href={estLink}
-            target="_blank"
+            target='_blank'
             key={estLink}
           >
             {est}
@@ -27,9 +27,9 @@ const Header = ({ title, est, estLink, location, year, links }) => {
         return (
           <>
             <a
-              className="link"
+              className={wide ? 'w_link' : 'm_link'}
               href={link.link}
-              target="_blank"
+              target='_blank'
               key={link.link}
             >
               {link.label}
@@ -39,9 +39,7 @@ const Header = ({ title, est, estLink, location, year, links }) => {
         );
       }) :
       <></>}
-      {year ? <span className="year">{year}</span> : <></>}
+      {year ? <span className={wide ? 'w_year' : 'm_year'}>{year}</span> : <></>}
     </div>
   );
 }
-
-export default Header;

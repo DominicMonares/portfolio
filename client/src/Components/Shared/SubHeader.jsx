@@ -1,8 +1,8 @@
 import React from 'react';
 
-const SubHeader = ({ desc, links }) => {
+export default SubHeader = ({ desc, links }) => {
   return (
-    <div className="subheader_container">
+    <div className={wide ? 'w_subheader_container' : 'm_subheader_container'}>
       <span>{desc}</span>
       {links ?
         <>
@@ -12,9 +12,9 @@ const SubHeader = ({ desc, links }) => {
             return (
               <>
                 <a
-                  className="sublink"
+                  className={wide ? 'w_sublink' : 'm_sublink'}
                   href={link.link}
-                  target="_blank"
+                  target='_blank'
                   key={link.link}
                 >
                   {link.label}
@@ -29,5 +29,3 @@ const SubHeader = ({ desc, links }) => {
     </div>
   );
 }
-
-export default SubHeader;

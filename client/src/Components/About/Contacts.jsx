@@ -2,23 +2,29 @@ import React from 'react';
 
 import { contacts } from '../../../../data/contacts';
 
-const Contacts = () => {
-  const device = 'web'; // TEMP, NEEDS TO BE MADE DYNAMIC
+export default Contacts = ({ wide }) => {
+  const device = wide ? 'web' : 'mobile';
   const allContacts = [];
   for (const c in contacts) {
     const contact = contacts[c]
     const dims = contact['dims'][device];
     allContacts.push(
-      <div className="contact">
-        <a className="contact_link" href={contact.link} target="_blank">
+      <div className={wide ? 'w_contact' : 'm_contact'}>
+        <a
+          className={wide ? 'w_contact_link' : 'm_contact_link'}
+          href={contact.link}
+          target='_blank'
+        >
           <img src={contact.icon} width={dims.width} height={dims.height} />
-          <div className="contact_link">{contact.display}</div>
+          <div className={wide ? 'w_contact_link' : 'm_contact_link'}>{contact.display}</div>
         </a>
       </div>
     );
   }
 
-  return ( <div className="contacts_container">{allContacts}</div> );
+  return (
+    <div className={wide ? 'w_contacts_container' : 'm_contacts_container'}>
+      {allContacts}
+    </div>
+  );
 }
-
-export default Contacts;

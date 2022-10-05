@@ -1,18 +1,18 @@
 import React from 'react';
 
-const Demo = ({ demo }) => {
+export default Demo = ({ wide, demo }) => {
   const smallWidth = demo.dims.web.width < 200;
 
   const youtube = () => {
     return (
-      <div className="youtube">
+      <div className={wide ? 'w_youtube' : 'm_youtube'}>
         <iframe
-          className="youtube_iframe"
+          className={wide ? 'w_youtube_iframe' : 'm_youtube_iframe'}
           src={demo.media}
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          frameBorder='0'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
           allowFullScreen
-          title="Embedded youtube"
+          title='Embedded youtube'
         />
       </div>
     );
@@ -20,19 +20,19 @@ const Demo = ({ demo }) => {
 
   const video = () => {
     return (
-      <div className="demo_container">
-        <div className="demo">
+      <div className={wide ? 'w_demo_container' : 'm_demo_container'}>
+        <div className={wide ? 'w_demo' : 'm_demo'}>
           <video
-            className="demo_img"
+            className={wide ? 'w_demo_img' : 'm_demo_img'}
             width={demo.dims.web.width}
             height={demo.dims.web.height}
-            autoplay="autoplay"
-            loop="true"
-            muted="true"
+            autoplay='autoplay'
+            loop='true'
+            muted='true'
           >
             <source src={demo.media} type={demo.mediaType} />
           </video>
-          <span className="demo_caption">{demo.caption}</span>
+          <span className={wide ? 'w_demo_caption' : 'm_demo_caption'}>{demo.caption}</span>
         </div>
       </div>
     );
@@ -40,5 +40,3 @@ const Demo = ({ demo }) => {
 
   return ( <div>{demo.mediaType === 'youtube' ? youtube() : video()}</div> );
 }
-
-export default Demo;

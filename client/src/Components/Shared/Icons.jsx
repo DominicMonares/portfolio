@@ -23,7 +23,7 @@ const modalStyles = { // Modal styling must be separate from css file
 
 Modal.setAppElement('#root');
 
-const Icons = ({ page }) => {
+export default Icons = ({ wide, page }) => {
   const [modalIsOpen, setIsOpen] = React.useState(false);
 
   const openModal = () => {
@@ -35,32 +35,46 @@ const Icons = ({ page }) => {
   }
 
   return (
-    <div className="icon_container">
-      <span className="icon_open" onClick={openModal}>Icons by Icons8</span>
+    <div className={wide ? 'w_icon_container' : 'm_icon_container'}>
+      <span className={wide ? 'w_icon_open' : 'm_icon_open'} onClick={openModal}>
+        Icons by Icons8
+      </span>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         style={modalStyles}
-        contentLabel="Icons Modal"
+        contentLabel='Icons Modal'
       >
-        <div className="modal_close" onClick={closeModal}>X</div>
+        <div className={wide ? 'w_modal_close' : 'm_modal_close'} onClick={closeModal}>X</div>
         <br />
-        <div className="modal_title">Source Links</div>
+        <div className={wide ? 'w_modal_title' : 'm_modal_title'}>Source Links</div>
         <br />
         {icons[page].map(icon => {
           return (
-            <div className="modal_icon_link">
-              <a className="modal_link" target="_blank" href={icon.link}>{icon.name}</a>
+            <div className={wide ? 'w_modal_icon_link' : 'm_modal_icon_link'}>
+              <a
+                className={wide ? 'w_modal_link' : 'm_modal_link'}
+                target='_blank'
+                href={icon.link}
+              >
+                {icon.name}
+              </a>
               &nbsp;icon by&nbsp;
-              <a className="modal_link" target="_blank" href="https://icons8.com">Icons8</a>
+              <a
+                className={wide ? 'w_modal_link' : 'm_modal_link'}
+                target='_blank'
+                href='https://icons8.com'
+              >
+                Icons8
+              </a>
             </div>
           );
         })}
         <br />
-        <div className="modal_icon_disclaimer">Icons used but not listed here were not sourced from Icons8.</div>
+        <div className={wide ? 'w_icon_disclaimer' : 'm_icon_disclaimer'}>
+          Icons used but not listed here were not sourced from Icons8.
+        </div>
       </Modal>
     </div>
   )
 }
-
-export default Icons;
