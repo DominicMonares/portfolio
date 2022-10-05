@@ -12,73 +12,28 @@ import petpix4 from '../assets/petpix4.mp4';
 
 const applications = [
   {
-    title: 'Atelier',
-    desc: 'eCommerce application: Q&A widget on product page',
+    title: 'fretJs',
+    desc: 'An app that lets you write and execute JavaScript using only an electric guitar',
     links: [
       {
         label: 'GitHub',
-        link: 'https://github.com/DominicMonares/fec-atelier'
+        link: 'https://github.com/DominicMonares/fret-js'
       }
     ],
-    techs: 'React, webpack, Babel, Express, Node.js, AWS: EC2, Jest, React Testing Library',
+    techs: 'React, webpack, Babel, Express, Web Audio API',
     demos: [
       {
-        caption: 'Dynamically sorting search bar',
-        mediaType: 'video/mp4',
-        media: fec1,
+        caption: '',
+        mediaType: 'youtube',
+        media: 'https://www.youtube.com/embed/QHJy7SKRfSE',
         dims: {
           web: {
-            width: 713,
-            height: 346
+            width: null,
+            height: null
           },
           mobile: {
-            width: 713, // PLACEHOLDER VALUE
-            height: 346 // PLACEHOLDER VALUE
-          }
-        }
-      },
-      {
-        caption: 'Rate helpfulness and flag inappropriate answers for review',
-        mediaType: 'video/mp4',
-        media: fec2,
-        dims: {
-          web: {
-            width: 664,
-            height: 180
-          },
-          mobile: {
-            width: 664, // PLACEHOLDER VALUE
-            height: 180 // PLACEHOLDER VALUE
-          }
-        }
-      },
-      {
-        caption: 'Answer accordion, expandable questions, and infinitely scrolling display',
-        mediaType: 'video/mp4',
-        media: fec3,
-        dims: {
-          web: {
-            width: 718,
-            height: 378
-          },
-          mobile: {
-            width: 718, // PLACEHOLDER VALUE
-            height: 378 // PLACEHOLDER VALUE
-          }
-        }
-      },
-      {
-        caption: 'Answer submission modal and image upload',
-        mediaType: 'video/mp4',
-        media: fec4,
-        dims: {
-          web: {
-            width: 718,
-            height: 380
-          },
-          mobile: {
-            width: 718, // PLACEHOLDER VALUE
-            height: 380 // PLACEHOLDER VALUE
+            width: null,
+            height: null
           }
         }
       }
@@ -162,28 +117,73 @@ const applications = [
     ]
   },
   {
-    title: 'fretJs',
-    desc: 'An app that lets you write and execute JavaScript using only an electric guitar',
+    title: 'Atelier',
+    desc: 'eCommerce application: Q&A widget on product page',
     links: [
       {
         label: 'GitHub',
-        link: 'https://github.com/DominicMonares/fret-js'
+        link: 'https://github.com/DominicMonares/fec-atelier'
       }
     ],
-    techs: 'React, webpack, Babel, Express, Web Audio API',
+    techs: 'React, webpack, Babel, Express, Node.js, AWS: EC2, Jest, React Testing Library',
     demos: [
       {
-        caption: '',
-        mediaType: 'youtube',
-        media: 'https://www.youtube.com/embed/QHJy7SKRfSE',
+        caption: 'Dynamically sorting search bar',
+        mediaType: 'video/mp4',
+        media: fec1,
         dims: {
           web: {
-            width: null,
-            height: null
+            width: 713,
+            height: 346
           },
           mobile: {
-            width: null,
-            height: null
+            width: 713, // PLACEHOLDER VALUE
+            height: 346 // PLACEHOLDER VALUE
+          }
+        }
+      },
+      {
+        caption: 'Rate helpfulness and flag inappropriate answers for review',
+        mediaType: 'video/mp4',
+        media: fec2,
+        dims: {
+          web: {
+            width: 664,
+            height: 180
+          },
+          mobile: {
+            width: 664, // PLACEHOLDER VALUE
+            height: 180 // PLACEHOLDER VALUE
+          }
+        }
+      },
+      {
+        caption: 'Answer accordion, expandable questions, and infinitely scrolling display',
+        mediaType: 'video/mp4',
+        media: fec3,
+        dims: {
+          web: {
+            width: 718,
+            height: 378
+          },
+          mobile: {
+            width: 718, // PLACEHOLDER VALUE
+            height: 378 // PLACEHOLDER VALUE
+          }
+        }
+      },
+      {
+        caption: 'Answer submission modal and image upload',
+        mediaType: 'video/mp4',
+        media: fec4,
+        dims: {
+          web: {
+            width: 718,
+            height: 380
+          },
+          mobile: {
+            width: 718, // PLACEHOLDER VALUE
+            height: 380 // PLACEHOLDER VALUE
           }
         }
       }

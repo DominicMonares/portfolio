@@ -8,7 +8,7 @@ const Job = ({ job }) => {
   const app = job.app;
   const bullets = job.bullets;
   return (
-    <div className="job_container">
+    <>
       <Header
         title={job.title}
         est={job.est}
@@ -17,7 +17,7 @@ const Job = ({ job }) => {
       />
       {app ? <SubHeader desc={app.desc} links={app.links} /> : <></>}
       {bullets ? <Bullets bullets={bullets} /> : <></>}
-    </div>
+    </>
   );
 }
 

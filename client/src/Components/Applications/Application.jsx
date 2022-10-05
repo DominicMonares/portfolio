@@ -20,9 +20,7 @@ const Application = (props) => {
       <div className={mobileDemo ? "mobile_demo_container" : "web_demo_container"}>
         {app.demos.map(demo => <Demo demo={demo} />)}
       </div>
-
     </div>
-
   );
 }
 

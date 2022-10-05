@@ -3,4 +3,4 @@ const about = [
   'I enjoy playing guitar, bass, drums, and piano, creating rotoscope animations, tinkering with video game mods, and luthiery in my spare time.'
 ];
 
-export { about };
+export default about;

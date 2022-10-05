@@ -38,11 +38,7 @@ const Demo = ({ demo }) => {
     );
   }
 
-  return (
-    <div>
-      {demo.mediaType === 'youtube' ? youtube() : video()}
-    </div>
-  );
+  return ( <div>{demo.mediaType === 'youtube' ? youtube() : video()}</div> );
 }
 
 export default Demo;

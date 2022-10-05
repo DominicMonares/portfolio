@@ -1,7 +1,7 @@
 import React from 'react';
 
-import applications from '../../../../data/applications';
 import Application from './Application.jsx';
+import applications from '../../../../data/applications';
 import './Applications.css';
 
 const Applications = () => {
