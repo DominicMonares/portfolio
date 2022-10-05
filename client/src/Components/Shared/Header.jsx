@@ -6,7 +6,7 @@ const Header = ({ wide, title, est, estLink, location, year, links }) => {
   return (
     <div className={wide ? 'w_header_container' : 'm_header_container'}>
       <>
-        <span className={wide ? 'w_title' : 'm_title'}>{title}</span>
+        <span className={wide ? 'w_header_title' : 'm_header_title'}>{title}</span>
         &nbsp;|&nbsp;
         {!estLink ?
           <span>{est}</span> :

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SubHeader = ({ desc, links }) => {
+const SubHeader = ({ wide, desc, links }) => {
   return (
     <div className={wide ? 'w_subheader_container' : 'm_subheader_container'}>
       <span>{desc}</span>

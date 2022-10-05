@@ -1,45 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
-import { Nav, NavLink, NavMenu } from './NavBarElements';
+import navigation from '../../../../data/navigation';
 import './NavBar.css';
 
 const NavBar = () => {
+  const tabs = {};
+  navigation.forEach(p => p.page === 'Apps' ? tabs[p.page] = 'tab_active' : tabs[p.page] = 'tab');
+  const [activeTab, setActiveTab] = useState(tabs);
+
+  const updateTabs = (tab) => {
+    const currentTabs = { ...tabs };
+    for (const t in currentTabs) {
+      if (t === tab) {
+        currentTabs[t] = 'tab_active';
+      } else {
+        currentTabs[t] = 'tab';
+      }
+    }
+
+    setActiveTab(currentTabs);
+  }
+
   return (
     <div className="nav_container">
-      <div className="navbar">
-        <Nav>
-          <NavMenu>
-            <NavLink to="/apps" className="navlink">
-              <div className="nav_text">
-                Apps
-              </div>
+      <div className="nav_menu">
+        {navigation.map(p => {
+          return (
+            <NavLink to={p.route} className={activeTab[p.page]} onClick={() => updateTabs(p.page)}>
+              <div className='nav_text'>{p.page}</div>
             </NavLink>
-            <NavLink to="/skills" className="navlink">
-              <div className="nav_text">
-                Skills
-              </div>
-            </NavLink>
-            <NavLink to="/experience" className="navlink">
-              <div className="nav_text">
-                Experience
-              </div>
-            </NavLink>
-            <NavLink to="/education" className="navlink">
-              <div className="nav_text">
-                Education
-              </div>
-            </NavLink>
-            <NavLink to="/about" className="navlink">
-              <div className="nav_text">
-                About
-              </div>
-            </NavLink>
-          </NavMenu>
-        </Nav>
+          );
+        })}
       </div>
       <div className="header_underline"></div>
     </div>
-  )
+  );
 }
 
 export default NavBar;
