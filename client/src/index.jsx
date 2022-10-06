@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
-import axios from 'axios';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import NavBar from './Components/NavBar/NavBar';
+import Dropdown from './Components/Dropdown/Dropdown';
 import About from './Components/About/About';
 import Skills from './Components/Skills/Skills';
 import Experience from './Components/Experience/Experience';
@@ -26,7 +26,7 @@ const App = () => {
       <h1 className={wide ? 'w_title' : 'm_title'}>Dominic Monares</h1>
       <h3 className={wide ? 'w_subtitle' : 'm_subtitle'}>Full-Stack Software Engineer</h3>
       <Router>
-        <NavBar />
+        {wide ? <NavBar /> : <Dropdown />}
         <Routes>
           <Route path='/apps' element={<Applications wide={wide} />}></Route>
           <Route path='/about' element={<About wide={wide} />}></Route>
