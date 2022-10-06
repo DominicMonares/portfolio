@@ -27,8 +27,8 @@ const NavBar = () => {
   }
 
   return (
-    <div className="nav_container">
-      <div className="nav_menu">
+    <div className='nav_container'>
+      <div className='nav_menu'>
         {navigation.map(p => {
           return (
             <NavLink to={p.route} className={activeTab[p.page]} onClick={() => updateTabs(p.page)}>
@@ -37,7 +37,7 @@ const NavBar = () => {
           );
         })}
       </div>
-      <div className="header_underline"></div>
+      <div className='header_underline'></div>
     </div>
   );
 }
