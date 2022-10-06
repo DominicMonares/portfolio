@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 import navigation from '../../../../data/navigation';
 import './NavBar.css';
 
 const NavBar = () => {
+  const location = useLocation();
   const tabs = {};
-  navigation.forEach(p => p.page === 'Apps' ? tabs[p.page] = 'tab_active' : tabs[p.page] = 'tab');
+  navigation.forEach(p => {
+    p.route === location.pathname ? tabs[p.page] = 'tab_active' : tabs[p.page] = 'tab';
+  });
   const [activeTab, setActiveTab] = useState(tabs);
 
   const updateTabs = (tab) => {
