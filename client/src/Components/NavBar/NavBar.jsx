@@ -10,6 +10,7 @@ const NavBar = () => {
   navigation.forEach(p => {
     p.route === location.pathname ? tabs[p.page] = 'tab_active' : tabs[p.page] = 'tab';
   });
+
   const [activeTab, setActiveTab] = useState(tabs);
 
   const updateTabs = (tab) => {
