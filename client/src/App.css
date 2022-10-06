@@ -1,6 +1,5 @@
 html, body {
-  height: 100%;
-  width: 100%;
+  min-height: 100%;
   margin: 0;
 }
 
@@ -13,7 +12,9 @@ html, body {
 /***** Web *****/
 
 #w_app {
-  width: 92%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 100%;
 }
 
