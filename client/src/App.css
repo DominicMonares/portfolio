@@ -52,6 +52,8 @@ html, body {
   justify-content: center;
   height: 100%;
   max-width: 790px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .m_title, .m_subtitle {

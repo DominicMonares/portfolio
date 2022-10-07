@@ -22,28 +22,29 @@ const Dropdown = () => {
 
   return (
     <div className='dropdown_container'>
-      <div className='dropdown'>
-        <button type='button' onClick={() => ddOpen ? setDdOpen(false) : setDdOpen(true)}>
-          {activeTab}
-        </button>
-        <div className={ddOpen ? 'dd_open' : 'dd_closed'}>
-          {menu.map(p => {
-            return (
-              <NavLink
-                to={p.route}
-                className={activeTab[p.page]}
-                onClick={() => {
-                  setActiveTab(p.page);
-                  setDdOpen(false);
-                }}
-              >
-                <div className='dd_page'>{p.page}</div>
-              </NavLink>
-            );
-          })}
-        </div>
+      <div
+        className='dd_button'
+        onClick={() => ddOpen ? setDdOpen(false) : setDdOpen(true)}
+      >
+        {activeTab}
       </div>
-      <div className='header_underline'></div>
+      <div className={ddOpen ? 'dd_open' : 'dd_closed'}>
+        {menu.map(p => {
+          return (
+            <NavLink
+              to={p.route}
+              className='dd_page'
+              onClick={() => {
+                setActiveTab(p.page);
+                setDdOpen(false);
+              }}
+            >
+              {p.page}
+            </NavLink>
+          );
+        })}
+      </div>
+
     </div>
   );
 }

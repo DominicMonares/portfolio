@@ -24,26 +24,6 @@ const experience = [
     ]
   },
   {
-    title: 'Front-End Engineer',
-    est: 'Atelier',
-    location: 'US Remote',
-    year: 'Jan 2022 - Mar 2022',
-    app: {
-      desc: 'e-commerce application',
-      links: [
-        {
-          label: 'GitHub',
-          link: 'https://github.com/DominicMonares/fec-atelier'
-        }
-      ]
-    },
-    bullets: [
-      'Increased Google Lighthouse performance from 40% to 81% by effectively utilizing tree-shaking, JS minification with <b>TerserWebpackPlugin<b>, and image minification with <b>Imagemin<b>',
-      'Utilized the <b>Filestack API<b> to both store and retrieve user images uploaded in answer creation',
-      'Developed a dynamically sorting search bar, modal windows, and an infinitely scrolling display for user questions and answers'
-    ]
-  },
-  {
     title: 'Back-End Engineer',
     est: 'Atelier API',
     location: 'US Remote',
@@ -61,6 +41,26 @@ const experience = [
       'Designed, built, and deployed a multi-layered backend microservice on an <b>AWS EC2<b> T2.micro instance',
       'Increased throughput from 460 RPS to 1,500 RPS, with an average latency of 30ms and error rate below 0.1%, using <b>Memcached<b>, <b>MongoDB<b> indexing, and horizontal scaling',
       'Increased fault tolerance and system availability for users by horizontally scaling microservice layers with <b>NGINX<b> load balancing, using a round-robin configuration'
+    ]
+  },
+  {
+    title: 'Front-End Engineer',
+    est: 'Atelier',
+    location: 'US Remote',
+    year: 'Jan 2022 - Mar 2022',
+    app: {
+      desc: 'e-commerce application',
+      links: [
+        {
+          label: 'GitHub',
+          link: 'https://github.com/DominicMonares/fec-atelier'
+        }
+      ]
+    },
+    bullets: [
+      'Increased Google Lighthouse performance from 40% to 81% by effectively utilizing tree-shaking, JS minification with <b>TerserWebpackPlugin<b>, and image minification with <b>Imagemin<b>',
+      'Utilized the <b>Filestack API<b> to both store and retrieve user images uploaded in answer creation',
+      'Developed a dynamically sorting search bar, modal windows, and an infinitely scrolling display for user questions and answers'
     ]
   },
   {
