@@ -68,8 +68,8 @@ const skills = {
           height: 48
         },
         mobile: {
-          width: 48, // PLACEHOLDER VALUE
-          height: 48 // PLACEHOLDER VALUE
+          width: 48,
+          height: 48
         }
       }
     },
@@ -82,8 +82,8 @@ const skills = {
           height: 48
         },
         mobile: {
-          width: 48, // PLACEHOLDER VALUE
-          height: 48 // PLACEHOLDER VALUE
+          width: 48,
+          height: 48
         }
       }
     },
@@ -96,8 +96,8 @@ const skills = {
           height: 48
         },
         mobile: {
-          width: 48, // PLACEHOLDER VALUE
-          height: 48 // PLACEHOLDER VALUE
+          width: 48,
+          height: 48
         }
       }
     },
@@ -110,8 +110,8 @@ const skills = {
           height: 48
         },
         mobile: {
-          width: 48, // PLACEHOLDER VALUE
-          height: 48 // PLACEHOLDER VALUE
+          width: 48,
+          height: 48
         }
       }
     },
@@ -124,8 +124,8 @@ const skills = {
           height: 48
         },
         mobile: {
-          width: 48, // PLACEHOLDER VALUE
-          height: 48 // PLACEHOLDER VALUE
+          width: 48,
+          height: 48
         }
       }
     },
@@ -134,12 +134,12 @@ const skills = {
       icon: redux,
       dims: {
         web: {
-          width: 48, // PLACEHOLDER VALUE
-          height: 48 // PLACEHOLDER VALUE
+          width: 48,
+          height: 48
         },
         mobile: {
-          width: 48, // PLACEHOLDER VALUE
-          height: 48 // PLACEHOLDER VALUE
+          width: 48,
+          height: 48
         }
       }
     },
@@ -152,8 +152,8 @@ const skills = {
           height: 45
         },
         mobile: {
-          width: 45, // PLACEHOLDER VALUE
-          height: 45 // PLACEHOLDER VALUE
+          width: 45,
+          height: 45
         }
       }
     },
@@ -168,8 +168,8 @@ const skills = {
           height: 48
         },
         mobile: {
-          width: 48, // PLACEHOLDER VALUE
-          height: 48 // PLACEHOLDER VALUE
+          width: 48,
+          height: 48
         }
       }
     },
@@ -182,8 +182,8 @@ const skills = {
           height: 48
         },
         mobile: {
-          width: 48, // PLACEHOLDER VALUE
-          height: 48 // PLACEHOLDER VALUE
+          width: 48,
+          height: 48
         }
       }
     },
@@ -196,8 +196,8 @@ const skills = {
           height: 48
         },
         mobile: {
-          width: 48, // PLACEHOLDER VALUE
-          height: 48 // PLACEHOLDER VALUE
+          width: 48,
+          height: 48
         }
       }
     },
@@ -210,8 +210,8 @@ const skills = {
           height: 46
         },
         mobile: {
-          width: 46, // PLACEHOLDER VALUE
-          height: 46 // PLACEHOLDER VALUE
+          width: 46,
+          height: 46
         }
       }
     },
@@ -224,8 +224,8 @@ const skills = {
           height: 48
         },
         mobile: {
-          width: 48, // PLACEHOLDER VALUE
-          height: 48 // PLACEHOLDER VALUE
+          width: 48,
+          height: 48
         }
       }
     },
@@ -238,8 +238,8 @@ const skills = {
           height: 46
         },
         mobile: {
-          width: 46, // PLACEHOLDER VALUE
-          height: 46 // PLACEHOLDER VALUE
+          width: 46,
+          height: 46
         }
       }
     },
@@ -252,8 +252,8 @@ const skills = {
           height: 46
         },
         mobile: {
-          width: 46, // PLACEHOLDER VALUE
-          height: 46 // PLACEHOLDER VALUE
+          width: 46,
+          height: 46
         }
       }
     },
@@ -266,8 +266,8 @@ const skills = {
           height: 46
         },
         mobile: {
-          width: 46, // PLACEHOLDER VALUE
-          height: 46 // PLACEHOLDER VALUE
+          width: 46,
+          height: 46
         }
       }
     },
@@ -280,8 +280,8 @@ const skills = {
           height: 42
         },
         mobile: {
-          width: 94, // PLACEHOLDER VALUE
-          height: 42 // PLACEHOLDER VALUE
+          width: 94,
+          height: 42
         }
       }
     },
@@ -296,8 +296,8 @@ const skills = {
           height: 48
         },
         mobile: {
-          width: 48, // PLACEHOLDER VALUE
-          height: 48 // PLACEHOLDER VALUE
+          width: 48,
+          height: 48
         }
       }
     },
@@ -310,8 +310,8 @@ const skills = {
           height: 48
         },
         mobile: {
-          width: 48, // PLACEHOLDER VALUE
-          height: 48 // PLACEHOLDER VALUE
+          width: 48,
+          height: 48
         }
       }
     },
@@ -324,8 +324,8 @@ const skills = {
           height: 48
         },
         mobile: {
-          width: 48, // PLACEHOLDER VALUE
-          height: 48 // PLACEHOLDER VALUE
+          width: 48,
+          height: 48
         }
       }
     },
@@ -338,8 +338,8 @@ const skills = {
           height: 48
         },
         mobile: {
-          width: 48, // PLACEHOLDER VALUE
-          height: 48 // PLACEHOLDER VALUE
+          width: 48,
+          height: 48
         }
       }
     },
@@ -352,8 +352,8 @@ const skills = {
           height: 46
         },
         mobile: {
-          width: 46, // PLACEHOLDER VALUE
-          height: 46 // PLACEHOLDER VALUE
+          width: 46,
+          height: 46
         }
       }
     },
@@ -366,8 +366,8 @@ const skills = {
           height: 46
         },
         mobile: {
-          width: 46, // PLACEHOLDER VALUE
-          height: 46 // PLACEHOLDER VALUE
+          width: 46,
+          height: 46
         }
       }
     },
@@ -380,8 +380,8 @@ const skills = {
           height: 48
         },
         mobile: {
-          width: 48, // PLACEHOLDER VALUE
-          height: 48 // PLACEHOLDER VALUE
+          width: 48,
+          height: 48
         }
       }
     },
@@ -394,8 +394,8 @@ const skills = {
           height: 46
         },
         mobile: {
-          width: 46, // PLACEHOLDER VALUE
-          height: 46 // PLACEHOLDER VALUE
+          width: 46,
+          height: 46
         }
       }
     },
@@ -408,8 +408,8 @@ const skills = {
           height: 48
         },
         mobile: {
-          width: 48, // PLACEHOLDER VALUE
-          height: 48 // PLACEHOLDER VALUE
+          width: 48,
+          height: 48
         }
       }
     }
@@ -424,8 +424,8 @@ const skills = {
           height: 46
         },
         mobile: {
-          width: 46, // PLACEHOLDER VALUE
-          height: 46 // PLACEHOLDER VALUE
+          width: 46,
+          height: 46
         }
       }
     },
@@ -438,8 +438,8 @@ const skills = {
           height: 46
         },
         mobile: {
-          width: 46, // PLACEHOLDER VALUE
-          height: 46 // PLACEHOLDER VALUE
+          width: 46,
+          height: 46
         }
       }
     },
@@ -452,8 +452,8 @@ const skills = {
           height: 48
         },
         mobile: {
-          width: 48, // PLACEHOLDER VALUE
-          height: 48 // PLACEHOLDER VALUE
+          width: 48,
+          height: 48
         }
       }
     },
@@ -466,8 +466,8 @@ const skills = {
           height: 46
         },
         mobile: {
-          width: 46, // PLACEHOLDER VALUE
-          height: 46 // PLACEHOLDER VALUE
+          width: 46,
+          height: 46
         }
       }
     },
@@ -480,8 +480,8 @@ const skills = {
           height: 48
         },
         mobile: {
-          width: 48, // PLACEHOLDER VALUE
-          height: 48 // PLACEHOLDER VALUE
+          width: 48,
+          height: 48
         }
       }
     },
@@ -494,8 +494,8 @@ const skills = {
           height: 48
         },
         mobile: {
-          width: 48, // PLACEHOLDER VALUE
-          height: 48 // PLACEHOLDER VALUE
+          width: 48,
+          height: 48
         }
       }
     },
@@ -508,8 +508,8 @@ const skills = {
           height: 46
         },
         mobile: {
-          width: 46, // PLACEHOLDER VALUE
-          height: 46 // PLACEHOLDER VALUE
+          width: 46,
+          height: 46
         }
       }
     },
@@ -522,8 +522,8 @@ const skills = {
           height: 48
         },
         mobile: {
-          width: 48, // PLACEHOLDER VALUE
-          height: 48 // PLACEHOLDER VALUE
+          width: 48,
+          height: 48
         }
       }
     },
@@ -536,8 +536,8 @@ const skills = {
           height: 50
         },
         mobile: {
-          width: 50, // PLACEHOLDER VALUE
-          height: 50 // PLACEHOLDER VALUE
+          width: 50,
+          height: 50
         }
       }
     },
@@ -550,8 +550,8 @@ const skills = {
           height: 42
         },
         mobile: {
-          width: 42, // PLACEHOLDER VALUE
-          height: 42 // PLACEHOLDER VALUE
+          width: 42,
+          height: 42
         }
       }
     },
@@ -564,8 +564,8 @@ const skills = {
           height: 44
         },
         mobile: {
-          width: 44, // PLACEHOLDER VALUE
-          height: 44 // PLACEHOLDER VALUE
+          width: 44,
+          height: 44
         }
       }
     },
@@ -578,8 +578,8 @@ const skills = {
           height: 48
         },
         mobile: {
-          width: 48, // PLACEHOLDER VALUE
-          height: 48 // PLACEHOLDER VALUE
+          width: 48,
+          height: 48
         }
       }
     },
@@ -594,8 +594,8 @@ const skills = {
           height: 48
         },
         mobile: {
-          width: 48, // PLACEHOLDER VALUE
-          height: 48 // PLACEHOLDER VALUE
+          width: 48,
+          height: 48
         }
       }
     },
@@ -608,8 +608,8 @@ const skills = {
           height: 48
         },
         mobile: {
-          width: 48, // PLACEHOLDER VALUE
-          height: 48 // PLACEHOLDER VALUE
+          width: 48,
+          height: 48
         }
       }
     },
@@ -622,8 +622,8 @@ const skills = {
           height: 48
         },
         mobile: {
-          width: 48, // PLACEHOLDER VALUE
-          height: 48 // PLACEHOLDER VALUE
+          width: 48,
+          height: 48
         }
       }
     },
@@ -636,8 +636,8 @@ const skills = {
           height: 48
         },
         mobile: {
-          width: 48, // PLACEHOLDER VALUE
-          height: 48 // PLACEHOLDER VALUE
+          width: 48,
+          height: 48
         }
       }
     },
@@ -650,8 +650,8 @@ const skills = {
           height: 48
         },
         mobile: {
-          width: 48, // PLACEHOLDER VALUE
-          height: 48 // PLACEHOLDER VALUE
+          width: 48,
+          height: 48
         }
       }
     },
@@ -664,8 +664,8 @@ const skills = {
           height: 48
         },
         mobile: {
-          width: 48, // PLACEHOLDER VALUE
-          height: 48 // PLACEHOLDER VALUE
+          width: 48,
+          height: 48
         }
       }
     }
@@ -680,8 +680,8 @@ const skills = {
           height: 52
         },
         mobile: {
-          width: 52, // PLACEHOLDER VALUE
-          height: 52 // PLACEHOLDER VALUE
+          width: 52,
+          height: 52
         }
       }
     },
@@ -694,8 +694,8 @@ const skills = {
           height: 52
         },
         mobile: {
-          width: 52, // PLACEHOLDER VALUE
-          height: 52 // PLACEHOLDER VALUE
+          width: 52,
+          height: 52
         }
       }
     },
@@ -708,8 +708,8 @@ const skills = {
           height: 52
         },
         mobile: {
-          width: 52, // PLACEHOLDER VALUE
-          height: 52 // PLACEHOLDER VALUE
+          width: 52,
+          height: 52
         }
       }
     },
@@ -722,8 +722,8 @@ const skills = {
           height: 44
         },
         mobile: {
-          width: 44, // PLACEHOLDER VALUE
-          height: 44 // PLACEHOLDER VALUE
+          width: 44,
+          height: 44
         }
       }
     },
@@ -736,8 +736,8 @@ const skills = {
           height: 46
         },
         mobile: {
-          width: 46, // PLACEHOLDER VALUE
-          height: 46 // PLACEHOLDER VALUE
+          width: 46,
+          height: 46
         }
       }
     },

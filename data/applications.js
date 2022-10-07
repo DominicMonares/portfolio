@@ -64,8 +64,8 @@ const applications = [
             height: 356
           },
           mobile: {
-            width: 350, // PLACEHOLDER VALUE
-            height: 704 // PLACEHOLDER VALUE
+            width: 350,
+            height: 704
           }
         }
       },
@@ -79,8 +79,8 @@ const applications = [
             height: 356
           },
           mobile: {
-            width: 350, // PLACEHOLDER VALUE
-            height: 704 // PLACEHOLDER VALUE
+            width: 350,
+            height: 704
           }
         }
       },
@@ -94,8 +94,8 @@ const applications = [
             height: 356
           },
           mobile: {
-            width: 350, // PLACEHOLDER VALUE
-            height: 704 // PLACEHOLDER VALUE
+            width: 350,
+            height: 704
           }
         }
       },
@@ -109,8 +109,8 @@ const applications = [
             height: 356
           },
           mobile: {
-            width: 350, // PLACEHOLDER VALUE
-            height: 704 // PLACEHOLDER VALUE
+            width: 350,
+            height: 704
           }
         }
       },
@@ -137,8 +137,8 @@ const applications = [
             height: 346
           },
           mobile: {
-            width: 350, // PLACEHOLDER VALUE
-            height: 170 // PLACEHOLDER VALUE
+            width: 350,
+            height: 170
           }
         }
       },
@@ -152,8 +152,8 @@ const applications = [
             height: 180
           },
           mobile: {
-            width: 350, // PLACEHOLDER VALUE
-            height: 95 // PLACEHOLDER VALUE
+            width: 350,
+            height: 95
           }
         }
       },
@@ -167,8 +167,8 @@ const applications = [
             height: 378
           },
           mobile: {
-            width: 350, // PLACEHOLDER VALUE
-            height: 184 // PLACEHOLDER VALUE
+            width: 350,
+            height: 184
           }
         }
       },
@@ -182,8 +182,8 @@ const applications = [
             height: 380
           },
           mobile: {
-            width: 350, // PLACEHOLDER VALUE
-            height: 185 // PLACEHOLDER VALUE
+            width: 350,
+            height: 185
           }
         }
       }
