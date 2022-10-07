@@ -2,7 +2,7 @@ import React from 'react';
 
 import Contacts from './Contacts';
 import Icons from '../Shared/Icons';
-import profile_pic from '../../../../assets/profile_pic.png';
+import profile_pic from '../../../../assets/profile_pic.jpeg';
 import about from '../../../../data/about';
 import './About.css';
 

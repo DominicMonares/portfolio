@@ -1,13 +1,16 @@
 import React from 'react';
 
 const Demo = ({ wide, demo }) => {
-  const smallWidth = demo.dims.web.width < 200;
+  const platform = wide ? 'web' : 'mobile';
+  const dims = demo['dims'][platform];
 
   const youtube = () => {
     return (
       <div className={wide ? 'w_youtube' : 'm_youtube'}>
         <iframe
           className={wide ? 'w_youtube_iframe' : 'm_youtube_iframe'}
+          width={dims.width}
+          height={dims.height}
           src={demo.media}
           frameBorder='0'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
@@ -24,8 +27,8 @@ const Demo = ({ wide, demo }) => {
         <div className={wide ? 'w_demo' : 'm_demo'}>
           <video
             className={wide ? 'w_demo_img' : 'm_demo_img'}
-            width={demo.dims.web.width}
-            height={demo.dims.web.height}
+            width={dims.width}
+            height={dims.height}
             autoplay='autoplay'
             loop='true'
             muted='true'

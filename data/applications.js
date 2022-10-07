@@ -28,12 +28,12 @@ const applications = [
         media: 'https://www.youtube.com/embed/QHJy7SKRfSE',
         dims: {
           web: {
-            width: null,
-            height: null
+            width: 960,
+            height: 540
           },
           mobile: {
-            width: null,
-            height: null
+            width: 350,
+            height: 197
           }
         }
       }
@@ -137,8 +137,8 @@ const applications = [
             height: 346
           },
           mobile: {
-            width: 713, // PLACEHOLDER VALUE
-            height: 346 // PLACEHOLDER VALUE
+            width: 350, // PLACEHOLDER VALUE
+            height: 170 // PLACEHOLDER VALUE
           }
         }
       },
@@ -152,8 +152,8 @@ const applications = [
             height: 180
           },
           mobile: {
-            width: 664, // PLACEHOLDER VALUE
-            height: 180 // PLACEHOLDER VALUE
+            width: 350, // PLACEHOLDER VALUE
+            height: 95 // PLACEHOLDER VALUE
           }
         }
       },
@@ -167,8 +167,8 @@ const applications = [
             height: 378
           },
           mobile: {
-            width: 718, // PLACEHOLDER VALUE
-            height: 378 // PLACEHOLDER VALUE
+            width: 350, // PLACEHOLDER VALUE
+            height: 184 // PLACEHOLDER VALUE
           }
         }
       },
@@ -182,8 +182,8 @@ const applications = [
             height: 380
           },
           mobile: {
-            width: 718, // PLACEHOLDER VALUE
-            height: 380 // PLACEHOLDER VALUE
+            width: 350, // PLACEHOLDER VALUE
+            height: 185 // PLACEHOLDER VALUE
           }
         }
       }
