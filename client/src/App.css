@@ -48,6 +48,7 @@ html, body {
   flex-direction: column;
   justify-content: center;
   height: 100%;
+  max-width: 790px;
 }
 
 .m_title, .m_subtitle {
