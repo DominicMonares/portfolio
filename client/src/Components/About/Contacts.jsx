@@ -1,48 +1,30 @@
 import React from 'react';
 
-import gmail from '../../../../assets/icons8-gmail-144.png';
-import linkedIn from '../../../../assets/icons8-linkedin-144.png';
-import gitHub from '../../../../assets/GitHub-Mark-120px-plus.png';
+import { contacts } from '../../../../data/contacts';
 
-const Contacts = () => {
+const Contacts = ({ wide }) => {
+  const device = wide ? 'web' : 'mobile';
+  const allContacts = [];
+  for (const c in contacts) {
+    const contact = contacts[c]
+    const dims = contact['dims'][device];
+    allContacts.push(
+      <div className={wide ? 'w_contact' : 'm_contact'}>
+        <a
+          className={wide ? 'w_contact_container' : 'm_contact_container'}
+          href={contact.link}
+          target='_blank'
+        >
+          <img src={contact.icon} width={dims.width} height={dims.height} />
+          <div className={wide ? 'w_contact_link' : 'm_contact_link'}>{contact.display}</div>
+        </a>
+      </div>
+    );
+  }
+
   return (
-    <div className="contacts_container">
-      <div className="contact">
-        <a
-          className="contact_link"
-          href="https://dominicsmonares@gmail.com"
-          target="_blank"
-        >
-          <img src={gmail} width="53px" height="40px" />
-          <div className="contact_link">
-            dominicsmonares@gmail.com
-          </div>
-        </a>
-      </div>
-      <div className="contact">
-        <a
-          className="contact_link"
-          href="https://linkedin.com/in/dominic-monares/"
-          target="_blank"
-        >
-          <img src={linkedIn} width="40px" height="40px" />
-          <div className="contact_link">
-            linkedin.com/in/dominic-monares/
-          </div>
-        </a>
-      </div>
-      <div className="contact">
-        <a
-          className="contact_link"
-          href="https://github.com/DominicMonares"
-          target="_blank"
-        >
-          <img src={gitHub} width="40px" height="40px" />
-          <div className="contact_link">
-            github.com/DominicMonares
-          </div>
-        </a>
-      </div>
+    <div className={wide ? 'w_contacts_container' : 'm_contacts_container'}>
+      {allContacts}
     </div>
   );
 }

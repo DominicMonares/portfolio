@@ -1,37 +1,25 @@
 import React from 'react';
 
-import Header from './Header';
-import App from './App';
-import Bullets from './Bullets';
+import Header from '../Shared/Header';
+import SubHeader from '../Shared/SubHeader';
+import Bullets from '../Shared/Bullets';
 
-const Job = (props) => {
-  const job = props.job;
-  const currentApp = () => {
-    if (job.app) {
-      const current = job.app;
-      return <App type={current.type} links={current.github} />
-    }
-
-    return <></>
-  }
-
+const Job = ({ wide, job }) => {
+  const app = job.app;
   const bullets = job.bullets;
   return (
-    <div className="job_container">
+    <>
       <Header
+        wide={wide}
         title={job.title}
-        company={job.company}
+        est={job.est}
         location={job.location}
         year={job.year}
       />
-      {currentApp()}
-      <Bullets
-        first={bullets.first}
-        second={bullets.second}
-        third={bullets.third}
-      />
-    </div>
-  )
+      {app ? <SubHeader wide={wide} desc={app.desc} links={app.links} /> : <></>}
+      {bullets ? <Bullets wide={wide} bullets={bullets} /> : <></>}
+    </>
+  );
 }
 
 export default Job;

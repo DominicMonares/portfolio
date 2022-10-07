@@ -1,15 +1,15 @@
 import React from 'react';
 
 import Job from './Job';
-import exp from './exp.js';
-const jobs = exp.jobs;
+import experience from '../../../../data/experience';
+import './Experience.css';
 
-const Experience = () => {
+const Experience = ({ wide }) => {
   return (
-    <div className="experience_container">
-      {jobs.map(j => <Job key={j.title} job={j} />)}
+    <div className={wide ? 'w_experience_container' : 'm_experience_container'}>
+      {experience.map(job => <Job wide={wide} job={job} />)}
     </div>
-  )
+  );
 }
 
 export default Experience;

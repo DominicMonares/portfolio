@@ -1,38 +1,30 @@
 import React from 'react';
 
 import Contacts from './Contacts';
-import Icons from './Icons';
-import profile_pic from '../../../../assets/profile_pic.png';
+import Icons from '../Shared/Icons';
+import profile_pic from '../../../../assets/profile_pic.jpeg';
+import about from '../../../../data/about';
+import './About.css';
 
-const About = () => {
+const About = ({ wide }) => {
   return (
-    <div className="about_container">
-      <div className="about_body_container">
-        <div className="about_body">
-          <div>
-            <img className="profile_pic" src={profile_pic} width="300px" height="300px" />
-          </div>
-          <div className="about_text_container">
-            <p className="about_text">
-              Hi! I’m a problem solver who specializes in full-stack
-              software engineering. At my core, I’m someone who loves making
-              and fixing things. From learning how to code through Hack Reactor
-              to teaching myself how to create rotoscope animations, if I’m
-              passionate about something, I can accomplish my goals and exceed
-              expectations. I believe that with the right amount of creativity, even
-              the most mundane things can be made exciting and impactful.
-            </p>
-            <p className="about_text_bottom">
-              I enjoy playing guitar, bass, drums, and piano, creating rotoscope animations,
-              tinkering with video game mods, and luthiery in
-              my spare time.
-            </p>
+    <div className={wide ? 'w_about_container' : 'm_about_container'}>
+      <div>
+        <div className={wide ? 'w_about_body_container' : 'm_about_body_container'}>
+          <img
+            className={wide ? 'w_profile_pic' : 'm_profile_pic'}
+            src={profile_pic}
+            width='300px'
+            height='300px'
+          />
+          <div className={wide ? 'w_about_text_container' : 'm_about_text_container'}>
+            {about.map(p => <p className={wide ? 'w_about_text' : 'm_about_text'}>{p}</p>)}
           </div>
         </div>
+        <div className={wide ? 'w_about_container_ul' : 'm_about_container_ul'}></div>
+        <Contacts wide={wide} />
       </div>
-      <div className="about_container_underline"></div>
-      <Contacts />
-      <Icons />
+      <Icons wide={wide} page='About' />
     </div>
   );
 }
