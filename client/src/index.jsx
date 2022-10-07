@@ -12,7 +12,7 @@ import Applications from './Components/Applications/Applications';
 import './App.css';
 
 const App = () => {
-  const isWide = () =>  window.innerWidth => 790 ? true : false;
+  const isWide = () =>  window.innerWidth >= 790 ? true : false;
   const [wide, setWide] = useState(isWide());
 
   useEffect(() => {
