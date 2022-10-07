@@ -188,7 +188,31 @@ const applications = [
         }
       }
     ]
-  }
+  },
+  {
+    title: 'Atelier API',
+    desc: 'API microservice for eCommerce application',
+    links: [
+      {
+        label: 'GitHub',
+        link: 'https://github.com/DominicMonares/cactus-oasis-ov'
+      }
+    ],
+    techs: 'Express, MongoDB, Memcached, NGINX, K6, Loader.io, AWS: EC2 / S3, Supertest',
+    demos: []
+  },
+  {
+    title: 'Account-wide',
+    desc: 'Tool for the Celguar SPP Classics Repack that transfers progress between player characters',
+    links: [
+      {
+        label: 'GitHub',
+        link: 'https://github.com/Domclay/spp-account-wide'
+      }
+    ],
+    techs: 'Node.js, MySQL',
+    demos: []
+  },
 ];
 
 export default applications;
