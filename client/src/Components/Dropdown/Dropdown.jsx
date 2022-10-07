@@ -5,39 +5,39 @@ import navigation from '../../../../data/navigation';
 import './Dropdown.css';
 
 const Dropdown = () => {
+  let currentTab;
   const location = useLocation();
-  const tabs = {};
-  navigation.forEach(p => {
-    p.route === location.pathname ? tabs[p.page] = 'dd_tab_active' : tabs[p.page] = 'dd_tab';
+  const route = location.pathname;
+  const menu = navigation.filter(p => {
+    if (p.route === route) {
+      currentTab = p.page;
+      return false;
+    } else {
+      return true;
+    }
   });
 
-  const [activeTab, setActiveTab] = useState(tabs);
+  const [activeTab, setActiveTab] = useState(currentTab);
   const [ddOpen, setDdOpen] = useState(false);
-
-  const updateTabs = (tab) => {
-    const currentTabs = { ...tabs };
-    for (const t in currentTabs) {
-      if (t === tab) {
-        currentTabs[t] = 'dd_tab_active';
-      } else {
-        currentTabs[t] = 'dd_tab';
-      }
-    }
-
-    setActiveTab(currentTabs);
-  }
 
   return (
     <div className='dropdown_container'>
-      <div className=''>
-        <button type='button'>
-
+      <div className='dropdown'>
+        <button type='button' onClick={() => ddOpen ? setDdOpen(false) : setDdOpen(true)}>
+          {activeTab}
         </button>
         <div className={ddOpen ? 'dd_open' : 'dd_closed'}>
-          {navigation.map(p => {
+          {menu.map(p => {
             return (
-              <NavLink to={p.route} className={activeTab[p.page]} onClick={() => updateTabs(p.page)}>
-                <div className=''>{p.page}</div>
+              <NavLink
+                to={p.route}
+                className={activeTab[p.page]}
+                onClick={() => {
+                  setActiveTab(p.page);
+                  setDdOpen(false);
+                }}
+              >
+                <div className='dd_page'>{p.page}</div>
               </NavLink>
             );
           })}
