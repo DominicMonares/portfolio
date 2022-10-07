@@ -11,7 +11,7 @@ const Contacts = ({ wide }) => {
     allContacts.push(
       <div className={wide ? 'w_contact' : 'm_contact'}>
         <a
-          className={wide ? 'w_contact_link' : 'm_contact_link'}
+          className={wide ? 'w_contact_container' : 'm_contact_container'}
           href={contact.link}
           target='_blank'
         >

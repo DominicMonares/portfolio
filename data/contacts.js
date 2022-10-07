@@ -13,8 +13,8 @@ const contacts = {
         height: 40
       },
       mobile: {
-        width: 53, // PLACEHOLDER VALUE
-        height:40 // PLACEHOLDER VALUE
+        width: 27, // PLACEHOLDER VALUE
+        height:20 // PLACEHOLDER VALUE
       }
     }
   },
@@ -28,8 +28,8 @@ const contacts = {
         height: 40
       },
       mobile: {
-        width: 40, // PLACEHOLDER VALUE
-        height: 40 // PLACEHOLDER VALUE
+        width: 20, // PLACEHOLDER VALUE
+        height: 20 // PLACEHOLDER VALUE
       }
     }
   },
@@ -43,8 +43,8 @@ const contacts = {
         height: 40
       },
       mobile: {
-        width: 40, // PLACEHOLDER VALUE
-        height: 40 // PLACEHOLDER VALUE
+        width: 20, // PLACEHOLDER VALUE
+        height: 20 // PLACEHOLDER VALUE
       }
     }
   }

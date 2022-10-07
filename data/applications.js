@@ -64,8 +64,8 @@ const applications = [
             height: 356
           },
           mobile: {
-            width: 177, // PLACEHOLDER VALUE
-            height: 356 // PLACEHOLDER VALUE
+            width: 350, // PLACEHOLDER VALUE
+            height: 704 // PLACEHOLDER VALUE
           }
         }
       },
@@ -79,8 +79,8 @@ const applications = [
             height: 356
           },
           mobile: {
-            width: 177, // PLACEHOLDER VALUE
-            height: 356 // PLACEHOLDER VALUE
+            width: 350, // PLACEHOLDER VALUE
+            height: 704 // PLACEHOLDER VALUE
           }
         }
       },
@@ -94,8 +94,8 @@ const applications = [
             height: 356
           },
           mobile: {
-            width: 177, // PLACEHOLDER VALUE
-            height: 356 // PLACEHOLDER VALUE
+            width: 350, // PLACEHOLDER VALUE
+            height: 704 // PLACEHOLDER VALUE
           }
         }
       },
@@ -109,8 +109,8 @@ const applications = [
             height: 356
           },
           mobile: {
-            width: 177, // PLACEHOLDER VALUE
-            height: 356 // PLACEHOLDER VALUE
+            width: 350, // PLACEHOLDER VALUE
+            height: 704 // PLACEHOLDER VALUE
           }
         }
       },

@@ -88,18 +88,14 @@ const Header = ({ wide, title, est, estLink, location, year, links }) => {
           {description()}
           &nbsp;|&nbsp;
           <span>{location}</span>
-          {year ? <span className='m_year'>&nbsp;|&nbsp;{year}</span> : <></>}
+          {year ? <>&nbsp;|&nbsp;{year}</> : <></>}
         </div>
         {links ? githubLinks() : <></>}
       </>
     );
   }
 
-  const mobile = () => {
-    return (
-      <>{route === '/apps' ? applications() : credentials()}</>
-    );
-  }
+  const mobile = () => <>{route === '/apps' ? applications() : credentials()}</>
 
   return (
     <div className={wide ? 'w_header_container' : 'm_header_container'}>
