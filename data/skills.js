@@ -1,61 +1,61 @@
 // Front-End
-import js from '../assets/icons8-javascript-48.png';
-import html5 from '../assets/icons8-html-5-48.png';
-import css3 from '../assets/icons8-css3-48.png';
-import react from '../assets/icons8-react-40.png';
-import redux from '../assets/icons8-redux-48.png';
-import webAudio from '../assets/icons8-audio-40.png';
+import js from '../assets/icons/icons8-javascript-48.png';
+import html5 from '../assets/icons/icons8-html-5-48.png';
+import css3 from '../assets/icons/icons8-css3-48.png';
+import react from '../assets/icons/icons8-react-40.png';
+import redux from '../assets/icons/icons8-redux-48.png';
+import webAudio from '../assets/icons/icons8-audio-40.png';
 
 // Back-End
-import node from '../assets/icons8-node-js-48.png';
-import express from '../assets/icons8-javascript-48.png';
-import mongo from '../assets/icons8-mongodb-48.png';
-import mySQL from '../assets/mySQL.png';
-import rest from '../assets/icons8-rest-api-40.png';
-import memcached from '../assets/memcached-tutorial.png';
-import passport from '../assets/passport.png';
-import auth0 from '../assets/icons8-auth0-the-solution-you-need-for-web,-mobile,-iot,-and-internal-applications.-48.png';
-import nodemailer from '../assets/nodemailer.png';
+import node from '../assets/icons/icons8-node-js-48.png';
+import express from '../assets/icons/icons8-javascript-48.png';
+import mongo from '../assets/icons/icons8-mongodb-48.png';
+import mySQL from '../assets/icons/mySQL.png';
+import rest from '../assets/icons/icons8-rest-api-40.png';
+import memcached from '../assets/icons/memcached-tutorial.png';
+import passport from '../assets/icons/passport.png';
+import auth0 from '../assets/icons/icons8-auth0-the-solution-you-need-for-web,-mobile,-iot,-and-internal-applications.-48.png';
+import nodemailer from '../assets/icons/nodemailer.png';
 
 // Testing & Deployment
-import jest from '../assets/icons8-jest-can-collect-code-coverage-information-from-entire-projects-48.png';
-import mocha from '../assets/mocha.png';
-import chai from '../assets/chai.png';
-import supertest from '../assets/icons8-npm-48.png';
-import ec2 from '../assets/ec2.png';
-import s3 from '../assets/s3.png';
-import nginx from '../assets/icons8-nginx-48.png';
-import k6 from '../assets/k6.png';
-import loaderio from '../assets/loaderio.png';
+import jest from '../assets/icons/icons8-jest-can-collect-code-coverage-information-from-entire-projects-48.png';
+import mocha from '../assets/icons/mocha.png';
+import chai from '../assets/icons/chai.png';
+import supertest from '../assets/icons/icons8-npm-48.png';
+import ec2 from '../assets/icons/ec2.png';
+import s3 from '../assets/icons/s3.png';
+import nginx from '../assets/icons/icons8-nginx-48.png';
+import k6 from '../assets/icons/k6.png';
+import loaderio from '../assets/icons/loaderio.png';
 
 // Development
-import vim from '../assets/vim.png';
-import git from '../assets/git.png';
-import npm from '../assets/icons8-npm-48.png';
-import jquery from '../assets/jquery.png';
-import axios from '../assets/axios.png';
-import webpack from '../assets/webpack.png';
-import babel from '../assets/icons8-babel-64.png';
-import agile from '../assets/icons8-agile-64.png';
-import tdd from '../assets/icons8-testing-64.png';
-import expo from '../assets/expo.png';
-import trello from '../assets/trello.png';
-import figma from '../assets/icons8-figma-48.png';
+import vim from '../assets/icons/vim.png';
+import git from '../assets/icons/git.png';
+import npm from '../assets/icons/icons8-npm-48.png';
+import jquery from '../assets/icons/jquery.png';
+import axios from '../assets/icons/axios.png';
+import webpack from '../assets/icons/webpack.png';
+import babel from '../assets/icons/icons8-babel-64.png';
+import agile from '../assets/icons/icons8-agile-64.png';
+import tdd from '../assets/icons/icons8-testing-64.png';
+import expo from '../assets/icons/expo.png';
+import trello from '../assets/icons/trello.png';
+import figma from '../assets/icons/icons8-figma-48.png';
 
 // Office
-import docs from '../assets/icons8-google-docs-48.png';
-import sheets from '../assets/icons8-google-sheets-48.png';
-import slides from '../assets/icons8-google-slides-48.png';
-import word from '../assets/icons8-microsoft-word-48.png';
-import excel from '../assets/icons8-microsoft-excel-48.png';
-import powerpoint from '../assets/icons8-microsoft-powerpoint-48.png';
+import docs from '../assets/icons/icons8-google-docs-48.png';
+import sheets from '../assets/icons/icons8-google-sheets-48.png';
+import slides from '../assets/icons/icons8-google-slides-48.png';
+import word from '../assets/icons/icons8-microsoft-word-48.png';
+import excel from '../assets/icons/icons8-microsoft-excel-48.png';
+import powerpoint from '../assets/icons/icons8-microsoft-powerpoint-48.png';
 
 // Media
-import photoshop from '../assets/icons8-adobe-photoshop-48.png';
-import premiere from '../assets/icons8-adobe-premiere-pro-48.png';
-import afterEffects from '../assets/icons8-adobe-after-effects-48.png';
-import ebsynth from '../assets/ebsynth.png';
-import cubase from '../assets/cubase.png';
+import photoshop from '../assets/icons/icons8-adobe-photoshop-48.png';
+import premiere from '../assets/icons/icons8-adobe-premiere-pro-48.png';
+import afterEffects from '../assets/icons/icons8-adobe-after-effects-48.png';
+import ebsynth from '../assets/icons/ebsynth.png';
+import cubase from '../assets/icons/cubase.png';
 
 const skills = {
   'Front-End': [
