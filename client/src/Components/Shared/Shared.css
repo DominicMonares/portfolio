@@ -23,6 +23,26 @@
   line-height: 1.5;
 }
 
+/* Download Resume */
+
+.w_download {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.w_download_link:link {
+  color: #3A2E47;
+}
+
+.w_download_link:visited {
+  color: #3A2E47;
+}
+
+.w_download_link:active {
+  color: #BBA5D2;
+}
+
 /* Header */
 
 .w_header_container {
@@ -167,6 +187,26 @@
   margin-top: -3px;
   margin-bottom: 0px;
   line-height: 1.5;
+}
+
+/* Download Resume */
+
+.m_download {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.m_download_link:link {
+  color: #3A2E47;
+}
+
+.m_download_link:visited {
+  color: #3A2E47;
+}
+
+.m_download_link:active {
+  color: #BBA5D2;
 }
 
 /* Header */

@@ -2,6 +2,7 @@ import React from 'react';
 
 import Contacts from './Contacts';
 import Icons from '../Shared/Icons';
+import DownloadResume from '../Shared/DownloadResume';
 import profile_pic from '../../../../assets/profile_pic.jpeg';
 import about from '../../../../data/about';
 import './About.css';
@@ -21,6 +22,7 @@ const About = ({ wide }) => {
             {about.map(p => <p className={wide ? 'w_about_text' : 'm_about_text'}>{p}</p>)}
           </div>
         </div>
+        <DownloadResume wide={wide} />
         <div className={wide ? 'w_about_container_ul' : 'm_about_container_ul'}></div>
         <Contacts wide={wide} />
       </div>
