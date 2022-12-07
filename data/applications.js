@@ -10,6 +10,10 @@ import petpix2 from '../assets/demos/petpix2.mp4';
 import petpix3 from '../assets/demos/petpix3.mp4';
 import petpix4 from '../assets/demos/petpix4.mp4';
 
+// Clown Detector
+import clown1 from '../assets/demos/clown1.mp4';
+import clown2 from '../assets/demos/clown2.png';
+
 const applications = [
   {
     title: 'Clown Detector',
@@ -26,7 +30,36 @@ const applications = [
     ],
     techs: 'TypeScript, React, jQuery, MUI, Jest',
     demos: [
-
+      {
+        caption: 'Flag LinkedIn jobs with a clown emoji and the matching keyword(s) found',
+        mediaType: 'video/mp4',
+        media: clown1,
+        dims: {
+          web: {
+            width: 945,
+            height: 640
+          },
+          mobile: {
+            width: 350,
+            height: 237
+          }
+        }
+      },
+      {
+        caption: 'Settings can be changed from the extension popup menu',
+        mediaType: 'pic',
+        media: clown2,
+        dims: {
+          web: {
+            width: 634,
+            height: 372
+          },
+          mobile: {
+            width: 350,
+            height: 205
+          }
+        }
+      }
     ]
   },
   {
