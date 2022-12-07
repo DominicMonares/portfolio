@@ -12,6 +12,24 @@ import petpix4 from '../assets/petpix4.mp4';
 
 const applications = [
   {
+    title: 'Clown Detector',
+    desc: 'A Google Chrome extension that helps you spot silly LinkedIn jobs',
+    links: [
+      {
+        label: 'Chrome Web Store',
+        link: 'https://chrome.google.com/webstore/detail/clown-detector/djejlndcgacefmmiamjankkmdeoebhif'
+      },
+      {
+        label: 'GitHub',
+        link: 'https://github.com/DominicMonares/clown-detector'
+      }
+    ],
+    techs: 'TypeScript, React, jQuery, MUI, Jest',
+    demos: [
+
+    ]
+  },
+  {
     title: 'fretJs',
     desc: 'An app that lets you write and execute JavaScript using only an electric guitar',
     links: [
