@@ -15,6 +15,10 @@ const icons = {
       link: 'https://icons8.com/icon/108784/javascript'
     },
     {
+      name: 'TypeScript',
+      link: 'https://icons8.com/icon/uJM6fQYqDaZK/typescript'
+    },
+    {
       name: 'Html 5',
       link: 'https://icons8.com/icon/20909/html-5'
     },
@@ -37,6 +41,10 @@ const icons = {
     {
       name: 'Node Js',
       link: 'https://icons8.com/icon/hsPbhkOH4FMe/node-js'
+    },
+    {
+      name: 'Python',
+      link: 'https://icons8.com/icon/13441/python'
     },
     {
       name: 'MongoDB',

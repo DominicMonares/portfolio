@@ -1,14 +1,18 @@
 // Front-End
 import js from '../assets/skills/icons8-javascript-48.png';
+import ts from '../assets/skills/icons8-typescript-48.png';
 import html5 from '../assets/skills/icons8-html-5-48.png';
 import css3 from '../assets/skills/icons8-css3-48.png';
 import react from '../assets/skills/icons8-react-40.png';
 import redux from '../assets/skills/icons8-redux-48.png';
+import electron from '../assets/skills/electron.png';
+import jquery from '../assets/skills/jquery.png';
 import webAudio from '../assets/skills/icons8-audio-40.png';
 
 // Back-End
 import node from '../assets/skills/icons8-node-js-48.png';
 import express from '../assets/skills/icons8-javascript-48.png';
+import python from '../assets/skills/icons8-python-48.png';
 import mongo from '../assets/skills/icons8-mongodb-48.png';
 import mySQL from '../assets/skills/mySQL.png';
 import rest from '../assets/skills/icons8-rest-api-40.png';
@@ -32,7 +36,6 @@ import loaderio from '../assets/skills/loaderio.png';
 import vim from '../assets/skills/vim.png';
 import git from '../assets/skills/git.png';
 import npm from '../assets/skills/icons8-npm-48.png';
-import jquery from '../assets/skills/jquery.png';
 import axios from '../assets/skills/axios.png';
 import webpack from '../assets/skills/webpack.png';
 import babel from '../assets/skills/icons8-babel-64.png';
@@ -62,6 +65,20 @@ const skills = {
     {
       title: 'JavaScript (ES5 & ES6)',
       icon: js,
+      dims: {
+        web: {
+          width: 48,
+          height: 48
+        },
+        mobile: {
+          width: 48,
+          height: 48
+        }
+      }
+    },
+    {
+      title: 'TypeScript',
+      icon: ts,
       dims: {
         web: {
           width: 48,
@@ -144,6 +161,34 @@ const skills = {
       }
     },
     {
+      title: 'Electron',
+      icon: electron,
+      dims: {
+        web: {
+          width: 48,
+          height: 48
+        },
+        mobile: {
+          width: 48,
+          height: 48
+        }
+      }
+    },
+    {
+      title: 'jQuery',
+      icon: jquery,
+      dims: {
+        web: {
+          width: 46,
+          height: 46
+        },
+        mobile: {
+          width: 46,
+          height: 46
+        }
+      }
+    },
+    {
       title: 'Web Audio API',
       icon: webAudio,
       dims: {
@@ -188,6 +233,20 @@ const skills = {
       }
     },
     {
+      title: 'Python',
+      icon: python,
+      dims: {
+        web: {
+          width: 48,
+          height: 48
+        },
+        mobile: {
+          width: 48,
+          height: 48
+        }
+      }
+    },
+    {
       title: 'MongoDB',
       icon: mongo,
       dims: {
@@ -216,7 +275,7 @@ const skills = {
       }
     },
     {
-      title: 'RESTful API Development',
+      title: 'REST API Development',
       icon: rest,
       dims: {
         web: {
@@ -454,20 +513,6 @@ const skills = {
         mobile: {
           width: 48,
           height: 48
-        }
-      }
-    },
-    {
-      title: 'jQuery',
-      icon: jquery,
-      dims: {
-        web: {
-          width: 46,
-          height: 46
-        },
-        mobile: {
-          width: 46,
-          height: 46
         }
       }
     },
