@@ -21,27 +21,36 @@ const Demo = ({ wide, demo }) => {
     );
   }
 
-  const video = () => {
+  const picOrVid = () => {
     return (
       <div className={wide ? 'w_demo_container' : 'm_demo_container'}>
         <div className={wide ? 'w_demo' : 'm_demo'}>
-          <video
-            className={wide ? 'w_demo_img' : 'm_demo_img'}
-            width={dims.width}
-            height={dims.height}
-            autoplay='autoplay'
-            loop='true'
-            muted='true'
-          >
-            <source src={demo.media} type={demo.mediaType} />
-          </video>
+          {demo.mediaType === 'video/mp4' ? (
+            <video
+              className={wide ? 'w_demo_img' : 'm_demo_img'}
+              width={dims.width}
+              height={dims.height}
+              autoplay='autoplay'
+              loop='true'
+              muted='true'
+            >
+              <source src={demo.media} type={demo.mediaType} />
+            </video>
+          ) : (
+            <img
+              className={wide ? 'w_demo_img' : 'm_demo_img'}
+              src={demo.media}
+              width={dims.width}
+              height={dims.height}
+            />
+          )}
           <span className={wide ? 'w_demo_caption' : 'm_demo_caption'}>{demo.caption}</span>
         </div>
       </div>
     );
   }
 
-  return ( <div>{demo.mediaType === 'youtube' ? youtube() : video()}</div> );
+  return ( <div>{demo.mediaType === 'youtube' ? youtube() : picOrVid()}</div> );
 }
 
 export default Demo;
