@@ -10,6 +10,10 @@ import petpix2 from '../assets/demos/petpix2.mp4';
 import petpix3 from '../assets/demos/petpix3.mp4';
 import petpix4 from '../assets/demos/petpix4.mp4';
 
+// fretJS
+import fretJS1 from '../assets/demos/fretJS1.mp4';
+import fretJS2 from '../assets/demos/fretJS2.mp4';
+
 // Clown Detector
 import clown1 from '../assets/demos/clown1.mp4';
 import clown2 from '../assets/demos/clown2.png';
@@ -63,7 +67,7 @@ const applications = [
     ]
   },
   {
-    title: 'fretJs',
+    title: 'fretJS',
     desc: 'An app that lets you write and execute JavaScript using only an electric guitar',
     links: [
       {
@@ -71,12 +75,12 @@ const applications = [
         link: 'https://github.com/DominicMonares/fret-js'
       }
     ],
-    techs: 'React, webpack, Babel, Express, Web Audio API',
+    techs: 'TypeScript, React, webpack, Web Audio API',
     demos: [
       {
         caption: '',
         mediaType: 'youtube',
-        media: 'https://www.youtube.com/embed/QHJy7SKRfSE',
+        media: 'https://www.youtube.com/embed/fRe4yupMJ-A',
         dims: {
           web: {
             width: 960,
@@ -87,7 +91,37 @@ const applications = [
             height: 197
           }
         }
-      }
+      },
+      {
+        caption: 'Works for both 22 and 24 fret guitars',
+        mediaType: 'video/mp4',
+        media: fretJS1,
+        dims: {
+          web: {
+            width: 960,
+            height: 501
+          },
+          mobile: {
+            width: 350,
+            height: 183
+          }
+        }
+      },
+      {
+        caption: 'Responsive fretboard diagram',
+        mediaType: 'video/mp4',
+        media: fretJS2,
+        dims: {
+          web: {
+            width: 960,
+            height: 416
+          },
+          mobile: {
+            width: 350,
+            height: 152
+          }
+        }
+      },
     ]
   },
   {
