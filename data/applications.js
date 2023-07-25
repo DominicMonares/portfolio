@@ -37,6 +37,21 @@ const applications = [
     techs: 'TypeScript, React, Redux, Electron, MySQL, Jest',
     demos: [
       {
+        caption: 'Track the completion status of all quests across all characters',
+        mediaType: 'video/mp4',
+        media: sppe4,
+        dims: {
+          web: {
+            width: 650,
+            height: 540
+          },
+          mobile: {
+            width: 237,
+            height: 197
+          }
+        }
+      },
+      {
         caption: 'Transfer achievement credit, rewards, and progress between all characters',
         mediaType: 'video/mp4',
         media: sppe1,
@@ -77,21 +92,6 @@ const applications = [
           },
           mobile: {
             width: 350,
-            height: 197
-          }
-        }
-      },
-      {
-        caption: 'Track the completion status of all quests across all characters',
-        mediaType: 'video/mp4',
-        media: sppe4,
-        dims: {
-          web: {
-            width: 650,
-            height: 540
-          },
-          mobile: {
-            width: 237,
             height: 197
           }
         }
