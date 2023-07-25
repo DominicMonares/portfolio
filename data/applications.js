@@ -32,6 +32,10 @@ const applications = [
       {
         label: 'GitHub',
         link: 'https://github.com/DominicMonares/spp-extras'
+      },
+      {
+        label: 'PR #171',
+        link: 'https://github.com/celguar/spp-classics-cmangos/pull/171'
       }
     ],
     techs: 'TypeScript, React, Redux, Electron, MySQL, Jest',
