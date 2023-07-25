@@ -18,7 +18,86 @@ import fretJS2 from '../assets/demos/fretJS2.mp4';
 import clown1 from '../assets/demos/clown1.mp4';
 import clown2 from '../assets/demos/clown2.png';
 
+// SPP Extras
+import sppe1 from '../assets/demos/sppe1.mp4';
+import sppe2 from '../assets/demos/sppe2.mp4';
+import sppe3 from '../assets/demos/sppe3.mp4';
+import sppe4 from '../assets/demos/sppe4.mp4';
+
 const applications = [
+  {
+    title: 'SPP Extras',
+    desc: 'A desktop application that provides miscellaneous tools for Celguar\'s SPP Classics Repack',
+    links: [
+      {
+        label: 'GitHub',
+        link: 'https://github.com/DominicMonares/spp-extras'
+      }
+    ],
+    techs: 'TypeScript, React, Redux, Electron, MySQL, Jest',
+    demos: [
+      {
+        caption: 'Transfer achievement credit, rewards, and progress between all characters',
+        mediaType: 'video/mp4',
+        media: sppe1,
+        dims: {
+          web: {
+            width: 960,
+            height: 540
+          },
+          mobile: {
+            width: 350,
+            height: 197
+          }
+        }
+      },
+      {
+        caption: 'Transfer pets and mounts between all characters',
+        mediaType: 'video/mp4',
+        media: sppe2,
+        dims: {
+          web: {
+            width: 960,
+            height: 540
+          },
+          mobile: {
+            width: 350,
+            height: 197
+          }
+        }
+      },
+      {
+        caption: 'Transfer reputation standings between all characters',
+        mediaType: 'video/mp4',
+        media: sppe3,
+        dims: {
+          web: {
+            width: 960,
+            height: 540
+          },
+          mobile: {
+            width: 350,
+            height: 197
+          }
+        }
+      },
+      {
+        caption: 'Track the completion status of all quests across all characters',
+        mediaType: 'video/mp4',
+        media: sppe4,
+        dims: {
+          web: {
+            width: 650,
+            height: 540
+          },
+          mobile: {
+            width: 237,
+            height: 197
+          }
+        }
+      }
+    ]
+  },
   {
     title: 'Clown Detector',
     desc: 'A Google Chrome extension that helps you spot silly LinkedIn jobs',
@@ -113,7 +192,7 @@ const applications = [
         media: fretJS2,
         dims: {
           web: {
-            width: 960,
+            width: 956,
             height: 416
           },
           mobile: {
@@ -176,11 +255,11 @@ const applications = [
         dims: {
           web: {
             width: 177,
-            height: 356
+            height: 354
           },
           mobile: {
             width: 350,
-            height: 704
+            height: 700
           }
         }
       },
@@ -191,11 +270,11 @@ const applications = [
         dims: {
           web: {
             width: 177,
-            height: 356
+            height: 354
           },
           mobile: {
             width: 350,
-            height: 704
+            height: 700
           }
         }
       },
@@ -288,7 +367,7 @@ const applications = [
   },
   {
     title: 'Account-wide',
-    desc: 'Tool for the Celguar SPP Classics Repack that transfers progress between player characters',
+    desc: 'Tool for Celguar\'s SPP Classics Repack that transfers progress between player characters',
     links: [
       {
         label: 'GitHub',
