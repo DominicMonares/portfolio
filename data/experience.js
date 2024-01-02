@@ -1,7 +1,31 @@
 const experience = [
   {
+    title: 'Site Supervisor',
+    est: 'ProGuard Security Services',
+    location: 'San Francisco, CA',
+    year: 'Sep 2023 - Present',
+    app: null,
+    bullets: [
+      'Continue to perform all Security Officer duties while directing and supervising a team of 8+ Security Officers',
+      'Improve security team performance and accountability through reformation of site procedures and documentation',
+      'Maintain client relations through transparent communication and consistent efforts to improve security operations'
+    ]
+  },
+  {
+    title: 'Security Officer',
+    est: 'ProGuard Security Services',
+    location: 'San Francisco, CA',
+    year: 'Mar 2023 - Present',
+    app: null,
+    bullets: [
+      'Maintain a safe work environment through cordial and professional enforcement of site rules with staff and guests',
+      'Prevent property damage and loss by identifying and reporting failing systems, leaks, and other hazards',
+      'Provide a visible deterrence to incidents by consistently patrolling sites on foot'
+    ]
+  },
+  {
     title: 'Full-Stack Engineer / UI Owner',
-    est: 'PetPix',
+    est: 'GitHub Portfolio - PetPix',
     location: 'US Remote',
     year: 'Mar 2022 - Apr 2022',
     app: {
@@ -25,7 +49,7 @@ const experience = [
   },
   {
     title: 'Back-End Engineer',
-    est: 'Atelier API',
+    est: 'GitHub Portfolio - Atelier API',
     location: 'US Remote',
     year: 'Dec 2021 - Jan 2022',
     app: {
@@ -45,7 +69,7 @@ const experience = [
   },
   {
     title: 'Front-End Engineer',
-    est: 'Atelier',
+    est: 'GitHub Portfolio - Atelier',
     location: 'US Remote',
     year: 'Jan 2022 - Mar 2022',
     app: {
@@ -67,7 +91,7 @@ const experience = [
     title: 'Facilities Assistant',
     est: 'GSH Group',
     location: 'Berkeley, CA',
-    year: '2018-2020',
+    year: 'Sep 2018 - Mar 2020',
     app: null,
     bullets: [
       'Oversaw commercial building improvement projects with budgets ranging from tens to hundreds of thousands of dollars, further developing the property',
@@ -76,22 +100,34 @@ const experience = [
     ]
   },
   {
-    title: 'Site Supervisor / Security Officer',
+    title: 'Site Supervisor',
     est: 'Allied Universal',
     location: 'San Bruno, CA',
-    year: '2015-2018',
+    year: 'Mar 2017 - Aug 2018',
     app: null,
     bullets: [
-      'Sustained client relations through effective team management and efforts to meet staffing obligations',
-      'Maintained a safe work environment through cordial and professional enforcement of company rules, policies, and procedures with company staff and guests',
-      'Prevented property damage and loss by identifying and reporting failing systems, leaks, and other hazards'
+      'Continued to perform all Security Officer duties while directing and supervising a team of 10+ Security Officers',
+      'Sustained client relations through effective team management and efforts to meet staffing obligations ',
+      'Managed scheduling, payroll, and uniform ordering/inventory'
+    ]
+  },
+  {
+    title: 'Security Officer',
+    est: 'Allied Universal',
+    location: 'San Bruno, CA',
+    year: 'Dec 2015 - Aug 2018',
+    app: null,
+    bullets: [
+      'Maintained a safe work environment through cordial and professional enforcement of site rules with staff and guests',
+      'Prevented property damage and loss by identifying and reporting failing systems, leaks, and other hazards',
+      'Assisted with receptionist duties, including greeting visitors and responding to telephone and in-person requests for information'
     ]
   },
   {
     title: 'Resident Manager',
     est: 'Pacific Equities West, LLC',
     location: 'San Francisco, CA',
-    year: '2014-2015',
+    year: '2014 - 2015',
     app: null,
     bullets: [
       'Oversaw managerial tasks for a 49 room, 149-bed student housing property',
@@ -103,7 +139,7 @@ const experience = [
     title: 'Administrative Assistant',
     est: 'Pacific Equities West, LLC',
     location: 'San Francisco, CA',
-    year: '2014-2014',
+    year: '2014 - 2014',
     app: null,
     bullets: [
       'Processed and deposited tenant rent payments, utilizing applications such as QuickBooks, Front Desk Anywhere, and Authorize.net',
@@ -115,7 +151,7 @@ const experience = [
     title: 'Front Desk Agent',
     est: 'Pacific Equities West, LLC',
     location: 'San Francisco, CA',
-    year: '2013-2014',
+    year: '2013 - 2014',
     app: null,
     bullets: [
       'Managed front desk tasks for a 36-room hotel/hostel as well as an 18-studio music rehearsal space',
@@ -127,7 +163,7 @@ const experience = [
     title: 'Maintenance Worker / Social Media Marketing Admin',
     est: 'Pacific Equities West, LLC',
     location: 'San Francisco, CA',
-    year: '2013-2014',
+    year: '2013 - 2014',
     app: null,
     bullets: [
       'Completed basic building maintenance tasks such as furniture assembly/repair, painting, janitorial duties, supply pickups, etc. during daytime hours',
