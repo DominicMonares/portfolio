@@ -1,6 +1,7 @@
 html, body {
   min-height: 100%;
   margin: 0;
+  background-color: #f1cfff;
 }
 
 
@@ -19,22 +20,22 @@ html, body {
 .w_title {
   display: flex;
   justify-content: center;
-  font-size: 65px;
-  font-weight: bold;
-  padding-top: 7px;
+  font-size: 40px;
+  font-weight: 700;
+  padding-top: 10px;
   margin-top: 0px;
   margin-bottom: 0px;
-  color: #3A2E47;
+  color: #4d006d;
 }
 
 .w_subtitle {
   display: flex;
   justify-content: center;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 20px;
   margin-top: 0px;
   margin-bottom: 0px;
-  color: #3A2E47;
+  color: #4d006d;
 }
 
 
