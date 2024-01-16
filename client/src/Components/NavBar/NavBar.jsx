@@ -8,7 +8,7 @@ const NavBar = () => {
   const location = useLocation();
   const tabs = {};
   navigation.forEach(p => {
-    p.route === location.pathname ? tabs[p.page] = 'tab_active' : tabs[p.page] = 'tab';
+    p.route === location.pathname ? tabs[p.page] = 'nav-tab-active' : tabs[p.page] = 'nav-tab';
   });
 
   const [activeTab, setActiveTab] = useState(tabs);
@@ -17,9 +17,9 @@ const NavBar = () => {
     const currentTabs = { ...tabs };
     for (const t in currentTabs) {
       if (t === tab) {
-        currentTabs[t] = 'tab_active';
+        currentTabs[t] = 'nav-tab-active';
       } else {
-        currentTabs[t] = 'tab';
+        currentTabs[t] = 'nav-tab';
       }
     }
 
@@ -27,17 +27,20 @@ const NavBar = () => {
   }
 
   return (
-    <div className='nav_container'>
-      <div className='nav_menu'>
-        {navigation.map(p => {
-          return (
-            <NavLink to={p.route} className={activeTab[p.page]} onClick={() => updateTabs(p.page)}>
-              <div className='nav_text'>{p.page}</div>
-            </NavLink>
-          );
-        })}
+    <div className='nav-container'>
+      <div className='nav-menu'>
+        <span className=''>
+          <NavLink to={'/apps'} className={activeTab['Apps']} onClick={() => updateTabs('Apps')}>
+            <div className='nav-text'>Applications</div>
+          </NavLink>
+        </span>
+        <span className=''>
+          <NavLink to={'/skills'} className={activeTab['Skills']} onClick={() => updateTabs('Skills')}>
+            <div className='nav-text'>Skills</div>
+          </NavLink>
+        </span>
       </div>
-      <div className='header_underline'></div>
+      <div className='header-underline'></div>
     </div>
   );
 }
