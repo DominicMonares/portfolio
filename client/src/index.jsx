@@ -22,9 +22,9 @@ const App = () => {
   }, []);
 
   return (
-    <div id={wide ? 'w_app' : 'm_app'}>
-      <h1 className={wide ? 'w_title' : 'm_title'}>Dominic Monares</h1>
-      <h3 className={wide ? 'w_subtitle' : 'm_subtitle'}>Full-Stack Software Engineer</h3>
+    <div id={wide ? 'w-app' : 'm-app'}>
+      <h1 className={wide ? 'w-title' : 'm-title'}>Dominic Monares</h1>
+      <h3 className={wide ? 'w-subtitle' : 'm-subtitle'}>Full-Stack Software Engineer</h3>
       <Router>
         {wide ? <NavBar /> : <Dropdown />}
         <Routes>
