@@ -68,5 +68,5 @@
 .header-underline {
   height: 2px;
   background: rgb(77,0,109);
-  background: radial-gradient(circle, rgba(77,0,109,1) 0%, rgba(241,207,255,1) 100%);
+  background: radial-gradient(circle, rgba(77,0,109,1) 0%, rgba(77,0,109,1) 80%, rgba(241,207,255,1) 100%);
 }
