@@ -1,7 +1,9 @@
 import React from 'react';
+import { Carousel } from 'react-responsive-carousel';
 
 import Header from '../Shared/Header';
 import SubHeader from '../Shared/SubHeader';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Demo from './Demo';
 
 const Application = ({ wide, app }) => {
@@ -26,7 +28,11 @@ const Application = ({ wide, app }) => {
       />
       <SubHeader wide={wide} desc={app.techs} />
       <div className={getAppClass()}>
-        {app.demos.map(demo => <Demo wide={wide} demo={demo} />)}
+        <Carousel
+          showArrows={tru}
+        >
+          {app.demos.map(demo => <Demo wide={wide} demo={demo} />)}
+        </Carousel>
       </div>
     </div>
   );
