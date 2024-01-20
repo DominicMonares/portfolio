@@ -3,13 +3,20 @@
 /* Applications */
 
 .w_applications_container {
-  margin-bottom: 75px;
+  margin-top: 20px;
 }
 
 /* Application */
 
 .w_app_container {
-  margin-top: 50px;
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 5px;
+  border-style: solid;
+  border-color: #4d006d;
+  border-width: 1px;
+  border-radius: 10px;
+  background-color: #ffffff;
 }
 
 .w_web_demo_container {
