@@ -28,13 +28,15 @@ const App = () => {
       <h3 className={wide ? 'w-subtitle' : 'm-subtitle'}>Full-Stack Software Engineer</h3>
       <Router>
         {wide ? <NavBar /> : <Dropdown />}
-        <Routes>
-          <Route path='/apps' element={<Applications wide={wide} />}></Route>
-          <Route path='/about' element={<About wide={wide} />}></Route>
-          <Route path='/skills' element={<Skills wide={wide} />}></Route>
-          <Route path='/experience' element={<Experience wide={wide} />}></Route>
-          <Route path='/education' element={<Education wide={wide} />}></Route>
-        </Routes>
+        <div className="route-container">
+          <Routes>
+            <Route path='/apps' element={<Applications wide={wide} />}></Route>
+            <Route path='/about' element={<About wide={wide} />}></Route>
+            <Route path='/skills' element={<Skills wide={wide} />}></Route>
+            <Route path='/experience' element={<Experience wide={wide} />}></Route>
+            <Route path='/education' element={<Education wide={wide} />}></Route>
+          </Routes>
+        </div>
       </Router>
     </div>
   );
