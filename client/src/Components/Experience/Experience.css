@@ -3,9 +3,19 @@
 /* Experience */
 
 .w_experience_container {
-  font-size: 22px;
-  margin-top: 50px;
-  margin-bottom: 75px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.job-container {
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 5px;
+  border-style: solid;
+  border-color: #4d006d;
+  border-width: 1px;
+  border-radius: 10px;
+  background-color: #ffffff;
 }
 
 

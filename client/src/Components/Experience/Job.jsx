@@ -8,7 +8,7 @@ const Job = ({ wide, job }) => {
   const app = job.app;
   const bullets = job.bullets;
   return (
-    <>
+    <div className="job-container">
       <Header
         wide={wide}
         title={job.title}
@@ -18,7 +18,7 @@ const Job = ({ wide, job }) => {
       />
       {app ? <SubHeader wide={wide} desc={app.desc} links={app.links} /> : <></>}
       {bullets ? <Bullets wide={wide} bullets={bullets} /> : <></>}
-    </>
+    </div>
   );
 }
 
