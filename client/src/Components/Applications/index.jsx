@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Application from './Application.jsx';
-import applications from '../../../../data/applications';
+import applications from '../../../../data/applications.js';
 import './Applications.css';
 
 const Applications = ({ wide }) => {

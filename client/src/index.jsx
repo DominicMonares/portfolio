@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import NavBar from './Components/NavBar/NavBar';
-import Dropdown from './Components/Dropdown/Dropdown';
-import About from './Components/About/About';
-import Skills from './Components/Skills/Skills';
-import Experience from './Components/Experience/Experience';
-import Education from './Components/Education/Education';
-import Applications from './Components/Applications/Applications';
+import NavBar from './Components/NavBar';
+import Dropdown from './Components/Dropdown';
+import About from './Components/About';
+import Skills from './Components/Skills';
+import Experience from './Components/Experience';
+import Education from './Components/Education';
+import Applications from './Components/Applications';
 import './App.css';
 
 const App = () => {
