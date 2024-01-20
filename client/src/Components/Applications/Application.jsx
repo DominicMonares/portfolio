@@ -11,7 +11,8 @@ const Application = ({ wide, app }) => {
 
   const getAppClass = () => {
     if (wide) {
-      return mobileDemo ? 'w_mobile_demo_container' : 'w_web_demo_container';
+      // return mobileDemo ? 'w_mobile_demo_container' : 'w_web_demo_container';
+      return 'w_demo_carousel_container';
     } else {
       return 'm_demo_container';
     }
@@ -27,12 +28,16 @@ const Application = ({ wide, app }) => {
         techs={app.techs}
       />
       <SubHeader wide={wide} desc={app.techs} />
-      <div className={getAppClass()}>
-        <Carousel
-          showArrows={tru}
-        >
-          {app.demos.map(demo => <Demo wide={wide} demo={demo} />)}
-        </Carousel>
+      <Carousel
+        showArrows={false}
+        showIndicators={false}
+        showStatus={false}
+      >
+        {app.demos.map(demo => <Demo wide={wide} demo={demo} />)}
+      </Carousel>
+      <div className="carousel-arrows-container">
+        <div className="carousel-arrow-left">{'<'}</div>
+        <div className="carousel-arrow-right">{'>'}</div>
       </div>
     </div>
   );
