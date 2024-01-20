@@ -1,7 +1,8 @@
 /***** Web *****/
 
 .w_education_container {
-  flex-grow: 1;
+  /* flex-grow: 1; */
+  width: 100%;
   margin-top: 20px;
   margin-bottom: 15px;
 }
