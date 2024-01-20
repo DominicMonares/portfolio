@@ -26,11 +26,11 @@ const NavBar = () => {
     setActive(currentTabs);
   }
 
+  // <span className="tab-curve tab-1-curve-left"></span>
+  // <span className={'tab-square'.concat(' tab-1-square-left', active['Apps'])}></span>
   return (
     <div className='nav-container'>
       <div className='nav-menu'>
-        <span className="tab-curve tab-1-curve-left"></span>
-        <span className={'tab-square'.concat(' tab-1-square-left', active['Apps'])}></span>
         <NavLink
           to={'/apps'}
           className={'nav-tab'.concat(active['Apps'], ' tab-1')}
