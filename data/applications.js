@@ -138,8 +138,8 @@ const applications = [
         media: clown2,
         dims: {
           web: {
-            width: 634,
-            height: 372
+            width: 632,
+            height: 354
           },
           mobile: {
             width: 350,
