@@ -16,7 +16,7 @@ import fretJS2 from '../assets/demos/fretJS2.mp4';
 
 // Clown Detector
 import clown1 from '../assets/demos/clown1.mp4';
-import clown2 from '../assets/demos/clown2.png';
+import clown2 from '../assets/demos/clown2.mp4';
 
 // SPP Extras
 import sppe1 from '../assets/demos/sppe1.mp4';
@@ -134,7 +134,7 @@ const applications = [
       },
       {
         caption: 'Settings can be changed from the extension popup menu',
-        mediaType: 'pic',
+        mediaType: 'video/mp4',
         media: clown2,
         dims: {
           web: {
