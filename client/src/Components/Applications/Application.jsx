@@ -38,6 +38,9 @@ const Application = ({ wide, app }) => {
     cursor: 'pointer',
   };
 
+  // autoPlay={autoPlay}
+  // interval={6000}
+
   return (
     <div className={wide ? 'w_app_container' : 'm_app_container'}>
       <Header
@@ -49,9 +52,7 @@ const Application = ({ wide, app }) => {
       />
       <SubHeader wide={wide} desc={app.techs} />
       <Carousel
-        autoPlay={autoPlay}
         infiniteLoop={true}
-        interval={6000}
         onChange={updateCurrentSlide}
         selectedItem={currentSlide}
         showIndicators={false}
