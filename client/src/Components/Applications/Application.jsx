@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 
 import Header from '../Shared/Header';
@@ -7,6 +7,8 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Demo from './Demo';
 
 const Application = ({ wide, app }) => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [autoPlay, setAutoPlay] = useState(true);
   const mobileDemo = app.demos.every(d => d.dims.web.width < 200);
 
   const getAppClass = () => {
@@ -16,6 +18,15 @@ const Application = ({ wide, app }) => {
     } else {
       return 'm_demo_container';
     }
+  }
+
+  const changeSlide = (direction) => {
+    if (autoPlay) setAutoPlay(false);
+    setCurrentSlide(currentSlide + direction);
+  }
+
+  const updateCurrentSlide = (index) => {
+    if (currentSlide !== index) setCurrentSlide(index)
   }
 
   return (
@@ -29,15 +40,25 @@ const Application = ({ wide, app }) => {
       />
       <SubHeader wide={wide} desc={app.techs} />
       <Carousel
+        autoPlay={autoPlay}
+        infiniteLoop={true}
+        interval={6000}
+        onChange={updateCurrentSlide}
+        selectedItem={currentSlide}
         showArrows={false}
         showIndicators={false}
         showStatus={false}
+        width="95%"
       >
         {app.demos.map(demo => <Demo wide={wide} demo={demo} />)}
       </Carousel>
       <div className="carousel-arrows-container">
-        <div className="carousel-arrow-left">{'<'}</div>
-        <div className="carousel-arrow-right">{'>'}</div>
+        <div className="carousel-arrow-left" onClick={() => changeSlide(-1)}>
+          {'<'}
+        </div>
+        <div className="carousel-arrow-right" onClick={() => changeSlide(1)}>
+          {'>'}
+        </div>
       </div>
     </div>
   );

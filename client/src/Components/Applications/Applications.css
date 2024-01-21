@@ -11,7 +11,7 @@
 .w_app_container {
   width: 100%;
   margin-bottom: 5px;
-  padding: 5px;
+  padding: 8px;
   border-style: solid;
   border-color: #4d006d;
   border-width: 1px;
@@ -41,20 +41,26 @@
 
 /* Carousel */
 
+.carousel.carousel-slider {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .carousel-arrows-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: -85px;
+  z-index: 9997;
 }
 
 .carousel-arrow-left {
   font-size: 40px;
-  margin-right: 400px;
+  /* margin-right: 400px; */
 }
 
 .carousel-arrow-right {
   font-size: 40px;
-  margin-left: 400px;
+  /* margin-left: 400px; */
 }
 
 /* Demo */
