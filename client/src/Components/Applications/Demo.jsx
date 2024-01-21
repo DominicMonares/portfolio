@@ -40,8 +40,8 @@ const Demo = ({ wide, demo }) => {
             <img
               className={wide ? 'w_demo_img' : 'm_demo_img'}
               src={demo.media}
-              width={dims.width}
-              height={dims.height}
+              // width={dims.width}
+              // height={dims.height}
             />
           )}
           <span className={wide ? 'w_demo_caption' : 'm_demo_caption'}>{demo.caption}</span>
