@@ -70,9 +70,15 @@
 
 .w_youtube {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin-top: 20px;
+  scale: 0.95
   /* margin-bottom: 25px; */
+}
+
+.carousel.slide.iframe {
+
 }
 
 .w_youtube_iframe {
@@ -123,7 +129,8 @@
   outline-offset: -1px;
 }
 
-.w_demo_caption {
+.w_demo_caption,
+.w_demo_caption_yt {
   height: 20px;
   display: flex;
   justify-content: center;
@@ -132,6 +139,10 @@
   margin-right: auto;
   font-size: 16px;
   text-align: center;
+}
+
+.w_demo_caption_yt {
+  margin-top: -28px;
 }
 
 

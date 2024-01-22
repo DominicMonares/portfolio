@@ -17,7 +17,7 @@ const Demo = ({ wide, demo }) => {
           allowFullScreen
           title='Embedded youtube'
         />
-        <span className={wide ? 'w_demo_caption' : 'm_demo_caption'}>{demo.caption}</span>
+        <span className={wide ? 'w_demo_caption_yt' : 'm_demo_caption_yt'}>{demo.caption}</span>
       </div>
       
     );
