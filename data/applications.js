@@ -161,7 +161,7 @@ const applications = [
     techs: 'TypeScript, React, webpack, Web Audio API',
     demos: [
       {
-        caption: '',
+        caption: 'Full demo',
         mediaType: 'youtube',
         media: 'https://www.youtube.com/embed/fRe4yupMJ-A',
         dims: {

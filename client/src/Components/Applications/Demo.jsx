@@ -12,12 +12,14 @@ const Demo = ({ wide, demo }) => {
           width={dims.width}
           height={dims.height}
           src={demo.media}
-          frameBorder='0'
+          // frameBorder='0'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
           allowFullScreen
           title='Embedded youtube'
         />
+        <span className={wide ? 'w_demo_caption' : 'm_demo_caption'}>{demo.caption}</span>
       </div>
+      
     );
   }
 
