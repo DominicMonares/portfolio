@@ -8,14 +8,14 @@ import './About.css';
 
 const About = ({ wide }) => {
   return (
-    <div className={wide ? 'w_about_container' : 'm_about_container'}>
-      <div>
+    <div>
+      <div className={wide ? 'w_about_container' : 'm_about_container'}>
         <div className={wide ? 'w_about_body_container' : 'm_about_body_container'}>
           <img
             className={wide ? 'w_profile_pic' : 'm_profile_pic'}
             src={profile_pic}
-            width='300px'
-            height='300px'
+            width='192px'
+            height='192px'
           />
           <div className={wide ? 'w_about_text_container' : 'm_about_text_container'}>
             {about.map(p => <p className={wide ? 'w_about_text' : 'm_about_text'}>{p}</p>)}
