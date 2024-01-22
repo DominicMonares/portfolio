@@ -9,8 +9,8 @@ const contacts = {
     icon: gmail,
     dims: {
       web: {
-        width: 39,
-        height: 30
+        width: 34,
+        height: 26
       },
       mobile: {
         width: 27,
@@ -24,8 +24,8 @@ const contacts = {
     icon: linkedIn,
     dims: {
       web: {
-        width: 30,
-        height: 30
+        width: 26,
+        height: 26
       },
       mobile: {
         width: 20,
@@ -39,8 +39,8 @@ const contacts = {
     icon: gitHub,
     dims: {
       web: {
-        width: 31,
-        height: 31
+        width: 27,
+        height: 27
       },
       mobile: {
         width: 20,
