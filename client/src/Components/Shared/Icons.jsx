@@ -14,10 +14,11 @@ const modalStyles = { // Modal styling must be separate from css file
     transform: 'translate(-50%, -50%)',
     border: 'solid',
     borderWidth: '3px',
-    borderColor: '#3A2E47'
+    borderColor: '#3A2E47',
   },
   overlay: {
-    background: 'rgba(58, 46, 71, 0.75)'
+    background: 'rgba(58, 46, 71, 0.75)',
+    zIndex: 5
   }
 };
 
