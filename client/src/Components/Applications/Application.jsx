@@ -33,9 +33,30 @@ const Application = ({ wide, app }) => {
     position: 'absolute',
     zIndex: 2,
     top: 'calc(50% - 15px)',
-    width: 30,
-    height: 30,
+    width: 40,
+    height: 40,
     cursor: 'pointer',
+    fontSize: 30,
+    color: '#4d006d',
+    backgroundColor: '#f1cfff',
+    border: '#4d006d',
+    borderWidth: 1,
+    borderStyle: 'solid',
+    borderRadius: 45,
+    textAlign: 'center',
+    transition: 'scale 0.20s',
+  };
+
+  const leftArrowStyles = {
+    ...arrowStyles,
+    marginLeft: -13,
+    left: 15,
+  };
+
+  const rightArrowStyles = {
+    ...arrowStyles,
+    marginRight: -13,
+    right: 15,
   };
 
   // autoPlay={autoPlay}
@@ -60,10 +81,11 @@ const Application = ({ wide, app }) => {
         renderArrowPrev={(onClickHandler, hasPrev, label) =>
           hasPrev && (
             <button
+              className="carousel-arrow"
               type="button"
               onClick={onClickHandler}
               title={label}
-              style={{ ...arrowStyles, left: 15 }}
+              style={leftArrowStyles}
             >
               {'<'}
             </button>
@@ -72,10 +94,11 @@ const Application = ({ wide, app }) => {
         renderArrowNext={(onClickHandler, hasNext, label) =>
           hasNext && (
             <button
+              className="carousel-arrow"
               type="button"
               onClick={onClickHandler}
               title={label}
-              style={{ ...arrowStyles, right: 15 }}
+              style={rightArrowStyles}
             >
               {'>'}
             </button>

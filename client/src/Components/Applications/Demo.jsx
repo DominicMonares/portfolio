@@ -50,7 +50,7 @@ const Demo = ({ wide, demo }) => {
     );
   }
 
-  return ( <div>{demo.mediaType === 'youtube' ? youtube() : picOrVid()}</div> );
+  return demo.mediaType === 'youtube' ? youtube() : picOrVid();
 }
 
 export default Demo;
