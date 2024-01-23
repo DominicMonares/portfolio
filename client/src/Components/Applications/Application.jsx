@@ -44,6 +44,7 @@ const Application = ({ wide, app }) => {
     borderStyle: 'solid',
     borderRadius: 45,
     textAlign: 'center',
+    opacity: 0.5,
     transition: 'scale 0.20s',
   };
 
