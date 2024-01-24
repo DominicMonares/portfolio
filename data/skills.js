@@ -95,7 +95,7 @@ const skills = {
       icon: html5,
       dims: {
         web: {
-          width: 30,
+          width: 27,
           height: 30
         },
         mobile: {
@@ -109,7 +109,7 @@ const skills = {
       icon: css3,
       dims: {
         web: {
-          width: 30,
+          width: 27,
           height: 30
         },
         mobile: {
@@ -124,7 +124,7 @@ const skills = {
       dims: {
         web: {
           width: 30,
-          height: 30
+          height: 27
         },
         mobile: {
           width: 48,
@@ -152,7 +152,7 @@ const skills = {
       dims: {
         web: {
           width: 30,
-          height: 30
+          height: 29
         },
         mobile: {
           width: 48,
@@ -180,7 +180,7 @@ const skills = {
       dims: {
         web: {
           width: 30,
-          height: 30
+          height: 29
         },
         mobile: {
           width: 46,
@@ -209,7 +209,7 @@ const skills = {
       icon: node,
       dims: {
         web: {
-          width: 30,
+          width: 27,
           height: 30
         },
         mobile: {
