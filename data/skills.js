@@ -63,7 +63,7 @@ import cubase from '../assets/skills/cubase.png';
 const skills = {
   'Front-End': [
     {
-      title: 'JavaScript (ES5 & ES6)',
+      title: 'JavaScript',
       icon: js,
       dims: {
         web: {
@@ -275,7 +275,7 @@ const skills = {
       }
     },
     {
-      title: 'REST API Development',
+      title: 'REST API Dev',
       icon: rest,
       dims: {
         web: {
@@ -573,7 +573,7 @@ const skills = {
       }
     },
     {
-      title: 'Test-Driven Development',
+      title: 'TDD',
       icon: tdd,
       dims: {
         web: {
@@ -702,7 +702,7 @@ const skills = {
     },
     {
       title: 'Microsoft Powerpoint',
-      icon: slides,
+      icon: powerpoint,
       dims: {
         web: {
           width: 20,
