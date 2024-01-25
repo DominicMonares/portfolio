@@ -16,15 +16,21 @@ const Skills = ({ wide }) => {
         skillRows.push(
           <div className={wide ? 'w_tool' : 'm_tool'}>
             <span className={wide ? 'w_tool_text' : 'm_tool_text'}>{s.title}</span>
-            <img src={s.icon} width={dims.width} height={dims.height} />
+            <div className="w_tool_img_container">
+              <img src={s.icon} width={dims.width} height={dims.height} />
+            </div>
           </div>
         );
       });
 
       allSkills.push(
         <div className={wide ? 'w_category_container' : 'm_category_container'}>
-          <span className={wide ? 'w_category_name' : 'm_category_name'}>{category}</span>
-          {skillRows}
+          <span className={wide ? 'w_category_name' : 'm_category_name'}>
+            {category}
+          </span>
+          <div className="w_tools">
+            {skillRows}
+          </div>
         </div>
       );
     }
@@ -34,7 +40,9 @@ const Skills = ({ wide }) => {
 
   return (
     <div className={wide ? 'w_skills_container' : 'm_skills_container'}>
-      <div>{sortSkills()}</div>
+      <div className="w_skills">
+        {sortSkills()}
+      </div>
       <Icons wide={wide} page="Skills" />
     </div>
   );
