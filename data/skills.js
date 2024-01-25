@@ -238,7 +238,7 @@ const skills = {
       dims: {
         web: {
           width: 30,
-          height: 30
+          height: 29
         },
         mobile: {
           width: 48,
@@ -251,7 +251,7 @@ const skills = {
       icon: mongo,
       dims: {
         web: {
-          width: 30,
+          width: 27,
           height: 30
         },
         mobile: {
@@ -266,7 +266,7 @@ const skills = {
       dims: {
         web: {
           width: 30,
-          height: 30
+          height: 29
         },
         mobile: {
           width: 46,
@@ -279,7 +279,7 @@ const skills = {
       icon: rest,
       dims: {
         web: {
-          width: 30,
+          width: 28,
           height: 30
         },
         mobile: {
@@ -307,7 +307,7 @@ const skills = {
       icon: passport,
       dims: {
         web: {
-          width: 30,
+          width: 24,
           height: 30
         },
         mobile: {
@@ -321,7 +321,7 @@ const skills = {
       icon: auth0,
       dims: {
         web: {
-          width: 30,
+          width: 26,
           height: 30
         },
         mobile: {
@@ -335,8 +335,8 @@ const skills = {
       icon: nodemailer,
       dims: {
         web: {
-          width: 63,
-          height: 30
+          width: 30,
+          height: 14
         },
         mobile: {
           width: 94,
@@ -351,7 +351,7 @@ const skills = {
       icon: jest,
       dims: {
         web: {
-          width: 30,
+          width: 26,
           height: 30
         },
         mobile: {
@@ -365,7 +365,7 @@ const skills = {
       icon: mocha,
       dims: {
         web: {
-          width: 30,
+          width: 26,
           height: 30
         },
         mobile: {
@@ -379,7 +379,7 @@ const skills = {
       icon: chai,
       dims: {
         web: {
-          width: 30,
+          width: 26,
           height: 30
         },
         mobile: {
@@ -394,7 +394,7 @@ const skills = {
       dims: {
         web: {
           width: 30,
-          height: 30
+          height: 13
         },
         mobile: {
           width: 48,
@@ -407,7 +407,7 @@ const skills = {
       icon: ec2,
       dims: {
         web: {
-          width: 30,
+          width: 25,
           height: 30
         },
         mobile: {
@@ -421,7 +421,7 @@ const skills = {
       icon: s3,
       dims: {
         web: {
-          width: 30,
+          width: 25,
           height: 30
         },
         mobile: {
@@ -435,7 +435,7 @@ const skills = {
       icon: nginx,
       dims: {
         web: {
-          width: 30,
+          width: 27,
           height: 30
         },
         mobile: {
@@ -450,7 +450,7 @@ const skills = {
       dims: {
         web: {
           width: 30,
-          height: 30
+          height: 29
         },
         mobile: {
           width: 46,
@@ -464,7 +464,7 @@ const skills = {
       dims: {
         web: {
           width: 30,
-          height: 30
+          height: 29
         },
         mobile: {
           width: 48,
@@ -508,7 +508,7 @@ const skills = {
       dims: {
         web: {
           width: 30,
-          height: 30
+          height: 13
         },
         mobile: {
           width: 48,
@@ -521,7 +521,7 @@ const skills = {
       icon: axios,
       dims: {
         web: {
-          width: 30,
+          width: 17,
           height: 30
         },
         mobile: {
@@ -535,7 +535,7 @@ const skills = {
       icon: webpack,
       dims: {
         web: {
-          width: 30,
+          width: 27,
           height: 30
         },
         mobile: {
@@ -549,7 +549,7 @@ const skills = {
       icon: babel,
       dims: {
         web: {
-          width: 30,
+          width: 26,
           height: 30
         },
         mobile: {
@@ -578,7 +578,7 @@ const skills = {
       dims: {
         web: {
           width: 30,
-          height: 30
+          height: 26
         },
         mobile: {
           width: 50,
@@ -592,7 +592,7 @@ const skills = {
       dims: {
         web: {
           width: 30,
-          height: 30
+          height: 26
         },
         mobile: {
           width: 42,
@@ -619,7 +619,7 @@ const skills = {
       icon: figma,
       dims: {
         web: {
-          width: 30,
+          width: 20,
           height: 30
         },
         mobile: {
@@ -635,7 +635,7 @@ const skills = {
       icon: docs,
       dims: {
         web: {
-          width: 30,
+          width: 23,
           height: 30
         },
         mobile: {
@@ -649,7 +649,7 @@ const skills = {
       icon: sheets,
       dims: {
         web: {
-          width: 30,
+          width: 23,
           height: 30
         },
         mobile: {
@@ -663,7 +663,7 @@ const skills = {
       icon: slides,
       dims: {
         web: {
-          width: 30,
+          width: 23,
           height: 30
         },
         mobile: {
