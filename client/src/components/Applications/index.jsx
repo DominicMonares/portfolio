@@ -1,12 +1,11 @@
 import React from 'react';
-
 import Application from './Application.jsx';
 import applications from '../../../../data/applications.js';
 import './Applications.css';
 
-const Applications = ({ wide }) => {
+const Applications = ({ swClass }) => {
   return (
-    <div className={wide ? 'w_applications_container' : 'm_applications_container'}>
+    <div className={swClass.concat('applications-container')}>
       {applications.map(app => <Application wide={wide} app={app} />)}
     </div>
   );
