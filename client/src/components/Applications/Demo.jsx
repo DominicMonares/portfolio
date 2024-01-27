@@ -1,14 +1,13 @@
 import React from 'react';
 
-const Demo = ({ wide, demo }) => {
-  const platform = wide ? 'web' : 'mobile';
-  const dims = demo['dims'][platform];
+const Demo = ({ swClass, demo }) => {
+  const dims = demo['dims'][swClass ? 'web' : 'mobile'];
 
   const youtube = () => {
     return (
-      <div className={wide ? 'w_youtube' : 'm_youtube'}>
+      <div className={swClass.concat('youtube')}>
         <iframe
-          className={wide ? 'w_youtube_iframe' : 'm_youtube_iframe'}
+          className={swClass.concat('youtube-iframe')}
           width={dims.width}
           height={dims.height}
           src={demo.media}
@@ -17,19 +16,18 @@ const Demo = ({ wide, demo }) => {
           allowFullScreen
           title='Embedded youtube'
         />
-        <span className={wide ? 'w_demo_caption_yt' : 'm_demo_caption_yt'}>{demo.caption}</span>
+        <span className={swClass.concat(('demo-caption-yt'))}>{demo.caption}</span>
       </div>
-      
     );
   }
 
   const picOrVid = () => {
     return (
-      <div className={wide ? 'w_demo_container' : 'm_demo_container'}>
-        <div className={wide ? 'w_demo' : 'm_demo'}>
+      <div className={swClass.concat('demo-container')}>
+        <div className={swClass.concat('demo')}>
           {demo.mediaType === 'video/mp4' ? (
             <video
-              className={wide ? 'w_demo_img' : 'm_demo_img'}
+              className={swClass.concat('demo-img')}
               width={dims.width}
               height={dims.height}
               autoplay='autoplay'
@@ -40,13 +38,13 @@ const Demo = ({ wide, demo }) => {
             </video>
           ) : (
             <img
-              className={wide ? 'w_demo_img' : 'm_demo_img'}
+              className={swClass.concat(('demo-img'))}
               src={demo.media}
               // width={dims.width}
               // height={dims.height}
             />
           )}
-          <span className={wide ? 'w_demo_caption' : 'm_demo_caption'}>{demo.caption}</span>
+          <span className={swClass.concat('demo-caption')}>{demo.caption}</span>
         </div>
       </div>
     );
