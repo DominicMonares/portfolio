@@ -6,7 +6,7 @@ import './Applications.css';
 const Applications = ({ swClass }) => {
   return (
     <div className={swClass.concat('applications-container')}>
-      {applications.map(app => <Application wide={wide} app={app} />)}
+      {applications.map(app => <Application swClass={swClass} app={app} />)}
     </div>
   );
 }
