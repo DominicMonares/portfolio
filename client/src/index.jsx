@@ -28,11 +28,11 @@ const App = () => {
         {isSmallWindow() ? <Dropdown /> : <NavBar />}
         <div className="route-container">
           <Routes>
-            <Route path='/apps' element={<Applications swClass={swClass} />}></Route>
-            <Route path='/about' element={<About swClass={swClass} />}></Route>
-            <Route path='/skills' element={<Skills swClass={swClass} />}></Route>
-            <Route path='/experience' element={<Experience swClass={swClass} />}></Route>
-            <Route path='/education' element={<Education swClass={swClass} />}></Route>
+            <Route path='/apps' element={<Applications swClass={swClass} />} />
+            <Route path='/about' element={<About swClass={swClass} />} />
+            <Route path='/skills' element={<Skills swClass={swClass} />} />
+            <Route path='/experience' element={<Experience swClass={swClass} />} />
+            <Route path='/education' element={<Education swClass={swClass} />} />
           </Routes>
         </div>
       </Router>
