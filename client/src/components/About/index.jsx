@@ -22,9 +22,9 @@ const About = ({ swClass }) => {
           </div>
         </div>
         <div className={swClass.concat('about-container-ul')} />
-        <Contacts wide={wide} />
+        <Contacts swClass={swClass} />
       </div>
-      <Icons wide={wide} page='About' />
+      <Icons swClass={swClass} page='About' />
     </div>
   );
 }
