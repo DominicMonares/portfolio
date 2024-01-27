@@ -6,22 +6,22 @@ import profile_pic from '../../../../assets/about/profile_pic.png';
 import about from '../../../../data/about';
 import './About.css';
 
-const About = ({ wide }) => {
+const About = ({ swClass }) => {
   return (
     <div>
-      <div className={wide ? 'w_about_container' : 'm_about_container'}>
-        <div className={wide ? 'w_about_body_container' : 'm_about_body_container'}>
+      <div className={swClass.concat('about-container')}>
+        <div className={swClass.concat('about-body-container')}>
           <img
-            className={wide ? 'w_profile_pic' : 'm_profile_pic'}
+            className={swClass.concat('profile-pic')}
             src={profile_pic}
             width='192px'
             height='192px'
           />
-          <div className={wide ? 'w_about_text_container' : 'm_about_text_container'}>
-            {about.map(p => <p className={wide ? 'w_about_text' : 'm_about_text'}>{p}</p>)}
+          <div className={swClass.concat('about-text-container')}>
+            {about.map(p => <p className={swClass.concat('about-text')}>{p}</p>)}
           </div>
         </div>
-        <div className={wide ? 'w_about_container_ul' : 'm_about_container_ul'}></div>
+        <div className={swClass.concat('about-container-ul')} />
         <Contacts wide={wide} />
       </div>
       <Icons wide={wide} page='About' />
