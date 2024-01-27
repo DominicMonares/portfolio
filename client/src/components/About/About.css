@@ -2,7 +2,7 @@
 
 /* About */
 
-.w_about_container {
+.about-container {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -14,7 +14,7 @@
   padding: 8px;
 }
 
-.w_about_body_container {
+.about-body-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -22,23 +22,23 @@
   /* margin-top: 50px; */
 }
 
-.w_profile_pic {
+.profile-pic {
   border-style: solid;
   border-width: 2px;
   border-color: #4d006d;
 }
 
-.w_about_text_container {
+.about-text-container {
   max-width: 700px;
   margin-left: 50px;
 }
 
-.w_about_text {
+.about-text {
   font-size: 16px;
   /* line-height: 1.5; */
 }
 
-.w_about_container_ul {
+.about-container-ul {
   width: 100%;
   height: 2px;
   background: rgb(77,0,109);
@@ -92,17 +92,17 @@
 
 /* About */
 
-.m_about_container {
+.sw-about-container {
   padding-left: 2px;
   padding-right: 2px;
 }
 
-.m_about_body_container {
+.sw-about-body-container {
   display: flex;
   flex-direction: column;
 }
 
-.m_profile_pic {
+.sw-profile-pic {
   border-style: solid;
   border-width: 3px;
   border-color: #4d006d;
@@ -110,17 +110,17 @@
   margin-right: auto;
 }
 
-.m_about_text_container {
+.sw-about-text-container {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.m_about_text {
+.sw-about-text {
   line-height: 1;
 }
 
-.m_about_container_ul {
+.sw-about-container-ul {
   width: 101%;
   margin-top: -6px;
   margin-bottom: 7px;
