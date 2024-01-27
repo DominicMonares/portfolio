@@ -11,32 +11,28 @@ import Applications from './components/Applications';
 import './App.css';
 
 const App = () => {
-  const isSmallWindow = () =>  window.innerWidth < 790 ? true : false;
-  const [smallWindow, setSmallWindow] = useState(isSmallWindow());
+  const isSmallWindow = () =>  window.innerWidth < 790 ? 'sw-' : '';
+  const [swClass, setSWClass] = useState(isSmallWindow());
 
   useEffect(() => {
-    const handleWidthChange = () => setSmallWindow(isSmallWindow());
+    const handleWidthChange = () => setSWClass(isSmallWindow());
     window.addEventListener('resize', handleWidthChange);
     return () => window.removeEventListener('resize', handleWidthChange);
   }, []);
 
   return (
-    <div id={smallWindow ? 'app' : 'sw-app'}>
-      <h1 className={smallWindow ? 'title' : 'sw-title'}>
-        Dominic Monares
-      </h1>
-      <h3 className={smallWindow ? 'subtitle' : 'sw-subtitle'}>
-        Full-Stack Software Engineer
-      </h3>
+    <div id={swClass.concat('app')}>
+      <h1 className={swClass.concat('title')}>Dominic Monares</h1>
+      <h3 className={swClass.concat('subtitle')}>Full-Stack Software Engineer</h3>
       <Router>
-        {smallWindow ? <NavBar /> : <Dropdown />}
+        {isSmallWindow() ? <Dropdown /> : <NavBar />}
         <div className="route-container">
           <Routes>
-            <Route path='/apps' element={<Applications smallWindow={smallWindow} />}></Route>
-            <Route path='/about' element={<About smallWindow={smallWindow} />}></Route>
-            <Route path='/skills' element={<Skills smallWindow={smallWindow} />}></Route>
-            <Route path='/experience' element={<Experience smallWindow={smallWindow} />}></Route>
-            <Route path='/education' element={<Education smallWindow={smallWindow} />}></Route>
+            <Route path='/apps' element={<Applications swClass={swClass} />}></Route>
+            <Route path='/about' element={<About swClass={swClass} />}></Route>
+            <Route path='/skills' element={<Skills swClass={swClass} />}></Route>
+            <Route path='/experience' element={<Experience swClass={swClass} />}></Route>
+            <Route path='/education' element={<Education swClass={swClass} />}></Route>
           </Routes>
         </div>
       </Router>
