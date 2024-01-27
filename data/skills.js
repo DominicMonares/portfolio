@@ -673,7 +673,7 @@ const skills = {
       }
     },
     {
-      title: 'Microsoft Word',
+      title: 'Word',
       icon: word,
       dims: {
         web: {
@@ -687,7 +687,7 @@ const skills = {
       }
     },
     {
-      title: 'Microsoft Excel',
+      title: 'Excel',
       icon: excel,
       dims: {
         web: {
@@ -701,7 +701,7 @@ const skills = {
       }
     },
     {
-      title: 'Microsoft Powerpoint',
+      title: 'Powerpoint',
       icon: powerpoint,
       dims: {
         web: {
@@ -717,7 +717,7 @@ const skills = {
   ],
   'Media': [
     {
-      title: 'Adobe Photoshop',
+      title: 'Photoshop',
       icon: photoshop,
       dims: {
         web: {
@@ -731,7 +731,7 @@ const skills = {
       }
     },
     {
-      title: 'Adobe Premiere',
+      title: 'Premiere',
       icon: premiere,
       dims: {
         web: {
@@ -745,7 +745,7 @@ const skills = {
       }
     },
     {
-      title: 'Adobe After Effects',
+      title: 'After Effects',
       icon: afterEffects,
       dims: {
         web: {
