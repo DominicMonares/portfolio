@@ -1,62 +1,61 @@
 // Front-End
-import js from '../assets/skills/icons8-javascript-48.png';
-import ts from '../assets/skills/icons8-typescript-48.png';
-import html5 from '../assets/skills/icons8-html-5-48.png';
-import css3 from '../assets/skills/icons8-css3-48.png';
-import react from '../assets/skills/icons8-react-40.png';
-import redux from '../assets/skills/icons8-redux-48.png';
+import js from '../assets/skills/javascript.png';
+import ts from '../assets/skills/typescript.png';
+import html5 from '../assets/skills/html.png';
+import css3 from '../assets/skills/css.png';
+import react from '../assets/skills/react.png';
+import redux from '../assets/skills/redux.png';
 import electron from '../assets/skills/electron.png';
 import jquery from '../assets/skills/jquery.png';
-import webAudio from '../assets/skills/icons8-audio-40.png';
+import webAudio from '../assets/skills/web-audio-api.png';
 
 // Back-End
-import node from '../assets/skills/icons8-node-js-48.png';
-import express from '../assets/skills/icons8-javascript-48.png';
-import python from '../assets/skills/icons8-python-48.png';
-import mongo from '../assets/skills/icons8-mongodb-48.png';
-import mySQL from '../assets/skills/mySQL.png';
-import rest from '../assets/skills/icons8-rest-api-40.png';
-import memcached from '../assets/skills/memcached-tutorial.png';
+import node from '../assets/skills/node.png';
+import python from '../assets/skills/python.png';
+import mongo from '../assets/skills/mongodb.png';
+import mySQL from '../assets/skills/mysql.png';
+import rest from '../assets/skills/rest.png';
+import memcached from '../assets/skills/memcached.png';
 import passport from '../assets/skills/passport.png';
-import auth0 from '../assets/skills/icons8-auth0-the-solution-you-need-for-web,-mobile,-iot,-and-internal-applications.-48.png';
+import auth0 from '../assets/skills/auth0.png';
 import nodemailer from '../assets/skills/nodemailer.png';
 
 // Testing & Deployment
-import jest from '../assets/skills/icons8-jest-can-collect-code-coverage-information-from-entire-projects-48.png';
+import jest from '../assets/skills/jest.png';
 import mocha from '../assets/skills/mocha.png';
 import chai from '../assets/skills/chai.png';
-import supertest from '../assets/skills/icons8-npm-48.png';
 import ec2 from '../assets/skills/ec2.png';
 import s3 from '../assets/skills/s3.png';
-import nginx from '../assets/skills/icons8-nginx-48.png';
+import nginx from '../assets/skills/nginx.png';
+import chromeStore from '../assets/skills/chrome-store.png';
 import k6 from '../assets/skills/k6.png';
 import loaderio from '../assets/skills/loaderio.png';
 
 // Development
 import vim from '../assets/skills/vim.png';
 import git from '../assets/skills/git.png';
-import npm from '../assets/skills/icons8-npm-48.png';
+import npm from '../assets/skills/npm.png';
 import axios from '../assets/skills/axios.png';
 import webpack from '../assets/skills/webpack.png';
-import babel from '../assets/skills/icons8-babel-64.png';
-import agile from '../assets/skills/icons8-agile-64.png';
-import tdd from '../assets/skills/icons8-testing-64.png';
+import babel from '../assets/skills/babel.png';
+import agile from '../assets/skills/agile.png';
+import tdd from '../assets/skills/tdd.png';
 import expo from '../assets/skills/expo.png';
 import trello from '../assets/skills/trello.png';
-import figma from '../assets/skills/icons8-figma-48.png';
+import figma from '../assets/skills/figma.png';
 
 // Office
-import docs from '../assets/skills/icons8-google-docs-48.png';
-import sheets from '../assets/skills/icons8-google-sheets-48.png';
-import slides from '../assets/skills/icons8-google-slides-48.png';
-import word from '../assets/skills/icons8-microsoft-word-48.png';
-import excel from '../assets/skills/icons8-microsoft-excel-48.png';
-import powerpoint from '../assets/skills/icons8-microsoft-powerpoint-48.png';
+import docs from '../assets/skills/docs.png';
+import sheets from '../assets/skills/sheets.png';
+import slides from '../assets/skills/slides.png';
+import word from '../assets/skills/word.png';
+import excel from '../assets/skills/excel.png';
+import powerpoint from '../assets/skills/powerpoint.png';
 
 // Media
-import photoshop from '../assets/skills/icons8-adobe-photoshop-48.png';
-import premiere from '../assets/skills/icons8-adobe-premiere-pro-48.png';
-import afterEffects from '../assets/skills/icons8-adobe-after-effects-48.png';
+import photoshop from '../assets/skills/photoshop.png';
+import premiere from '../assets/skills/premiere.png';
+import afterEffects from '../assets/skills/after-effects.png';
 import ebsynth from '../assets/skills/ebsynth.png';
 import cubase from '../assets/skills/cubase.png';
 
@@ -220,7 +219,7 @@ const skills = {
     },
     {
       title: 'Express',
-      icon: express,
+      icon: js,
       dims: {
         web: {
           width: 20,
@@ -390,7 +389,7 @@ const skills = {
     },
     {
       title: 'SuperTest',
-      icon: supertest,
+      icon: npm,
       dims: {
         web: {
           width: 20,
@@ -465,6 +464,20 @@ const skills = {
         web: {
           width: 20,
           height: 19
+        },
+        mobile: {
+          width: 48,
+          height: 48
+        }
+      }
+    },
+    {
+      title: 'Chrome Web Store',
+      icon: chromeStore,
+      dims: {
+        web: {
+          width: 20,
+          height: 18
         },
         mobile: {
           width: 48,
