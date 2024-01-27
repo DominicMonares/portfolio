@@ -12,14 +12,14 @@ const Education = ({ swClass }) => {
         return (
           <div className={swClass.concat('edu-container')}>
             <Header
-              wide={wide}
+              swClass={swClass}
               title={edu.title}
               est={edu.est}
               estLink={edu.estLink}
               location={edu.location}
               year={edu.year}
             />
-            {edu.bullets ? <Bullets wide={wide} bullets={edu.bullets} /> : <></>}
+            {edu.bullets ? <Bullets swClass={swClass} bullets={edu.bullets} /> : <></>}
           </div>
         );
       })}
