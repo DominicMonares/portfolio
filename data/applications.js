@@ -61,7 +61,7 @@ const applications = [
         media: sppe1,
         dims: {
           web: {
-            width: 960,
+            width: 950,
             height: 540
           },
           mobile: {
@@ -76,7 +76,7 @@ const applications = [
         media: sppe2,
         dims: {
           web: {
-            width: 960,
+            width: 950,
             height: 540
           },
           mobile: {
@@ -91,7 +91,7 @@ const applications = [
         media: sppe3,
         dims: {
           web: {
-            width: 960,
+            width: 950,
             height: 540
           },
           mobile: {
@@ -123,7 +123,7 @@ const applications = [
         media: clown1,
         dims: {
           web: {
-            width: 945,
+            width: 942,
             height: 640
           },
           mobile: {
@@ -138,8 +138,8 @@ const applications = [
         media: clown2,
         dims: {
           web: {
-            width: 632,
-            height: 354
+            width: 626,
+            height: 350
           },
           mobile: {
             width: 350,
