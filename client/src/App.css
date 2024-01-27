@@ -4,12 +4,12 @@ html, body {
   background-color: #f1cfff;
 }
 
-body {
+html {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
 
-body::-webkit-scrollbar {
+html::-webkit-scrollbar {
   display: none;
 }
 
