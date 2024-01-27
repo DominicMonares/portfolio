@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
 import NavBar from './Components/NavBar';
 import Dropdown from './Components/Dropdown';
 import About from './Components/About';
