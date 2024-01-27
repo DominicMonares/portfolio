@@ -1,6 +1,6 @@
 /***** Web *****/
 
-.w_education_container {
+.education-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,7 +10,7 @@
   margin-bottom: 15px;
 }
 
-.w_edu_container {
+.edu-container {
   width: 100%;
   margin-bottom: 5px;
   padding: 8px;
@@ -24,10 +24,10 @@
 
 /***** Mobile *****/
 
-.m_education_container {
+.m-education-container {
 
 }
 
-.m_edu_container {
+.m-edu-container {
 
 }
