@@ -5,12 +5,12 @@ import Bullets from '../Shared/Bullets';
 import education from '../../../../data/education';
 import './Education.css';
 
-const Education = ({ wide }) => {
+const Education = ({ swClass }) => {
   return (
-    <div className={wide ? 'w_education_container' : 'm_education_container'}>
+    <div className={swClass.concat('education-container')}>
       {education.map(edu => {
         return (
-          <div className={wide ? 'w_edu_container' : 'm_edu_container'}>
+          <div className={swClass.concat('edu-container')}>
             <Header
               wide={wide}
               title={edu.title}
