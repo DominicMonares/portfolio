@@ -21,7 +21,7 @@ html::-webkit-scrollbar {
 
 /***** Web *****/
 
-#w-app {
+#app {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,7 +31,7 @@ html::-webkit-scrollbar {
   margin-right: auto;
 }
 
-.w-title {
+.title {
   display: flex;
   justify-content: center;
   font-size: 40px;
@@ -42,7 +42,7 @@ html::-webkit-scrollbar {
   color: #4d006d;
 }
 
-.w-subtitle {
+.subtitle {
   display: flex;
   justify-content: center;
   font-weight: 400;
@@ -53,9 +53,9 @@ html::-webkit-scrollbar {
 }
 
 
-/***** Mobile *****/
+/***** Small Window *****/
 
-#m-app {
+#sw-app {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,18 +65,18 @@ html::-webkit-scrollbar {
   margin-right: auto;
 }
 
-.m-title, .m-subtitle {
+.sw-title, .sw-subtitle {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
-.m-title {
+.sw-title {
   padding-top: 7px;
 }
 
-.m-subtitle {
+.sw-subtitle {
   padding-top: 5px;
   padding-bottom: 5px;
 }

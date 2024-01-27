@@ -21,9 +21,13 @@ const App = () => {
   }, []);
 
   return (
-    <div id={smallWindow ? 'w-app' : 'm-app'}>
-      <h1 className={smallWindow ? 'w-title' : 'm-title'}>Dominic Monares</h1>
-      <h3 className={smallWindow ? 'w-subtitle' : 'm-subtitle'}>Full-Stack Software Engineer</h3>
+    <div id={smallWindow ? 'app' : 'sw-app'}>
+      <h1 className={smallWindow ? 'title' : 'sw-title'}>
+        Dominic Monares
+      </h1>
+      <h3 className={smallWindow ? 'subtitle' : 'sw-subtitle'}>
+        Full-Stack Software Engineer
+      </h3>
       <Router>
         {smallWindow ? <NavBar /> : <Dropdown />}
         <div className="route-container">
@@ -39,6 +43,5 @@ const App = () => {
     </div>
   );
 }
-
 
 ReactDOM.render(<App />, document.getElementById('root'));
