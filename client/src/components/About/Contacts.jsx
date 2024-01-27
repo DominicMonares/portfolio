@@ -2,28 +2,27 @@ import React from 'react';
 
 import { contacts } from '../../../../data/contacts';
 
-const Contacts = ({ wide }) => {
-  const device = wide ? 'web' : 'mobile';
+const Contacts = ({ swClass }) => {
   const allContacts = [];
   for (const c in contacts) {
     const contact = contacts[c]
-    const dims = contact['dims'][device];
+    const dims = contact['dims'][swClass ? 'web' : 'mobile'];
     allContacts.push(
-      <div className={wide ? 'w_contact' : 'm_contact'}>
+      <div className={swClass.concat('contact')}>
         <a
-          className={wide ? 'w_contact_container' : 'm_contact_container'}
+          className={swClass.concat('contact-container')}
           href={contact.link}
           target='_blank'
         >
           <img src={contact.icon} width={dims.width} height={dims.height} />
-          <div className={wide ? 'w_contact_link' : 'm_contact_link'}>{contact.display}</div>
+          <div className={swClass.concat(('contact-link'))}>{contact.display}</div>
         </a>
       </div>
     );
   }
 
   return (
-    <div className={wide ? 'w_contacts_container' : 'm_contacts_container'}>
+    <div className={swClass.concat('contacts-container')}>
       {allContacts}
     </div>
   );
