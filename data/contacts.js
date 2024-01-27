@@ -1,6 +1,6 @@
-import gmail from '../assets/about/icons8-gmail-144.png';
-import linkedIn from '../assets/about/icons8-linkedin-144.png';
-import gitHub from '../assets/about/GitHub-Mark-120px-plus.png';
+import gmail from '../assets/about/gmail.png';
+import linkedIn from '../assets/about/linkedin.png';
+import gitHub from '../assets/about/github.png';
 
 const contacts = {
   gmail: {
