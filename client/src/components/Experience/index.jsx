@@ -4,10 +4,10 @@ import Job from './Job';
 import experience from '../../../../data/experience';
 import './Experience.css';
 
-const Experience = ({ wide }) => {
+const Experience = ({ swClass }) => {
   return (
-    <div className={wide ? 'w_experience_container' : 'm_experience_container'}>
-      {experience.map(job => <Job wide={wide} job={job} />)}
+    <div className={swClass.concat('experience-container')}>
+      {experience.map(job => <Job swClass={swClass} job={job} />)}
     </div>
   );
 }
