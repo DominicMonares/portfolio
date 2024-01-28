@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 
-import navigation from '../../../../data/navigation';
+import navigation from '../../../../data/navigation.json';
 import './NavBar.css';
 
 const NavBar = () => {
