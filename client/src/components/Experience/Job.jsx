@@ -4,20 +4,20 @@ import Header from '../Shared/Header';
 import SubHeader from '../Shared/SubHeader';
 import Bullets from '../Shared/Bullets';
 
-const Job = ({ wide, job }) => {
+const Job = ({ swClass, job }) => {
   const app = job.app;
   const bullets = job.bullets;
   return (
     <div className="job-container">
       <Header
-        wide={wide}
+        swClass={swClass}
         title={job.title}
         est={job.est}
         location={job.location}
         year={job.year}
       />
-      {app ? <SubHeader wide={wide} desc={app.desc} links={app.links} /> : <></>}
-      {bullets ? <Bullets wide={wide} bullets={bullets} /> : <></>}
+      {app ? <SubHeader swClass={swClass} desc={app.desc} links={app.links} /> : <></>}
+      {bullets ? <Bullets swClass={swClass} bullets={bullets} /> : <></>}
     </div>
   );
 }
