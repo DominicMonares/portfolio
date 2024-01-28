@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 
 import './Shared.css';
 
-const Header = ({ wide, title, est, estLink, location, year, links }) => {
+const Header = ({ swClass, title, est, estLink, location, year, links }) => {
   const routeLocation = useLocation();
   const route = routeLocation.pathname;
 
@@ -13,7 +13,7 @@ const Header = ({ wide, title, est, estLink, location, year, links }) => {
     if (estLink) {
       return (
         <a
-          className={wide ? 'w_link' : 'm_link'}
+          className={swClass.concat('link')}
           href={estLink}
           target='_blank'
           key={estLink}
@@ -32,7 +32,7 @@ const Header = ({ wide, title, est, estLink, location, year, links }) => {
       return (
         <>
           <a
-            className={wide ? 'w_link' : 'm_link'}
+            className={swClass.concat('link')}
             href={link.link}
             target='_blank'
             key={link.link}
@@ -98,8 +98,8 @@ const Header = ({ wide, title, est, estLink, location, year, links }) => {
   const mobile = () => <>{route === '/apps' ? applications() : credentials()}</>
 
   return (
-    <div className={wide ? 'w_header_container' : 'm_header_container'}>
-      {wide ? web() : mobile()}
+    <div className={swClass.concat('header-container')}>
+      {swClass ? web() : mobile()}
     </div>
   );
 }
