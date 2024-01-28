@@ -4,19 +4,17 @@ import Icons from '../Shared/Icons';
 import skills from '../../../../data/skills';
 import './Skills.css';
 
-const Skills = ({ wide }) => {
-  const device = wide ? 'web' : 'mobile';
-
+const Skills = ({ swClass }) => {
   const sortSkills = () => {
     const allSkills = [];
     for (const category in skills) {
       const skillRows = [];
       skills[category].forEach(s => {
-        const dims = s['dims'][device];
+        const dims = s['dims'][swClass ? 'web' : 'mobile'];
         skillRows.push(
-          <div className={wide ? 'w_tool' : 'm_tool'}>
-            <span className={wide ? 'w_tool_text' : 'm_tool_text'}>{s.title}</span>
-            <div className="w_tool_img_container">
+          <div className={swClass.concat('tool')}>
+            <span className={swClass.concat('tool-text')}>{s.title}</span>
+            <div className="tool-img-container">
               <img src={s.icon} width={dims.width} height={dims.height} />
             </div>
           </div>
@@ -24,11 +22,11 @@ const Skills = ({ wide }) => {
       });
 
       allSkills.push(
-        <div className={wide ? 'w_category_container' : 'm_category_container'}>
-          <span className={wide ? 'w_category_name' : 'm_category_name'}>
+        <div className={swClass.concat('category-container')}>
+          <span className={swClass.concat('category-name')}>
             {category}
           </span>
-          <div className="w_tools">
+          <div className="tools">
             {skillRows}
           </div>
         </div>
@@ -39,11 +37,11 @@ const Skills = ({ wide }) => {
   }
 
   return (
-    <div className={wide ? 'w_skills_container' : 'm_skills_container'}>
-      <div className="w_skills">
+    <div className={swClass.concat('skills-container')}>
+      <div className="skills">
         {sortSkills()}
       </div>
-      <Icons wide={wide} page="Skills" />
+      <Icons swClass={swClass} page="Skills" />
     </div>
   );
 }
