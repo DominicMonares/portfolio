@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Shared.css';
 
-const Bullets = ({ wide, bullets }) => {
+const Bullets = ({ swClass, bullets }) => {
   const bold = (bullet) => {
     const splitBullet = bullet.split('<b>');
     let odd = true;
@@ -18,12 +18,12 @@ const Bullets = ({ wide, bullets }) => {
   }
 
   return (
-    <div className={wide ? 'w_bullet_container' : 'm_bullet_container'}>
+    <div className={swClass.concat('bullet-container')}>
       {bullets.map(bullet => {
         return (
-          <div className={wide ? 'w_bullet' : 'm_bullet'}>
+          <div className={swClass.concat('bullet')}>
             •
-            <p className={wide ? 'w_bullet_text' : 'm_bullet_text'}>{bold(bullet)}</p>
+            <p className={swClass.concat('bullet-text')}>{bold(bullet)}</p>
           </div>
         );
       })}
