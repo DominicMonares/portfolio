@@ -24,7 +24,7 @@ const modalStyles = { // Modal styling must be separate from css file
 
 Modal.setAppElement('#root');
 
-const Icons = ({ wide, page }) => {
+const Icons = ({ swClass, page }) => {
   const [modalIsOpen, setIsOpen] = React.useState(false);
 
   const openModal = () => {
@@ -36,8 +36,8 @@ const Icons = ({ wide, page }) => {
   }
 
   return (
-    <div className={wide ? 'w_icon_container' : 'm_icon_container'}>
-      <span className={wide ? 'w_icon_open' : 'm_icon_open'} onClick={openModal}>
+    <div className={swClass.concat('icon-container')}>
+      <span className={swClass.concat('icon-open')} onClick={openModal}>
         Icons by Icons8
       </span>
       <Modal
@@ -46,15 +46,15 @@ const Icons = ({ wide, page }) => {
         style={modalStyles}
         contentLabel='Icons Modal'
       >
-        <div className={wide ? 'w_modal_close' : 'm_modal_close'} onClick={closeModal}>X</div>
+        <div className={swClass.concat('modal-close')} onClick={closeModal}>X</div>
         <br />
-        <div className={wide ? 'w_modal_title' : 'm_modal_title'}>Source Links</div>
+        <div className={swClass.concat('modal-title')}>Source Links</div>
         <br />
         {icons[page].map(icon => {
           return (
-            <div className={wide ? 'w_modal_icon_link' : 'm_modal_icon_link'}>
+            <div className={swClass.concat('modal-icon-link')}>
               <a
-                className={wide ? 'w_modal_link' : 'm_modal_link'}
+                className={swClass.concat('modal-link')}
                 target='_blank'
                 href={icon.link}
               >
@@ -62,7 +62,7 @@ const Icons = ({ wide, page }) => {
               </a>
               &nbsp;icon by&nbsp;
               <a
-                className={wide ? 'w_modal_link' : 'm_modal_link'}
+                className={swClass.concat('modal-link')}
                 target='_blank'
                 href='https://icons8.com'
               >
@@ -72,7 +72,7 @@ const Icons = ({ wide, page }) => {
           );
         })}
         <br />
-        <div className={wide ? 'w_icon_disclaimer' : 'm_icon_disclaimer'}>
+        <div className={swClass.concat('icon-disclaimer')}>
           Icons used but not listed here were not sourced from Icons8.
         </div>
       </Modal>
