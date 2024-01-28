@@ -1,16 +1,16 @@
 import React from 'react';
 
-const SubHeader = ({ wide, desc, links }) => {
+const SubHeader = ({ swClass, desc, links }) => {
   const githubLinks = () => {
     return (
       <div>
-        {wide ? <>&nbsp;|&nbsp;</> : <></>}
+        {swClass ? <>&nbsp;|&nbsp;</> : <></>}
         {links.map((link, index) => {
           const notLast = index < links.length - 1;
           return (
             <>
               <a
-                className={wide ? 'w_sublink' : 'm_sublink'}
+                className={swClass.concat('sublink')}
                 href={link.link}
                 target='_blank'
                 key={link.link}
@@ -26,7 +26,7 @@ const SubHeader = ({ wide, desc, links }) => {
   }
 
   return (
-    <div className={wide ? 'w_subheader_container' : 'm_subheader_container'}>
+    <div className={swClass.concat('subheader-container')}>
       <span>{desc}</span>
       {links ? githubLinks() : <></>}
     </div>
