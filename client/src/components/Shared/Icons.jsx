@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import regeneratorRuntime from 'regenerator-runtime';
 import Modal from 'react-modal';
-
-import icons from '../../../../data/icons.js';
 import './Shared.css';
 
 const modalStyles = { // Modal styling must be separate from css file
@@ -26,6 +25,17 @@ Modal.setAppElement('#root');
 
 const Icons = ({ swClass, page }) => {
   const [modalIsOpen, setIsOpen] = React.useState(false);
+  const [icons, setIcons] = useState({});
+
+  useEffect(() => {
+    const fetchData = async () => await fetch('/data/icons');
+    fetchData()
+      .then(async res => {
+        const data = await res.json();
+        setIcons(data);
+      })
+      .catch(err => { throw err })
+  }, []);
 
   const openModal = () => {
     setIsOpen(true);
