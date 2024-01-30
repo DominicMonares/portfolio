@@ -1,7 +1,7 @@
 const navigation = [
   {
-    "page": "Apps",
-    "route": "/apps"
+    "page": "Applications",
+    "route": "/applications"
   },
   {
     "page": "Skills",
