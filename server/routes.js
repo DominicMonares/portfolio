@@ -3,7 +3,7 @@ const navigation = require('../data/navigation.json');
 const app = require('express').Router();
 
 app.get('/', (req, res) => {
-  res.redirect('/apps');
+  res.redirect('/applications');
 });
 
 app.get('/data/nav', (req, res) => {
