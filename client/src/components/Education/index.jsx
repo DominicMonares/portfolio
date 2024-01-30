@@ -1,11 +1,22 @@
-import React from 'react';
-
+import React, { useEffect, useState } from 'react';
+import regeneratorRuntime from 'regenerator-runtime';
 import Header from '../Shared/Header';
 import Bullets from '../Shared/Bullets';
-import education from '../../../../data/education.js';
 import './Education.css';
 
 const Education = ({ swClass }) => {
+  const [education, setEducation] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => await fetch('/data/edu');
+    fetchData()
+      .then(async res => {
+        const data = await res.json();
+        setEducation(data);
+      })
+      .catch(err => { throw err })
+  }, []);
+
   return (
     <div className={swClass.concat('education-container')}>
       {education.map(edu => {
