@@ -28,7 +28,7 @@ const Icons = ({ swClass, page }) => {
   const [icons, setIcons] = useState({});
 
   useEffect(() => {
-    const fetchData = async () => await fetch('/data/icons');
+    const fetchData = async () => await fetch('/data/iconLinks');
     fetchData()
       .then(async res => {
         const data = await res.json();

@@ -21,7 +21,7 @@ app.get('/data/exp', (req, res) => {
   res.json(experience);
 });
 
-app.get('/data/icons', (req, res) => {
+app.get('/data/iconLinks', (req, res) => {
   res.json(icons);
 });
 
