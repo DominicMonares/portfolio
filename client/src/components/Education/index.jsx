@@ -2,7 +2,7 @@ import React from 'react';
 
 import Header from '../Shared/Header';
 import Bullets from '../Shared/Bullets';
-import education from '../../../../data/education.json';
+import education from '../../../../data/education.js';
 import './Education.css';
 
 const Education = ({ swClass }) => {

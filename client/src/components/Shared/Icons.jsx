@@ -1,7 +1,7 @@
 import React from 'react';
 import Modal from 'react-modal';
 
-import icons from '../../../../data/icons.json';
+import icons from '../../../../data/icons.js';
 import './Shared.css';
 
 const modalStyles = { // Modal styling must be separate from css file

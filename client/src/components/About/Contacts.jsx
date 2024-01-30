@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { contacts } from '../../../../data/contacts.json';
+import { contacts } from '../../../../data/contacts.js';
 
 const Contacts = ({ swClass }) => {
   const allContacts = [];

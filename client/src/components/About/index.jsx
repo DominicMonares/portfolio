@@ -2,8 +2,8 @@ import React from 'react';
 
 import Contacts from './Contacts';
 import Icons from '../Shared/Icons';
-import profile_pic from '../../../../assets/about/profile_pic.png';
-import about from '../../../../data/about.json';
+import profile_pic from '../../../../assets/about/profile-pic.png';
+import about from '../../../../data/about.js';
 import './About.css';
 
 const About = ({ swClass }) => {
