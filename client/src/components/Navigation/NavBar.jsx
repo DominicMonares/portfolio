@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import regeneratorRuntime from 'regenerator-runtime';
-import './NavBar.css';
+import './Navigation.css';
 
 const NavBar = () => {
   const [navData, setNavData] = useState([]);

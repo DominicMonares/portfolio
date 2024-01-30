@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import NavBar from './components/NavBar';
-import Dropdown from './components/Dropdown';
+import NavBar from './components/Navigation/NavBar';
+import Dropdown from './components/Navigation/Dropdown';
 import About from './components/About';
 import Skills from './components/Skills';
 import Experience from './components/Experience';

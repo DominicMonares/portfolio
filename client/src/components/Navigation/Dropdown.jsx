@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 
 import navigation from '../../../../data/navigation';
-import './Dropdown.css';
+import './Navigation.css';
 
 const Dropdown = () => {
   let currentTab;
