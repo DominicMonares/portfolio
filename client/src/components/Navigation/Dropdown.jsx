@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-
-import navigation from '../../../../data/navigation';
 import './Navigation.css';
 
-const Dropdown = () => {
+const Dropdown = ({ navData }) => {
   let currentTab;
   const location = useLocation();
   const route = location.pathname;
-  const menu = navigation.filter(p => {
+  const menu = navData.filter(p => {
     if (p.route === route) {
       currentTab = p.page;
       return false;

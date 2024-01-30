@@ -1,37 +1,26 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import regeneratorRuntime from 'regenerator-runtime';
 import './Navigation.css';
 
-const NavBar = () => {
-  const [navData, setNavData] = useState([]);
+const NavBar = ({ navData }) => {
   const [tabs, setTabs] = useState({});
-
   const location = useLocation();
 
   useEffect(() => {
-    const fetchData = async () => await fetch('/data/nav');
-    fetchData()
-      .then(async res => {
-        const data = await res.json();
-        const tabData = {};
-        data.forEach(p => {
-          p.route === location.pathname
-            ? tabData[p.page] = '-active'
-            : tabData[p.page] = '';
-        });
-        setNavData(data);
-        setTabs(tabData);
-      })
-      .catch(err => { throw err })
-  }, []);
+    const tabData = {};
+    navData.forEach(p => {
+      p.route === location.pathname
+        ? tabData[p.page] = '-active'
+        : tabData[p.page] = '';
+    });
+    setTabs(tabData);
+  });
 
   const updateTabs = (tab) => {
     const currentTabs = { ...tabs };
     for (const t in currentTabs) {
       t === tab ? currentTabs[t] = '-active' : currentTabs[t] = '';
     }
-    
     setTabs(currentTabs);
   }
 

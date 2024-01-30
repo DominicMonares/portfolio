@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation
+} from 'react-router-dom';
+import regeneratorRuntime from 'regenerator-runtime';
 import NavBar from './components/Navigation/NavBar';
 import Dropdown from './components/Navigation/Dropdown';
 import About from './components/About';
@@ -13,6 +19,7 @@ import './App.css';
 const App = () => {
   const isSmallWindow = () =>  window.innerWidth < 790 ? 'sw-' : '';
   const [swClass, setSWClass] = useState(isSmallWindow());
+  const [navData, setNavData] = useState([]);
 
   useEffect(() => {
     const handleWidthChange = () => setSWClass(isSmallWindow());
@@ -20,12 +27,22 @@ const App = () => {
     return () => window.removeEventListener('resize', handleWidthChange);
   }, []);
 
+  useEffect(() => {
+    const fetchData = async () => await fetch('/data/nav');
+    fetchData()
+      .then(async res => {
+        const data = await res.json();
+        setNavData(data);
+      })
+      .catch(err => { throw err })
+  }, []);
+
   return (
     <div id={swClass.concat('app')}>
       <h1 className={swClass.concat('title')}>Dominic Monares</h1>
       <h3 className={swClass.concat('subtitle')}>Full-Stack Software Engineer</h3>
       <Router>
-        {isSmallWindow() ? <Dropdown /> : <NavBar />}
+        {isSmallWindow() ? <Dropdown navData={navData} /> : <NavBar navData={navData} />}
         <div className="route-container">
           <Routes>
             <Route path='/apps' element={<Applications swClass={swClass} />} />
