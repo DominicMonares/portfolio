@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/data/about', (req, res) => {
-  res.json(education);
+  res.json(about);
 });
 
 app.get('/data/edu', (req, res) => {
