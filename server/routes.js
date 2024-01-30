@@ -21,6 +21,10 @@ app.get('/data/exp', (req, res) => {
   res.json(experience);
 });
 
+app.get('/data/icons', (req, res) => {
+  res.json(icons);
+});
+
 app.get('/data/nav', (req, res) => {
   res.json(navigation);
 });
