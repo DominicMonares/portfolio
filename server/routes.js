@@ -35,4 +35,8 @@ app.get('/data/nav', (req, res) => {
   res.json(navigation);
 });
 
+app.get('/data/skills', (req, res) => {
+  res.json(skills);
+});
+
 module.exports = app;
