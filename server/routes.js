@@ -1,4 +1,5 @@
 const about = require('../data/about.json');
+const contacts = require('../data/contacts.json');
 const education = require('../data/education.json');
 const experience = require('../data/experience.json');
 const navigation = require('../data/navigation.json');
@@ -11,6 +12,10 @@ app.get('/', (req, res) => {
 
 app.get('/data/about', (req, res) => {
   res.json(about);
+});
+
+app.get('/data/contacts', (req, res) => {
+  res.json(contacts);
 });
 
 app.get('/data/edu', (req, res) => {
