@@ -6,8 +6,8 @@ import profile_pic from '../../../../assets/about/profile-pic.png';
 import './About.css';
 
 const About = ({ swClass }) => {
+  // Fetch personal summary data
   const [about, setAbout] = useState([]);
-
   useEffect(() => {
     const fetchData = async () => await fetch('/data/about');
     fetchData()
@@ -19,9 +19,9 @@ const About = ({ swClass }) => {
   }, []);
 
   return (
-    <div>
-      <div className={swClass.concat('about-container')}>
-        <div className={swClass.concat('about-body-container')}>
+    <div className={swClass.concat('about-container')}>
+      <div className={swClass.concat('about-body-container')}>
+        <div className={swClass.concat('about-body')}>
           <img
             className={swClass.concat('profile-pic')}
             src={profile_pic}
@@ -32,7 +32,7 @@ const About = ({ swClass }) => {
             {about.map(p => <p className={swClass.concat('about-text')}>{p}</p>)}
           </div>
         </div>
-        <div className={swClass.concat('about-container-ul')} />
+        <div className={swClass.concat('about-body-ul')} />
         <Contacts swClass={swClass} />
       </div>
       <Icons swClass={swClass} page='about' />

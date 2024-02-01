@@ -2,7 +2,7 @@
 
 /* About */
 
-.about-container {
+.about-body-container {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -14,7 +14,7 @@
   padding: 8px;
 }
 
-.about-body-container {
+.about-body {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -38,7 +38,7 @@
   /* line-height: 1.5; */
 }
 
-.about-container-ul {
+.about-body-ul {
   width: 100%;
   height: 2px;
   background: rgb(77,0,109);
@@ -92,12 +92,12 @@
 
 /* About */
 
-.sw-about-container {
+.sw-about-body-container {
   padding-left: 2px;
   padding-right: 2px;
 }
 
-.sw-about-body-container {
+.sw-about-body {
   display: flex;
   flex-direction: column;
 }
@@ -120,7 +120,7 @@
   line-height: 1;
 }
 
-.sw-about-container-ul {
+.sw-about-body-ul {
   width: 101%;
   margin-top: -6px;
   margin-bottom: 7px;
