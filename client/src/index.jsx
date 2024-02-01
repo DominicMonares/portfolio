@@ -15,11 +15,6 @@ const App = () => {
   // Change styling depending on window size
   const isSmallWindow = () =>  window.innerWidth < 790 ? 'sw-' : '';
   const [swClass, setSWClass] = useState(isSmallWindow());
-
-  // Tab navigation data
-  const [navData, setNavData] = useState([]);
-
-  // Handle window resize
   useEffect(() => {
     const handleWidthChange = () => setSWClass(isSmallWindow());
     window.addEventListener('resize', handleWidthChange);
@@ -27,6 +22,7 @@ const App = () => {
   }, []);
 
   // Fetch tab navigation data
+  const [navData, setNavData] = useState([]);
   useEffect(() => {
     const fetchData = async () => await fetch('/data/nav');
     fetchData()
