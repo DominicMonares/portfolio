@@ -1,11 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useLocation
-} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import regeneratorRuntime from 'regenerator-runtime';
 import NavBar from './components/Navigation/NavBar';
 import Dropdown from './components/Navigation/Dropdown';
@@ -17,16 +12,21 @@ import Applications from './components/Applications';
 import './App.css';
 
 const App = () => {
+  // Change styling depending on window size
   const isSmallWindow = () =>  window.innerWidth < 790 ? 'sw-' : '';
   const [swClass, setSWClass] = useState(isSmallWindow());
+
+  // Tab navigation data
   const [navData, setNavData] = useState([]);
 
+  // Handle window resize
   useEffect(() => {
     const handleWidthChange = () => setSWClass(isSmallWindow());
     window.addEventListener('resize', handleWidthChange);
     return () => window.removeEventListener('resize', handleWidthChange);
   }, []);
 
+  // Fetch tab navigation data
   useEffect(() => {
     const fetchData = async () => await fetch('/data/nav');
     fetchData()
