@@ -2,6 +2,7 @@ const about = require('../data/about.json');
 const contacts = require('../data/contacts.json');
 const education = require('../data/education.json');
 const experience = require('../data/experience.json');
+const iconLinks = require('../data/iconLinks.json');
 const navigation = require('../data/navigation.json');
 
 const app = require('express').Router();
@@ -27,7 +28,7 @@ app.get('/data/exp', (req, res) => {
 });
 
 app.get('/data/iconLinks', (req, res) => {
-  res.json(icons);
+  res.json(iconLinks);
 });
 
 app.get('/data/nav', (req, res) => {
