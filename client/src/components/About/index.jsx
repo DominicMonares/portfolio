@@ -35,7 +35,7 @@ const About = ({ swClass }) => {
         <div className={swClass.concat('about-container-ul')} />
         <Contacts swClass={swClass} />
       </div>
-      <Icons swClass={swClass} page='About' />
+      <Icons swClass={swClass} page='about' />
     </div>
   );
 }
