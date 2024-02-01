@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import regeneratorRuntime from 'regenerator-runtime';
 import Application from './Application.jsx';
-import applications from '../../../../data/applications.js';
 import './Applications.css';
 
 const Applications = ({ swClass }) => {
+  const [applications, setApplications] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => await fetch('/data/applications');
+    fetchData()
+      .then(async res => {
+        const data = await res.json();
+        setApplications(data);
+      })
+      .catch(err => { throw err })
+  }, []);
+
   return (
     <div className={swClass.concat('applications-container')}>
       {applications.map(app => <Application swClass={swClass} app={app} />)}

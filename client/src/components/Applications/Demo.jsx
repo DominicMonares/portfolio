@@ -1,4 +1,5 @@
 import React from 'react';
+import images from '../../images';
 
 const Demo = ({ swClass, demo }) => {
   const dims = demo['dims'][swClass ? 'web' : 'mobile'];
@@ -34,7 +35,7 @@ const Demo = ({ swClass, demo }) => {
               loop='true'
               muted='true'
             >
-              <source src={demo.media} type={demo.mediaType} />
+              <source src={images['applications'][demo.media]} type={demo.mediaType} />
             </video>
           ) : (
             <img
