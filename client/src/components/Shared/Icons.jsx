@@ -25,14 +25,14 @@ Modal.setAppElement('#root');
 
 const Icons = ({ swClass, page }) => {
   const [modalIsOpen, setIsOpen] = React.useState(false);
-  const [icons, setIcons] = useState({});
+  const [iconLinks, setIconLinks] = useState({ about: [], skills: [] });
 
   useEffect(() => {
     const fetchData = async () => await fetch('/data/iconLinks');
     fetchData()
       .then(async res => {
         const data = await res.json();
-        setIcons(data);
+        setIconLinks(data);
       })
       .catch(err => { throw err })
   }, []);
@@ -60,7 +60,7 @@ const Icons = ({ swClass, page }) => {
         <br />
         <div className={swClass.concat('modal-title')}>Source Links</div>
         <br />
-        {icons[page].map(icon => {
+        {iconLinks[page].map(icon => {
           return (
             <div className={swClass.concat('modal-icon-link')}>
               <a
