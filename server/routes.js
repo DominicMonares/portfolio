@@ -4,6 +4,7 @@ const education = require('../data/education.json');
 const experience = require('../data/experience.json');
 const iconLinks = require('../data/iconLinks.json');
 const navigation = require('../data/navigation.json');
+const skills = require('../data/skills.json');
 
 const app = require('express').Router();
 
