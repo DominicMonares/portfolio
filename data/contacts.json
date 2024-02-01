@@ -14,7 +14,7 @@
       }
     }
   },
-  "linkedin": {
+  "linkedIn": {
     "link": "https://linkedin.com/in/dominic-monares/",
     "display": "linkedin.com/in/dominic-monares/",
     "icon": "linkedIn",
@@ -29,7 +29,7 @@
       }
     }
   },
-  "github": {
+  "gitHub": {
     "link": "https://github.com/DominicMonares",
     "display": "github.com/DominicMonares",
     "icon": "gitHub",
