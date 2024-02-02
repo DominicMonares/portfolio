@@ -44,7 +44,7 @@ const Application = ({ swClass, app }) => {
   };
 
   return (
-    <div className={swClass.concat('app-container')}>
+    <div className={swClass.concat('application-container')}>
       <Header
         swClass={swClass}
         title={app.title}
