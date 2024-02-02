@@ -5,8 +5,8 @@ import Bullets from '../Shared/Bullets';
 import './Education.css';
 
 const Education = ({ swClass }) => {
+  // Fetch education data
   const [education, setEducation] = useState([]);
-
   useEffect(() => {
     const fetchData = async () => await fetch('/data/edu');
     fetchData()
@@ -30,7 +30,11 @@ const Education = ({ swClass }) => {
               location={edu.location}
               year={edu.year}
             />
-            {edu.bullets ? <Bullets swClass={swClass} bullets={edu.bullets} /> : <></>}
+            {edu.bullets ? (
+              <Bullets swClass={swClass} bullets={edu.bullets} />
+            ) : (
+              <span></span>
+            )}
           </div>
         );
       })}
