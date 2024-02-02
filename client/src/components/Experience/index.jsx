@@ -4,8 +4,8 @@ import Job from './Job';
 import './Experience.css';
 
 const Experience = ({ swClass }) => {
+  // Fetch experience data 
   const [experience, setExperience] = useState([]);
-
   useEffect(() => {
     const fetchData = async () => await fetch('/data/exp');
     fetchData()
