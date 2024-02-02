@@ -1,105 +1,49 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
-
 import './Shared.css';
 
-const Header = ({ swClass, title, est, estLink, location, year, links }) => {
-  const routeLocation = useLocation();
-  const route = routeLocation.pathname;
-
-  /* General */
-
-  const description = () => { // used for description and establishment
-    if (estLink) {
-      return (
-        <a
-          className={swClass.concat('link')}
-          href={estLink}
-          target='_blank'
-          key={estLink}
-        >
-          {est}
-        </a>
-      );
-    } else {
-      return <span>{est}</span>
-    }
-  }
-
-  const githubLinks = () => {
-    return links.map((link, index) => {
-      const notLast = index < links.length - 1;
-      return (
-        <>
-          <a
-            className={swClass.concat('link')}
-            href={link.link}
-            target='_blank'
-            key={link.link}
-          >
-            {link.label}
-          </a>
-          {notLast ? <>&nbsp;|&nbsp;</> : <></>}
-        </>
-      );
-    });
-  }
-
-
-  /* Web Render */
-
-  const web = () => {
-    return (
-      <>
-        <>
-          <span className='w_header_title'>{title}</span>
-          &nbsp;|&nbsp;
-          {description()}
-          &nbsp;|&nbsp;
-          <span>{location}</span>
-        </>
-        {links ? githubLinks() : <></>}
-        {year ? <span className='w_year'>{year}</span> : <></>}
-      </>
-    );
-  }
-
-
-  /* Mobile Render */
-
-  const applications = () => {
-    return (
-      <>
-        <div>
-          <span className='m_header_title'>{title}</span>
-          &nbsp;|&nbsp;
-          {links ? githubLinks() : <></>}
-        </div>
-        <div className="m_description">{description()}</div>
-      </>
-    );
-  }
-
-  const credentials = () => { // used for experience and education
-    return (
-      <>
-        <span className='m_header_title'>{title}</span>
-        <div>
-          {description()}
-          &nbsp;|&nbsp;
-          <span>{location}</span>
-          {year ? <>&nbsp;|&nbsp;{year}</> : <></>}
-        </div>
-        {links ? githubLinks() : <></>}
-      </>
-    );
-  }
-
-  const mobile = () => <>{route === '/apps' ? applications() : credentials()}</>
-
-  return (
+const Header = ({ swClass, title, est, estLink, location, year }) => {
+  return swClass ? (
     <div className={swClass.concat('header-container')}>
-      {swClass ? web() : mobile()}
+      <div className='sw-header-title'>{title}</div>
+      <div>
+        {estLink ? (
+          <a
+            className={'sw-link'}
+            href={estLink}
+            target='-blank'
+            key={estLink}
+          >
+            {est}
+          </a>
+        ) : (
+          <span>{est}</span>
+        )}
+        &nbsp;|&nbsp;
+        <span>{location}</span>
+        <span>&nbsp;|&nbsp;{year}</span>
+      </div>
+    </div>
+  ) : (
+    <div className={swClass.concat('header-container')}>
+      <div>
+        <span className='header-title'>{title}</span>
+        &nbsp;|&nbsp;
+        {estLink ? (
+          <a
+            className={'link'}
+            href={estLink}
+            target='-blank'
+            key={estLink}
+          >
+            {est}
+          </a>
+        ) : (
+          <span>{est}</span>
+        )}
+        &nbsp;|&nbsp;
+        <span>{location}</span>
+      </div>
+      <div className='year'>{year}</div>
     </div>
   );
 }
