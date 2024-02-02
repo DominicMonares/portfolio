@@ -32,7 +32,7 @@ const Education = ({ swClass }) => {
           {edu.bullets ? (
             <Bullets swClass={swClass} bullets={edu.bullets} />
           ) : (
-            <span></span>
+            <span />
           )}
         </div>
       ))}

@@ -22,7 +22,7 @@ const ApplicationHeader = ({ swClass, title, desc, links }) => {
           {i < links.length - 1 ? (
             <span>&nbsp;|&nbsp;</span>
           ) : (
-            <span></span>
+            <span />
           )}
         </span>
       ))}

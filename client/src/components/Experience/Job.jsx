@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Header from '../Shared/Header';
 import SubHeader from '../Shared/SubHeader';
 import Bullets from '../Shared/Bullets';
@@ -16,8 +15,20 @@ const Job = ({ swClass, job }) => {
         location={job.location}
         year={job.year}
       />
-      {app ? <SubHeader swClass={swClass} desc={app.desc} links={app.links} /> : <></>}
-      {bullets ? <Bullets swClass={swClass} bullets={bullets} /> : <></>}
+      {app ? (
+        <SubHeader
+          swClass={swClass}
+          desc={app.desc}
+          links={app.links}
+        />
+      ) : (
+        <span />
+      )}
+      {bullets ? (
+        <Bullets swClass={swClass} bullets={bullets} />
+      ) : (
+        <span />
+      )}
     </div>
   );
 }
