@@ -19,11 +19,11 @@
         "mediaType": "video/mp4",
         "media": "sppe4",
         "dims": {
-          "web": {
+          "reg": {
             "width": 650,
             "height": 540
           },
-          "mobile": {
+          "small": {
             "width": 237,
             "height": 197
           }
@@ -34,11 +34,11 @@
         "mediaType": "video/mp4",
         "media": "sppe1",
         "dims": {
-          "web": {
+          "reg": {
             "width": 950,
             "height": 540
           },
-          "mobile": {
+          "small": {
             "width": 350,
             "height": 197
           }
@@ -49,11 +49,11 @@
         "mediaType": "video/mp4",
         "media": "sppe2",
         "dims": {
-          "web": {
+          "reg": {
             "width": 950,
             "height": 540
           },
-          "mobile": {
+          "small": {
             "width": 350,
             "height": 197
           }
@@ -64,11 +64,11 @@
         "mediaType": "video/mp4",
         "media": "sppe3",
         "dims": {
-          "web": {
+          "reg": {
             "width": 950,
             "height": 540
           },
-          "mobile": {
+          "small": {
             "width": 350,
             "height": 197
           }
@@ -96,11 +96,11 @@
         "mediaType": "video/mp4",
         "media": "clown1",
         "dims": {
-          "web": {
+          "reg": {
             "width": 942,
             "height": 640
           },
-          "mobile": {
+          "small": {
             "width": 350,
             "height": 237
           }
@@ -111,11 +111,11 @@
         "mediaType": "video/mp4",
         "media": "clown2",
         "dims": {
-          "web": {
+          "reg": {
             "width": 626,
             "height": 350
           },
-          "mobile": {
+          "small": {
             "width": 350,
             "height": 205
           }
@@ -139,11 +139,11 @@
         "mediaType": "youtube",
         "media": "https://www.youtube.com/embed/fRe4yupMJ-A",
         "dims": {
-          "web": {
+          "reg": {
             "width": 960,
             "height": 540
           },
-          "mobile": {
+          "small": {
             "width": 350,
             "height": 197
           }
@@ -154,11 +154,11 @@
         "mediaType": "video/mp4",
         "media": "fretJS1",
         "dims": {
-          "web": {
+          "reg": {
             "width": 960,
             "height": 501
           },
-          "mobile": {
+          "small": {
             "width": 350,
             "height": 183
           }
@@ -169,11 +169,11 @@
         "mediaType": "video/mp4",
         "media": "fretJS2",
         "dims": {
-          "web": {
+          "reg": {
             "width": 956,
             "height": 416
           },
-          "mobile": {
+          "small": {
             "width": 350,
             "height": 152
           }
@@ -201,11 +201,11 @@
         "mediaType": "video/mp4",
         "media": "petpix1",
         "dims": {
-          "web": {
+          "reg": {
             "width": 177,
             "height": 356
           },
-          "mobile": {
+          "small": {
             "width": 350,
             "height": 704
           }
@@ -216,11 +216,11 @@
         "mediaType": "video/mp4",
         "media": "petpix2",
         "dims": {
-          "web": {
+          "reg": {
             "width": 177,
             "height": 356
           },
-          "mobile": {
+          "small": {
             "width": 350,
             "height": 704
           }
@@ -231,11 +231,11 @@
         "mediaType": "video/mp4",
         "media": "petpix3",
         "dims": {
-          "web": {
+          "reg": {
             "width": 177,
             "height": 354
           },
-          "mobile": {
+          "small": {
             "width": 350,
             "height": 700
           }
@@ -246,11 +246,11 @@
         "mediaType": "video/mp4",
         "media": "petpix4",
         "dims": {
-          "web": {
+          "reg": {
             "width": 177,
             "height": 354
           },
-          "mobile": {
+          "small": {
             "width": 350,
             "height": 700
           }
@@ -274,11 +274,11 @@
         "mediaType": "video/mp4",
         "media": "fec1",
         "dims": {
-          "web": {
+          "reg": {
             "width": 713,
             "height": 346
           },
-          "mobile": {
+          "small": {
             "width": 350,
             "height": 170
           }
@@ -289,11 +289,11 @@
         "mediaType": "video/mp4",
         "media": "fec2",
         "dims": {
-          "web": {
+          "reg": {
             "width": 664,
             "height": 180
           },
-          "mobile": {
+          "small": {
             "width": 350,
             "height": 95
           }
@@ -304,11 +304,11 @@
         "mediaType": "video/mp4",
         "media": "fec3",
         "dims": {
-          "web": {
+          "reg": {
             "width": 718,
             "height": 378
           },
-          "mobile": {
+          "small": {
             "width": 350,
             "height": 184
           }
@@ -319,11 +319,11 @@
         "mediaType": "video/mp4",
         "media": "fec4",
         "dims": {
-          "web": {
+          "reg": {
             "width": 718,
             "height": 380
           },
-          "mobile": {
+          "small": {
             "width": 350,
             "height": 185
           }
