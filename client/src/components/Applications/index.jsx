@@ -4,8 +4,8 @@ import Application from './Application.jsx';
 import './Applications.css';
 
 const Applications = ({ swClass }) => {
+  // Fetch application portfolio data
   const [applications, setApplications] = useState([]);
-
   useEffect(() => {
     const fetchData = async () => await fetch('/data/applications');
     fetchData()
