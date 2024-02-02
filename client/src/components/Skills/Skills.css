@@ -10,7 +10,7 @@
   /* height: 80%; */
 }
 
-.skills {
+.categories-container {
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -41,7 +41,7 @@
   color: #4d006d;
 }
 
-.tools {
+.skills {
   /* display: flex;
   flex-direction: row;
   justify-content: space-evenly; */
@@ -50,7 +50,7 @@
   margin-right: 5px; */
 }
 
-.tool {
+.skill {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,13 +60,13 @@
   margin-right: 8px; */
 }
 
-.tool-text {
+.skill-text {
   font-size: 14px;
   /* margin-top: 4px; */
   margin-right: 5px;
 }
 
-.tool-img-container {
+.skill-img-container {
   width: 20px;
   height: 20px;
   display: flex;
@@ -80,6 +80,13 @@
 .sw-skills-container {
   display: flex;
   flex-direction: column;
+}
+
+.sw-categories-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 
 .sw-category-container {
@@ -100,14 +107,7 @@
   margin-bottom: 15px;
 }
 
-.sw-skills {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-  font-size: 20px;
-}
-
-.sw-tool {
+.sw-skill {
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -116,7 +116,7 @@
   margin-bottom: 5px;
 }
 
-.sw-tool-text {
+.sw-skill-text {
   margin-top: 5px;
   margin-right: 15px;
 }
