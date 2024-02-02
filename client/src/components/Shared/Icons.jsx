@@ -3,7 +3,8 @@ import regeneratorRuntime from 'regenerator-runtime';
 import Modal from 'react-modal';
 import './Shared.css';
 
-const modalStyles = { // Modal styling must be separate from css file
+// Define modal styles then attach modal to root
+const modalStyles = {
   content: {
     top: '50%',
     left: '50%',
@@ -20,13 +21,11 @@ const modalStyles = { // Modal styling must be separate from css file
     zIndex: 5
   }
 };
-
 Modal.setAppElement('#root');
 
 const Icons = ({ swClass, page }) => {
-  const [modalIsOpen, setIsOpen] = React.useState(false);
+  // Fetch icon link data
   const [iconLinks, setIconLinks] = useState({ about: [], skills: [] });
-
   useEffect(() => {
     const fetchData = async () => await fetch('/data/iconLinks');
     fetchData()
@@ -37,26 +36,25 @@ const Icons = ({ swClass, page }) => {
       .catch(err => { throw err })
   }, []);
 
-  const openModal = () => {
-    setIsOpen(true);
-  }
-
-  const closeModal = () => {
-    setIsOpen(false);
-  }
+  // Open and close modal
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+  const openModal = () => setIsOpen(true);
+  const closeModal = () => setIsOpen(false);
 
   return (
     <div className={swClass.concat('icon-container')}>
-      <span className={swClass.concat('icon-open')} onClick={openModal}>
+      <button className={swClass.concat('icon-open')} onClick={openModal}>
         Icons by Icons8
-      </span>
+      </button>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         style={modalStyles}
         contentLabel='Icons Modal'
       >
-        <div className={swClass.concat('modal-close')} onClick={closeModal}>X</div>
+        <button className={swClass.concat('modal-close')} onClick={closeModal}>
+          X
+        </button>
         <br />
         <div className={swClass.concat('modal-title')}>Source Links</div>
         <br />
