@@ -19,25 +19,23 @@ const Education = ({ swClass }) => {
 
   return (
     <div className={swClass.concat('education-container')}>
-      {education.map(edu => {
-        return (
-          <div className={swClass.concat('edu-container')}>
-            <Header
-              swClass={swClass}
-              title={edu.title}
-              est={edu.est}
-              estLink={edu.estLink}
-              location={edu.location}
-              year={edu.year}
-            />
-            {edu.bullets ? (
-              <Bullets swClass={swClass} bullets={edu.bullets} />
-            ) : (
-              <span></span>
-            )}
-          </div>
-        );
-      })}
+      {education.map(edu => (
+        <div className={swClass.concat('edu-container')}>
+          <Header
+            swClass={swClass}
+            title={edu.title}
+            est={edu.est}
+            estLink={edu.estLink}
+            location={edu.location}
+            year={edu.year}
+          />
+          {edu.bullets ? (
+            <Bullets swClass={swClass} bullets={edu.bullets} />
+          ) : (
+            <span></span>
+          )}
+        </div>
+      ))}
     </div>
   );
 }
