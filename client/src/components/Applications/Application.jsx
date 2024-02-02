@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import Header from '../Shared/Header';
+import ApplicationHeader from './ApplicationHeader';
 import SubHeader from '../Shared/SubHeader';
 import Demo from './Demo';
 
@@ -44,12 +44,11 @@ const Application = ({ swClass, app }) => {
 
   return (
     <div className={swClass.concat('application-container')}>
-      <Header
+      <ApplicationHeader
         swClass={swClass}
         title={app.title}
-        est={app.desc}
+        desc={app.desc}
         links={app.links}
-        techs={app.techs}
       />
       <SubHeader swClass={swClass} desc={app.techs} />
       <Carousel
