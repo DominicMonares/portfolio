@@ -1,47 +1,46 @@
 import React, { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Header from '../Shared/Header';
 import SubHeader from '../Shared/SubHeader';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Demo from './Demo';
 
-const Application = ({ swClass, app }) => {
-  const [currentSlide, setCurrentSlide] = useState(0);
+// Define carousel arrow styles
+const arrowStyles = {
+  position: 'absolute',
+  zIndex: 2,
+  top: 'calc(50% - 15px)',
+  width: 40,
+  height: 40,
+  cursor: 'pointer',
+  fontSize: 30,
+  color: '#4d006d',
+  backgroundColor: '#f1cfff',
+  border: '#4d006d',
+  borderWidth: 1,
+  borderStyle: 'solid',
+  borderRadius: 45,
+  textAlign: 'center',
+  opacity: 0.5,
+  transition: 'scale 0.20s',
+};
+const leftArrowStyles = {
+  ...arrowStyles,
+  marginLeft: -13,
+  left: 15,
+};
+const rightArrowStyles = {
+  ...arrowStyles,
+  marginRight: -13,
+  right: 15,
+};
 
+const Application = ({ swClass, app }) => {
+  // Change carousel slides
+  const [currentSlide, setCurrentSlide] = useState(0);
   const updateCurrentSlide = (index) => {
     if (currentSlide !== index) setCurrentSlide(index)
   }
-
-  const arrowStyles = {
-    position: 'absolute',
-    zIndex: 2,
-    top: 'calc(50% - 15px)',
-    width: 40,
-    height: 40,
-    cursor: 'pointer',
-    fontSize: 30,
-    color: '#4d006d',
-    backgroundColor: '#f1cfff',
-    border: '#4d006d',
-    borderWidth: 1,
-    borderStyle: 'solid',
-    borderRadius: 45,
-    textAlign: 'center',
-    opacity: 0.5,
-    transition: 'scale 0.20s',
-  };
-
-  const leftArrowStyles = {
-    ...arrowStyles,
-    marginLeft: -13,
-    left: 15,
-  };
-
-  const rightArrowStyles = {
-    ...arrowStyles,
-    marginRight: -13,
-    right: 15,
-  };
 
   return (
     <div className={swClass.concat('application-container')}>
