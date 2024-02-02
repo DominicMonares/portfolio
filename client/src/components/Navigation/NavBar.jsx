@@ -3,19 +3,22 @@ import { NavLink, useLocation } from 'react-router-dom';
 import './Navigation.css';
 
 const NavBar = ({ navData }) => {
-  const [tabs, setTabs] = useState({});
+  // Find current page
   const location = useLocation();
 
+  // Set initial page
+  const [tabs, setTabs] = useState({});
   useEffect(() => {
     const tabData = {};
     navData.forEach(p => {
       p.route === location.pathname
-        ? tabData[p.page] = '-active'
-        : tabData[p.page] = '';
+      ? tabData[p.page] = '-active'
+      : tabData[p.page] = '';
     });
     setTabs(tabData);
   });
-
+  
+  // Update current page
   const updateTabs = (tab) => {
     const currentTabs = { ...tabs };
     for (const t in currentTabs) {
