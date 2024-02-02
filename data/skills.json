@@ -4,140 +4,80 @@
       "title": "JavaScript",
       "icon": "js",
       "dims": {
-        "web": {
-          "width": 20,
-          "height": 20
-        },
-        "mobile": {
-          "width": 48,
-          "height": 48
-        }
+        "width": 20,
+        "height": 20
       }
     },
     {
       "title": "TypeScript",
       "icon": "ts",
       "dims": {
-        "web": {
-          "width": 20,
-          "height": 20
-        },
-        "mobile": {
-          "width": 48,
-          "height": 48
-        }
+        "width": 20,
+        "height": 20
       }
     },
     {
       "title": "HTML5",
       "icon": "html5",
       "dims": {
-        "web": {
-          "width": 18,
-          "height": 20
-        },
-        "mobile": {
-          "width": 48,
-          "height": 48
-        }
+        "width": 18,
+        "height": 20
       }
     },
     {
       "title": "CSS3",
       "icon": "css3",
       "dims": {
-        "web": {
-          "width": 18,
-          "height": 20
-        },
-        "mobile": {
-          "width": 48,
-          "height": 48
-        }
+        "width": 18,
+        "height": 20
       }
     },
     {
       "title": "React",
       "icon": "react",
       "dims": {
-        "web": {
-          "width": 20,
-          "height": 18
-        },
-        "mobile": {
-          "width": 48,
-          "height": 48
-        }
+        "width": 20,
+        "height": 18
       }
     },
     {
       "title": "React Native",
       "icon": "react",
       "dims": {
-        "web": {
-          "width": 20,
-          "height": 18
-        },
-        "mobile": {
-          "width": 48,
-          "height": 48
-        }
+        "width": 20,
+        "height": 18
       }
     },
     {
       "title": "Redux",
       "icon": "redux",
       "dims": {
-        "web": {
-          "width": 20,
-          "height": 19
-        },
-        "mobile": {
-          "width": 48,
-          "height": 48
-        }
+        "width": 20,
+        "height": 19
       }
     },
     {
       "title": "Electron",
       "icon": "electron",
       "dims": {
-        "web": {
-          "width": 20,
-          "height": 20
-        },
-        "mobile": {
-          "width": 48,
-          "height": 48
-        }
+        "width": 20,
+        "height": 20
       }
     },
     {
       "title": "jQuery",
       "icon": "jquery",
       "dims": {
-        "web": {
-          "width": 20,
-          "height": 19
-        },
-        "mobile": {
-          "width": 46,
-          "height": 46
-        }
+        "width": 20,
+        "height": 19
       }
     },
     {
       "title": "Web Audio API",
       "icon": "webAudio",
       "dims": {
-        "web": {
-          "width": 20,
-          "height": 20
-        },
-        "mobile": {
-          "width": 45,
-          "height": 45
-        }
+        "width": 20,
+        "height": 20
       }
     }
   ],
@@ -146,140 +86,80 @@
       "title": "Node.js",
       "icon": "node",
       "dims": {
-        "web": {
-          "width": 18,
-          "height": 20
-        },
-        "mobile": {
-          "width": 48,
-          "height": 48
-        }
+        "width": 18,
+        "height": 20
       }
     },
     {
       "title": "Express",
       "icon": "js",
       "dims": {
-        "web": {
-          "width": 20,
-          "height": 20
-        },
-        "mobile": {
-          "width": 48,
-          "height": 48
-        }
+        "width": 20,
+        "height": 20
       }
     },
     {
       "title": "Python",
       "icon": "python",
       "dims": {
-        "web": {
-          "width": 20,
-          "height": 19
-        },
-        "mobile": {
-          "width": 48,
-          "height": 48
-        }
+        "width": 20,
+        "height": 19
       }
     },
     {
       "title": "MongoDB",
       "icon": "mongo",
       "dims": {
-        "web": {
-          "width": 18,
-          "height": 20
-        },
-        "mobile": {
-          "width": 48,
-          "height": 48
-        }
+        "width": 18,
+        "height": 20
       }
     },
     {
       "title": "MySQL",
       "icon": "mySQL",
       "dims": {
-        "web": {
-          "width": 20,
-          "height": 20
-        },
-        "mobile": {
-          "width": 46,
-          "height": 46
-        }
+        "width": 20,
+        "height": 20
       }
     },
     {
       "title": "REST API Dev",
       "icon": "rest",
       "dims": {
-        "web": {
-          "width": 19,
-          "height": 20
-        },
-        "mobile": {
-          "width": 48,
-          "height": 48
-        }
+        "width": 19,
+        "height": 20
       }
     },
     {
       "title": "Memcached",
       "icon": "memcached",
       "dims": {
-        "web": {
-          "width": 20,
-          "height": 20
-        },
-        "mobile": {
-          "width": 46,
-          "height": 46
-        }
+        "width": 20,
+        "height": 20
       }
     },
     {
       "title": "Passport.js",
       "icon": "passport",
       "dims": {
-        "web": {
-          "width": 16,
-          "height": 20
-        },
-        "mobile": {
-          "width": 46,
-          "height": 46
-        }
+        "width": 16,
+        "height": 20
       }
     },
     {
       "title": "Auth0",
       "icon": "auth0",
       "dims": {
-        "web": {
-          "width": 18,
-          "height": 20
-        },
-        "mobile": {
-          "width": 46,
-          "height": 46
-        }
+        "width": 18,
+        "height": 20
       }
     },
     {
       "title": "Nodemailer",
       "icon": "nodemailer",
       "dims": {
-        "web": {
-          "width": 20,
-          "height": 10
-        },
-        "mobile": {
-          "width": 94,
-          "height": 42
-        }
+        "width": 20,
+        "height": 10
       }
     }
   ],
@@ -288,140 +168,80 @@
       "title": "Jest",
       "icon": "jest",
       "dims": {
-        "web": {
-          "width": 18,
-          "height": 20
-        },
-        "mobile": {
-          "width": 48,
-          "height": 48
-        }
+        "width": 18,
+        "height": 20
       }
     },
     {
       "title": "Mocha",
       "icon": "mocha",
       "dims": {
-        "web": {
-          "width": 18,
-          "height": 20
-        },
-        "mobile": {
-          "width": 48,
-          "height": 48
-        }
+        "width": 18,
+        "height": 20
       }
     },
     {
       "title": "Chai",
       "icon": "chai",
       "dims": {
-        "web": {
-          "width": 18,
-          "height": 20
-        },
-        "mobile": {
-          "width": 48,
-          "height": 48
-        }
+        "width": 18,
+        "height": 20
       }
     },
     {
       "title": "SuperTest",
       "icon": "npm",
       "dims": {
-        "web": {
-          "width": 20,
-          "height": 8
-        },
-        "mobile": {
-          "width": 48,
-          "height": 48
-        }
+        "width": 20,
+        "height": 8
       }
     },
     {
       "title": "AWS: EC2",
       "icon": "ec2",
       "dims": {
-        "web": {
-          "width": 17,
-          "height": 20
-        },
-        "mobile": {
-          "width": 46,
-          "height": 46
-        }
+        "width": 17,
+        "height": 20
       }
     },
     {
       "title": "AWS: S3",
       "icon": "s3",
       "dims": {
-        "web": {
-          "width": 17,
-          "height": 20
-        },
-        "mobile": {
-          "width": 46,
-          "height": 46
-        }
+        "width": 17,
+        "height": 20
       }
     },
     {
       "title": "NGINX",
       "icon": "nginx",
       "dims": {
-        "web": {
-          "width": 18,
-          "height": 20
-        },
-        "mobile": {
-          "width": 48,
-          "height": 48
-        }
+        "width": 18,
+        "height": 20
       }
     },
     {
       "title": "K6",
       "icon": "k6",
       "dims": {
-        "web": {
-          "width": 20,
-          "height": 19
-        },
-        "mobile": {
-          "width": 46,
-          "height": 46
-        }
+        "width": 20,
+        "height": 19
       }
     },
     {
       "title": "Loader.io",
       "icon": "loaderio",
       "dims": {
-        "web": {
-          "width": 20,
-          "height": 19
-        },
-        "mobile": {
-          "width": 48,
-          "height": 48
-        }
+        "width": 20,
+        "height": 19
       }
     },
     {
       "title": "Chrome Web Store",
       "icon": "chromeStore",
       "dims": {
-        "web": {
-          "width": 20,
-          "height": 18
-        },
-        "mobile": {
-          "width": 48,
-          "height": 48
-        }
+        "width": 20,
+        "height": 18
       }
     }
   ],
@@ -430,154 +250,88 @@
       "title": "Vim",
       "icon": "vim",
       "dims": {
-        "web": {
-          "width": 20,
-          "height": 20
-        },
-        "mobile": {
-          "width": 46,
-          "height": 46
-        }
+        "width": 20,
+        "height": 20
       }
     },
     {
       "title": "Git",
       "icon": "git",
       "dims": {
-        "web": {
-          "width": 20,
-          "height": 20
-        },
-        "mobile": {
-          "width": 46,
-          "height": 46
-        }
+        "width": 20,
+        "height": 20
       }
     },
     {
       "title": "npm",
       "icon": "npm",
       "dims": {
-        "web": {
-          "width": 20,
-          "height": 8
-        },
-        "mobile": {
-          "width": 48,
-          "height": 48
-        }
+        "width": 20,
+        "height": 8
       }
     },
     {
       "title": "Axios",
       "icon": "axios",
       "dims": {
-        "web": {
-          "width": 12,
-          "height": 20
-        },
-        "mobile": {
-          "width": 48,
-          "height": 48
-        }
+        "width": 12,
+        "height": 20
       }
     },
     {
       "title": "webpack",
       "icon": "webpack",
       "dims": {
-        "web": {
-          "width": 18,
-          "height": 20
-        },
-        "mobile": {
-          "width": 48,
-          "height": 48
-        }
+        "width": 18,
+        "height": 20
       }
     },
     {
       "title": "Babel",
       "icon": "babel",
       "dims": {
-        "web": {
-          "width": 18,
-          "height": 20
-        },
-        "mobile": {
-          "width": 46,
-          "height": 46
-        }
+        "width": 18,
+        "height": 20
       }
     },
     {
       "title": "Agile Methodology",
       "icon": "agile",
       "dims": {
-        "web": {
-          "width": 20,
-          "height": 20
-        },
-        "mobile": {
-          "width": 48,
-          "height": 48
-        }
+        "width": 20,
+        "height": 20
       }
     },
     {
       "title": "TDD",
       "icon": "tdd",
       "dims": {
-        "web": {
-          "width": 20,
-          "height": 17
-        },
-        "mobile": {
-          "width": 50,
-          "height": 50
-        }
+        "width": 20,
+        "height": 17
       }
     },
     {
       "title": "Expo",
       "icon": "expo",
       "dims": {
-        "web": {
-          "width": 20,
-          "height": 18
-        },
-        "mobile": {
-          "width": 42,
-          "height": 42
-        }
+        "width": 20,
+        "height": 18
       }
     },
     {
       "title": "Trello",
       "icon": "trello",
       "dims": {
-        "web": {
-          "width": 20,
-          "height": 20
-        },
-        "mobile": {
-          "width": 44,
-          "height": 44
-        }
+        "width": 20,
+        "height": 20
       }
     },
     {
       "title": "Figma",
       "icon": "figma",
       "dims": {
-        "web": {
-          "width": 13,
-          "height": 20
-        },
-        "mobile": {
-          "width": 48,
-          "height": 48
-        }
+        "width": 13,
+        "height": 20
       }
     }
   ],
@@ -586,84 +340,48 @@
       "title": "Google Docs",
       "icon": "docs",
       "dims": {
-        "web": {
-          "width": 15,
-          "height": 20
-        },
-        "mobile": {
-          "width": 48,
-          "height": 48
-        }
+        "width": 15,
+        "height": 20
       }
     },
     {
       "title": "Google Sheets",
       "icon": "sheets",
       "dims": {
-        "web": {
-          "width": 15,
-          "height": 20
-        },
-        "mobile": {
-          "width": 48,
-          "height": 48
-        }
+        "width": 15,
+        "height": 20
       }
     },
     {
       "title": "Google Slides",
       "icon": "slides",
       "dims": {
-        "web": {
-          "width": 15,
-          "height": 20
-        },
-        "mobile": {
-          "width": 48,
-          "height": 48
-        }
+        "width": 15,
+        "height": 20
       }
     },
     {
       "title": "Word",
       "icon": "word",
       "dims": {
-        "web": {
-          "width": 20,
-          "height": 20
-        },
-        "mobile": {
-          "width": 48,
-          "height": 48
-        }
+        "width": 20,
+        "height": 20
       }
     },
     {
       "title": "Excel",
       "icon": "excel",
       "dims": {
-        "web": {
-          "width": 20,
-          "height": 20
-        },
-        "mobile": {
-          "width": 48,
-          "height": 48
-        }
+        "width": 20,
+        "height": 20
       }
     },
     {
       "title": "Powerpoint",
       "icon": "powerpoint",
       "dims": {
-        "web": {
-          "width": 20,
-          "height": 20
-        },
-        "mobile": {
-          "width": 48,
-          "height": 48
-        }
+        "width": 20,
+        "height": 20
       }
     }
   ],
@@ -672,70 +390,40 @@
       "title": "Photoshop",
       "icon": "photoshop",
       "dims": {
-        "web": {
-          "width": 20,
-          "height": 20
-        },
-        "mobile": {
-          "width": 52,
-          "height": 52
-        }
+        "width": 20,
+        "height": 20
       }
     },
     {
       "title": "Premiere",
       "icon": "premiere",
       "dims": {
-        "web": {
-          "width": 20,
-          "height": 20
-        },
-        "mobile": {
-          "width": 52,
-          "height": 52
-        }
+        "width": 20,
+        "height": 20
       }
     },
     {
       "title": "After Effects",
       "icon": "afterEffects",
       "dims": {
-        "web": {
-          "width": 20,
-          "height": 20
-        },
-        "mobile": {
-          "width": 52,
-          "height": 52
-        }
+        "width": 20,
+        "height": 20
       }
     },
     {
       "title": "Ebsynth",
       "icon": "ebsynth",
       "dims": {
-        "web": {
-          "width": 20,
-          "height": 20
-        },
-        "mobile": {
-          "width": 44,
-          "height": 44
-        }
+        "width": 20,
+        "height": 20
       }
     },
     {
       "title": "Cubase",
       "icon": "cubase",
       "dims": {
-        "web": {
-          "width": 20,
-          "height": 20
-        },
-        "mobile": {
-          "width": 46,
-          "height": 46
-        }
+        "width": 20,
+        "height": 20
       }
     }
   ]
