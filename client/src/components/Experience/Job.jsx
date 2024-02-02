@@ -7,7 +7,7 @@ const Job = ({ swClass, job }) => {
   const app = job.app;
   const bullets = job.bullets;
   return (
-    <div className="job-container">
+    <div className={swClass.concat('job-container')}>
       <Header
         swClass={swClass}
         title={job.title}
