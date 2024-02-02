@@ -1,34 +1,33 @@
 import React from 'react';
 
 const SubHeader = ({ swClass, desc, links }) => {
-  const githubLinks = () => {
-    return (
-      <div>
-        {swClass ? <>&nbsp;|&nbsp;</> : <></>}
-        {links.map((link, index) => {
-          const notLast = index < links.length - 1;
-          return (
-            <>
-              <a
-                className={swClass.concat('sublink')}
-                href={link.link}
-                target='_blank'
-                key={link.link}
-              >
-                {link.label}
-              </a>
-              {notLast ? <>&nbsp;|&nbsp;</> : <></>}
-            </>
-          );
-        })}
-      </div>
-    );
-  }
-
   return (
     <div className={swClass.concat('subheader-container')}>
       <span>{desc}</span>
-      {links ? githubLinks() : <></>}
+      {links ? (
+        <span>
+          {swClass ? <span /> : <span>&nbsp;|&nbsp;</span>}
+          {links.map((l, i) => (
+            <span>
+              <a
+                className={swClass.concat('sublink')}
+                href={l.link}
+                target='_blank'
+                key={l.link}
+              >
+                {l.label}
+              </a>
+              {i < links.length - 1 ? (
+                <span>&nbsp;|&nbsp;</span>
+              ) : (
+                <span />
+              )}
+            </span>
+          ))}
+        </span>
+      ) : (
+        <span />
+      )}
     </div>
   );
 }
