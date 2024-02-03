@@ -1,4 +1,5 @@
 import React from 'react';
+import './Applications.css';
 
 const ApplicationHeader = ({ swClass, title, desc, links }) => {
   return (
