@@ -12,12 +12,12 @@ const NavBar = ({ navData }) => {
     const tabData = {};
     navData.forEach(p => {
       p.route === location.pathname
-      ? tabData[p.page] = '-active'
-      : tabData[p.page] = '';
+        ? tabData[p.page] = '-active'
+        : tabData[p.page] = '';
     });
     setTabs(tabData);
   });
-  
+
   // Update current page
   const updateTabs = (tab) => {
     const currentTabs = { ...tabs };

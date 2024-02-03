@@ -19,19 +19,19 @@ const Dropdown = ({ navData }) => {
   const [ddOpen, setDdOpen] = useState(false);
 
   return (
-    <div className='dropdown_container'>
+    <div className='dropdown-container'>
       <div
-        className='dd_button'
+        className='dd-button'
         onClick={() => ddOpen ? setDdOpen(false) : setDdOpen(true)}
       >
         {activeTab}
       </div>
-      <div className={ddOpen ? 'dd_open' : 'dd_closed'}>
+      <div className={ddOpen ? 'dd-open' : 'dd-closed'}>
         {menu.map(p => {
           return (
             <NavLink
               to={p.route}
-              className='dd_page'
+              className='dd-page'
               onClick={() => {
                 setActiveTab(p.page);
                 setDdOpen(false);
