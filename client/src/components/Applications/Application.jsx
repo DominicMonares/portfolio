@@ -84,7 +84,13 @@ const Application = ({ swClass, app }) => {
           )
         }
       >
-        {app.demos.map(demo => <Demo swClass={swClass} demo={demo} />)}
+        {app.demos.map((demo, i) => (
+          <Demo
+            swClass={swClass}
+            demo={demo}
+            inactive={currentSlide !== i}
+          />
+        ))}
       </Carousel>
     </div>
   );
