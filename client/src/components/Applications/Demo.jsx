@@ -22,7 +22,7 @@ const Demo = ({ swClass, demo }) => {
           allowFullScreen
           title='Embedded youtube'
         />
-        <span className={swClass.concat(('demo-caption'))}>{demo.caption}</span>
+        <span className={swClass.concat(('youtube-demo-caption'))}>{demo.caption}</span>
       </div>
       ) : (
         <div className={swClass.concat('demo')}>

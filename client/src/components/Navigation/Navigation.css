@@ -66,10 +66,6 @@
   transition: font-size 0.20s;
 }
 
-.nav-tab:active {
-  font-weight: 400;
-}
-
 .nav-text {
   position: absolute;
 }

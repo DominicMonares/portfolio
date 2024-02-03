@@ -1,4 +1,4 @@
-/***** Web *****/
+/***** Reg Window *****/
 
 /* Applications */
 
@@ -30,16 +30,24 @@
 
 /* Application Header */
 
-.application-header {
-
-}
+/* .application-header {
+} */
 
 .application-header-title {
-
+  font-weight: bold;
+  color: #4d006d;
 }
 
-.application-header-link {
+.application-header-link:link {
+  color: #4d006d
+}
 
+.application-header-link:visited {
+  color: #4d006d
+}
+
+.application-header-link:active {
+  color: #BBA5D2
 }
 
 /* Demo */
@@ -67,7 +75,8 @@
   margin-right: auto;
 }
 
-.demo-caption {
+.demo-caption,
+.youtube-demo-caption {
   display: flex;
   justify-content: center;
   height: 20px;
@@ -78,20 +87,23 @@
   font-size: 16px;
 }
 
-.demo-caption {
-  margin-top: -28px;
-}
-
 .youtube {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  scale: 0.95;
-  margin-top: 20px;
 }
 
-.youtube-iframe {
+/* .youtube-iframe {
+} */
 
+.youtube-demo-caption {
+  margin-top: -28px;
+}
+
+.thumbs-wrapper.axis-vertical,
+.carousel.thumbs-wrapper {
+  height: 0px;
+  margin: 0px;
 }
 
 
