@@ -6,9 +6,9 @@ import './Shared.css';
 // Define modal styles then attach modal to root
 const modalStyles = {
   content: {
-    top: '50%',
     left: '50%',
     right: 'auto',
+    top: '50%',
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
@@ -17,8 +17,8 @@ const modalStyles = {
     borderColor: '#3A2E47',
   },
   overlay: {
+    zIndex: 5,
     background: 'rgba(58, 46, 71, 0.75)',
-    zIndex: 5
   }
 };
 Modal.setAppElement('#root');

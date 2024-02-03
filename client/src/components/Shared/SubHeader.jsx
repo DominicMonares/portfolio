@@ -10,7 +10,7 @@ const SubHeader = ({ swClass, desc, links }) => {
           {links.map((l, i) => (
             <span>
               <a
-                className={swClass.concat('sublink')}
+                className={swClass.concat('subheader-link')}
                 href={l.link}
                 target='_blank'
                 key={l.link}
