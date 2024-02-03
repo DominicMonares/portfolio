@@ -10,7 +10,7 @@ const skills = require('../data/skills.json');
 const app = require('express').Router();
 
 app.get('/', (req, res) => {
-  res.redirect('/applications');
+  res.redirect('/apps');
 });
 
 app.get('/data/about', (req, res) => {
