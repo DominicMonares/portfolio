@@ -14,10 +14,13 @@ const Demo = ({ swClass, demo, inactive }) => {
         <div className={swClass.concat('youtube')}>
           <iframe
             className={swClass.concat('youtube-iframe')}
-            width={demo['dims'][size]['width']}
-            height={demo['dims'][size]['height']}
+            style={{
+              width: demo['dims'][size]['width'],
+              height: demo['dims'][size]['height'],
+              border: '1px solid #4d006d',
+              boxSizing: 'content-box',
+            }}
             src={demo.media}
-            // frameBorder='0'
             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
             allowFullScreen
             title='Embedded youtube'
