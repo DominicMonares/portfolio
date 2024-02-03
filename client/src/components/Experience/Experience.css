@@ -1,6 +1,4 @@
-/***** Web *****/
-
-/* Experience */
+/***** Reg Window *****/
 
 .experience-container {
   display: flex;
@@ -16,17 +14,15 @@
   margin-bottom: 5px;
   padding: 8px;
   border-style: solid;
-  border-color: #4d006d;
   border-width: 1px;
   border-radius: 10px;
+  border-color: #4d006d;
   background-color: #ffffff;
 }
 
 
-/***** Mobile *****/
+/***** Small Window *****/
 
-/* Experience */
-
-.m_experience_container {
+.sw-experience-container {
 
 }

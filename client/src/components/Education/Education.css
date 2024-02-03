@@ -1,4 +1,4 @@
-/***** Web *****/
+/***** Reg Window *****/
 
 .education-container {
   display: flex;
@@ -22,12 +22,12 @@
 }
 
 
-/***** Mobile *****/
+/***** Small Window *****/
 
-.m-education-container {
+.sw-education-container {
 
 }
 
-.m-edu-container {
+.sw-edu-container {
 
 }
