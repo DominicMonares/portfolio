@@ -6,6 +6,10 @@ import './Shared.css';
 // Define modal styles then attach modal to root
 const modalStyles = {
   content: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
     left: '50%',
     right: 'auto',
     top: '50%',
@@ -52,10 +56,11 @@ const Icons = ({ swClass, page }) => {
         style={modalStyles}
         contentLabel='Icons Modal'
       >
-        <button className={swClass.concat('modal-close')} onClick={closeModal}>
-          X
-        </button>
-        <br />
+        <div className={swClass.concat('modal-close-container')}>
+          <button className={swClass.concat('modal-close')} onClick={closeModal}>
+            X
+          </button>
+        </div>
         <div className={swClass.concat('modal-title')}>Source Links</div>
         <br />
         {iconLinks[page].map(icon => {
