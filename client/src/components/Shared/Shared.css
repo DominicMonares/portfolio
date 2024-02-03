@@ -1,13 +1,12 @@
-/***** Web *****/
+/***** Reg Window *****/
 
 /* Bullets */
 
 .bullet-container {
   display: flex;
   flex-direction: column;
-  margin-top: 5px;
-  /* margin-bottom: 50px; */
   margin-left: 20px;
+  margin-top: 5px;
 }
 
 .bullet {
@@ -26,11 +25,9 @@
 /* Header */
 
 .header-container {
-  font-size: 16px;
   display: flex;
   flex-direction: row;
-  /* margin-left: 5px;
-  margin-right: 5px; */
+  font-size: 16px;
 }
 
 .header-title {
@@ -38,15 +35,15 @@
   font-weight: bold;
 }
 
-.link:link {
+.header-link:link {
   color: #4d006d
 }
 
-.link:visited {
+.header-link:visited {
   color: #4d006d
 }
 
-.link:active {
+.header-link:active {
   color: #BBA5D2
 }
 
@@ -151,16 +148,16 @@
 }
 
 
-/***** Mobile *****/
+/***** Small Window *****/
 
 /* Bullets */
 
 .sw-bullet-container {
   display: flex;
   flex-direction: column;
+  margin-left: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 10px;
 }
 
 .sw-bullet {
@@ -193,12 +190,12 @@
   font-weight: bold;
 }
 
-.sw-link:link,
-.sw-link:visited {
+.sw-header-link:link,
+.sw-header-link:visited {
   color: #4d006d
 }
 
-.sw-link:active {
+.sw-header-link:active {
   color: #BBA5D2
 }
 

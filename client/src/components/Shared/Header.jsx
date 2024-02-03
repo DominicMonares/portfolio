@@ -8,7 +8,7 @@ const Header = ({ swClass, title, est, estLink, location, year }) => {
       <span>
         {estLink ? (
           <a
-            className={'sw-link'}
+            className={'sw-header-link'}
             href={estLink}
             target='-blank'
             key={estLink}
@@ -30,7 +30,7 @@ const Header = ({ swClass, title, est, estLink, location, year }) => {
         &nbsp;|&nbsp;
         {estLink ? (
           <a
-            className={'link'}
+            className={'header-link'}
             href={estLink}
             target='-blank'
             key={estLink}
