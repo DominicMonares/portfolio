@@ -88,6 +88,10 @@
 }
 
 .icon-open {
+  border: none;
+  background: none;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #4d006d;
   text-decoration: underline;
   cursor: pointer;
 }
