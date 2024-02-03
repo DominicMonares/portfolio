@@ -35,8 +35,8 @@
         "media": "sppe1",
         "dims": {
           "reg": {
-            "width": 950,
-            "height": 540
+            "width": 952,
+            "height": 541
           },
           "small": {
             "width": 350,
@@ -50,8 +50,8 @@
         "media": "sppe2",
         "dims": {
           "reg": {
-            "width": 950,
-            "height": 540
+            "width": 952,
+            "height": 541
           },
           "small": {
             "width": 350,
@@ -65,8 +65,8 @@
         "media": "sppe3",
         "dims": {
           "reg": {
-            "width": 950,
-            "height": 540
+            "width": 952,
+            "height": 541
           },
           "small": {
             "width": 350,
