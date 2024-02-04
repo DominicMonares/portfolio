@@ -25,12 +25,14 @@ const Dropdown = ({ navData }) => {
 
   return (
     <div className="dropdown-container">
-      <button
-        className="dropdown-button"
-        onClick={() => setDdOpen(!ddOpen)}
-      >
-        {activeTab}
-      </button>
+      <div className="dropdown-button-container">
+        <button
+          className="dropdown-button"
+          onClick={() => setDdOpen(!ddOpen)}
+        >
+          {activeTab}
+        </button>
+      </div>
       <div className="dropdown-body">
         <div
           className={'dropdown-nav-container'.concat(
