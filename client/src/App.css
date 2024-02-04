@@ -18,65 +18,59 @@ html::-webkit-scrollbar {
   margin-right: auto;
 }
 
-
-/***** Reg Window *****/
-
-#app {
+#app,
+#sw-app {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 1170px;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.main-title {
-  display: flex;
-  justify-content: center;
+.main-title,
+.main-subtitle,
+.sw-main-title,
+.sw-main-subtitle {
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-top: 10px;
-  font-size: 40px;
-  font-weight: 700;
   color: #4d006d;
 }
 
+
+/***** Reg Window *****/
+
+#app {
+  max-width: 1170px;
+}
+
+.main-title {
+  padding-top: 10px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
 .main-subtitle {
-  display: flex;
-  justify-content: center;
-  margin-top: 0px;
-  margin-bottom: 0px;
   font-size: 20px;
   font-weight: 400;
-  color: #4d006d;
 }
 
 
 /***** Small Window *****/
 
 #sw-app {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   max-width: 790px;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.sw-main-title, .sw-main-subtitle {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
 
 .sw-main-title {
-  padding-top: 7px;
+  padding-top: 8px;
+  font-size: 32px;
+  font-weight: 700;
 }
 
 .sw-main-subtitle {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  font-size: 18px;
+  font-weight: 400;
 }
