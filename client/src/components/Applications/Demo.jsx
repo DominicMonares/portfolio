@@ -45,7 +45,7 @@ const Demo = ({ swClass, demo, inactive }) => {
     const origWidth = demo.dims.original.width;
     const origHeight = demo.dims.original.height;
     modalStyles.content.maxWidth = origWidth;
-    modalStyles.content.maxHeight = origHeight * 1.5;
+    modalStyles.content.maxHeight = origHeight;
     setOrigDims({
       width: origWidth,
       height: origHeight
@@ -55,7 +55,10 @@ const Demo = ({ swClass, demo, inactive }) => {
   // Open and close modal
   const [modalIsOpen, setIsOpen] = React.useState(false);
   const openModal = () => setIsOpen(true);
-  const closeModal = () => setIsOpen(false);
+  const closeModal = (e) => {
+    e.stopPropagation();
+    setIsOpen(false);
+  };
 
   return (
     <div
@@ -65,17 +68,19 @@ const Demo = ({ swClass, demo, inactive }) => {
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
+        shouldCloseOnOverlayClick={true}
         style={modalStyles}
         contentLabel='Demo Modal'
       >
         {demo.mediaType === 'youtube' ? (
           <iframe
             className={swClass.concat('youtube-iframe-modal')}
+            src={demo.media}
+            onClick={closeModal}
             style={{
               maxWidth: origDims.width,
               maxHeight: origDims.height,
             }}
-            src={demo.media}
             allow={`
               accelerometer;
               autoplay;
@@ -91,6 +96,7 @@ const Demo = ({ swClass, demo, inactive }) => {
           demo.mediaType === 'video/mp4' ? (
             <video
               className={swClass.concat('demo-media-modal')}
+              onClick={closeModal}
               style={{
                 maxWidth: origDims.width,
                 maxHeight: origDims.height,
@@ -105,6 +111,7 @@ const Demo = ({ swClass, demo, inactive }) => {
             <img
               className={swClass.concat(('demo-media-modal'))}
               src={demo.media}
+              onClick={closeModal}
               style={{
                 maxWidth: origDims.width,
                 maxHeight: origDims.height,
