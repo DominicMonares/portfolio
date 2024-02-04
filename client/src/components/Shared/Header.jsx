@@ -18,16 +18,17 @@ const Header = ({ swClass, title, est, estLink, location, year }) => {
         ) : (
           <span>{est}</span>
         )}
-        &nbsp;|&nbsp;
+        <span>&nbsp;|&nbsp;</span>
         <span>{location}</span>
-        <span>&nbsp;|&nbsp;{year}</span>
+        <span>&nbsp;|&nbsp;</span>
+        <span>{year}</span>
       </span>
     </div>
   ) : (
     <div className="header-container">
       <span>
         <span className="header-title">{title}</span>
-        &nbsp;|&nbsp;
+        <span>&nbsp;|&nbsp;</span>
         {estLink ? (
           <a
             className={"header-link"}
@@ -40,7 +41,7 @@ const Header = ({ swClass, title, est, estLink, location, year }) => {
         ) : (
           <span>{est}</span>
         )}
-        &nbsp;|&nbsp;
+        <span>&nbsp;|&nbsp;</span>
         <span>{location}</span>
       </span>
       <span className="year">{year}</span>

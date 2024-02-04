@@ -7,9 +7,9 @@ const ApplicationHeader = ({ swClass, title, desc, links }) => {
       <span className={swClass.concat('application-header-title')}>
         {title}
       </span>
-      &nbsp;|&nbsp;
+      <span>&nbsp;|&nbsp;</span>
       <span>{desc}</span>
-      &nbsp;|&nbsp;
+      <span>&nbsp;|&nbsp;</span>
       {links.map((a, i) => (
         <span>
           <a
