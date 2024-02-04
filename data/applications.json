@@ -94,7 +94,7 @@
   },
   {
     "title": "Clown Detector",
-    "desc": "A Google Chrome extension that helps you spot silly LinkedIn jobs",
+    "desc": "Google Chrome extension that helps you spot silly LinkedIn jobs",
     "links": [
       {
         "label": "Chrome Web Store",
@@ -149,7 +149,7 @@
   },
   {
     "title": "fretJS",
-    "desc": "An app that lets you write and execute JavaScript using only an electric guitar",
+    "desc": "Web app that lets you write and execute JavaScript using only an electric guitar",
     "links": [
       {
         "label": "GitHub",
@@ -312,7 +312,7 @@
   },
   {
     "title": "Atelier",
-    "desc": "eCommerce application: Q&A widget on product page",
+    "desc": "eCommerce application",
     "links": [
       {
         "label": "GitHub",
@@ -413,7 +413,7 @@
   },
   {
     "title": "Account-wide",
-    "desc": "Tool for Celguar's SPP Classics Repack that transfers progress between player characters",
+    "desc": "Progress sharing tool for Celguar's SPP Classics Repack",
     "links": [
       {
         "label": "GitHub",
