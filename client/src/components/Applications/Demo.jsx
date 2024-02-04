@@ -17,7 +17,7 @@ const modalStyles = {
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
     border: 'none',
-    background: 'none'
+    background: 'none',
   },
   overlay: {
     zIndex: 5,
@@ -39,7 +39,7 @@ const Demo = ({ swClass, demo, inactive }) => {
   useEffect(() => {
     setRegDims({
       width: demo['dims'][size]['width'],
-      height: demo['dims'][size]['height']
+      height: demo['dims'][size]['height'],
     });
 
     const origWidth = demo.dims.original.width;
@@ -48,8 +48,8 @@ const Demo = ({ swClass, demo, inactive }) => {
     modalStyles.content.maxHeight = origHeight;
     setOrigDims({
       width: origWidth,
-      height: origHeight
-    })
+      height: origHeight,
+    });
   }, [size]);
 
   // Open and close modal
@@ -62,7 +62,7 @@ const Demo = ({ swClass, demo, inactive }) => {
 
   return (
     <div
-      className={swClass.concat('demo-container', inactive ? '-inactive' : '')}
+      className={swClass.concat('demo-container', inactive)}
       onClick={openModal}
     >
       <Modal
@@ -70,14 +70,13 @@ const Demo = ({ swClass, demo, inactive }) => {
         onRequestClose={closeModal}
         shouldCloseOnOverlayClick={true}
         style={modalStyles}
-        contentLabel='Demo Modal'
+        contentLabel="Demo Modal"
       >
         <div className={swClass.concat('demo-modal-container')} onClick={closeModal}>
           {demo.mediaType === 'youtube' ? (
             <iframe
               className={swClass.concat('youtube-iframe-modal')}
               src={demo.media}
-              // onClick={closeModal}
               style={{
                 maxWidth: origDims.width,
                 maxHeight: origDims.height,
@@ -91,28 +90,26 @@ const Demo = ({ swClass, demo, inactive }) => {
                 picture-in-picture
               `}
               allowFullScreen
-              title='Embedded youtube'
+              title="Embedded youtube"
             />
           ) : (
             demo.mediaType === 'video/mp4' ? (
               <video
                 className={swClass.concat('demo-media-modal')}
-                // onClick={closeModal}
                 style={{
                   maxWidth: origDims.width,
                   maxHeight: origDims.height,
                 }}
-                autoplay='autoplay'
-                loop='true'
-                muted='true'
+                autoplay="autoplay"
+                loop="true"
+                muted="true"
               >
                 <source src={images['applications'][demo.media]} type={demo.mediaType} />
               </video>
             ) : (
               <img
-                className={swClass.concat(('demo-media-modal'))}
+                className={swClass.concat('demo-media-modal')}
                 src={demo.media}
-                // onClick={closeModal}
                 style={{
                   maxWidth: origDims.width,
                   maxHeight: origDims.height,
@@ -129,8 +126,8 @@ const Demo = ({ swClass, demo, inactive }) => {
             style={{
               width: regDims.width,
               height: regDims.height,
-              border: '1px solid #4d006d',
-              boxSizing: 'content-box',
+              border: "1px solid #4d006d",
+              boxSizing: "content-box",
             }}
             src={demo.media}
             allow={`
@@ -142,9 +139,9 @@ const Demo = ({ swClass, demo, inactive }) => {
               picture-in-picture
             `}
             allowFullScreen
-            title='Embedded youtube'
+            title="Embedded youtube"
           />
-          <span className={swClass.concat(('youtube-demo-caption'))}>{demo.caption}</span>
+          <span className={swClass.concat('youtube-demo-caption')}>{demo.caption}</span>
         </div>
       ) : (
         <div className={swClass.concat('demo')}>
@@ -155,15 +152,15 @@ const Demo = ({ swClass, demo, inactive }) => {
                 width: regDims.width,
                 height: regDims.height,
               }}
-              autoplay='autoplay'
-              loop='true'
-              muted='true'
+              autoplay="autoplay"
+              loop="true"
+              muted="true"
             >
               <source src={images['applications'][demo.media]} type={demo.mediaType} />
             </video>
           ) : (
             <img
-              className={swClass.concat(('demo-media'))}
+              className={swClass.concat('demo-media')}
               src={demo.media}
               style={{
                 width: regDims.width,

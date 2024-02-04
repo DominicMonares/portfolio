@@ -66,7 +66,7 @@ const Application = ({ swClass, app }) => {
               title={label}
               style={leftArrowStyles}
             >
-              {'<'}
+              &lt;
             </button>
           )
         }
@@ -79,7 +79,7 @@ const Application = ({ swClass, app }) => {
               title={label}
               style={rightArrowStyles}
             >
-              {'>'}
+              &gt;
             </button>
           )
         }
@@ -88,7 +88,7 @@ const Application = ({ swClass, app }) => {
           <Demo
             swClass={swClass}
             demo={demo}
-            inactive={currentSlide !== i}
+            inactive={currentSlide !== i ? '-inactive' : ''}
           />
         ))}
       </Carousel>

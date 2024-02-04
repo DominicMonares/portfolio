@@ -29,7 +29,7 @@ const Contacts = ({ swClass }) => {
               width={c.dims.width}
               height={c.dims.height}
             />
-            <div className={swClass.concat(('contact-link'))}>{c.display}</div>
+            <div className={swClass.concat('contact-link')}>{c.display}</div>
           </a>
         </div>
       ))}

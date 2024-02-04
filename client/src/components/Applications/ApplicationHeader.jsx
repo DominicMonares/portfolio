@@ -15,7 +15,7 @@ const ApplicationHeader = ({ swClass, title, desc, links }) => {
           <a
             className={swClass.concat('application-header-link')}
             href={a.link}
-            target='_blank'
+            target="_blank"
             key={a.link}
           >
             {a.label}
