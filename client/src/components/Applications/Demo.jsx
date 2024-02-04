@@ -44,8 +44,6 @@ const Demo = ({ swClass, demo, inactive }) => {
 
     const origWidth = demo.dims.original.width;
     const origHeight = demo.dims.original.height;
-    // modalStyles.content.width = '100%';
-    // modalStyles.content.height = '100%';
     modalStyles.content.maxWidth = origWidth;
     modalStyles.content.maxHeight = origHeight * 1.5;
     setOrigDims({
@@ -78,7 +76,14 @@ const Demo = ({ swClass, demo, inactive }) => {
               maxHeight: origDims.height,
             }}
             src={demo.media}
-            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+            allow={`
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture
+            `}
             allowFullScreen
             title='Embedded youtube'
           />
@@ -108,7 +113,6 @@ const Demo = ({ swClass, demo, inactive }) => {
           )
         )}
       </Modal>
-
       {demo.mediaType === 'youtube' ? (
         <div className={swClass.concat('youtube')}>
           <iframe
@@ -120,7 +124,14 @@ const Demo = ({ swClass, demo, inactive }) => {
               boxSizing: 'content-box',
             }}
             src={demo.media}
-            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+            allow={`
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture
+            `}
             allowFullScreen
             title='Embedded youtube'
           />

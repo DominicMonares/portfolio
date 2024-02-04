@@ -99,7 +99,7 @@
 .youtube-demo-caption {
   display: flex;
   justify-content: center;
-  height: 20px;
+  height: 24px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 12px;
@@ -114,10 +114,13 @@
   align-items: center;
   width: 100%;
   height: 100%;
+  margin-bottom: 5px;
 }
 
-/* .youtube-iframe {
-} */
+.youtube-iframe {
+  width: 100%;
+  height: 100%;
+}
 
 .youtube-iframe-modal {
   width: 100%;
