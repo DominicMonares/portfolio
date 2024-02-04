@@ -54,7 +54,7 @@ const Icons = ({ swClass, page }) => {
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         style={modalStyles}
-        contentLabel='Icons Modal'
+        contentLabel="Icons Modal"
       >
         <div className={swClass.concat('modal-close-container')}>
           <button className={swClass.concat('modal-close')} onClick={closeModal}>
@@ -68,7 +68,7 @@ const Icons = ({ swClass, page }) => {
             <div className={swClass.concat('modal-icon-link')}>
               <a
                 className={swClass.concat('modal-link')}
-                target='_blank'
+                target="_blank"
                 href={icon.link}
               >
                 {icon.name}
@@ -76,8 +76,8 @@ const Icons = ({ swClass, page }) => {
               &nbsp;icon by&nbsp;
               <a
                 className={swClass.concat('modal-link')}
-                target='_blank'
-                href='https://icons8.com'
+                target="_blank"
+                href="https://icons8.com"
               >
                 Icons8
               </a>

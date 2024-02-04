@@ -1,5 +1,7 @@
 /***** Reg Window *****/
 
+/* Skills */
+
 .skills-container {
   display: flex;
   flex-direction: column;
@@ -14,6 +16,8 @@
   justify-content: space-between;
   align-items: start;
 }
+
+/* Category */
 
 .category-container {
   display: flex;

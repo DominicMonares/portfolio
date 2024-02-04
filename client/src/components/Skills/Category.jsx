@@ -7,11 +7,11 @@ const Category = ({ swClass, category, skills }) => {
       <div className={swClass.concat('category-name')}>
         {category}
       </div>
-      <ul className="skills">
+      <ul className={swClass.concat('skills')}>
         {skills[category].map(s => (
           <li className={swClass.concat('skill')}>
             <span className={swClass.concat('skill-text')}>{s.title}</span>
-            <span className="skill-img-container">
+            <span className={swClass.concat('skill-img-container')}>
               <img
                 src={images['skills'][s.icon]}
                 width={s.dims.width}

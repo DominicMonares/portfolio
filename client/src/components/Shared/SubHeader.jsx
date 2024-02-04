@@ -12,7 +12,7 @@ const SubHeader = ({ swClass, desc, links }) => {
               <a
                 className={swClass.concat('subheader-link')}
                 href={l.link}
-                target='_blank'
+                target="_blank"
                 key={l.link}
               >
                 {l.label}

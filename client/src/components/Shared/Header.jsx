@@ -3,14 +3,14 @@ import './Shared.css';
 
 const Header = ({ swClass, title, est, estLink, location, year }) => {
   return swClass ? (
-    <div className={swClass.concat('header-container')}>
-      <span className='sw-header-title'>{title}</span>
+    <div className="sw-header-container">
+      <span className="sw-header-title">{title}</span>
       <span>
         {estLink ? (
           <a
-            className={'sw-header-link'}
+            className="sw-header-link"
             href={estLink}
-            target='-blank'
+            target="-blank"
             key={estLink}
           >
             {est}
@@ -24,13 +24,13 @@ const Header = ({ swClass, title, est, estLink, location, year }) => {
       </span>
     </div>
   ) : (
-    <div className={swClass.concat('header-container')}>
+    <div className="header-container">
       <span>
-        <span className='header-title'>{title}</span>
+        <span className="header-title">{title}</span>
         &nbsp;|&nbsp;
         {estLink ? (
           <a
-            className={'header-link'}
+            className={"header-link"}
             href={estLink}
             target='-blank'
             key={estLink}
@@ -43,7 +43,7 @@ const Header = ({ swClass, title, est, estLink, location, year }) => {
         &nbsp;|&nbsp;
         <span>{location}</span>
       </span>
-      <span className='year'>{year}</span>
+      <span className="year">{year}</span>
     </div>
   );
 }
