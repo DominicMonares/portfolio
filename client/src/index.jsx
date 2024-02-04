@@ -40,7 +40,7 @@ const App = () => {
       {swClass ? <div className="sw-title-ul" /> : <div />}
       <Router>
         {isSmallWindow() ? <Dropdown navData={navData} /> : <NavBar navData={navData} />}
-        <div className="route-container">
+        <div className={swClass.concat('route-container')}>
           <Routes>
             <Route path="/apps" element={<Applications swClass={swClass} />} />
             <Route path="/about" element={<About swClass={swClass} />} />
