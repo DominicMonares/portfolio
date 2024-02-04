@@ -8,6 +8,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 /* Application */
@@ -39,6 +40,12 @@
 .application-header-title {
   font-weight: bold;
   color: #4d006d;
+}
+
+.application-header-top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .application-header-link:link {
@@ -152,20 +159,62 @@
 /* Applications */
 
 .sw-applications-container {
-  padding-left: 2px;
-  padding-right: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 4px;
 }
 
 /* Application */
 
 .sw-application-container {
-  margin-bottom: 30px;
+  width: 100%;
+  margin-bottom: 4px;
+  padding: 4px;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  border-color: #4d006d;
+  background-color: #ffffff;
 }
 
 .sw-demo-container {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
+}
+
+/* Application Header */
+
+.sw-application-header {
+  font-size: 14px;
+}
+
+.sw-application-header-top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sw-application-header-title {
+  font-weight: bold;
+  color: #4d006d;
+}
+
+.sw-application-header-link:link {
+  color: #4d006d
+}
+
+.sw-application-header-link:visited {
+  color: #4d006d
+}
+
+.sw-application-header-link:active {
+  color: #BBA5D2
 }
 
 /* Demo */
