@@ -28,19 +28,19 @@ const NavBar = ({ navData }) => {
   }
 
   return (
-    <div className='nav-container'>
-      <div className='nav-menu'>
+    <div className="nav-container">
+      <div className="nav-menu">
         {navData.map(n => (
           <NavLink
             to={n.route}
             className={'nav-tab'.concat(tabs[n.page])}
             onClick={() => updateTabs(n.page)}
           >
-            <div className='nav-text'>{n.page}</div>
+            <div className="nav-text">{n.page}</div>
           </NavLink>
         ))}
       </div>
-      <div className='header-underline'></div>
+      <div className="header-underline" />
     </div>
   );
 }
