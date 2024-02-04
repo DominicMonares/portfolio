@@ -22,7 +22,7 @@ const Contacts = ({ swClass }) => {
           <a
             className={swClass.concat('contact-container')}
             href={c.link}
-            target='_blank'
+            target="_blank"
           >
             <img
               src={images['contacts'][c.icon]}

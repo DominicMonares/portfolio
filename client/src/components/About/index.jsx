@@ -25,8 +25,8 @@ const About = ({ swClass }) => {
           <img
             className={swClass.concat('profile-pic')}
             src={profile_pic}
-            width='192px'
-            height='192px'
+            width="192px"
+            height="192px"
           />
           <div className={swClass.concat('about-text-container')}>
             {about.map(p => <p className={swClass.concat('about-text')}>{p}</p>)}
@@ -35,7 +35,7 @@ const About = ({ swClass }) => {
         <div className={swClass.concat('about-body-ul')} />
         <Contacts swClass={swClass} />
       </div>
-      <Icons swClass={swClass} page='about' />
+      <Icons swClass={swClass} page="about" />
     </div>
   );
 }
