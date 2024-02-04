@@ -71,6 +71,7 @@ html::-webkit-scrollbar {
 }
 
 .sw-main-subtitle {
+  margin-bottom: 4px;
   font-size: 18px;
   font-weight: 400;
 }
