@@ -72,61 +72,63 @@ const Demo = ({ swClass, demo, inactive }) => {
         style={modalStyles}
         contentLabel='Demo Modal'
       >
-        {demo.mediaType === 'youtube' ? (
-          <iframe
-            className={swClass.concat('youtube-iframe-modal')}
-            src={demo.media}
-            onClick={closeModal}
-            style={{
-              maxWidth: origDims.width,
-              maxHeight: origDims.height,
-            }}
-            allow={`
-              accelerometer;
-              autoplay;
-              clipboard-write;
-              encrypted-media;
-              gyroscope;
-              picture-in-picture
-            `}
-            allowFullScreen
-            title='Embedded youtube'
-          />
-        ) : (
-          demo.mediaType === 'video/mp4' ? (
-            <video
-              className={swClass.concat('demo-media-modal')}
-              onClick={closeModal}
-              style={{
-                maxWidth: origDims.width,
-                maxHeight: origDims.height,
-              }}
-              autoplay='autoplay'
-              loop='true'
-              muted='true'
-            >
-              <source src={images['applications'][demo.media]} type={demo.mediaType} />
-            </video>
-          ) : (
-            <img
-              className={swClass.concat(('demo-media-modal'))}
+        <div className={swClass.concat('demo-modal-container')} onClick={closeModal}>
+          {demo.mediaType === 'youtube' ? (
+            <iframe
+              className={swClass.concat('youtube-iframe-modal')}
               src={demo.media}
-              onClick={closeModal}
+              // onClick={closeModal}
               style={{
                 maxWidth: origDims.width,
                 maxHeight: origDims.height,
               }}
+              allow={`
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture
+              `}
+              allowFullScreen
+              title='Embedded youtube'
             />
-          )
-        )}
+          ) : (
+            demo.mediaType === 'video/mp4' ? (
+              <video
+                className={swClass.concat('demo-media-modal')}
+                // onClick={closeModal}
+                style={{
+                  maxWidth: origDims.width,
+                  maxHeight: origDims.height,
+                }}
+                autoplay='autoplay'
+                loop='true'
+                muted='true'
+              >
+                <source src={images['applications'][demo.media]} type={demo.mediaType} />
+              </video>
+            ) : (
+              <img
+                className={swClass.concat(('demo-media-modal'))}
+                src={demo.media}
+                // onClick={closeModal}
+                style={{
+                  maxWidth: origDims.width,
+                  maxHeight: origDims.height,
+                }}
+              />
+            )
+          )}
+        </div>
       </Modal>
       {demo.mediaType === 'youtube' ? (
         <div className={swClass.concat('youtube')}>
           <iframe
             className={swClass.concat('youtube-iframe')}
             style={{
-              maxWidth: regDims.width,
-              maxHeight: regDims.height,
+              width: regDims.width,
+              height: regDims.height,
               border: '1px solid #4d006d',
               boxSizing: 'content-box',
             }}
@@ -150,8 +152,8 @@ const Demo = ({ swClass, demo, inactive }) => {
             <video
               className={swClass.concat('demo-media')}
               style={{
-                maxWidth: regDims.width,
-                maxHeight: regDims.height,
+                width: regDims.width,
+                height: regDims.height,
               }}
               autoplay='autoplay'
               loop='true'
@@ -164,8 +166,8 @@ const Demo = ({ swClass, demo, inactive }) => {
               className={swClass.concat(('demo-media'))}
               src={demo.media}
               style={{
-                maxWidth: regDims.width,
-                maxHeight: regDims.height,
+                width: regDims.width,
+                height: regDims.height,
               }}
             />
           )}
