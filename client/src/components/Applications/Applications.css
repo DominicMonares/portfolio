@@ -82,10 +82,17 @@
 }
 
 .demo-media {
+  width: 100%;
+  height: 100%;
   box-sizing: content-box;
   border-style: solid;
   border-width: 1px;
   border-color: #4d006d;
+}
+
+.demo-media-modal {
+  width: 100%;
+  height: 100%;
 }
 
 .demo-caption,
@@ -110,6 +117,19 @@
 }
 
 /* .youtube-iframe {
+} */
+
+.youtube-iframe-modal {
+  width: 100%;
+  height: 100%;
+}
+
+.ReactModal__Content.ReactModal__Content--after-open::-webkit-scrollbar {
+  display: none;
+}
+
+/* .youtube-iframe-modal::-webkit-scrollbar {
+  display: none;
 } */
 
 .youtube-demo-caption {
