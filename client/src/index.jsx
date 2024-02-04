@@ -37,6 +37,7 @@ const App = () => {
     <div id={swClass.concat('app')}>
       <h1 className={swClass.concat('main-title')}>Dominic Monares</h1>
       <h3 className={swClass.concat('main-subtitle')}>Full-Stack Software Engineer</h3>
+      {swClass ? <div className="sw-title-ul" /> : <div />}
       <Router>
         {isSmallWindow() ? <Dropdown navData={navData} /> : <NavBar navData={navData} />}
         <div className="route-container">
