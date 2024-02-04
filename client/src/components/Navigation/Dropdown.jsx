@@ -1,37 +1,46 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import './Navigation.css';
 
 const Dropdown = ({ navData }) => {
-  let currentTab;
+  // Find current page
   const location = useLocation();
-  const route = location.pathname;
-  const menu = navData.filter(p => {
-    if (p.route === route) {
-      currentTab = p.page;
-      return false;
-    } else {
-      return true;
-    }
-  });
 
-  const [activeTab, setActiveTab] = useState(currentTab);
+  // Set menu and active tab data
+  const [menu, setMenu] = useState([]);
+  const [activeTab, setActiveTab] = useState('Loading...');
+  useEffect(() => {
+    setMenu(navData.filter(p => {
+      if (p.route === location.pathname) {
+        setActiveTab(p.page);
+        return false;
+      } else {
+        return true;
+      }
+    }))
+  }), [];
+
+  // Open and close the dropdown menu
   const [ddOpen, setDdOpen] = useState(false);
 
   return (
-    <div className='dropdown-container'>
-      <div
-        className='dd-button'
-        onClick={() => ddOpen ? setDdOpen(false) : setDdOpen(true)}
+    <div className="dropdown-container">
+      <button
+        className="dropdown-button"
+        onClick={() => setDdOpen(!ddOpen)}
       >
         {activeTab}
-      </div>
-      <div className={ddOpen ? 'dd-open' : 'dd-closed'}>
-        {menu.map(p => {
-          return (
+      </button>
+      <div className="dropdown-body">
+        <div
+          className={'dropdown-nav-container'.concat(
+            ddOpen ? '-open' : '-closed'
+          )}
+        >
+          {menu.map((p, i) => (
             <NavLink
               to={p.route}
-              className='dd-page'
+              className="dropdown-navlink"
               onClick={() => {
                 setActiveTab(p.page);
                 setDdOpen(false);
@@ -39,10 +48,9 @@ const Dropdown = ({ navData }) => {
             >
               {p.page}
             </NavLink>
-          );
-        })}
+          ))}
+        </div>
       </div>
-
     </div>
   );
 }
