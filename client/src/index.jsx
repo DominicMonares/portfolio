@@ -30,7 +30,7 @@ const App = () => {
         const data = await res.json();
         setNavData(data);
       })
-      .catch(err => { throw err })
+      .catch(err => { throw err });
   }, []);
 
   return (
@@ -41,11 +41,11 @@ const App = () => {
         {isSmallWindow() ? <Dropdown navData={navData} /> : <NavBar navData={navData} />}
         <div className="route-container">
           <Routes>
-            <Route path='/apps' element={<Applications swClass={swClass} />} />
-            <Route path='/about' element={<About swClass={swClass} />} />
-            <Route path='/skills' element={<Skills swClass={swClass} />} />
-            <Route path='/experience' element={<Experience swClass={swClass} />} />
-            <Route path='/education' element={<Education swClass={swClass} />} />
+            <Route path="/apps" element={<Applications swClass={swClass} />} />
+            <Route path="/about" element={<About swClass={swClass} />} />
+            <Route path="/skills" element={<Skills swClass={swClass} />} />
+            <Route path="/experience" element={<Experience swClass={swClass} />} />
+            <Route path="/education" element={<Education swClass={swClass} />} />
           </Routes>
         </div>
       </Router>
