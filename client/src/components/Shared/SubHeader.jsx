@@ -4,6 +4,7 @@ const SubHeader = ({ swClass, desc, links }) => {
   return (
     <div className={swClass.concat('subheader-container')}>
       <span>{desc}</span>
+      {swClass ? <span>&nbsp;|&nbsp;</span> : <span />}
       {links ? (
         <span>
           {swClass ? <span /> : <span>&nbsp;|&nbsp;</span>}

@@ -4,8 +4,13 @@ import './Shared.css';
 const Header = ({ swClass, title, est, estLink, location, year }) => {
   return swClass ? (
     <div className="sw-header-container">
-      <span className="sw-header-title">{title}</span>
-      <span>
+      <div className="sw-header-top-container">
+        <span className="sw-header-title">
+          {title.includes('Immersive') ? title.replace(' Immersive', '') : title}
+        </span>
+        <span>{year}</span>
+      </div>
+      <div className="sw-header-bottom-container">
         {estLink ? (
           <a
             className="sw-header-link"
@@ -20,9 +25,7 @@ const Header = ({ swClass, title, est, estLink, location, year }) => {
         )}
         <span>&nbsp;|&nbsp;</span>
         <span>{location}</span>
-        <span>&nbsp;|&nbsp;</span>
-        <span>{year}</span>
-      </span>
+      </div>
     </div>
   ) : (
     <div className="header-container">

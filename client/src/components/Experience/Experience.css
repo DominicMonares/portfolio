@@ -30,7 +30,24 @@
 /* Experience */
 
 .sw-experience-container {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 4px;
 }
 
 /* Job */
+
+.sw-job-container {
+  width: 100%;
+  margin-bottom: 4px;
+  padding: 4px;
+  border-style: solid;
+  border-color: #4d006d;
+  border-width: 1px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}

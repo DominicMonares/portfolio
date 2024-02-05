@@ -164,35 +164,41 @@
   flex-direction: column;
   margin-left: 10px;
   margin-top: 10px;
-  margin-bottom: 10px;
+  font-size: 14px;
 }
 
 .sw-bullet {
   display: flex;
   flex-direction: row;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 }
 
 .sw-bullet-text {
   margin-left: 5px;
   margin-top: -3px;
   margin-bottom: 0px;
-  line-height: 1.5;
 }
 
 /* Header */
 
 .sw-header-container {
-  font-size: 14.5px;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
 }
 
-.sw-description {
-  margin-top: 5px;
-  margin-bottom: 3px;
+.sw-header-top-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+
+.sw-header-bottom-container {
+  margin-bottom: 2px;
+  font-size: 13px;
 }
 
 .sw-header-title {
-  font-size: 20px;
   font-weight: bold;
   color: #4d006d;
 }
@@ -210,20 +216,20 @@
 
 .sw-subheader-container {
   display: flex;
-  flex-direction: column;
-  margin-bottom: 8px;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  /* margin-bottom: 8px; */
   font-size: 12px;
   font-style: italic;
   color: #9E9BA0;
 }
 
-.sw-sublink:link,
-.sw-sublink:visited {
+.sw-subheader-link:link,
+.sw-subheader-link:visited {
   color: #9E9BA0
 }
 
-.sw-sublink:active {
-  font-size: 13px;
+.sw-subheader-link:active {
   color: #BBA5D2
 }
 
