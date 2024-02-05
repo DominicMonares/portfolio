@@ -56,8 +56,8 @@
 
 .subheader-container {
   display: flex;
-  margin-top: 4px;
-  font-size: 15px;
+  /* margin-top: 4px; */
+  font-size: 14px;
   font-style: italic;
   color: #9E9BA0;
 }

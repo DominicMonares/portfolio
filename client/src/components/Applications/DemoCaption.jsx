@@ -24,7 +24,12 @@ const DemoCaption = ({
       ) : (
         <div />
       )}
-      <span className={swClass.concat('demo-caption')}>
+      <span
+        className={swClass.concat(
+          'demo-caption',
+          youtube ? '-yt' : ''
+        )}
+      >
         {caption}
       </span>
       {swClass ? (
