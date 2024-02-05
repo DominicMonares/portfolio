@@ -203,6 +203,10 @@
   color: #4d006d;
 }
 
+.sw-header-year {
+  font-size: 11px;
+}
+
 .sw-header-link:link,
 .sw-header-link:visited {
   color: #4d006d

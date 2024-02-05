@@ -17,6 +17,7 @@
   width: 100%;
   margin-bottom: 5px;
   padding: 8px;
+  box-sizing: border-box;
   border-style: solid;
   border-width: 1px;
   border-radius: 10px;
@@ -45,6 +46,7 @@
   width: 100%;
   margin-bottom: 4px;
   padding: 4px;
+  box-sizing: border-box;
   border-style: solid;
   border-color: #4d006d;
   border-width: 1px;

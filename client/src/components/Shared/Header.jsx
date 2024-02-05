@@ -6,9 +6,14 @@ const Header = ({ swClass, title, est, estLink, location, year }) => {
     <div className="sw-header-container">
       <div className="sw-header-top-container">
         <span className="sw-header-title">
-          {title.includes('Immersive') ? title.replace(' Immersive', '') : title}
+          {title.includes(' Immersive') || title.includes(' Marketing') ? (
+            // Shortened title workaround
+            title.replace(' Immersive', '').replace(' Marketing', '')
+          ) : (
+            title
+          )}
         </span>
-        <span>{year}</span>
+        <span className="sw-header-year">{year}</span>
       </div>
       <div className="sw-header-bottom-container">
         {estLink ? (
