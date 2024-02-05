@@ -38,8 +38,16 @@ const rightArrowStyles = {
 const Application = ({ swClass, app }) => {
   // Change carousel slides
   const [currentSlide, setCurrentSlide] = useState(0);
+
   const updateCurrentSlide = (index) => {
     if (currentSlide !== index) setCurrentSlide(index)
+  }
+
+  const updateCurrentSlideSW = (direction) => {
+    const dLengthMax = app.demos.length - 1;
+    let prev = currentSlide - 1 < 0 ? dLengthMax : currentSlide - 1;
+    let next = currentSlide + 1 > dLengthMax ? 0 : currentSlide + 1;
+    setCurrentSlide(direction === 'right' ? next : prev);
   }
 
   return (
@@ -57,11 +65,12 @@ const Application = ({ swClass, app }) => {
         selectedItem={currentSlide}
         showIndicators={false}
         showStatus={false}
-        renderArrowPrev={(onClickHandler, hasPrev, label) =>
-          hasPrev && (
+        renderArrowPrev={(onClickHandler, hasPrev, label) => (
+          hasPrev && swClass ? (
+            <div />
+          ) : (
             <button
               className="carousel-arrow"
-              type="button"
               onClick={onClickHandler}
               title={label}
               style={leftArrowStyles}
@@ -69,12 +78,13 @@ const Application = ({ swClass, app }) => {
               &lt;
             </button>
           )
-        }
-        renderArrowNext={(onClickHandler, hasNext, label) =>
-          hasNext && (
+        )}
+        renderArrowNext={(onClickHandler, hasNext, label) => (
+          hasNext && swClass ? (
+            <div />
+          ) : (
             <button
               className="carousel-arrow"
-              type="button"
               onClick={onClickHandler}
               title={label}
               style={rightArrowStyles}
@@ -82,12 +92,13 @@ const Application = ({ swClass, app }) => {
               &gt;
             </button>
           )
-        }
+        )}
       >
         {app.demos.map((demo, i) => (
           <Demo
             swClass={swClass}
             demo={demo}
+            updateCurrentSlide={updateCurrentSlideSW}
             inactive={currentSlide !== i ? '-inactive' : ''}
           />
         ))}
