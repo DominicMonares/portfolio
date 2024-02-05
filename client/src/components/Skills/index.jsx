@@ -19,7 +19,7 @@ const Skills = ({ swClass }) => {
 
   return (
     <div className={swClass.concat('skills-container')}>
-      <div className="categories-container">
+      <div className={swClass.concat('categories-container')}>
         {Object.keys(skills).map(category => (
           <Category
             swClass={swClass}

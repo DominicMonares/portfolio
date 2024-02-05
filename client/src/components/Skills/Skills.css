@@ -72,46 +72,62 @@
 
 /***** Small Window *****/
 
+/* Skills */
+
 .sw-skills-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 4px;
 }
 
 .sw-categories-container {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
-  font-size: 20px;
+  width: 60%;
 }
+
+/* Category */
 
 .sw-category-container {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
-  border-bottom-style: solid;
-  border-bottom-width: 3px;
+  justify-content: center;
+  margin-bottom: 4px;
+  padding: 8px;
+  border-style: solid;
+  border-width: 1px;
   border-color: #4d006d;
+  border-radius: 10px;
+  background-color: #ffffff;
 }
 
 .sw-category-name {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 15px;
-  font-size: 20px;
+  margin-bottom: 8px;
+  font-size: 18px;
   font-weight: bold;
   color: #4d006d;
 }
 
+.sw-skills {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .sw-skill {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
 
 .sw-skill-text {
   margin-top: 5px;
   margin-right: 15px;
+  font-size: 18px;
 }
