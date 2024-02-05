@@ -1,9 +1,19 @@
 import React from 'react';
 import './Applications.css';
 
-const DemoCaption = ({ swClass, caption, updateCurrentSlide }) => {
+const DemoCaption = ({
+  swClass,
+  caption,
+  youtube,
+  updateCurrentSlide
+}) => {
   return (
-    <div className={swClass.concat('demo-caption-container')}>
+    <div
+      className={swClass.concat(
+        'demo-caption-container',
+        youtube ? '-yt' : '',
+      )}
+    >
       {swClass ? (
         <button
           className="sw-carousel-arrow"

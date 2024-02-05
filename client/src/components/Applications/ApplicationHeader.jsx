@@ -29,7 +29,9 @@ const ApplicationHeader = ({ swClass, title, desc, links }) => {
 
         </span>
       </div>
-      <div>{desc}</div>
+      <div className={swClass.concat('application-header-desc')}>
+        {desc}
+      </div>
     </div>
   );
 }

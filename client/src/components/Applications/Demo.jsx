@@ -147,6 +147,7 @@ const Demo = ({ swClass, demo, updateCurrentSlide, inactive }) => {
           <DemoCaption
             swClass={swClass}
             caption={demo.caption}
+            youtube={demo.mediaType === 'youtube'}
             updateCurrentSlide={updateCurrentSlide}
           />
         </div>
@@ -180,6 +181,7 @@ const Demo = ({ swClass, demo, updateCurrentSlide, inactive }) => {
           <DemoCaption
             swClass={swClass}
             caption={demo.caption}
+            youtube={demo.mediaType === 'youtube'}
             updateCurrentSlide={updateCurrentSlide}
           />
         </div>

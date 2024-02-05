@@ -212,7 +212,7 @@
 .sw-subheader-container {
   display: flex;
   flex-direction: column;
-  font-size: 14.5px;
+  font-size: 12px;
   font-style: italic;
   color: #9E9BA0;
 }
@@ -223,7 +223,7 @@
 }
 
 .sw-sublink:active {
-  font-size: 14px;
+  font-size: 13px;
   color: #BBA5D2
 }
 
