@@ -26,7 +26,7 @@ const modalStyles = {
 };
 Modal.setAppElement('#root');
 
-const Demo = ({ swClass, demo, inactive }) => {
+const Demo = ({ swClass, demo, updateCurrentSlide, inactive }) => {
   // Update demo size type depending on window size
   const [size, setSize] = useState('reg');
   useEffect(() => {
@@ -63,7 +63,9 @@ const Demo = ({ swClass, demo, inactive }) => {
   return (
     <div
       className={swClass.concat('demo-container', inactive)}
-      onClick={openModal}
+      onClick={() => {
+        if (!swClass) openModal();
+      }}
     >
       <Modal
         isOpen={modalIsOpen}
@@ -152,6 +154,7 @@ const Demo = ({ swClass, demo, inactive }) => {
                 width: regDims.width,
                 height: regDims.height,
               }}
+              onClick={openModal}
               autoplay="autoplay"
               loop="true"
               muted="true"
@@ -166,9 +169,30 @@ const Demo = ({ swClass, demo, inactive }) => {
                 width: regDims.width,
                 height: regDims.height,
               }}
+              onClick={openModal}
             />
           )}
+          {swClass ? (
+            <button
+              className="sw-carousel-arrow"
+              onClick={() => updateCurrentSlide('left')}
+            >
+              &lt;
+            </button>
+          ) : (
+            <div />
+          )}
           <span className={swClass.concat('demo-caption')}>{demo.caption}</span>
+          {swClass ? (
+            <button
+              className="sw-carousel-arrow"
+              onClick={() => updateCurrentSlide('right')}
+            >
+              &gt;
+            </button>
+          ) : (
+            <div />
+          )}
         </div>
       )}
     </div>
