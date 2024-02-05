@@ -212,6 +212,7 @@
 .sw-subheader-container {
   display: flex;
   flex-direction: column;
+  margin-bottom: 8px;
   font-size: 12px;
   font-style: italic;
   color: #9E9BA0;
