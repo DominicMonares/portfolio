@@ -3,7 +3,7 @@ import './Applications.css';
 
 const DemoCaption = ({ swClass, caption, updateCurrentSlide }) => {
   return (
-    <div>
+    <div className={swClass.concat('demo-caption-container')}>
       {swClass ? (
         <button
           className="sw-carousel-arrow"

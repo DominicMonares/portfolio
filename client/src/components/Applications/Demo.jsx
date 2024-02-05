@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Modal from 'react-modal';
+import DemoCaption from './DemoCaption';
 import images from '../../images';
 
 // Define modal styles then attach modal to root
@@ -143,7 +144,11 @@ const Demo = ({ swClass, demo, updateCurrentSlide, inactive }) => {
             allowFullScreen
             title="Embedded youtube"
           />
-          <span className={swClass.concat('youtube-demo-caption')}>{demo.caption}</span>
+          <DemoCaption
+            swClass={swClass}
+            caption={demo.caption}
+            updateCurrentSlide={updateCurrentSlide}
+          />
         </div>
       ) : (
         <div className={swClass.concat('demo')}>
@@ -172,27 +177,11 @@ const Demo = ({ swClass, demo, updateCurrentSlide, inactive }) => {
               onClick={openModal}
             />
           )}
-          {swClass ? (
-            <button
-              className="sw-carousel-arrow"
-              onClick={() => updateCurrentSlide('left')}
-            >
-              &lt;
-            </button>
-          ) : (
-            <div />
-          )}
-          <span className={swClass.concat('demo-caption')}>{demo.caption}</span>
-          {swClass ? (
-            <button
-              className="sw-carousel-arrow"
-              onClick={() => updateCurrentSlide('right')}
-            >
-              &gt;
-            </button>
-          ) : (
-            <div />
-          )}
+          <DemoCaption
+            swClass={swClass}
+            caption={demo.caption}
+            updateCurrentSlide={updateCurrentSlide}
+          />
         </div>
       )}
     </div>
