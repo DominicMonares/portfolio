@@ -64,8 +64,9 @@ const Demo = ({ swClass, demo, updateCurrentSlide, inactive }) => {
   return (
     <div
       className={swClass.concat('demo-container', inactive)}
-      onClick={() => {
+      onClick={(e) => {
         if (!swClass) openModal();
+        if (swClass && modalIsOpen) closeModal(e);
       }}
     >
       <Modal
