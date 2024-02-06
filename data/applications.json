@@ -121,8 +121,8 @@
             "height": 406
           },
           "small": {
-            "width": 330,
-            "height": 224
+            "width": 274,
+            "height": 186
           }
         }
       },
@@ -172,8 +172,8 @@
             "height": 398
           },
           "small": {
-            "width": 332,
-            "height": 187
+            "width": 256,
+            "height": 144
           }
         }
       },
@@ -191,8 +191,8 @@
             "height": 370
           },
           "small": {
-            "width": 332,
-            "height": 173
+            "width": 276,
+            "height": 144
           }
         }
       },
@@ -335,8 +335,8 @@
             "height": 344
           },
           "small": {
-            "width": 332,
-            "height": 161
+            "width": 185,
+            "height": 90
           }
         }
       },
@@ -373,8 +373,8 @@
             "height": 372
           },
           "small": {
-            "width": 332,
-            "height": 175
+            "width": 171,
+            "height": 90
           }
         }
       },
@@ -392,8 +392,8 @@
             "height": 374
           },
           "small": {
-            "width": 332,
-            "height": 176
+            "width": 170,
+            "height": 90
           }
         }
       }
