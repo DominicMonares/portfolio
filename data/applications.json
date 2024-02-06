@@ -140,8 +140,8 @@
             "height": 350
           },
           "small": {
-            "width": 332,
-            "height": 186
+            "width": 330,
+            "height": 185
           }
         }
       }
@@ -172,7 +172,7 @@
             "height": 398
           },
           "small": {
-            "width": 256,
+            "width": 262,
             "height": 144
           }
         }
@@ -335,8 +335,8 @@
             "height": 344
           },
           "small": {
-            "width": 185,
-            "height": 90
+            "width": 186,
+            "height": 91
           }
         }
       },
