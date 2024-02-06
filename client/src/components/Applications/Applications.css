@@ -1,22 +1,40 @@
-/***** Reg Window *****/
+/***** Applications *****/
 
-/* Applications */
+/* Shared */
 
-.applications-container {
+.applications-container,
+.sw-applications-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+}
+
+/* Reg Window */
+
+.applications-container {
   margin-top: 20px;
   margin-bottom: 15px;
 }
 
-/* Application */
+/* Small Window */
 
-.application-container {
+.sw-applications-container {
   width: 100%;
-  margin-bottom: 5px;
-  padding: 8px;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+
+/***** Application *****/
+
+/* Shared */
+
+.application-container,
+.sw-application-container {
+  width: 100%;
+  box-sizing: border-box;
   border-style: solid;
   border-width: 1px;
   border-radius: 10px;
@@ -24,16 +42,61 @@
   background-color: #ffffff;
 }
 
-.carousel-arrow:hover {
-  scale: 1.1;
-  transition: scale 0.20s;
+/* Reg Window */
+
+.application-container {
+  margin-bottom: 5px;
+  padding: 8px;
 }
 
-.thumbs-wrapper.axis-vertical,
+/* Small Window */
+
+.sw-application-container {
+  margin-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 4px;
+}
+
+/***** Application Header *****/
+
+/* Shared */
+
+/* Reg Window */
+
+/* Small Window */
+
+
+
+
+
+/***** Demo *****/
+
+/* Shared */
+
+/* Reg Window */
+
+/* Small Window */
+
+
+
+/***** Reg Window *****/
+
+/* Applications */
+
+
+
+/* Application */
+
+
+
+
+
+/* .thumbs-wrapper.axis-vertical,
 .carousel.thumbs-wrapper {
   height: 0px;
   margin: 0px;
-}
+} */
 
 /* Application Header */
 
@@ -170,57 +233,14 @@
 
 /* Applications */
 
-.sw-applications-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-top: 8px;
-  margin-bottom: 4px;
-}
+
 
 /* Application */
 
-.sw-application-container {
-  width: 100%;
-  margin-bottom: 4px;
-  padding-left: 4px;
-  padding-right: 4px;
-  padding-top: 4px;
-  box-sizing: border-box;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 10px;
-  border-color: #4d006d;
-  background-color: #ffffff;
-}
 
-.sw-carousel-arrow,
-.sw-carousel-arrow:hover {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40;
-  height: 40;
-  margin-left: 4px;
-  margin-right: 4px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #4d006d;
-  border-radius: 45px;
-  background-color: #f1cfff;
-  font-size: 30;
-  color: #4d006d;
-  font-weight: both;
-  cursor: pointer;
-  opacity: 0.5;
-  transition: scale 0.20s;
-}
 
-.sw-carousel-arrow:hover {
-  scale: 1.1;
-}
+
+
 
 /* Application Header */
 

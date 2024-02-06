@@ -16,7 +16,7 @@ const Contacts = ({ swClass }) => {
   }, []);
 
   return (
-    <div className={swClass.concat('contacts-container')}>
+    <div className={swClass.concat('contacts')}>
       {contacts.map(c => (
         <div className={swClass.concat('contact')}>
           <a

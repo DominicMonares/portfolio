@@ -19,7 +19,7 @@ const About = ({ swClass }) => {
   }, []);
 
   return (
-    <div className={swClass.concat('about-container')}>
+    <div className={swClass.concat('about')}>
       <div className={swClass.concat('about-body-container')}>
         <div className={swClass.concat('about-body')}>
           <img
