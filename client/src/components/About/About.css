@@ -1,30 +1,55 @@
-/***** Reg Window *****/
+/***** About *****/
 
-/* About */
+/* Shared */
 
-.about-body-container {
+.about-body-container,
+.sw-about-body-container {
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
-  margin-top: 20px;
   padding: 8px;
+  background-color: #ffffff;
+  box-sizing: border-box;
   border-style: solid;
   border-width: 1px;
   border-radius: 10px;
   border-color: #4d006d;
 }
 
-.about-body {
+.about-body,
+.sw-about-body {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.profile-pic {
+.profile-pic,
+.sw-profile-pic {
   border-style: solid;
   border-width: 1px;
   border-color: #4d006d;
+}
+
+.about-body-ul,
+.sw-about-body-ul {
+  width: 100%;
+  height: 2px;
+  background: rgb(77,0,109);
+  background: radial-gradient(
+    circle,
+    rgba(77,0,109,1) 0%,
+    rgba(77,0,109,1) 80%,
+    rgba(255,255,255,1) 100%
+  );
+}
+
+/* Reg Window */
+
+.about-body-container {
+  margin-top: 20px;
+}
+
+.about-body {
+  flex-direction: row;
 }
 
 .about-text-container {
@@ -37,20 +62,73 @@
 }
 
 .about-body-ul {
-  width: 100%;
-  height: 2px;
   margin-top: 10px;
   margin-bottom: 10px;
-  background: rgb(77,0,109);
-  background: radial-gradient(
-    circle,
-    rgba(77,0,109,1) 0%,
-    rgba(77,0,109,1) 80%,
-    rgba(255,255,255,1) 100%
-  );
 }
 
-/* Contacts */
+/* Small Window */
+
+.sw-about-container {
+  margin-top: 8px;
+}
+
+.sw-about-body-container {
+  margin-bottom: 8px;
+}
+
+.sw-about-body {
+  flex-direction: column;
+}
+
+.sw-profile-pic {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sw-about-text-container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sw-about-text {
+  font-size: 14px;
+}
+
+
+/***** Contacts *****/
+
+/* Shared */
+
+.contact-container,
+.sw-contact-container {
+  display: flex;
+  align-items: center;
+}
+
+.contact-container:link,
+.sw-contact-container:link {
+  color: #4d006d;
+}
+
+.contact-container:visited,
+.sw-contact-container:visited {
+  color: #4d006d;
+}
+
+.contact-container:active,
+.sw-contact-container:active {
+  color: #BBA5D2;
+}
+
+.contact-link,
+.sw-contact-link {
+  display: flex;
+  align-items: center;
+  text-decoration: underline;
+}
+
+/* Reg Window */
 
 .contacts-container {
   display: flex;
@@ -66,92 +144,11 @@
   font-size: 16px;
 }
 
-.contact-container {
-  display: flex;
-  align-items: center;
-}
-
-.contact-container:link {
-  color: #4d006d;
-}
-
-.contact-container:visited {
-  color: #4d006d;
-}
-
-.contact-container:active {
-  color: #BBA5D2;
-}
-
 .contact-link {
-  display: flex;
-  align-items: center;
   margin-left: 10px;
-  text-decoration: underline;
 }
 
-
-/***** Small Window *****/
-
-/* About */
-
-.sw-about-container {
-  margin-top: 8px;
-}
-
-.sw-about-body-container {
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff;
-  margin-bottom: 8px;
-  padding: 8px;
-  box-sizing: border-box;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 10px;
-  border-color: #4d006d;
-}
-
-.sw-about-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.sw-profile-pic {
-  margin-left: auto;
-  margin-right: auto;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #4d006d;
-}
-
-.sw-about-text-container {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.sw-about-text {
-  font-size: 14px;
-}
-
-.sw-about-body-ul {
-  width: 100%;
-  height: 2px;
-  /* margin-top: 10px;
-  margin-bottom: 10px; */
-  background: rgb(77,0,109);
-  background: radial-gradient(
-    circle,
-    rgba(77,0,109,1) 0%,
-    rgba(77,0,109,1) 80%,
-    rgba(255,255,255,1) 100%
-  );
-}
-
-/* Contacts */
+/* Small Window */
 
 .sw-contacts-container {
   display: flex;
@@ -168,26 +165,6 @@
   font-size: 14px;
 }
 
-.sw-contact-container {
-  display: flex;
-  align-items: center;
-}
-
-.sw-contact-container:link {
-  color: #4d006d;
-}
-
-.sw-contact-container:visited {
-  color: #4d006d;
-}
-
-.sw-contact-container:active {
-  color: #BBA5D2;
-}
-
 .sw-contact-link {
-  display: flex;
-  align-items: center;
   margin-left: 20px;
-  text-decoration: underline;
 }
