@@ -17,8 +17,8 @@ const modalStyles = {
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
     border: 'solid',
-    borderWidth: '3px',
-    borderColor: '#3A2E47',
+    borderWidth: '1px',
+    borderColor: '#4d006d',
   },
   overlay: {
     zIndex: 5,
