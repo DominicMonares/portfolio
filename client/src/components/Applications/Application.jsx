@@ -38,16 +38,8 @@ const rightArrowStyles = {
 const Application = ({ swClass, app }) => {
   // Change carousel slides
   const [currentSlide, setCurrentSlide] = useState(0);
-
   const updateCurrentSlide = (index) => {
     if (currentSlide !== index) setCurrentSlide(index)
-  }
-
-  const updateCurrentSlideSW = (direction) => {
-    const dLengthMax = app.demos.length - 1;
-    let prev = currentSlide - 1 < 0 ? dLengthMax : currentSlide - 1;
-    let next = currentSlide + 1 > dLengthMax ? 0 : currentSlide + 1;
-    setCurrentSlide(direction === 'right' ? next : prev);
   }
 
   return (
@@ -66,39 +58,40 @@ const Application = ({ swClass, app }) => {
         showIndicators={false}
         showStatus={false}
         renderArrowPrev={(onClickHandler, hasPrev, label) => (
-          hasPrev && swClass ? (
-            <div />
-          ) : (
-            <button
-              className="carousel-arrow"
-              onClick={onClickHandler}
-              title={label}
-              style={leftArrowStyles}
-            >
-              &lt;
-            </button>
-          )
+          <button
+            className={swClass.concat('carousel-arrow')}
+            onClick={onClickHandler}
+            title={label}
+            style={{
+              ...leftArrowStyles,
+              width: swClass ? 20 : 40,
+              height: swClass ? 20 : 40,
+              fontSize: swClass ? 13 : 30,
+            }}
+          >
+            &lt;
+          </button>
         )}
         renderArrowNext={(onClickHandler, hasNext, label) => (
-          hasNext && swClass ? (
-            <div />
-          ) : (
-            <button
-              className="carousel-arrow"
-              onClick={onClickHandler}
-              title={label}
-              style={rightArrowStyles}
-            >
-              &gt;
-            </button>
-          )
+          <button
+            className={swClass.concat('carousel-arrow')}
+            onClick={onClickHandler}
+            title={label}
+            style={{
+              ...rightArrowStyles,
+              width: swClass ? 20 : 40,
+              height: swClass ? 20 : 40,
+              fontSize: swClass ? 13 : 30,
+            }}
+          >
+            &gt;
+          </button>
         )}
       >
         {app.demos.map((demo, i) => (
           <Demo
             swClass={swClass}
             demo={demo}
-            updateCurrentSlide={updateCurrentSlideSW}
             inactive={currentSlide !== i ? '-inactive' : ''}
           />
         ))}

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import Modal from 'react-modal';
-import DemoCaption from './DemoCaption';
 import images from '../../images';
 
 // Define modal styles then attach modal to root
@@ -27,7 +26,7 @@ const modalStyles = {
 };
 Modal.setAppElement('#root');
 
-const Demo = ({ swClass, demo, updateCurrentSlide, inactive }) => {
+const Demo = ({ swClass, demo, inactive }) => {
   // Update demo size type depending on window size
   const [size, setSize] = useState('reg');
   useEffect(() => {
@@ -145,12 +144,11 @@ const Demo = ({ swClass, demo, updateCurrentSlide, inactive }) => {
             allowFullScreen
             title="Embedded youtube"
           />
-          <DemoCaption
-            swClass={swClass}
-            caption={demo.caption}
-            youtube={demo.mediaType === 'youtube'}
-            updateCurrentSlide={updateCurrentSlide}
-          />
+          <div className={swClass.concat('demo-caption-container-yt')}>
+            <span className={swClass.concat('demo-caption-yt')}>
+              {demo.caption}
+            </span>
+          </div>
         </div>
       ) : (
         <div className={swClass.concat('demo')}>
@@ -166,7 +164,10 @@ const Demo = ({ swClass, demo, updateCurrentSlide, inactive }) => {
               loop="true"
               muted="true"
             >
-              <source src={images['applications'][demo.media]} type={demo.mediaType} />
+              <source
+                src={images['applications'][demo.media]}
+                type={demo.mediaType}
+              />
             </video>
           ) : (
             <img
@@ -179,12 +180,11 @@ const Demo = ({ swClass, demo, updateCurrentSlide, inactive }) => {
               onClick={openModal}
             />
           )}
-          <DemoCaption
-            swClass={swClass}
-            caption={demo.caption}
-            youtube={demo.mediaType === 'youtube'}
-            updateCurrentSlide={updateCurrentSlide}
-          />
+          <div className={swClass.concat('demo-caption-container')}>
+            <span className={swClass.concat('demo-caption')}>
+              {demo.caption}
+            </span>
+          </div>
         </div>
       )}
     </div>
