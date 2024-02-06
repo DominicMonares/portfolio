@@ -75,7 +75,7 @@ const Application = ({ swClass, app }) => {
   }, [arrowOpacity]);
 
   return (
-    <div className={swClass.concat('application-container')}>
+    <div className={swClass.concat('application')}>
       <ApplicationHeader
         swClass={swClass}
         title={app.title}

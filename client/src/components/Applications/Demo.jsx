@@ -3,7 +3,7 @@ import Modal from 'react-modal';
 import images from '../../images';
 
 // Define modal styles then attach modal to root
-const modalStyles = {
+const demoModalStyles = {
   content: {
     display: 'flex',
     justifyContent: 'center',
@@ -33,22 +33,27 @@ const Demo = ({ swClass, demo, inactive }) => {
     swClass ? setSize('small') : setSize('reg');
   });
 
-  // Update dimensions and modal styles
-  const [regDims, setRegDims] = useState({ width: 0, height: 0 });
+  // Change styles depending on window size
+  const [modalStyles, setModalStyles] = useState(demoModalStyles);
+  const [dims, setDims] = useState({ width: 0, height: 0 });
   const [origDims, setOrigDims] = useState({ width: 0, height: 0 });
   useEffect(() => {
-    setRegDims({
-      width: demo['dims'][size]['width'],
-      height: demo['dims'][size]['height'],
-    });
-
+    const width = demo['dims'][size]['width'];
+    const height = demo['dims'][size]['height'];
     const origWidth = demo.dims.original.width;
     const origHeight = demo.dims.original.height;
-    modalStyles.content.maxWidth = origWidth;
-    modalStyles.content.maxHeight = origHeight;
+    setDims({
+      width: width,
+      height: height,
+    });
     setOrigDims({
       width: origWidth,
       height: origHeight,
+    });
+    setModalStyles({
+      ...modalStyles,
+      maxWidth: origWidth,
+      maxHeight: origHeight,
     });
   }, [size]);
 
@@ -62,11 +67,8 @@ const Demo = ({ swClass, demo, inactive }) => {
 
   return (
     <div
-      className={swClass.concat('demo-container', inactive)}
-      onClick={(e) => {
-        if (!swClass) openModal();
-        if (swClass && modalIsOpen) closeModal(e);
-      }}
+      className={swClass.concat('demo', inactive)}
+      onClick={(e) => modalIsOpen ? closeModal(e) : openModal()}
     >
       <Modal
         isOpen={modalIsOpen}
@@ -127,8 +129,8 @@ const Demo = ({ swClass, demo, inactive }) => {
           <iframe
             className={swClass.concat('youtube-iframe')}
             style={{
-              width: regDims.width,
-              height: regDims.height,
+              width: dims.width,
+              height: dims.height,
               border: "1px solid #4d006d",
               boxSizing: "content-box",
             }}
@@ -151,13 +153,13 @@ const Demo = ({ swClass, demo, inactive }) => {
           </div>
         </div>
       ) : (
-        <div className={swClass.concat('demo')}>
+        <div className={swClass.concat('img-vid')}>
           {demo.mediaType === 'video/mp4' ? (
             <video
               className={swClass.concat('demo-media')}
               style={{
-                width: regDims.width,
-                height: regDims.height,
+                width: dims.width,
+                height: dims.height,
               }}
               onClick={openModal}
               autoplay="autoplay"
@@ -174,8 +176,8 @@ const Demo = ({ swClass, demo, inactive }) => {
               className={swClass.concat('demo-media')}
               src={demo.media}
               style={{
-                width: regDims.width,
-                height: regDims.height,
+                width: dims.width,
+                height: dims.height,
               }}
               onClick={openModal}
             />
