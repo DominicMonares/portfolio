@@ -2,8 +2,8 @@
 
 /* Shared */
 
-.applications-container,
-.sw-applications-container {
+.applications,
+.sw-applications {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,14 +13,14 @@
 
 /* Reg Window */
 
-.applications-container {
+.applications {
   margin-top: 20px;
   margin-bottom: 15px;
 }
 
 /* Small Window */
 
-.sw-applications-container {
+.sw-applications {
   width: 100%;
   margin-top: 8px;
   margin-bottom: 4px;
@@ -62,11 +62,27 @@
 
 /* Shared */
 
+.application-header-top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.sw-application-header-top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
 /* Reg Window */
 
 /* Small Window */
 
-
+.sw-application-header {
+  font-size: 14px;
+}
 
 
 
@@ -82,30 +98,10 @@
 
 /***** Reg Window *****/
 
-/* Applications */
-
-
-
-/* Application */
-
-
-
-
-
-/* .thumbs-wrapper.axis-vertical,
-.carousel.thumbs-wrapper {
-  height: 0px;
-  margin: 0px;
-} */
 
 /* Application Header */
 
-.application-header-top-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2px;
-}
+
 
 .application-header-title {
   font-weight: bold;
@@ -231,29 +227,10 @@
 
 /***** Small Window *****/
 
-/* Applications */
-
-
-
-/* Application */
-
-
-
-
-
 
 /* Application Header */
 
-.sw-application-header {
-  font-size: 14px;
-}
 
-.sw-application-header-top-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2px;
-}
 
 .sw-application-header-title {
   font-weight: bold;

@@ -18,9 +18,9 @@ const Contacts = ({ swClass }) => {
   return (
     <div className={swClass.concat('contacts')}>
       {contacts.map(c => (
-        <div className={swClass.concat('contact')}>
+        <div className={swClass.concat('contact-container')}>
           <a
-            className={swClass.concat('contact-container')}
+            className={swClass.concat('contact')}
             href={c.link}
             target="_blank"
           >

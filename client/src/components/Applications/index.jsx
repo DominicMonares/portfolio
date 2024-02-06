@@ -17,7 +17,7 @@ const Applications = ({ swClass }) => {
   }, []);
 
   return (
-    <div className={swClass.concat('applications-container')}>
+    <div className={swClass.concat('applications')}>
       {applications.map(app => <Application swClass={swClass} app={app} />)}
     </div>
   );

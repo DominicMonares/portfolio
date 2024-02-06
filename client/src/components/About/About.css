@@ -100,24 +100,24 @@
 
 /* Shared */
 
-.contact-container,
-.sw-contact-container {
+.contact,
+.sw-contact {
   display: flex;
   align-items: center;
 }
 
-.contact-container:link,
-.sw-contact-container:link {
+.contact:link,
+.sw-contact:link {
   color: #4d006d;
 }
 
-.contact-container:visited,
-.sw-contact-container:visited {
+.contact:visited,
+.sw-contact:visited {
   color: #4d006d;
 }
 
-.contact-container:active,
-.sw-contact-container:active {
+.contact:active,
+.sw-contact:active {
   color: #BBA5D2;
 }
 
@@ -135,7 +135,7 @@
   justify-content: space-evenly;
 }
 
-.contact {
+.contact-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -156,7 +156,7 @@
   margin-top: 8px;
 }
 
-.sw-contact {
+.sw-contact-container {
   display: flex;
   margin-left: auto;
   margin-right: auto;
