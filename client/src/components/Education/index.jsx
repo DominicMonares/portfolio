@@ -18,9 +18,9 @@ const Education = ({ swClass }) => {
   }, []);
 
   return (
-    <div className={swClass.concat('education-container')}>
+    <div className={swClass.concat('education')}>
       {education.map(edu => (
-        <div className={swClass.concat('edu-container')}>
+        <div className={swClass.concat('education-container')}>
           <Header
             swClass={swClass}
             title={edu.title}

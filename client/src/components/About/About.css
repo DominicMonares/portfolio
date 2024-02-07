@@ -1,6 +1,12 @@
 /***** About *****/
 
-/* Shared */
+/* About */
+
+.sw-about {
+  margin-top: 8px;
+}
+
+/* About Body Container */
 
 .about-body-container,
 .sw-about-body-container {
@@ -15,6 +21,16 @@
   border-color: #4d006d;
 }
 
+.about-body-container {
+  margin-top: 20px;
+}
+
+.sw-about-body-container {
+  margin-bottom: 8px;
+}
+
+/* About Body */
+
 .about-body,
 .sw-about-body {
   display: flex;
@@ -22,12 +38,52 @@
   align-items: center;
 }
 
+.about-body {
+  flex-direction: row;
+}
+
+.sw-about-body {
+  flex-direction: column;
+}
+
+/* Profile Pic */
+
 .profile-pic,
 .sw-profile-pic {
   border-style: solid;
   border-width: 1px;
   border-color: #4d006d;
 }
+
+.sw-profile-pic {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* About Text Container */
+
+.about-text-container {
+  max-width: 700px;
+  margin-left: 20px;
+}
+
+.sw-about-text-container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* About Text */
+
+.about-text {
+  font-size: 16px;
+}
+
+.sw-about-text {
+  font-size: 14px;
+}
+
+/* About Body UL */
 
 .about-body-ul,
 .sw-about-body-ul {
@@ -42,63 +98,48 @@
   );
 }
 
-/* Reg Window */
-
-.about-body-container {
-  margin-top: 20px;
-}
-
-.about-body {
-  flex-direction: row;
-}
-
-.about-text-container {
-  max-width: 700px;
-  margin-left: 20px;
-}
-
-.about-text {
-  font-size: 16px;
-}
-
 .about-body-ul {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-/* Small Window */
-
-.sw-about {
-  margin-top: 8px;
-}
-
-.sw-about-body-container {
-  margin-bottom: 8px;
-}
-
-.sw-about-body {
-  flex-direction: column;
-}
-
-.sw-profile-pic {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.sw-about-text-container {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.sw-about-text {
-  font-size: 14px;
-}
-
 
 /***** Contacts *****/
 
-/* Shared */
+/* Contacts */
+
+.contacts {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sw-contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+}
+
+/* Contact Container */
+
+.contact-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 2px;
+  margin-right: 2px;
+  font-size: 16px;
+}
+
+.sw-contact-container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  font-size: 14px;
+}
+
+/* Contact */
 
 .contact,
 .sw-contact {
@@ -121,6 +162,8 @@
   color: #BBA5D2;
 }
 
+/* Contact Link */
+
 .contact-link,
 .sw-contact-link {
   display: flex;
@@ -128,41 +171,8 @@
   text-decoration: underline;
 }
 
-/* Reg Window */
-
-.contacts {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.contact-container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-left: 2px;
-  margin-right: 2px;
-  font-size: 16px;
-}
-
 .contact-link {
   margin-left: 10px;
-}
-
-/* Small Window */
-
-.sw-contacts {
-  display: flex;
-  flex-direction: column;
-  margin-top: 8px;
-}
-
-.sw-contact-container {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3px;
-  margin-bottom: 3px;
-  font-size: 14px;
 }
 
 .sw-contact-link {
