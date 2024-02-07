@@ -66,10 +66,7 @@ const Demo = ({ swClass, demo, inactive }) => {
   };
 
   return (
-    <div
-      className={swClass.concat('demo', inactive)}
-      onClick={(e) => modalIsOpen ? closeModal(e) : openModal()}
-    >
+    <div className={swClass.concat('demo', inactive)}>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
@@ -77,62 +74,42 @@ const Demo = ({ swClass, demo, inactive }) => {
         style={modalStyles}
         contentLabel="Demo Modal"
       >
-        <div className={swClass.concat('demo-modal-container')} onClick={closeModal}>
-          {demo.mediaType === 'youtube' ? (
-            <iframe
-              className={swClass.concat('youtube-iframe-modal')}
-              src={demo.media}
-              style={{
-                maxWidth: origDims.width,
-                maxHeight: origDims.height,
-              }}
-              allow={`
-                accelerometer;
-                autoplay;
-                clipboard-write;
-                encrypted-media;
-                gyroscope;
-                picture-in-picture
-              `}
-              allowFullScreen
-              title="Embedded youtube"
-            />
-          ) : (
-            demo.mediaType === 'video/mp4' ? (
-              <video
-                className={swClass.concat('demo-media-modal')}
-                style={{
-                  maxWidth: origDims.width,
-                  maxHeight: origDims.height,
-                }}
-                autoplay="autoplay"
-                loop="true"
-                muted="true"
-              >
-                <source src={images['applications'][demo.media]} type={demo.mediaType} />
-              </video>
-            ) : (
-              <img
-                className={swClass.concat('demo-media-modal')}
-                src={demo.media}
-                style={{
-                  maxWidth: origDims.width,
-                  maxHeight: origDims.height,
-                }}
-              />
-            )
-          )}
-        </div>
+        {demo.mediaType === 'video/mp4' ? (
+          <video
+            className={swClass.concat('demo-media-modal')}
+            style={{
+              maxWidth: origDims.width,
+              maxHeight: origDims.height,
+            }}
+            onClick={closeModal}
+            autoplay="autoplay"
+            loop="true"
+            muted="true"
+          >
+            <source src={images['applications'][demo.media]} type={demo.mediaType} />
+          </video>
+        ) : (
+          <img
+            className={swClass.concat('demo-media-modal')}
+            src={demo.media}
+            onClick={closeModal}
+            style={{
+              maxWidth: origDims.width,
+              maxHeight: origDims.height,
+            }}
+          />
+        )}
       </Modal>
-      {demo.mediaType === 'youtube' ? (
-        <div className={swClass.concat('youtube')}>
+      <div className={swClass.concat('demo-media-container')}>
+        {demo.mediaType === 'youtube' ? (
           <iframe
             className={swClass.concat('youtube-iframe')}
             style={{
               width: dims.width,
               height: dims.height,
+              marginBottom: 0,
               border: "1px solid #4d006d",
-              boxSizing: "content-box",
+              boxSizing: "border-box",
             }}
             src={demo.media}
             allow={`
@@ -146,15 +123,8 @@ const Demo = ({ swClass, demo, inactive }) => {
             allowFullScreen
             title="Embedded youtube"
           />
-          <div className={swClass.concat('demo-caption-container-yt')}>
-            <span className={swClass.concat('demo-caption-yt')}>
-              {demo.caption}
-            </span>
-          </div>
-        </div>
-      ) : (
-        <div className={swClass.concat('img-vid')}>
-          {demo.mediaType === 'video/mp4' ? (
+        ) : (
+          demo.mediaType === 'video/mp4' ? (
             <video
               className={swClass.concat('demo-media')}
               style={{
@@ -181,14 +151,12 @@ const Demo = ({ swClass, demo, inactive }) => {
               }}
               onClick={openModal}
             />
-          )}
-          <div className={swClass.concat('demo-caption-container')}>
-            <span className={swClass.concat('demo-caption')}>
-              {demo.caption}
-            </span>
-          </div>
-        </div>
-      )}
+          )
+        )}
+        <span className={swClass.concat('demo-caption')}>
+          {demo.caption}
+        </span>
+      </div>
     </div>
   );
 }

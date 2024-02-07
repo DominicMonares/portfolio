@@ -116,13 +116,13 @@
 /***** Demo *****/
 
 /* Shared */
-
 .demo,
 .demo-inactive,
 .sw-demo,
 .sw-demo-inactive {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -136,34 +136,24 @@
   opacity: 0.0;
 }
 
-.img-vid,
-.sw-img-vid {
+.demo-media-container,
+.sw-demo-media-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
-  pointer-events: none;
 }
 
 .demo-media,
 .sw-demo-media {
-  box-sizing: content-box;
+  display: flex;
   border-style: solid;
   border-width: 1px;
   border-color: #4d006d;
   background-color: #4d006d;
-}
-
-.youtube,
-.sw-youtube {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+  cursor: zoom-in;
 }
 
 .ReactModal__Content.ReactModal__Content--after-open::-webkit-scrollbar {
@@ -176,17 +166,20 @@
 .sw-youtube-iframe-modal {
   width: 100%;
   height: 100%;
+  cursor: zoom-out;
+}
+
+.youtube-iframe,
+.sw-youtube-iframe {
+  background-color: #4d006d;
 }
 
 .demo-caption,
-.demo-caption-yt,
-.sw-demo-caption,
-.sw-demo-caption-yt {
+.sw-demo-caption {
   display: flex;
   justify-content: center;
   align-items: baseline;
   width: 100%;
-  height: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -195,52 +188,24 @@
 
 .demo,
 .demo-inactive {
-  justify-content: center;
   margin-top: 10px;
 }
 
-.youtube {
-  height: 100%;
-}
-
-.youtube-iframe {
-  width: 100%;
-  height: 100%;
-  background-color: #4d006d;
-}
-
-.demo-caption,
-.demo-caption-yt {
-  margin-top: 12px;
-  padding-bottom: 12px;
+.demo-caption {
+  margin-top: 10px;
+  padding-bottom: 10px;
   font-size: 16px;
-}
-
-.demo-caption-yt {
-  margin-top: -28px;
 }
 
 /* Small Window */
 
 .sw-demo,
 .sw-demo-inactive {
-  justify-content: baseline;
   margin-top: 8px;
 }
 
-.sw-youtube-iframe {
-  border-style: solid;
-  border-width: 3px;
-  border-color: #4d006d;
-}
-
-.sw-demo-caption,
-.sw-demo-caption-yt {
+.sw-demo-caption {
   margin-top: 8px;
-  padding-bottom: 4px;
+  padding-bottom: 8px;
   font-size: 14px;
-}
-
-.sw-demo-caption-yt {
-  margin-top: -32px;
 }
