@@ -17,7 +17,7 @@ const Experience = ({ swClass }) => {
   }, []);
 
   return (
-    <div className={swClass.concat('experience-container')}>
+    <div className={swClass.concat('experience')}>
       {experience.map(job => <Job swClass={swClass} job={job} />)}
     </div>
   );

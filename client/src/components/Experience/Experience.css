@@ -1,55 +1,48 @@
-/***** Reg Window *****/
+/***** Experience *****/
 
 /* Experience */
 
-.experience-container {
+.experience,
+.sw-experience {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.experience {
   margin-top: 20px;
   margin-bottom: 15px;
 }
 
-/* Job */
-
-.job-container {
-  width: 100%;
-  margin-bottom: 5px;
-  padding: 8px;
-  box-sizing: border-box;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 10px;
-  border-color: #4d006d;
-  background-color: #ffffff;
-}
-
-
-/***** Small Window *****/
-
-/* Experience */
-
-.sw-experience-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.sw-experience {
   width: 100%;
   margin-top: 8px;
   margin-bottom: 4px;
 }
 
+
+/***** Job *****/
+
 /* Job */
 
-.sw-job-container {
+.job,
+.sw-job {
   width: 100%;
-  margin-bottom: 4px;
-  padding: 4px;
   box-sizing: border-box;
   border-style: solid;
-  border-color: #4d006d;
   border-width: 1px;
   border-radius: 10px;
+  border-color: #4d006d;
   background-color: #ffffff;
+}
+
+.job {
+  margin-bottom: 5px;
+  padding: 8px;
+}
+
+.sw-job {
+  margin-bottom: 4px;
+  padding: 4px;
 }
