@@ -1,6 +1,6 @@
 /***** Applications *****/
 
-/* Shared */
+/* Applications */
 
 .applications,
 .sw-applications {
@@ -8,17 +8,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
-
-/* Reg Window */
 
 .applications {
   margin-top: 20px;
   margin-bottom: 15px;
 }
-
-/* Small Window */
 
 .sw-applications {
   width: 100%;
@@ -29,7 +24,7 @@
 
 /***** Application *****/
 
-/* Shared */
+/* Application */
 
 .application,
 .sw-application {
@@ -42,14 +37,10 @@
   background-color: #ffffff;
 }
 
-/* Reg Window */
-
 .application {
   margin-bottom: 5px;
   padding: 8px;
 }
-
-/* Small Window */
 
 .sw-application {
   margin-bottom: 4px;
@@ -59,7 +50,13 @@
 
 /***** Application Header *****/
 
-/* Shared */
+/* Application Header */
+
+.sw-application-header {
+  font-size: 14px;
+}
+
+/* Application Header Top Container */
 
 .application-header-top-container,
 .sw-application-header-top-container {
@@ -69,11 +66,21 @@
   margin-bottom: 2px;
 }
 
+/* Application Header Title */
+
 .application-header-title,
 .sw-application-header-title {
   font-weight: bold;
   color: #4d006d;
 }
+
+/* Application Header Links */
+
+.sw-application-header-links {
+  font-size: 11px;
+}
+
+/* Application Header Link */
 
 .application-header-link:link,
 .sw-application-header-link:link {
@@ -90,21 +97,11 @@
   color: #BBA5D2
 }
 
-/* Reg Window */
+/* Application Header Desc */
 
 .application-header-desc {
   margin-bottom: 2px;
   font-size: 15px;
-}
-
-/* Small Window */
-
-.sw-application-header {
-  font-size: 14px;
-}
-
-.sw-application-header-links {
-  font-size: 11px;
 }
 
 .sw-application-header-desc {
@@ -115,7 +112,8 @@
 
 /***** Demo *****/
 
-/* Shared */
+/* Demo | Demo Inactive */
+
 .demo,
 .demo-inactive,
 .sw-demo,
@@ -131,10 +129,22 @@
   transition: opacity 0.75s;
 }
 
+.demo,
+.demo-inactive {
+  margin-top: 10px;
+}
+
+.sw-demo,
+.sw-demo-inactive {
+  margin-top: 8px;
+}
+
 .demo-inactive,
 .sw-demo-inactive {
   opacity: 0.0;
 }
+
+/* Demo Media Container | Demo Media Container YT */
 
 .demo-media-container,
 .demo-media-container-yt,
@@ -152,6 +162,8 @@
   height: 100%;
 }
 
+/* Demo Media */
+
 .demo-media,
 .sw-demo-media {
   display: flex;
@@ -159,6 +171,8 @@
   height: 100%;
   cursor: zoom-in;
 }
+
+/* Demo Caption */
 
 .demo-caption,
 .sw-demo-caption {
@@ -170,6 +184,20 @@
   margin-right: auto;
 }
 
+.demo-caption {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+
+.sw-demo-caption {
+  margin-top: 8px;
+  padding-bottom: 8px;
+  font-size: 14px;
+}
+
+/* Demo Media Modal */
+
 .demo-media-modal,
 .sw-demo-media-modal {
   width: 100%;
@@ -177,32 +205,8 @@
   cursor: zoom-out;
 }
 
+/* React Modal Override */
+
 .ReactModal__Content.ReactModal__Content--after-open::-webkit-scrollbar {
   display: none;
-}
-
-/* Reg Window */
-
-.demo,
-.demo-inactive {
-  margin-top: 10px;
-}
-
-.demo-caption {
-  margin-top: 10px;
-  padding-bottom: 10px;
-  font-size: 16px;
-}
-
-/* Small Window */
-
-.sw-demo,
-.sw-demo-inactive {
-  margin-top: 8px;
-}
-
-.sw-demo-caption {
-  margin-top: 8px;
-  padding-bottom: 8px;
-  font-size: 14px;
 }
