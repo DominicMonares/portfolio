@@ -1,15 +1,34 @@
-/***** Reg Window *****/
+/***** Skills *****/
 
 /* Skills */
 
-.skills-container {
+.skills,
+.sw-skills {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+
+.skills {
+  justify-content: space-between;
   margin-top: 20px;
 }
+
+.sw-skills {
+  justify-content: center;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+
+
+
+
+
+
+
+
 
 .categories-container {
   display: flex;
@@ -74,15 +93,7 @@
 
 /* Skills */
 
-.sw-skills-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-top: 8px;
-  margin-bottom: 4px;
-}
+
 
 .sw-categories-container {
   display: flex;
