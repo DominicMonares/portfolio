@@ -24,7 +24,7 @@ const Dropdown = ({ navData }) => {
   const [ddOpen, setDdOpen] = useState(false);
 
   return (
-    <div className="dropdown-container">
+    <div className="dropdown">
       <div className="dropdown-button-container">
         <button
           className="dropdown-button"
@@ -42,7 +42,7 @@ const Dropdown = ({ navData }) => {
           {menu.map((p, i) => (
             <NavLink
               to={p.route}
-              className="dropdown-navlink"
+              className="dropdown-nav-link"
               onClick={() => {
                 setActiveTab(p.page);
                 setDdOpen(false);
