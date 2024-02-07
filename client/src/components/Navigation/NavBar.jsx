@@ -28,7 +28,7 @@ const NavBar = ({ navData }) => {
   }
 
   return (
-    <div className="nav-container">
+    <div className="navbar">
       <div className="nav-menu">
         {navData.map(n => (
           <NavLink
