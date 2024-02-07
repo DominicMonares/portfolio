@@ -19,17 +19,13 @@
         "mediaType": "video/mp4",
         "media": "sppe4",
         "dims": {
-          "original": {
+          "modal": {
             "width": 1300,
             "height": 1080
           },
           "reg": {
-            "width": 472,
-            "height": 392
-          },
-          "small": {
-            "width": 228,
-            "height": 189
+            "width": 708,
+            "height": 588
           }
         }
       },
@@ -38,17 +34,13 @@
         "mediaType": "video/mp4",
         "media": "sppe1",
         "dims": {
-          "original": {
+          "modal": {
             "width": 1902,
             "height": 1080
           },
           "reg": {
-            "width": 690,
-            "height": 392
-          },
-          "small": {
-            "width": 332,
-            "height": 189
+            "width": 1035,
+            "height": 588
           }
         }
       },
@@ -57,17 +49,13 @@
         "mediaType": "video/mp4",
         "media": "sppe2",
         "dims": {
-          "original": {
+          "modal": {
             "width": 1902,
             "height": 1080
           },
           "reg": {
-            "width": 690,
-            "height": 392
-          },
-          "small": {
-            "width": 332,
-            "height": 189
+            "width": 1035,
+            "height": 588
           }
         }
       },
@@ -76,17 +64,13 @@
         "mediaType": "video/mp4",
         "media": "sppe3",
         "dims": {
-          "original": {
+          "modal": {
             "width": 1902,
             "height": 1080
           },
           "reg": {
-            "width": 690,
-            "height": 392
-          },
-          "small": {
-            "width": 332,
-            "height": 189
+            "width": 1035,
+            "height": 588
           }
         }
       }
@@ -112,17 +96,13 @@
         "mediaType": "video/mp4",
         "media": "clown1",
         "dims": {
-          "original": {
+          "modal": {
             "width": 1122,
             "height": 762
           },
           "reg": {
-            "width": 598,
-            "height": 406
-          },
-          "small": {
-            "width": 274,
-            "height": 186
+            "width": 866,
+            "height": 588
           }
         }
       },
@@ -131,17 +111,13 @@
         "mediaType": "video/mp4",
         "media": "clown2",
         "dims": {
-          "original": {
+          "modal": {
             "width": 626,
             "height": 350
           },
           "reg": {
-            "width": 626,
-            "height": 350
-          },
-          "small": {
-            "width": 330,
-            "height": 185
+            "width": 866,
+            "height": 484
           }
         }
       }
@@ -163,17 +139,13 @@
         "mediaType": "youtube",
         "media": "https://www.youtube.com/embed/fRe4yupMJ-A",
         "dims": {
-          "original": {
+          "modal": {
             "width": 1920,
             "height": 1080
           },
           "reg": {
-            "width": 534,
-            "height": 300
-          },
-          "small": {
-            "width": 262,
-            "height": 144
+            "width": 800,
+            "height": 450
           }
         }
       },
@@ -182,17 +154,13 @@
         "mediaType": "video/mp4",
         "media": "fretJS1",
         "dims": {
-          "original": {
+          "modal": {
             "width": 1414,
             "height": 738
           },
           "reg": {
-            "width": 574,
-            "height": 300
-          },
-          "small": {
-            "width": 276,
-            "height": 144
+            "width": 862,
+            "height": 450
           }
         }
       },
@@ -201,17 +169,13 @@
         "mediaType": "video/mp4",
         "media": "fretJS2",
         "dims": {
-          "original": {
+          "modal": {
             "width": 1696,
             "height": 738
           },
           "reg": {
-            "width": 690,
-            "height": 301
-          },
-          "small": {
-            "width": 332,
-            "height": 144
+            "width": 1035,
+            "height": 450
           }
         }
       }
@@ -237,17 +201,13 @@
         "mediaType": "video/mp4",
         "media": "petpix1",
         "dims": {
-          "original": {
+          "modal": {
             "width": 354,
             "height": 712
           },
           "reg": {
-            "width": 202,
-            "height": 406
-          },
-          "small": {
-            "width": 165,
-            "height": 332
+            "width": 224,
+            "height": 450
           }
         }
       },
@@ -256,17 +216,13 @@
         "mediaType": "video/mp4",
         "media": "petpix2",
         "dims": {
-          "original": {
+          "modal": {
             "width": 354,
             "height": 712
           },
           "reg": {
-            "width": 202,
-            "height": 406
-          },
-          "small": {
-            "width": 165,
-            "height": 332
+            "width": 224,
+            "height": 450
           }
         }
       },
@@ -275,17 +231,13 @@
         "mediaType": "video/mp4",
         "media": "petpix3",
         "dims": {
-          "original": {
+          "modal": {
             "width": 480,
             "height": 960
           },
           "reg": {
-            "width": 204,
-            "height": 408
-          },
-          "small": {
-            "width": 166,
-            "height": 332
+            "width": 225,
+            "height": 450
           }
         }
       },
@@ -294,17 +246,13 @@
         "mediaType": "video/mp4",
         "media": "petpix4",
         "dims": {
-          "original": {
+          "modal": {
             "width": 480,
             "height": 960
           },
           "reg": {
-            "width": 204,
-            "height": 408
-          },
-          "small": {
-            "width": 166,
-            "height": 332
+            "width": 225,
+            "height": 450
           }
         }
       }
@@ -322,21 +270,32 @@
     "techs": "React, webpack, Babel, Express, Node.js, AWS: EC2, Jest, React Testing Library",
     "demos": [
       {
+        "caption": "Answer accordion, expandable questions, and infinitely scrolling display",
+        "mediaType": "video/mp4",
+        "media": "fec3",
+        "dims": {
+          "modal": {
+            "width": 1436,
+            "height": 756
+          },
+          "reg": {
+            "width": 1035,
+            "height": 545
+          }
+        }
+      },
+      {
         "caption": "Dynamically sorting search bar",
         "mediaType": "video/mp4",
         "media": "fec1",
         "dims": {
-          "original": {
+          "modal": {
             "width": 1426,
             "height": 692
           },
           "reg": {
-            "width": 690,
-            "height": 335
-          },
-          "small": {
-            "width": 186,
-            "height": 91
+            "width": 1035,
+            "height": 502
           }
         }
       },
@@ -345,36 +304,13 @@
         "mediaType": "video/mp4",
         "media": "fec2",
         "dims": {
-          "original": {
+          "modal": {
             "width": 888,
             "height": 240
           },
           "reg": {
-            "width": 688,
-            "height": 186
-          },
-          "small": {
-            "width": 332,
-            "height": 90
-          }
-        }
-      },
-      {
-        "caption": "Answer accordion, expandable questions, and infinitely scrolling display",
-        "mediaType": "video/mp4",
-        "media": "fec3",
-        "dims": {
-          "original": {
-            "width": 1436,
-            "height": 756
-          },
-          "reg": {
-            "width": 636,
-            "height": 335
-          },
-          "small": {
-            "width": 171,
-            "height": 90
+            "width": 1035,
+            "height": 280
           }
         }
       },
@@ -383,17 +319,13 @@
         "mediaType": "video/mp4",
         "media": "fec4",
         "dims": {
-          "original": {
+          "modal": {
             "width": 1434,
             "height": 760
           },
           "reg": {
-            "width": 632,
-            "height": 335
-          },
-          "small": {
-            "width": 170,
-            "height": 90
+            "width": 1035,
+            "height": 549
           }
         }
       }
