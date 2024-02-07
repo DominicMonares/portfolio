@@ -72,7 +72,7 @@ import afterEffects from '../../assets/skills/after-effects.png';
 import ebsynth from '../../assets/skills/ebsynth.png';
 import cubase from '../../assets/skills/cubase.png';
 
-const icons = {
+const media = {
   applications: {
     fec1: fec1,
     fec2: fec2,
@@ -149,4 +149,4 @@ const icons = {
   }
 };
 
-export default icons;
+export default media;

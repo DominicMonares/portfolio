@@ -1,5 +1,5 @@
 import React from 'react';
-import images from '../../images';
+import media from '../../media';
 
 const Category = ({ swClass, category, skills }) => {
   return (
@@ -13,7 +13,7 @@ const Category = ({ swClass, category, skills }) => {
             <span className={swClass.concat('skill-text')}>{s.title}</span>
             <span className={swClass.concat('skill-img-container')}>
               <img
-                src={images['skills'][s.icon]}
+                src={media['skills'][s.icon]}
                 width={s.dims.width}
                 height={s.dims.height}
               />

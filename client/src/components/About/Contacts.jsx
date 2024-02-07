@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import regeneratorRuntime from 'regenerator-runtime';
-import images from '../../images';
+import media from '../../media';
 
 const Contacts = ({ swClass }) => {
   // Fetch contacts data
@@ -25,7 +25,7 @@ const Contacts = ({ swClass }) => {
             target="_blank"
           >
             <img
-              src={images['contacts'][c.icon]}
+              src={media['contacts'][c.icon]}
               width={c.dims.width}
               height={c.dims.height}
             />

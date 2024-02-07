@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Modal from 'react-modal';
-import images from '../../images';
+import media from '../../media';
 
 // Define modal styles then attach modal to root
 const demoModalStyles = {
@@ -85,7 +85,7 @@ const Demo = ({ swClass, demo, inactive }) => {
             muted="true"
           >
             <source
-              src={images['applications'][demo.media]}
+              src={media['applications'][demo.media]}
               type={demo.mediaType}
             />
           </video>
@@ -143,7 +143,7 @@ const Demo = ({ swClass, demo, inactive }) => {
               muted="true"
             >
               <source
-                src={images['applications'][demo.media]}
+                src={media['applications'][demo.media]}
                 type={demo.mediaType}
               />
             </video>
