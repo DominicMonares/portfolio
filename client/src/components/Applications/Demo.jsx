@@ -35,25 +35,23 @@ const Demo = ({ swClass, demo, inactive }) => {
 
   // Change styles depending on window size
   const [modalStyles, setModalStyles] = useState(demoModalStyles);
-  const [dims, setDims] = useState({ width: 0, height: 0 });
-  const [origDims, setOrigDims] = useState({ width: 0, height: 0 });
+  const [regDims, setRegDims] = useState({ width: 0, height: 0 });
+  const [modalDims, setModalDims] = useState({ width: 0, height: 0 });
   useEffect(() => {
-    const width = demo['dims'][size]['width'];
-    const height = demo['dims'][size]['height'];
-    const origWidth = demo.dims.original.width;
-    const origHeight = demo.dims.original.height;
-    setDims({
-      width: width,
-      height: height,
-    });
-    setOrigDims({
-      width: origWidth,
-      height: origHeight,
-    });
+    const modalWidth = demo.dims.modal.width;
+    const modalHeight = demo.dims.modal.height;
     setModalStyles({
       ...modalStyles,
-      maxWidth: origWidth,
-      maxHeight: origHeight,
+      maxWidth: modalWidth,
+      maxHeight: modalHeight,
+    });
+    setModalDims({
+      width: modalWidth,
+      height: modalHeight,
+    });
+    setRegDims({
+      width: demo.dims.reg.width,
+      height: demo.dims.reg.height,
     });
   }, [size]);
 
@@ -78,15 +76,18 @@ const Demo = ({ swClass, demo, inactive }) => {
           <video
             className={swClass.concat('demo-media-modal')}
             style={{
-              maxWidth: origDims.width,
-              maxHeight: origDims.height,
+              maxWidth: modalDims.width,
+              maxHeight: modalDims.height,
             }}
             onClick={closeModal}
             autoplay="autoplay"
             loop="true"
             muted="true"
           >
-            <source src={images['applications'][demo.media]} type={demo.mediaType} />
+            <source
+              src={images['applications'][demo.media]}
+              type={demo.mediaType}
+            />
           </video>
         ) : (
           <img
@@ -94,22 +95,27 @@ const Demo = ({ swClass, demo, inactive }) => {
             src={demo.media}
             onClick={closeModal}
             style={{
-              maxWidth: origDims.width,
-              maxHeight: origDims.height,
+              maxWidth: modalDims.width,
+              maxHeight: modalDims.height,
             }}
           />
         )}
       </Modal>
-      <div className={swClass.concat('demo-media-container')}>
+      <div 
+        className={swClass.concat(
+          'demo-media-container',
+          demo.mediaType === 'youtube' ? '-yt' : ''
+        )}
+      >
         {demo.mediaType === 'youtube' ? (
           <iframe
             className={swClass.concat('youtube-iframe')}
             style={{
-              width: dims.width,
-              height: dims.height,
+              maxWidth: regDims.width,
+              maxHeight: regDims.height,
+              width: '100%',
+              height: '100%',
               marginBottom: 0,
-              border: "1px solid #4d006d",
-              boxSizing: "border-box",
             }}
             src={demo.media}
             allow={`
@@ -128,8 +134,8 @@ const Demo = ({ swClass, demo, inactive }) => {
             <video
               className={swClass.concat('demo-media')}
               style={{
-                width: dims.width,
-                height: dims.height,
+                maxWidth: regDims.width,
+                maxHeight: regDims.height,
               }}
               onClick={openModal}
               autoplay="autoplay"
@@ -146,8 +152,8 @@ const Demo = ({ swClass, demo, inactive }) => {
               className={swClass.concat('demo-media')}
               src={demo.media}
               style={{
-                width: dims.width,
-                height: dims.height,
+                maxWidth: regDims.width,
+                maxHeight: regDims.height,
               }}
               onClick={openModal}
             />

@@ -72,7 +72,7 @@ const Application = ({ swClass, app }) => {
       fontSize: fontSize,
       opacity: arrowOpacity.right,
     });
-  }, [arrowOpacity]);
+  }, [arrowOpacity, swClass]);
 
   return (
     <div className={swClass.concat('application')}>
