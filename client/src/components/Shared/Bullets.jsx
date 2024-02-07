@@ -3,7 +3,7 @@ import './Shared.css';
 
 const Bullets = ({ swClass, bullets }) => {
   return (
-    <div className={swClass.concat('bullet-container')}>
+    <div className={swClass.concat('bullets')}>
       {bullets.map(bullet => (
         <div className={swClass.concat('bullet')}>
           •

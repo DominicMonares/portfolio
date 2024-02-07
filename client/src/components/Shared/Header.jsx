@@ -3,7 +3,7 @@ import './Shared.css';
 
 const Header = ({ swClass, title, est, estLink, location, year }) => {
   return swClass ? (
-    <div className="sw-header-container">
+    <div className="sw-header">
       <div className="sw-header-top-container">
         <span className="sw-header-title">
           {title.includes(' Immersive') || title.includes(' Marketing') ? (
@@ -33,7 +33,7 @@ const Header = ({ swClass, title, est, estLink, location, year }) => {
       </div>
     </div>
   ) : (
-    <div className="header-container">
+    <div className="header">
       <span>
         <span className="header-title">{title}</span>
         <span>&nbsp;|&nbsp;</span>
@@ -52,7 +52,7 @@ const Header = ({ swClass, title, est, estLink, location, year }) => {
         <span>&nbsp;|&nbsp;</span>
         <span>{location}</span>
       </span>
-      <span className="year">{year}</span>
+      <span className="header-year">{year}</span>
     </div>
   );
 }

@@ -46,7 +46,7 @@ const Icons = ({ swClass, page }) => {
   const closeModal = () => setIsOpen(false);
 
   return (
-    <div className={swClass.concat('icon-container')}>
+    <div className={swClass.concat('icons')}>
       <button className={swClass.concat('icon-open')} onClick={openModal}>
         Icons by Icons8
       </button>

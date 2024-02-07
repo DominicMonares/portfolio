@@ -148,11 +148,8 @@
 }
 
 .contact:link,
-.sw-contact:link {
-  color: #4d006d;
-}
-
 .contact:visited,
+.sw-contact:link,
 .sw-contact:visited {
   color: #4d006d;
 }

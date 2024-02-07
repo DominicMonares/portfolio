@@ -2,7 +2,7 @@ import React from 'react';
 
 const SubHeader = ({ swClass, desc, links }) => {
   return (
-    <div className={swClass.concat('subheader-container')}>
+    <div className={swClass.concat('subheader')}>
       <span>{desc}</span>
       {swClass && links ? <span>&nbsp;|&nbsp;</span> : <span />}
       {links ? (
