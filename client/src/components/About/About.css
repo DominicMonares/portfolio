@@ -89,7 +89,7 @@
 .sw-about-body-ul {
   width: 100%;
   height: 2px;
-  background: rgb(77,0,109);
+  background: #4d006d;
   background: radial-gradient(
     circle,
     rgba(77,0,109,1) 0%,
