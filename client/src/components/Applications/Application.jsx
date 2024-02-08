@@ -44,6 +44,10 @@ const carouselRightArrowStyles = {
 };
 
 const Application = ({ swClass, app }) => {
+  // Render Loading component until videos loaded
+  // Hacky workaround for YouTube iframe
+  const [ytLoading, setYTLoading] = useState(true);
+
   // Change carousel slides
   const [currentSlide, setCurrentSlide] = useState(0);
   const updateCurrentSlide = (index) => {
@@ -148,6 +152,8 @@ const Application = ({ swClass, app }) => {
             swClass={swClass}
             demo={demo}
             inactive={currentSlide !== i ? '-inactive' : ''}
+            ytLoading={ytLoading}
+            setYTLoading={setYTLoading}
           />
         ))}
       </Carousel>

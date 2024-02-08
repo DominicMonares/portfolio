@@ -26,7 +26,17 @@ const demoModalStyles = {
 };
 Modal.setAppElement('#root');
 
-const Demo = ({ swClass, demo, inactive }) => {
+const Demo = ({ swClass, demo, inactive, ytLoading, setYTLoading }) => {
+  // Render Loading component until videos fully load
+  const [loading, setLoading] = useState(true);
+  const endLoading = () => {
+    setLoading(false);
+    setYTLoading(false);
+  }
+
+  // Track media type
+  const [mediaType, setMediaType] = useState(demo.mediaType);
+
   // Update demo size type depending on window size
   const [size, setSize] = useState('reg');
   useEffect(() => {
@@ -72,7 +82,7 @@ const Demo = ({ swClass, demo, inactive }) => {
         style={modalStyles}
         contentLabel="Demo Modal"
       >
-        {demo.mediaType === 'video/mp4' ? (
+        {mediaType === 'video/mp4' ? (
           <video
             className={swClass.concat('demo-media-modal')}
             style={{
@@ -101,23 +111,26 @@ const Demo = ({ swClass, demo, inactive }) => {
           />
         )}
       </Modal>
-      <div 
+      <div
         className={swClass.concat(
           'demo-media-container',
           demo.mediaType === 'youtube' ? '-yt' : ''
         )}
       >
+        {loading && mediaType !== 'youtube' ? <div>Loading...</div> : <div />}
+        {ytLoading && mediaType === 'youtube' ? <div>Loading...</div> : <div />}
         {demo.mediaType === 'youtube' ? (
           <iframe
+            src={demo.media}
             className={swClass.concat('youtube-iframe')}
             style={{
+              display: ytLoading ? 'none' : 'inline-block',
               maxWidth: regDims.width,
               maxHeight: regDims.height,
               width: '100%',
               height: '100%',
               marginBottom: 0,
             }}
-            src={demo.media}
             allow={`
               accelerometer;
               autoplay;
@@ -134,10 +147,12 @@ const Demo = ({ swClass, demo, inactive }) => {
             <video
               className={swClass.concat('demo-media')}
               style={{
+                display: loading ? 'none' : 'flex',
                 maxWidth: regDims.width,
                 maxHeight: regDims.height,
               }}
               onClick={openModal}
+              onLoadedData={endLoading}
               autoplay="autoplay"
               loop="true"
               muted="true"
@@ -152,10 +167,12 @@ const Demo = ({ swClass, demo, inactive }) => {
               className={swClass.concat('demo-media')}
               src={demo.media}
               style={{
+                display: loading ? 'none' : 'flex',
                 maxWidth: regDims.width,
                 maxHeight: regDims.height,
               }}
               onClick={openModal}
+              onLoadedData={endLoading}
             />
           )
         )}
