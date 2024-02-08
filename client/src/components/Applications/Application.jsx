@@ -33,12 +33,14 @@ const carouselArrowStyles = {
 
 const carouselLeftArrowStyles = {
   ...carouselArrowStyles,
+  float: 'left',
   marginLeft: -13,
   left: 15,
 };
 
 const carouselRightArrowStyles = {
   ...carouselArrowStyles,
+  float: 'right',
   marginRight: -13,
   right: 15,
 };
