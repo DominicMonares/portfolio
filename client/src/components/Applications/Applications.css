@@ -47,6 +47,15 @@
   padding: 4px;
 }
 
+/* Carousel Arrow */
+
+.carousel-arrow,
+.sw-carousel-arrow {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 
 /***** Application Header *****/
 
