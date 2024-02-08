@@ -78,6 +78,32 @@ const Application = ({ swClass, app }) => {
     });
   }, [arrowOpacity, swClass]);
 
+  // Change carousel arrow styles on event
+  const updateArrowStyle = (side, active) => {
+    const activeStyles = active
+      ? carouselColorStyles.active
+      : carouselColorStyles.inactive;
+    if (side === 'left') {
+      setArrowOpacity({
+        left: active ? 1.0 : 0.5,
+        right: 0.5,
+      });
+      setLeftArrowStyles({
+        ...leftArrowStyles,
+        ...activeStyles,
+      });
+    } else {
+      setArrowOpacity({
+        left: 0.5,
+        right: active ? 1.0 : 0.5,
+      });
+      setRightArrowStyles({
+        ...rightArrowStyles,
+        ...activeStyles,
+      });
+    }
+  }
+
   return (
     <div className={swClass.concat('application')}>
       <ApplicationHeader
@@ -98,22 +124,10 @@ const Application = ({ swClass, app }) => {
           <button
             className={swClass.concat('carousel-arrow')}
             onClick={onClickHandler}
-            onMouseEnter={() => setArrowOpacity({ left: 1.0, right: 0.5 })}
-            onMouseLeave={() => {
-              setArrowOpacity({ left: 0.5, right: 0.5 });
-              setLeftArrowStyles({
-                ...leftArrowStyles,
-                ...carouselColorStyles.inactive,
-              })
-            }}
-            onMouseDown={() => setLeftArrowStyles({
-              ...leftArrowStyles,
-              ...carouselColorStyles.active,
-            })}
-            onMouseUp={() => setLeftArrowStyles({
-              ...leftArrowStyles,
-              ...carouselColorStyles.inactive,
-            })}
+            onMouseDown={() => updateArrowStyle('left', true)}
+            onTouchStart={() => updateArrowStyle('left', true)}
+            onMouseUp={() => updateArrowStyle('left', false)}
+            onTouchEnd={() => updateArrowStyle('left', false)}
             title={label}
             style={leftArrowStyles}
           >
@@ -124,22 +138,10 @@ const Application = ({ swClass, app }) => {
           <button
             className={swClass.concat('carousel-arrow')}
             onClick={onClickHandler}
-            onMouseEnter={() => setArrowOpacity({ left: 0.5, right: 1.0 })}
-            onMouseLeave={() => {
-              setArrowOpacity({ left: 0.5, right: 0.5 });
-              setRightArrowStyles({
-                ...rightArrowStyles,
-                ...carouselColorStyles.inactive,
-              })
-            }}
-            onMouseDown={() => setRightArrowStyles({
-              ...rightArrowStyles,
-              ...carouselColorStyles.active,
-            })}
-            onMouseUp={() => setRightArrowStyles({
-              ...rightArrowStyles,
-              ...carouselColorStyles.inactive,
-            })}
+            onMouseDown={() => updateArrowStyle('right', true)}
+            onTouchStart={() => updateArrowStyle('right', true)}
+            onMouseUp={() => updateArrowStyle('right', false)}
+            onTouchEnd={() => updateArrowStyle('right', false)}
             title={label}
             style={rightArrowStyles}
           >
