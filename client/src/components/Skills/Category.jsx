@@ -3,11 +3,11 @@ import media from '../../media';
 
 const Category = ({ swClass, category, skills }) => {
   return (
-    <div className={swClass.concat('category-container')}>
+    <div className={swClass.concat('category')}>
       <div className={swClass.concat('category-name')}>
         {category}
       </div>
-      <ul className={swClass.concat('skills')}>
+      <ul className={swClass.concat('category-skills')}>
         {skills[category].map(s => (
           <li className={swClass.concat('skill')}>
             <span className={swClass.concat('skill-text')}>{s.title}</span>
