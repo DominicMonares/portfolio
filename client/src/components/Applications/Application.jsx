@@ -21,26 +21,25 @@ const carouselColorStyles = {
 
 const carouselArrowStyles = {
   ...carouselColorStyles.inactive,
+  display: 'flex',
+  alignItems: 'center',
   position: 'absolute',
   top: 'calc(50% - 15px)',
   zIndex: 2,
   borderStyle: 'solid',
   borderWidth: 1,
   borderRadius: 45,
-  textAlign: 'center',
   cursor: 'pointer',
 };
 
 const carouselLeftArrowStyles = {
   ...carouselArrowStyles,
-  float: 'left',
   marginLeft: -13,
   left: 15,
 };
 
 const carouselRightArrowStyles = {
   ...carouselArrowStyles,
-  float: 'right',
   marginRight: -13,
   right: 15,
 };
@@ -66,6 +65,7 @@ const Application = ({ swClass, app }) => {
     const fontSize = swClass ? 13 : 30;
     setLeftArrowStyles({
       ...leftArrowStyles,
+      justifyContent: swClass ? 'start' : 'center',
       width: width,
       height: height,
       fontSize: fontSize,
@@ -73,6 +73,7 @@ const Application = ({ swClass, app }) => {
     });
     setRightArrowStyles({
       ...rightArrowStyles,
+      justifyContent: swClass ? 'end' : 'center',
       width: width,
       height: height,
       fontSize: fontSize,
