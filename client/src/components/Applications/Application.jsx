@@ -22,6 +22,7 @@ const carouselColorStyles = {
 const carouselArrowStyles = {
   ...carouselColorStyles.inactive,
   display: 'flex',
+  justifyContent: 'center',
   alignItems: 'center',
   position: 'absolute',
   top: 'calc(50% - 15px)',
@@ -65,7 +66,6 @@ const Application = ({ swClass, app }) => {
     const fontSize = swClass ? 13 : 30;
     setLeftArrowStyles({
       ...leftArrowStyles,
-      justifyContent: swClass ? 'start' : 'center',
       width: width,
       height: height,
       fontSize: fontSize,
@@ -73,7 +73,6 @@ const Application = ({ swClass, app }) => {
     });
     setRightArrowStyles({
       ...rightArrowStyles,
-      justifyContent: swClass ? 'end' : 'center',
       width: width,
       height: height,
       fontSize: fontSize,
@@ -124,7 +123,7 @@ const Application = ({ swClass, app }) => {
         showStatus={false}
         showThumbs={false}
         renderArrowPrev={(onClickHandler, hasPrev, label) => (
-          <button
+          <div
             className={swClass.concat('carousel-arrow')}
             onClick={onClickHandler}
             onMouseDown={() => updateArrowStyle('left', true)}
@@ -135,10 +134,10 @@ const Application = ({ swClass, app }) => {
             style={leftArrowStyles}
           >
             &lt;
-          </button>
+          </div>
         )}
         renderArrowNext={(onClickHandler, hasNext, label) => (
-          <button
+          <div
             className={swClass.concat('carousel-arrow')}
             onClick={onClickHandler}
             onMouseDown={() => updateArrowStyle('right', true)}
@@ -149,7 +148,7 @@ const Application = ({ swClass, app }) => {
             style={rightArrowStyles}
           >
             &gt;
-          </button>
+          </div>
         )}
       >
         {app.demos.map((demo, i) => (
