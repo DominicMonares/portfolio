@@ -192,13 +192,24 @@
   font-size: 14px;
 }
 
+/* Demo Media Modal Container */
+
+.demo-media-modal-container,
+.sw-demo-media-modal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  cursor: zoom-out;
+}
+
 /* Demo Media Modal */
 
 .demo-media-modal,
 .sw-demo-media-modal {
   width: 100%;
   height: 100%;
-  cursor: zoom-out;
 }
 
 /* React Modal Override */

@@ -82,34 +82,37 @@ const Demo = ({ swClass, demo, inactive, ytLoading, setYTLoading }) => {
         style={modalStyles}
         contentLabel="Demo Modal"
       >
-        {mediaType === 'video/mp4' ? (
-          <video
-            className={swClass.concat('demo-media-modal')}
-            style={{
-              maxWidth: modalDims.width,
-              maxHeight: modalDims.height,
-            }}
-            onClick={closeModal}
-            autoplay="autoplay"
-            loop="true"
-            muted="true"
-          >
-            <source
-              src={media['applications'][demo.media]}
-              type={demo.mediaType}
+        <div
+          className={swClass.concat('demo-media-modal-container')}
+          onClick={closeModal}
+        >
+          {mediaType === 'video/mp4' ? (
+            <video
+              className={swClass.concat('demo-media-modal')}
+              style={{
+                maxWidth: modalDims.width,
+                maxHeight: modalDims.height,
+              }}
+              autoplay="autoplay"
+              loop="true"
+              muted="true"
+            >
+              <source
+                src={media['applications'][demo.media]}
+                type={demo.mediaType}
+              />
+            </video>
+          ) : (
+            <img
+              className={swClass.concat('demo-media-modal')}
+              src={demo.media}
+              style={{
+                maxWidth: modalDims.width,
+                maxHeight: modalDims.height,
+              }}
             />
-          </video>
-        ) : (
-          <img
-            className={swClass.concat('demo-media-modal')}
-            src={demo.media}
-            onClick={closeModal}
-            style={{
-              maxWidth: modalDims.width,
-              maxHeight: modalDims.height,
-            }}
-          />
-        )}
+          )}
+        </div>
       </Modal>
       <div
         className={swClass.concat(
