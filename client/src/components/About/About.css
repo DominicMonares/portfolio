@@ -1,0 +1,177 @@
+/***** About *****/
+
+/* About */
+
+.sw-about {
+  margin-top: 8px;
+}
+
+/* About Body Container */
+
+.about-body-container,
+.sw-about-body-container {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  border-color: #4d006d;
+}
+
+.about-body-container {
+  margin-top: 20px;
+}
+
+.sw-about-body-container {
+  margin-bottom: 8px;
+}
+
+/* About Body */
+
+.about-body,
+.sw-about-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-body {
+  flex-direction: row;
+}
+
+.sw-about-body {
+  flex-direction: column;
+}
+
+/* Profile Pic */
+
+.profile-pic,
+.sw-profile-pic {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #4d006d;
+}
+
+.sw-profile-pic {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* About Text Container */
+
+.about-text-container {
+  max-width: 700px;
+  margin-left: 20px;
+}
+
+.sw-about-text-container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* About Text */
+
+.about-text {
+  font-size: 16px;
+}
+
+.sw-about-text {
+  font-size: 14px;
+}
+
+/* About Body UL */
+
+.about-body-ul,
+.sw-about-body-ul {
+  width: 100%;
+  height: 2px;
+  background: #4d006d;
+  background: radial-gradient(
+    circle,
+    rgba(77,0,109,1) 0%,
+    rgba(77,0,109,1) 80%,
+    rgba(255,255,255,1) 100%
+  );
+}
+
+.about-body-ul {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+/***** Contacts *****/
+
+/* Contacts */
+
+.contacts {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sw-contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+}
+
+/* Contact Container */
+
+.contact-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 2px;
+  margin-right: 2px;
+  font-size: 16px;
+}
+
+.sw-contact-container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  font-size: 14px;
+}
+
+/* Contact */
+
+.contact,
+.sw-contact {
+  display: flex;
+  align-items: center;
+}
+
+.contact:link,
+.contact:visited,
+.sw-contact:link,
+.sw-contact:visited {
+  color: #4d006d;
+}
+
+.contact:active,
+.sw-contact:active {
+  color: #BBA5D2;
+}
+
+/* Contact Link */
+
+.contact-link,
+.sw-contact-link {
+  display: flex;
+  align-items: center;
+  text-decoration: underline;
+}
+
+.contact-link {
+  margin-left: 10px;
+}
+
+.sw-contact-link {
+  margin-left: 20px;
+}

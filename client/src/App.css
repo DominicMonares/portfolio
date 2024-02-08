@@ -1,68 +1,91 @@
+/***** General *****/
+
 html, body {
   min-height: 100%;
   margin: 0;
   background-color: #f1cfff;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
+html::-webkit-scrollbar {
+  display: none;
+}
 
-/***** Web *****/
-
-#w_app {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  max-width: 1250px;
+.route-container {
+  max-width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.w_title {
+#app,
+#sw-app {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-title,
+.main-subtitle,
+.sw-main-title,
+.sw-main-subtitle {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #4d006d;
+}
+
+
+/***** Reg Window *****/
+
+#app {
+  max-width: 1170px;
+}
+
+.main-title {
+  padding-top: 10px;
   font-size: 40px;
   font-weight: 700;
-  padding-top: 10px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  color: #4d006d;
 }
 
-.w_subtitle {
-  display: flex;
-  justify-content: center;
-  font-weight: 400;
+.main-subtitle {
   font-size: 20px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  font-weight: 400;
+}
+
+
+/***** Small Window *****/
+
+#sw-app {
+  max-width: 790px;
   color: #4d006d;
 }
 
-
-/***** Mobile *****/
-
-#m_app {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  max-width: 790px;
-  margin-left: auto;
-  margin-right: auto;
+.sw-main-title {
+  padding-top: 8px;
+  font-size: 32px;
+  font-weight: 700;
 }
 
-.m_title, .m_subtitle {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
+.sw-main-subtitle {
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: 400;
 }
 
-.m_title {
-  padding-top: 7px;
+.sw-title-ul {
+  width: 100%;
+  height: 1px;
+  background-color: #4d006d;
 }
 
-.m_subtitle {
-  padding-top: 5px;
-  padding-bottom: 5px;
+.sw-route-container {
+  max-width: 100%;
+  box-sizing: border-box;
+  padding-left: 8px;
+  padding-right: 8px;
 }

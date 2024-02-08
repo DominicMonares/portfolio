@@ -1,0 +1,45 @@
+/***** Education *****/
+
+/* Education */
+
+.education,
+.sw-education {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.education {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.sw-education {
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+/* Education Container */
+
+.education-container,
+.sw-education-container {
+  width: 100%;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: #4d006d;
+  border-width: 1px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.education-container {
+  margin-bottom: 5px;
+  padding: 8px;
+}
+
+.sw-education-container {
+  margin-bottom: 4px;
+  padding: 4px;
+}
