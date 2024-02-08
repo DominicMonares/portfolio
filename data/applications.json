@@ -1,0 +1,358 @@
+[
+  {
+    "title": "SPP Extras",
+    "desc": "Desktop app that provides tools for Celguar's SPP Classics Repack",
+    "links": [
+      {
+        "label": "GitHub",
+        "link": "https://github.com/DominicMonares/spp-extras"
+      },
+      {
+        "label": "PR #171",
+        "link": "https://github.com/celguar/spp-classics-cmangos/pull/171"
+      }
+    ],
+    "techs": "TypeScript, React, Redux, Electron, MySQL, Jest",
+    "demos": [
+      {
+        "caption": "Track the completion status of all quests across all characters",
+        "mediaType": "video/mp4",
+        "media": "sppe4",
+        "dims": {
+          "modal": {
+            "width": 1300,
+            "height": 1080
+          },
+          "reg": {
+            "width": 708,
+            "height": 588
+          }
+        }
+      },
+      {
+        "caption": "Transfer achievement credit, rewards, and progress between all characters",
+        "mediaType": "video/mp4",
+        "media": "sppe1",
+        "dims": {
+          "modal": {
+            "width": 1902,
+            "height": 1080
+          },
+          "reg": {
+            "width": 1035,
+            "height": 588
+          }
+        }
+      },
+      {
+        "caption": "Transfer pets and mounts between all characters",
+        "mediaType": "video/mp4",
+        "media": "sppe2",
+        "dims": {
+          "modal": {
+            "width": 1902,
+            "height": 1080
+          },
+          "reg": {
+            "width": 1035,
+            "height": 588
+          }
+        }
+      },
+      {
+        "caption": "Transfer reputation standings between all characters",
+        "mediaType": "video/mp4",
+        "media": "sppe3",
+        "dims": {
+          "modal": {
+            "width": 1902,
+            "height": 1080
+          },
+          "reg": {
+            "width": 1035,
+            "height": 588
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "Clown Detector",
+    "desc": "Google Chrome extension that helps you spot silly LinkedIn jobs",
+    "links": [
+      {
+        "label": "Chrome Web Store",
+        "link": "https://chrome.google.com/webstore/detail/clown-detector/djejlndcgacefmmiamjankkmdeoebhif"
+      },
+      {
+        "label": "GitHub",
+        "link": "https://github.com/DominicMonares/clown-detector"
+      }
+    ],
+    "techs": "TypeScript, React, jQuery, MUI, Jest",
+    "demos": [
+      {
+        "caption": "Flag LinkedIn jobs with a clown emoji and the matching keyword(s) found",
+        "mediaType": "video/mp4",
+        "media": "clown1",
+        "dims": {
+          "modal": {
+            "width": 1122,
+            "height": 762
+          },
+          "reg": {
+            "width": 866,
+            "height": 588
+          }
+        }
+      },
+      {
+        "caption": "Settings can be changed from the extension popup menu",
+        "mediaType": "video/mp4",
+        "media": "clown2",
+        "dims": {
+          "modal": {
+            "width": 626,
+            "height": 350
+          },
+          "reg": {
+            "width": 866,
+            "height": 484
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "fretJS",
+    "desc": "Web app that lets you write and execute JavaScript using only an electric guitar",
+    "links": [
+      {
+        "label": "GitHub",
+        "link": "https://github.com/DominicMonares/fret-js"
+      }
+    ],
+    "techs": "TypeScript, React, webpack, Web Audio API",
+    "demos": [
+      {
+        "caption": "Full demo",
+        "mediaType": "youtube",
+        "media": "https://www.youtube.com/embed/fRe4yupMJ-A",
+        "dims": {
+          "modal": {
+            "width": 1920,
+            "height": 1080
+          },
+          "reg": {
+            "width": 800,
+            "height": 450
+          }
+        }
+      },
+      {
+        "caption": "Works for both 22 and 24 fret guitars",
+        "mediaType": "video/mp4",
+        "media": "fretJS1",
+        "dims": {
+          "modal": {
+            "width": 1414,
+            "height": 738
+          },
+          "reg": {
+            "width": 862,
+            "height": 450
+          }
+        }
+      },
+      {
+        "caption": "Responsive fretboard diagram",
+        "mediaType": "video/mp4",
+        "media": "fretJS2",
+        "dims": {
+          "modal": {
+            "width": 1696,
+            "height": 738
+          },
+          "reg": {
+            "width": 1035,
+            "height": 450
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "PetPix",
+    "desc": "Social media application centered around pet pictures",
+    "links": [
+      {
+        "label": "GitHub - Front End",
+        "link": "https://github.com/DominicMonares/BOC"
+      },
+      {
+        "label": "GitHub - Back End",
+        "link": "https://github.com/DominicMonares/backend"
+      }
+    ],
+    "techs": "React Native, Expo, Redux, Express, MongoDB, Passport.js, Nodemailer, Jest, React Native Testing Library",
+    "demos": [
+      {
+        "caption": "Local auth flow that I was responsible for",
+        "mediaType": "video/mp4",
+        "media": "petpix1",
+        "dims": {
+          "modal": {
+            "width": 354,
+            "height": 712
+          },
+          "reg": {
+            "width": 224,
+            "height": 450
+          }
+        }
+      },
+      {
+        "caption": "Third-party auth flow that I was responsible for",
+        "mediaType": "video/mp4",
+        "media": "petpix2",
+        "dims": {
+          "modal": {
+            "width": 354,
+            "height": 712
+          },
+          "reg": {
+            "width": 224,
+            "height": 450
+          }
+        }
+      },
+      {
+        "caption": "UI that I designed using client's specifications",
+        "mediaType": "video/mp4",
+        "media": "petpix3",
+        "dims": {
+          "modal": {
+            "width": 480,
+            "height": 960
+          },
+          "reg": {
+            "width": 225,
+            "height": 450
+          }
+        }
+      },
+      {
+        "caption": "UI that I designed using client's specifications",
+        "mediaType": "video/mp4",
+        "media": "petpix4",
+        "dims": {
+          "modal": {
+            "width": 480,
+            "height": 960
+          },
+          "reg": {
+            "width": 225,
+            "height": 450
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "Atelier",
+    "desc": "eCommerce application",
+    "links": [
+      {
+        "label": "GitHub",
+        "link": "https://github.com/DominicMonares/fec-atelier"
+      }
+    ],
+    "techs": "React, webpack, Babel, Express, Node.js, AWS: EC2, Jest, React Testing Library",
+    "demos": [
+      {
+        "caption": "Answer accordion, expandable questions, and infinitely scrolling display",
+        "mediaType": "video/mp4",
+        "media": "fec3",
+        "dims": {
+          "modal": {
+            "width": 1436,
+            "height": 756
+          },
+          "reg": {
+            "width": 1035,
+            "height": 545
+          }
+        }
+      },
+      {
+        "caption": "Dynamically sorting search bar",
+        "mediaType": "video/mp4",
+        "media": "fec1",
+        "dims": {
+          "modal": {
+            "width": 1426,
+            "height": 692
+          },
+          "reg": {
+            "width": 1035,
+            "height": 502
+          }
+        }
+      },
+      {
+        "caption": "Rate helpfulness and flag inappropriate answers for review",
+        "mediaType": "video/mp4",
+        "media": "fec2",
+        "dims": {
+          "modal": {
+            "width": 888,
+            "height": 240
+          },
+          "reg": {
+            "width": 1035,
+            "height": 280
+          }
+        }
+      },
+      {
+        "caption": "Answer submission modal and image upload",
+        "mediaType": "video/mp4",
+        "media": "fec4",
+        "dims": {
+          "modal": {
+            "width": 1434,
+            "height": 760
+          },
+          "reg": {
+            "width": 1035,
+            "height": 549
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "Atelier API",
+    "desc": "API microservice for eCommerce application",
+    "links": [
+      {
+        "label": "GitHub",
+        "link": "https://github.com/DominicMonares/cactus-oasis-ov"
+      }
+    ],
+    "techs": "Express, MongoDB, Memcached, NGINX, K6, Loader.io, AWS: EC2 / S3, Supertest",
+    "demos": []
+  },
+  {
+    "title": "Account-wide",
+    "desc": "Progress sharing tool for Celguar's SPP Classics Repack",
+    "links": [
+      {
+        "label": "GitHub",
+        "link": "https://github.com/Domclay/spp-account-wide"
+      }
+    ],
+    "techs": "Node.js, MySQL",
+    "demos": []
+  }
+]

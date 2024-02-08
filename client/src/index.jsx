@@ -1,43 +1,57 @@
 import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-import NavBar from './Components/NavBar/NavBar';
-import Dropdown from './Components/Dropdown/Dropdown';
-import About from './Components/About/About';
-import Skills from './Components/Skills/Skills';
-import Experience from './Components/Experience/Experience';
-import Education from './Components/Education/Education';
-import Applications from './Components/Applications/Applications';
+import regeneratorRuntime from 'regenerator-runtime';
+import NavBar from './components/Navigation/NavBar';
+import Dropdown from './components/Navigation/Dropdown';
+import About from './components/About';
+import Skills from './components/Skills';
+import Experience from './components/Experience';
+import Education from './components/Education';
+import Applications from './components/Applications';
 import './App.css';
 
 const App = () => {
-  const isWide = () =>  window.innerWidth >= 790 ? true : false;
-  const [wide, setWide] = useState(isWide());
-
+  // Change styling depending on window size
+  const isSmallWindow = () =>  window.innerWidth < 790 ? 'sw-' : '';
+  const [swClass, setSWClass] = useState(isSmallWindow());
   useEffect(() => {
-    const handleWidthChange = () => setWide(isWide());
+    const handleWidthChange = () => setSWClass(isSmallWindow());
     window.addEventListener('resize', handleWidthChange);
     return () => window.removeEventListener('resize', handleWidthChange);
   }, []);
 
+  // Fetch tab navigation data
+  const [navData, setNavData] = useState([]);
+  useEffect(() => {
+    const fetchData = async () => await fetch('/data/nav');
+    fetchData()
+      .then(async res => {
+        const data = await res.json();
+        setNavData(data);
+      })
+      .catch(err => { throw err });
+  }, []);
+
   return (
-    <div id={wide ? 'w_app' : 'm_app'}>
-      <h1 className={wide ? 'w_title' : 'm_title'}>Dominic Monares</h1>
-      <h3 className={wide ? 'w_subtitle' : 'm_subtitle'}>Full-Stack Software Engineer</h3>
+    <div id={swClass.concat('app')}>
+      <h1 className={swClass.concat('main-title')}>Dominic Monares</h1>
+      <h3 className={swClass.concat('main-subtitle')}>Full-Stack Software Engineer</h3>
+      {swClass ? <div className="sw-title-ul" /> : <div />}
       <Router>
-        {wide ? <NavBar /> : <Dropdown />}
-        <Routes>
-          <Route path='/apps' element={<Applications wide={wide} />}></Route>
-          <Route path='/about' element={<About wide={wide} />}></Route>
-          <Route path='/skills' element={<Skills wide={wide} />}></Route>
-          <Route path='/experience' element={<Experience wide={wide} />}></Route>
-          <Route path='/education' element={<Education wide={wide} />}></Route>
-        </Routes>
+        {isSmallWindow() ? <Dropdown navData={navData} /> : <NavBar navData={navData} />}
+        <div className={swClass.concat('route-container')}>
+          <Routes>
+            <Route path="/apps" element={<Applications swClass={swClass} />} />
+            <Route path="/about" element={<About swClass={swClass} />} />
+            <Route path="/skills" element={<Skills swClass={swClass} />} />
+            <Route path="/experience" element={<Experience swClass={swClass} />} />
+            <Route path="/education" element={<Education swClass={swClass} />} />
+          </Routes>
+        </div>
       </Router>
     </div>
   );
 }
-
 
 ReactDOM.render(<App />, document.getElementById('root'));

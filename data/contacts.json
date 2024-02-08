@@ -1,0 +1,29 @@
+[
+  {
+    "link": "https://dominicsmonares@gmail.com",
+    "display": "dominicsmonares@gmail.com",
+    "icon": "gmail",
+    "dims": {
+      "width": 27,
+      "height":20
+    }
+  },
+  {
+    "link": "https://linkedin.com/in/dominic-monares/",
+    "display": "linkedin.com/in/dominic-monares/",
+    "icon": "linkedIn",
+    "dims": {
+      "width": 20,
+      "height": 20
+    }
+  },
+  {
+    "link": "https://github.com/DominicMonares",
+    "display": "github.com/DominicMonares",
+    "icon": "gitHub",
+    "dims": {
+      "width": 20,
+      "height": 20
+    }
+  }
+]
