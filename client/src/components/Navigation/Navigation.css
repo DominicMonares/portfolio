@@ -139,9 +139,9 @@
   width: 100%;
 }
 
-/* Dropdown NavBar Open */
+/* Dropdown Nav Container Open */
 
-.dropdown-navbar-open {
+.dropdown-nav-container-open {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -154,9 +154,9 @@
   background-color: #965eae;
 }
 
-/* Dropdown NavBar Closed */
+/* Dropdown Nav Container Closed */
 
-.dropdown-navbar-closed {
+.dropdown-nav-container-closed {
   display: none;
 }
 
